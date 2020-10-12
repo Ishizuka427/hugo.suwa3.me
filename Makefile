@@ -1,4 +1,4 @@
-HUGO_TAR_BALL := $(CURDIR)/hugo_0.76.2_Linux-64bit.tar.gz
+HUGO_TAR_BALL := $(CURDIR)/hugo_0.76.3_Linux-64bit.tar.gz
 
 
 .PHONY: hugo
