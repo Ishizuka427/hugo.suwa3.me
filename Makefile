@@ -3,7 +3,7 @@ HUGO_TAR_BALL := $(CURDIR)/hugo_0.76.3_Linux-64bit.tar.gz
 
 .PHONY: hugo
 hugo:
-	PATH=$(CURDIR)/bin:$$PATH && cd hugo && hugo -D
+	PATH=$(CURDIR)/bin:$$PATH && hugo -D
 
 
 .PHONY: netlify
