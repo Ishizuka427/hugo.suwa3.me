@@ -23,7 +23,7 @@ https://wp.suwa3.me/2019/12/25/pixela%e3%81%a8%e3%81%84%e3%81%86%e8%8d%89api%e3%
 
 まず、GitHub風に草を生やすことができる[Pixela](https://pixe.la/)
 
-![](images/スクリーンショット-2019-12-28-22.50.29.png)
+![](/images/スクリーンショット-2019-12-28-22.50.29.png)
 
 超かわいい！！と、見た瞬間一目惚れして  
 ぜひこれでblogのPV数をサイドバーなどに表示させたいと思いました。  
@@ -83,7 +83,7 @@ $ curl -X POST https://pixe.la/v1/users/a-know/graphs -H 'X-USER-TOKEN:thisissec
 
 [https://pixe.la/v1/users/a-know/graphs/test-graph](https://pixe.la/v1/users/a-know/graphs/test-graph)
 
-![](images/スクリーンショット-2019-12-26-22.04.50.png)
+![](/images/スクリーンショット-2019-12-26-22.04.50.png)
 
 (ユーザー名にsuwa3/IDにtest-graphを指定した例)
 
@@ -103,7 +103,7 @@ $ curl -X POST https://pixe.la/v1/users/a-know/graphs/test-graph -H 'X-USER-TOKE
 {"message":"Success.","isSuccess":true}
 ```
 
-![](images/スクリーンショット-2019-12-26-22.10.01.png)
+![](/images/スクリーンショット-2019-12-26-22.10.01.png)
 
 草を生やすことに成功しました👏  
 次はPV数を取得するために準備をします。
@@ -113,7 +113,7 @@ $ curl -X POST https://pixe.la/v1/users/a-know/graphs/test-graph -H 'X-USER-TOKE
 GoogleAnalyticsの導入方法について詳細は割愛します。  
 左下の歯車マークから、プロパティ設定を選択して行います。
 
-![](images/スクリーンショット-2019-12-29-0.03.14.png)
+![](/images/スクリーンショット-2019-12-29-0.03.14.png)
 
 ## GoogleAnalytics APIを利用してjsonファイルをDLする
 
@@ -124,7 +124,7 @@ GoogleAnalytics APIの設定を行います。
 一点のみ注意が必要なのが  
 サービスアカウントキーの設定時
 
-![](images/スクリーンショット-2019-12-26-22.35.34.png)
+![](/images/スクリーンショット-2019-12-26-22.35.34.png)
 
 これ、閲覧者では権限が足りずに実行できなかったため  
 わたしは「オーナー」で登録しました。  
@@ -349,6 +349,6 @@ WordPressではウィジェットにカスタムHTMLがあるのですが
 <iframe src="https://pixe.la/v1/users/<ユーザー名>/graphs/<グラフID>.html?mode=simple" height="155" width="720" frameborder="0"></iframe>
 ```
 
-![](images/スクリーンショット-2019-12-29-1.14.53.png)
+![](/images/スクリーンショット-2019-12-29-1.14.53.png)
 
 サイドバーに表示させることができました👏

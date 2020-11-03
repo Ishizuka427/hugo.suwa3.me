@@ -20,7 +20,7 @@ scp wp:/home/ec2-user/wp.suwa3.me-backup-mysql-20200515.tar.xz ~/tmp/
 service mysqld restart
 ```
 
-![](images/スクリーンショット-2020-05-14-21.07.22.png)
+![](/images/スクリーンショット-2020-05-14-21.07.22.png)
 
 blog開こうとしたらこれです(ゲンナリ)  
 なんか前にもあったぞ。。

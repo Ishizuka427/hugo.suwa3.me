@@ -47,7 +47,7 @@ USER-no-MacBook-Air:nuxt.Rabbit-game suwa$ tree
 
 ↑の、pagesの下にあるindex.vueをエディタで編集したの。
 
-![](images/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2019-08-19-11.10.27.png)
+![](/images/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2019-08-19-11.10.27.png)
 
 何故画像なのかというと、コードブロックで書こうとしたらスラッシュが何かに作用してうまく表示されなかったからです！そんなんばっか！
 

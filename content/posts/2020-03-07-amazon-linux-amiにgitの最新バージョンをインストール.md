@@ -53,7 +53,7 @@ $ sudo yum install curl-devel expat-devel gettext-devel openssl-devel perl-devel
 
 git-2.24.1.tar.gz
 
-![](images/スクリーンショット-2020-03-08-18.12.36.png)
+![](/images/スクリーンショット-2020-03-08-18.12.36.png)
 
 ```
 $ wget https://github.com/git/git/archive/v2.24.1.tar.gz

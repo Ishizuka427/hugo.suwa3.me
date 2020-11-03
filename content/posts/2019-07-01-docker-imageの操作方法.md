@@ -27,7 +27,7 @@ centosを検索してみます。
 
 $ docker search centos | more
 
-![](images/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2019-07-01-21.11.16.png)
+![](/images/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2019-07-01-21.11.16.png)
 
 * * *
 
@@ -47,7 +47,7 @@ $ docker pull centos
 
 $ docker images
 
-![](images/img_20190702_012415.png)
+![](/images/img_20190702_012415.png)
 
 REPOSITORY           TAG                 IMAGE ID            CREATED             SIZE
  misskey\_web          latest              0e061f36c9be        8 days ago          526MB
@@ -70,7 +70,7 @@ IMAGE IDで指定する場合は一つに絞ることができればOKなので�
 
 $ docker inspect centos:latest
 
-![](images/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2019-07-02-0.29.02.png)
+![](/images/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2019-07-02-0.29.02.png)
 
 上記画像のような設定を見ることができる。
 

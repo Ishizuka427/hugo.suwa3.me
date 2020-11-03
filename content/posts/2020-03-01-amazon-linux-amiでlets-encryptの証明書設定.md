@@ -74,7 +74,7 @@ $ certbot-auto --help
 
 # 自動更新の設定をする
 
-![](images/スクリーンショット-2020-03-01-21.38.39.png)
+![](/images/スクリーンショット-2020-03-01-21.38.39.png)
 
 あと3ヶ月で切れるっぽいです。  
 [certbotを使ってサイトをhttps化した | おそらくはそれさえも平凡な日々](https://songmu.jp/riji/entry/2019-06-10-certbot-https.html)
