@@ -1,6 +1,6 @@
 ---
 title: "Work_from_home"
-date: "2020-12-08T10:00:00.000Z"
+date: "2020-12-07T10:00:00.000Z"
 categories: 
   - "tech-blog"
 tags: 
