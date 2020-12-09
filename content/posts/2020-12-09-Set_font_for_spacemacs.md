@@ -52,7 +52,7 @@ https://develop.spacemacs.org/doc/DOCUMENTATION.html#font
 `.spacemacs/init.el` を開きます。  
 
 デフォルトが下記  
-```
+```emacslisp
    dotspacemacs-default-font '("Source Code Pro"
                                :size 13
                                :weight normal
@@ -63,7 +63,7 @@ https://develop.spacemacs.org/doc/DOCUMENTATION.html#font
 PixelMplus1 というフォントを設定したい場合  
 ※ Mac は `Library/Fonts/*******-Regular.ttf` などの形式で保存されていますが  
 ファイル名 `*******` 部分を記載します。  
-```
+```emacslisp
    dotspacemacs-default-font '("PixelMplus12"
                                :size 13
                                :weight normal
