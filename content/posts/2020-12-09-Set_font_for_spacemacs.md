@@ -23,12 +23,12 @@ markdown-
 `markdown-header-face-1` を選択  
 設定画面が開くので `Show All Attributes` を押す。
 
-foreground: 文字色
+foreground: 文字色  
 background: 背景色
 
-それぞれ設定して、`.spacemacs/init.el` を開きます。
+それぞれ設定して、`.spacemacs/init.el` を開きます。  
 
-最後にこういった設定が追加されていると思うので、それらを user-config の中に移動します。
+最後にこういった設定が追加されていると思うので、それらを user-config の中に移動します。  
 あとは、他のものもこの形式どおりに書いていけば編集できます。
 ```emacslisp
 (custom-set-faces
@@ -45,10 +45,10 @@ background: 背景色
 
 ## Font の設定
 
-ついでに Font も変更しました。
-`.spacemacs/init.el` を開きます。
+ついでに Font も変更しました。  
+`.spacemacs/init.el` を開きます。  
 
-デフォルトが下記
+デフォルトが下記  
 ```
    dotspacemacs-default-font '("Source Code Pro"
                                :size 13
@@ -57,8 +57,9 @@ background: 背景色
                                :powerline-scale 1.1)
 ```
 
-PixelMplus1 というフォントを設定したい場合
-※ Mac は `Library/Fonts/*******-Regular.ttf` などの形式で保存されていますが、ファイル名 `*******` 部分を記載します。
+PixelMplus1 というフォントを設定したい場合  
+※ Mac は `Library/Fonts/*******-Regular.ttf` などの形式で保存されていますが  
+ファイル名 `*******` 部分を記載します。  
 ```
    dotspacemacs-default-font '("PixelMplus12"
                                :size 13
@@ -68,7 +69,7 @@ PixelMplus1 というフォントを設定したい場合
 
 ```
 
-そして出来上がったのがこちら
+そして出来上がったのがこちら  
 
 ![](/images/SS_2020-12-09_22.46.05)
 
