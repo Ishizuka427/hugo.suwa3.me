@@ -45,6 +45,9 @@ background: 背景色
 
 ## Font の設定
 
+Spacemacs documentation
+https://develop.spacemacs.org/doc/DOCUMENTATION.html#font
+
 ついでに Font も変更しました。  
 `.spacemacs/init.el` を開きます。  
 
