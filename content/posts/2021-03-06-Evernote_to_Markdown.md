@@ -55,7 +55,7 @@ Kubernetes_Middle_Way.md	image
 
 ## 記事をhugoへ移動
 
-`mv ~/Ishizuka427/notes/*.md ~/Ishizuka427/hugo.suwa3.me/content/posts/`
+`mv /notes/*.md /hugo.suwa3.me/content/posts/`
 
 記事データの編集
 
@@ -77,3 +77,6 @@ tags:
   - "Evernote"
 ---
 ```
+
+なんだかんだで hugo に戻したい気分になったので CLI で Evernote to Markdown リポジトリを見つけて実行したら、
+思いのほかスムーズに行けました。
