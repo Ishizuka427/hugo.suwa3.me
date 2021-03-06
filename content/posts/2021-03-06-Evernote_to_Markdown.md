@@ -48,10 +48,10 @@ Kubernetes_Middle_Way.md	image
 良さそう。
 
 ## 日付の編集
-2021-01-19-Evernote_blog.md
-2021-01-24-Shell_Script.md
-2021-01-22-purpose_of_the_week.md
-2021-01-24-Kubernetes_Middle_Way.md
+- 2021-01-19-Evernote_blog.md
+- 2021-01-24-Shell_Script.md
+- 2021-01-22-purpose_of_the_week.md
+- 2021-01-24-Kubernetes_Middle_Way.md
 
 ## 記事をhugoへ移動
 
