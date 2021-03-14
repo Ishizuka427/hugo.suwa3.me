@@ -40,9 +40,9 @@ VM 上に、local にあるような Emacs 環境をつくりたい
   (参考: https://emacs-jp.github.io/tips/emacs-in-2020)
   
 2. ssh  
-  多段 ssh できるように設定する。
-
-  ```~/.ssh/config
+  多段 ssh できるように設定する。  
+  Trump を使って ssh 接続する際に踏み台を使う場合は、先に ~/.ssh/config の設定をしてしまうほうがラク。  
+  ```~/.ssh/config  
   # Gateway
   host XXXX
   HostName XXX.XX.X.XX
@@ -53,9 +53,9 @@ VM 上に、local にあるような Emacs 環境をつくりたい
     HostName YY.YYY.YY.YY
     User huga
     ProxyCommand ssh -W %h:%p XXXX
-  ```
+  ```  
 
-  Trump を使って ssh 接続する際に踏み台を使う場合は、先に ~/.ssh/config の設定をしてしまうほうがラク。  
+  
 
 3. Trump  
   デフォルトで入っているみたいなので特に設定はなし
