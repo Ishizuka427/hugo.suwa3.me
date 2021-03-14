@@ -14,47 +14,70 @@ tags:
 ---
 
 VM 上に、local にあるような Emacs 環境をつくりたい
-  
-  
+<br>
+<br>
 
-### ◆ VM 上に local で動いている spacemacs の init.el をそのまま貼ってみた
+### == 経緯 ==
 
-→まともに動かない。素の emacs だと動く。
-  
+リモートサーバー上に local で動いている spacemacs (emacs の設定群)の init.el を、そのまま貼ってみた。
 
-### ◆ 素の emacs を入れていい感じに設定群を入れてみる
+＿人人人人人人人人人人＿
 
-https://emacs-jp.github.io/tips/emacs-in-2020
+＞　まともに動かない　＜
 
-leaf のスタンダードなものと
+￣Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^￣
 
-ミニバッファの補完パッケージを入れた。ここまでは VM 上でも OK
-  
+素の Emacs だと動く・・。
 
-### ◆ お気に入り Theme の Twilight Bright を入れたい！
+これを機に、卒spacemacs してプレーンな Emacs をカスタマイズしていこう！
+<br>
+<br>
 
-https://github.com/jimeh/twilight-bright-theme.el
+### 設定したものたち
+---
 
-ということで設定を入れて local で eval → OK
+1. leaf
+スタンダードな設定と、ミニバッファの補完パッケージを入れました。  
+(参考: https://emacs-jp.github.io/tips/emacs-in-2020)  
+2. ssh
+多段 ssh できるように設定する。
+```~/.ssh/config
+# Gateway
+host XXXX
 
-VM 上で同様に設定を入れるも色が反転して可愛くない・・なぜ・・
 
-**ターミナルから emacs を開いている起因？**
-  
+HostName XXX.XX.X.XX
+   User hoge
 
-### ◆ emacs から ssh で VM サーバーに接続する方針
-
-1. いったん ~/.ssh/config を編集して一発 ssh でログインできるようにする。(多段 ssh 設定する)
-2. Trump を使う。
-
-https://www.emacswiki.org/emacs/TrampMode
-
-デフォルトで入っているみたいなので特に設定はなし
-
-`C-x C-f /ssh:bird@bastion|ssh:you@remotehost:/path`
-
-local と (最低限) 同じような設定＆Theme でリモートサーバー先の file を emacs で開けた🙌
-
-あとはモブプロ時に行数出てほしい
-
-`M-x linum-mode`
+# RemoteHost-out
+Host YYYY
+  HostName YY.YYY.YY.YY
+  User huga
+  ProxyCommand ssh -W %h:%p XXXX
+```
+Trump を使って ssh 接続する際に踏み台を使う場合は、先に ~/.ssh/config の設定をしてしまうほうがラク。
+3. Trump
+デフォルトで入っているみたいなので特に設定はなし  
+`C-x C-f /ssh:huga@YYYY:/home/huga`  
+sudo 使う場合  
+`C-x C-f /ssh:user3@hostname3|sudo:hostname3:path/to/file`  
+(参考: https://www.emacswiki.org/emacs/TrampMode)
+4. Theme
+Twilight Bright が気に入っているので入れたい♡  
+```init.el
+;; Theme
+(leaf twilight-bright-theme :ensure t)
+(require 'twilight-bright-theme)
+(load-theme twilight-bright t)
+```  
+リモートサーバーに Theme の設定を入れてみるも、色が反転してしまって可愛くない・・。ターミナルから emacs を触っているから？Trump で ssh して emacs を触るぶんにはOKだったので、ターミナルで emacs は触らないことにしました。  
+(参考: https://github.com/jimeh/twilight-bright-theme.el)
+5. 行数表示
+モブプロ時に行数が出てほしいので  
+`M-x linum-mode`  
+色の変更もできました♡  
+```init.el
+;; linum-mode の行数色
+(set-face-foreground 'linum "#e6e6fa")
+(set-face-background 'linum "#696969")
+```
