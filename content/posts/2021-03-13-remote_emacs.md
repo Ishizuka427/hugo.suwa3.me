@@ -37,7 +37,6 @@ VM 上に、local にあるような Emacs 環境をつくりたい
 
 1. leaf  
   スタンダードな設定と、ミニバッファの補完パッケージを入れました。
-  
   (参考: https://emacs-jp.github.io/tips/emacs-in-2020)
   
 2. ssh  
