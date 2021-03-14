@@ -35,46 +35,60 @@ VM 上に、local にあるような Emacs 環境をつくりたい
 ### 設定したものたち
 ---
 
-1. leaf
-スタンダードな設定と、ミニバッファの補完パッケージを入れました。  
-(参考: https://emacs-jp.github.io/tips/emacs-in-2020)  
-2. ssh
-多段 ssh できるように設定する。
-```~/.ssh/config
-# Gateway
-host XXXX
-HostName XXX.XX.X.XX
-   User hoge
+1. leaf  
+  スタンダードな設定と、ミニバッファの補完パッケージを入れました。
+  
+  (参考: https://emacs-jp.github.io/tips/emacs-in-2020)
+  
+2. ssh  
+  多段 ssh できるように設定する。
 
-# RemoteHost-out
-Host YYYY
-  HostName YY.YYY.YY.YY
-  User huga
-  ProxyCommand ssh -W %h:%p XXXX
-```
-Trump を使って ssh 接続する際に踏み台を使う場合は、先に ~/.ssh/config の設定をしてしまうほうがラク。  
-3. Trump
-デフォルトで入っているみたいなので特に設定はなし  
-`C-x C-f /ssh:huga@YYYY:/home/huga`  
-sudo 使う場合  
-`C-x C-f /ssh:user3@hostname3|sudo:hostname3:path/to/file`  
-(参考: https://www.emacswiki.org/emacs/TrampMode)  
-4. Theme
-Twilight Bright が気に入っているので入れたい♡  
-```init.el
-;; Theme
-(leaf twilight-bright-theme :ensure t)
-(require 'twilight-bright-theme)
-(load-theme twilight-bright t)
-```  
-リモートサーバーに Theme の設定を入れてみるも、色が反転してしまって可愛くない・・。ターミナルから emacs を触っているから？Trump で ssh して emacs を触るぶんにはOKだったので、ターミナルで emacs は触らないことにしました。  
-(参考: https://github.com/jimeh/twilight-bright-theme.el)  
+  ```~/.ssh/config
+  # Gateway
+  host XXXX
+  HostName XXX.XX.X.XX
+     User hoge
+
+  # RemoteHost-out
+    Host YYYY
+    HostName YY.YYY.YY.YY
+    User huga
+    ProxyCommand ssh -W %h:%p XXXX
+  ```
+
+  Trump を使って ssh 接続する際に踏み台を使う場合は、先に ~/.ssh/config の設定をしてしまうほうがラク。  
+
+3. Trump  
+  デフォルトで入っているみたいなので特に設定はなし
+  
+  `C-x C-f /ssh:huga@YYYY:/home/huga` 
+  
+  sudo 使う場合
+  
+  `C-x C-f /ssh:user3@hostname3|sudo:hostname3:path/to/file`
+  
+  (参考: https://www.emacswiki.org/emacs/TrampMode)
+
+4. Theme  
+  Twilight Bright が気に入っているので入れたい♡  
+  ```init.el
+  ;; Theme
+  (leaf twilight-bright-theme :ensure t)
+  (require 'twilight-bright-theme)
+  (load-theme twilight-bright t)
+  ```  
+  
+  リモートサーバーに Theme の設定を入れてみるも、色が反転してしまって可愛くない・・。
+  ターミナルから emacs を触っているから？Trump で ssh して emacs を触るぶんにはOKだったので、
+  ターミナルで emacs は触らないこ とにしました。  
+  (参考: https://github.com/jimeh/twilight-bright-theme.el)  
+
 5. 行数表示
-モブプロ時に行数が出てほしいので  
-`M-x linum-mode`  
-色の変更もできました♡  
-```init.el
-;; linum-mode の行数色
-(set-face-foreground 'linum "#e6e6fa")
-(set-face-background 'linum "#696969")
-```
+  モブプロ時に行数が出てほしいので
+   `M-x linum-mode`  
+  色の変更もできました♡  
+  ```init.el
+  ;; linum-mode の行数色
+  (set-face-foreground 'linum "#e6e6fa")
+  (set-face-background 'linum "#696969")
+  ```
