@@ -70,7 +70,7 @@ tags:
   (require 'twilight-bright-theme)
   (load-theme twilight-bright t)
   ```  
-5. 行数表示
+5. 行数表示  
   モブプロ時に行数が出てほしいので  
    `M-x linum-mode`  
   色の変更もできました♡  
