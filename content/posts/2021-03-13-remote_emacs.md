@@ -54,20 +54,12 @@ VM 上に、local にあるような Emacs 環境をつくりたい
     User huga
     ProxyCommand ssh -W %h:%p XXXX
   ```  
-
-  
-
 3. Trump  
-  デフォルトで入っているみたいなので特に設定はなし
-  
+  デフォルトで入っているみたいなので特に設定はなし    
   `C-x C-f /ssh:huga@YYYY:/home/huga` 
-  
-  sudo 使う場合
-  
-  `C-x C-f /ssh:user3@hostname3|sudo:hostname3:path/to/file`
-  
-  (参考: https://www.emacswiki.org/emacs/TrampMode)
-
+  sudo 使う場合    
+  `C-x C-f /ssh:user3@hostname3|sudo:hostname3:path/to/file`    
+  (参考: https://www.emacswiki.org/emacs/TrampMode)  
 4. Theme  
   Twilight Bright が気に入っているので入れたい♡  
   ```init.el
