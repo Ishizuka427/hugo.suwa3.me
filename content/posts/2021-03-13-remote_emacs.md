@@ -41,7 +41,7 @@ VM 上に、local にあるような Emacs 環境をつくりたい
   
 2. ssh  
   多段 ssh できるように設定する。  
-  Trump を使って ssh 接続する際に踏み台を使う場合は、先に ~/.ssh/config の設定をしてしまうほうがラク。  
+  ※ Trump を使って ssh 接続する際に踏み台を使う場合は、先に ~/.ssh/config の設定をしてしまうほうがラク。  
   ```~/.ssh/config  
   # Gateway
   host XXXX
@@ -62,18 +62,14 @@ VM 上に、local にあるような Emacs 環境をつくりたい
   (参考: https://www.emacswiki.org/emacs/TrampMode)  
 4. Theme  
   Twilight Bright が気に入っているので入れたい♡  
-  ```init.el
+  ```init.el  
   ;; Theme
   (leaf twilight-bright-theme :ensure t)
   (require 'twilight-bright-theme)
   (load-theme twilight-bright t)
   ```  
-  
-  リモートサーバーに Theme の設定を入れてみるも、色が反転してしまって可愛くない・・。
-  ターミナルから emacs を触っているから？Trump で ssh して emacs を触るぶんにはOKだったので、
-  ターミナルで emacs は触らないこ とにしました。  
+  リモートサーバーに Theme の設定を入れてみるも、色が反転してしまって可愛くない・・。ターミナルから emacs を触っているから？Trump で ssh して emacs を触るぶんにはOKだったので、ターミナルで emacs は触らないこ とにしました。  
   (参考: https://github.com/jimeh/twilight-bright-theme.el)  
-
 5. 行数表示
   モブプロ時に行数が出てほしいので
    `M-x linum-mode`  
