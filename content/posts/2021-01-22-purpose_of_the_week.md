@@ -56,4 +56,4 @@ TEDシャドーイング
 
 [Raspberry Foundation Release Their Own Silicon, the Raspberry Pi Pico](https://www.linuxtoday.com/it_management/raspberry-foundation-release-their-own-silicon-the-raspberry-pi-pico-210121015006.html)
 Linux Today 翻訳
-![image.png](image/image.png)
+![image.png](image/image2.png)
