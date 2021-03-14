@@ -11,7 +11,6 @@ tags:
 # Emacs 奮闘記
   
 ## 🌟 ゴール
----
 
 VM 上に、local にあるような Emacs 環境をつくりたい
 <br>
@@ -44,8 +43,6 @@ VM 上に、local にあるような Emacs 環境をつくりたい
 ```~/.ssh/config
 # Gateway
 host XXXX
-
-
 HostName XXX.XX.X.XX
    User hoge
 
@@ -55,13 +52,13 @@ Host YYYY
   User huga
   ProxyCommand ssh -W %h:%p XXXX
 ```
-Trump を使って ssh 接続する際に踏み台を使う場合は、先に ~/.ssh/config の設定をしてしまうほうがラク。
+Trump を使って ssh 接続する際に踏み台を使う場合は、先に ~/.ssh/config の設定をしてしまうほうがラク。  
 3. Trump
 デフォルトで入っているみたいなので特に設定はなし  
 `C-x C-f /ssh:huga@YYYY:/home/huga`  
 sudo 使う場合  
 `C-x C-f /ssh:user3@hostname3|sudo:hostname3:path/to/file`  
-(参考: https://www.emacswiki.org/emacs/TrampMode)
+(参考: https://www.emacswiki.org/emacs/TrampMode)  
 4. Theme
 Twilight Bright が気に入っているので入れたい♡  
 ```init.el
@@ -71,7 +68,7 @@ Twilight Bright が気に入っているので入れたい♡
 (load-theme twilight-bright t)
 ```  
 リモートサーバーに Theme の設定を入れてみるも、色が反転してしまって可愛くない・・。ターミナルから emacs を触っているから？Trump で ssh して emacs を触るぶんにはOKだったので、ターミナルで emacs は触らないことにしました。  
-(参考: https://github.com/jimeh/twilight-bright-theme.el)
+(参考: https://github.com/jimeh/twilight-bright-theme.el)  
 5. 行数表示
 モブプロ時に行数が出てほしいので  
 `M-x linum-mode`  
