@@ -1,7 +1,7 @@
 baseURL: "/"
 title: "suwa3 blog"
 paginate: 5
-theme: "hugo-PaperMod"
+theme: "github-style"
 
 params:
     homeInfoParams:
