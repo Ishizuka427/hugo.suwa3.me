@@ -7,7 +7,7 @@ params:
     github: "Ishizuka427"
     twitter: "_Tsuka3"
     url: "https://suwa3.github.io"
-    favicon: "/images/Octocat.png"
+    favicon: "https://raw.githubusercontent.com/ishizuka427/hugo.suwa3.me/master/images/Octocat.png"
     avatar: "https://avatars.githubusercontent.com/u/56011102?v=4" 
     homeInfoParams:
         Title: Hi there wave
