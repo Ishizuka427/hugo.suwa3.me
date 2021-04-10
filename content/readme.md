@@ -1,6 +1,6 @@
 Welcome to suwa3's blog!  
   
-![](/images/SS_2020-11-29_0.37.42.png)
+![](/images/SS_2021-04-10_18.33.45.png)
 
 
 | 🔖 tags | 内容 |
