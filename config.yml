@@ -1,14 +1,21 @@
-baseURL: "/"
+baseURL: "https://suwa3.netlify.app/"
+languageCode: "ja-JP"
 title: "suwa3 blog"
 paginate: 5
 theme: "github-style"
+pygmentsCodeFences: "true"
+pygmentsUseClasses: "true"
 
 params:
+    author: "suwa3"
+    description: "In solitude, where we are least alone."
     github: "Ishizuka427"
     twitter: "_Tsuka3"
     url: "https://suwa3.github.io"
     favicon: "https://raw.githubusercontent.com/ishizuka427/hugo.suwa3.me/master/images/Octocat.png"
-    avatar: "https://avatars.githubusercontent.com/u/56011102?v=4" 
+    avatar: "https://avatars.githubusercontent.com/u/56011102?v=4"
+    rss: "true"
+    lastmod: "true" 
     homeInfoParams:
         Title: Hi there wave
         Content: Can be Info, links, about...
@@ -20,3 +27,8 @@ params:
 #            url: "<link2>"
     links:
          - icon: "https://avatars.githubusercontent.com/u/56011102?v=4"
+frontmatter:
+    lastmod:
+         - lastmod
+         - :fileModTime
+         - :default
