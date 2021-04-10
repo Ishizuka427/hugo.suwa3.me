@@ -1,3 +1,4 @@
+![note_top](https://user-images.githubusercontent.com/56011102/114253730-4ee39e80-99e6-11eb-8cb7-a6a60a8beb68.png)
 ---
 title: "The Meaning of a Blog"
 date: "2021-04-09T10:00:00.000Z"
