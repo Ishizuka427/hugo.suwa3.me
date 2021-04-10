@@ -1,4 +1,3 @@
-![note_top](https://user-images.githubusercontent.com/56011102/114253730-4ee39e80-99e6-11eb-8cb7-a6a60a8beb68.png)
 ---
 title: "The Meaning of a Blog"
 date: "2021-04-09T10:00:00.000Z"
@@ -26,6 +25,8 @@ emacsとか作業ログとか、あとで見返す用
 ここ数年、年末に一年の振り返りをしていて、技術blogを読み返すと個人的な成長を感じる。   
 →「来年も頑張るぞ！」の気持ちになる  
   
+![note_top](https://user-images.githubusercontent.com/56011102/114253730-4ee39e80-99e6-11eb-8cb7-a6a60a8beb68.png)
+
   
 小さなことでも積み重ねが大事だと思うので、コツコツと書いていきたいです。  
   
