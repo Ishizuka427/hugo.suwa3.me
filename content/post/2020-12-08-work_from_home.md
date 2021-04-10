@@ -4,6 +4,7 @@ date: "2020-12-07T10:00:00.000Z"
 categories: 
   - "tech-blog"
 tags: 
+  - "life"
 ---
 
 今回は[在宅ワーク Advent Calendar 2020 - Adventar](https://adventar.org/calendars/5014)へ参加させて頂きました。  
