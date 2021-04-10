@@ -8,6 +8,7 @@ tags:
   - "python"
   - "selenium"
   - "%e8%87%aa%e5%8b%95%e5%8c%96"
+  - "Tech"
 ---
 
 Slackで、自分宛てにメンションされたものを見落としてしまい  
