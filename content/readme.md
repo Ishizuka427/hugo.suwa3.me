@@ -1,8 +1,6 @@
+![](/images/line_flag_garland01_08.png)  
 Welcome to suwa3's blog!  
   
-![](/images/line_flag_garland01_08.png)
-
-
 | 🔖 tags | 内容 |
 |---|---|
 | [Tech](https://suwa3.netlify.app/tags/tech/) | 主に技術記事です。|
