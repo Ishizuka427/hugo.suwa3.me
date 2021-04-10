@@ -140,7 +140,7 @@ drwxrwxr-x 29 ec2-user ec2-user   28672  3月  8 09:06 git-2.25.1
 -rw-r--r-- 1 ec2-user root     7114612  5月 14 12:37 wp.suwa3.me-backup-mysql-20200514.tar.xz
 ```
 
-#### ■ scp
+#### scp を実行
 
 ```
 $ scp wp:/home/ec2-user/wp.suwa3.me-backup-mysql-20200514.tar.xz ~/tmp/
