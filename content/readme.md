@@ -1,4 +1,5 @@
 Welcome to suwa3's blog!
 
 🔖 tags  
-[Tech](https://suwa3.netlify.app/tags/tech/) | [Life](https://suwa3.netlify.app/tags/life/)
+[Tech](https://suwa3.netlify.app/tags/tech/)...主に技術記事です。
+[Life](https://suwa3.netlify.app/tags/life/)...考えたことや人生についてのポエムです。
