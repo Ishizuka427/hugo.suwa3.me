@@ -5,6 +5,7 @@ categories:
   - "tech-blog"
 tags: 
   - "Evernote"
+  - "life"
 ---
 
 # purpose of the week

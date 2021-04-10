@@ -1,4 +1,12 @@
-Welcome to suwa3's blog!
+Welcome to suwa3's blog!  
+  
+![](/images/SS_2020-11-29_0.37.42.png)
 
-🔖 tags  
-[blog](https://suwa3.netlify.app/tags/blog/) | [emacs](https://suwa3.netlify.app/tags/emacs/) | [git](https://suwa3.netlify.app/tags/git/)
+
+| 🔖 tags | 内容 |
+|---|---|
+| [Tech](https://suwa3.netlify.app/tags/tech/) | 主に技術記事です。|
+| [Life](https://suwa3.netlify.app/tags/life/) | 考えたことや人生についてのポエムです。|
+  
+Powered by [Hugo️️️](https://gohugo.io/)  
+Theme️: [Github Style](https://github.com/MeiK2333/github-style)

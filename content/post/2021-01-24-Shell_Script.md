@@ -5,6 +5,7 @@ categories:
   - "tech-blog"
 tags: 
   - "Shell Script"
+  - "Tech"
 ---
 
 # Shell Script

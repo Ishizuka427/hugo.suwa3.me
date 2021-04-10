@@ -4,6 +4,7 @@ date: "2020-12-09T10:00:00.000Z"
 categories: 
   - "tech-blog"
 tags: 
+  - "Tech"
 ---
 
 今日は spacemacs の整備をしたよ。  
