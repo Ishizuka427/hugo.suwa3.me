@@ -10,9 +10,9 @@ tags:
 
 # Evernote blog
 
-今日から試験的にEvernoteでblogを書いてみたいと思います。
+今日から試験的に Evernote で blog を書いてみたいと思います。  
 
-今までHugo+Netlifyで3ヶ月ほどblogを運用していましたが、[Postach.io](https://postach.io/) というEvernoteのノートブックをそのままブログにできるサービスがあることを知って、思うところもあり乗り換えてみようと考えました。
+今まで Hugo+Netlify で3ヶ月ほどblogを運用していましたが、[Postach.io](https://postach.io/) という Evernote のノートブックをそのままブログにできるサービスがあることを知って、思うところもあり乗り換えてみようと考えました。
 
 ## Hugo+Netlify から Evernote+Postach.io へ乗り換えようと考えた理由
 
