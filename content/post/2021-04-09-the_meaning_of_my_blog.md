@@ -1,5 +1,5 @@
 ---
-title: "The Meaning of a Blog"
+title: "The Meaning of my Blog"
 date: "2021-04-09T10:00:00.000Z"
 categories: 
   - "note"
