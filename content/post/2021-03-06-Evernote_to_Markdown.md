@@ -5,6 +5,7 @@ categories:
   - "tech-blog"
 tags: 
   - "Evernote"
+  - "Tech"
 ---
 
 # Evernote to Markdown
