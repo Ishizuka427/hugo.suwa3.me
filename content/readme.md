@@ -4,3 +4,6 @@ Welcome to suwa3's blog!
 |---|---|
 | [Tech](https://suwa3.netlify.app/tags/tech/) | 主に技術記事です。|
 | [Life](https://suwa3.netlify.app/tags/life/) | 考えたことや人生についてのポエムです。|
+  
+Powered by Hugo️️️
+Theme️: Github Style
