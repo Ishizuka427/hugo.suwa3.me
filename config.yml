@@ -1,4 +1,4 @@
-baseURL: "https://suwa3.netlify.app/"
+baseURL: "https://suwa3.netlify.app"
 languageCode: "ja-JP"
 title: "suwa3 blog"
 paginate: 5
