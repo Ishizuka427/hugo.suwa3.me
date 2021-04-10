@@ -14,8 +14,12 @@ params:
     url: "https://suwa3.github.io"
     favicon: "https://raw.githubusercontent.com/ishizuka427/hugo.suwa3.me/master/images/Octocat.png"
     avatar: "https://avatars.githubusercontent.com/u/56011102?v=4"
-    rss: "true"
-    lastmod: "true" 
+#    rss: "true"
+#    lastmod: "true"
+    tag: "tags"
+    category: "categories"
+    toc: "true"
+    archive: "archives" 
     homeInfoParams:
         Title: Hi there wave
         Content: Can be Info, links, about...
