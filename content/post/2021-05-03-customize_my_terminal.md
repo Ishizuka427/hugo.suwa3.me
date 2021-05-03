@@ -59,7 +59,7 @@ setopt PROMPT_SUBST ; PS1='💠 %F{cyan}%n@%m%f: %F{white}%~%f %F{red}$(__git_ps
 PS1='%n@%m: %~ %#'
 
 # 表示
-a001859@pc-001859-2: ~/Ishizuka427 %
+ユーザー名@ホスト名: ~/Ishizuka427 %
 ```
 
 ### 色をつける
