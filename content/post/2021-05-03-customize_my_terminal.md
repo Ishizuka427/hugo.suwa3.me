@@ -33,6 +33,12 @@ setopt PROMPT_SUBST ; PS1='💠 %F{cyan}%n@%m%f: %F{white}%~%f %F{red}$(__git_ps
 
 ![](/images/SS_2021-05-03_22.57.02.png)
 
+```
+# 表示
+💠 ユーザー名@ホスト名: ~/Ishizuka427/ (master=)
+$ 
+```
+
 デスクトップの背景にはM78星雲を設定し、ターミナルの背景を半透明にしてうっすらと見えるようにしてあります。非常にエモいですね。  
 制御文字で、ターミナルを起動するたびに[バルタン星人](https://github.com/Ishizuka427/dot-Alien_Baltan)が出現するようにしました。これでリモートサーバーと間違えません。
 
