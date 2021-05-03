@@ -35,7 +35,7 @@ setopt PROMPT_SUBST ; PS1='💠 %F{cyan}%n@%m%f: %F{white}%~%f %F{red}$(__git_ps
 
 ```
 # 表示
-💠 ユーザー名@ホスト名: ~/Ishizuka427/ (master=)
+💠 suwa3@mbp-local: ~/Ishizuka427/ (master=)
 $ 
 ```
 
