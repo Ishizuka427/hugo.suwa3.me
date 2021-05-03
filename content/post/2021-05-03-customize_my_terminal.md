@@ -16,7 +16,7 @@ GWだしターミナルのカスタマイズしたい！
 
 ## 最終形態
 
-zshrc
+/etc/zshrc
 ```
 source ~/.git-prompt.sh
 
