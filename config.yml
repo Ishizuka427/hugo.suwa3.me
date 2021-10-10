@@ -1,4 +1,4 @@
-baseURL: "http://hugo.suwa3.me/"
+baseURL: "https//hugo.suwa3.me/"
 languageCode: "ja-JP"
 title: "suwa3 blog"
 paginate: 5
