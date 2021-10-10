@@ -1,4 +1,4 @@
-baseURL: "https://suwa3.netlify.app"
+baseURL: "https://hugo-suwa3-me-cayc6kab3-hugo-suwa3-me.vercel.app/"
 languageCode: "ja-JP"
 title: "suwa3 blog"
 paginate: 5
