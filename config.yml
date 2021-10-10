@@ -2,7 +2,7 @@ baseURL: "https://suwa3.netlify.app"
 languageCode: "ja-JP"
 title: "suwa3 blog"
 paginate: 5
-theme: "papercss-hugo-theme"
+theme: "github-style"
 pygmentsCodeFences: "true"
 pygmentsUseClasses: "true"
 tag: "tags"
