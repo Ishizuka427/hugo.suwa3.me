@@ -7,6 +7,3 @@
 [submodule "themes/hugo-PaperMod"]
 	path = themes/hugo-PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
-[submodule "themes/papercss-hugo-theme"]
-	path = themes/papercss-hugo-theme
-	url = https://github.com/zwbetz-gh/papercss-hugo-theme.git
