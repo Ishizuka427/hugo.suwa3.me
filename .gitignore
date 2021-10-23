@@ -1,3 +1,5 @@
 public
 resources
 *.md-e
+.DS_Store
+content/.DS_Store
