@@ -9,4 +9,4 @@
 	url = https://github.com/adityatelange/hugo-PaperMod.git
 [submodule "themes/papercss-hugo-theme"]
 	path = themes/papercss-hugo-theme
-	url = git@github.com:Ishizuka427/papercss-hugo-theme.git
+	url = https://github.com/Ishizuka427/papercss-hugo-theme.git
