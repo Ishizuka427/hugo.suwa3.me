@@ -48,4 +48,4 @@ hugo のレンダリングエンジンに手を加えるというのは Theme �
 README.md を読み、よくよく追ったら papercss hugo theme の `/static/css/paper.css` は以下のファイルから取ってきたものらしい。  
 https://github.com/papercss/papercss/tree/master/dist  
 そうなると PaperCSS オリジナルを修正する必要が出てくる。(そして、その修正をオリジナルに要求することは、 hugo に転用しているこちらの勝手な都合のため現実的ではない)  
-もし仮に papercss hugo them へ issue を報告しても、custom.css で対処する以外の妥当な判断が思いつかない。  
+もし仮に papercss hugo them へ issue を報告しても、custom.css で対処する以外の妥当な解決策が思いつかない。  
