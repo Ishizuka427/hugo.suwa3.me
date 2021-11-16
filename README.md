@@ -1,3 +1,4 @@
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=hugo-suwa3-me)
 # TODO
 
 1. ロゴを書く
