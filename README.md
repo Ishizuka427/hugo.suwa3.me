@@ -4,8 +4,8 @@
 hugo.suwa3.me is based on Hugo and Vercel.
 
 ## How to Create A New post
-You can use the `new` command to do.  
-For example: When you write a blog with the title "example-title" on December 1, 2021
+I can use the `new` command to do.  
+For example: When I write a blog with the title "example-title" on December 1, 2021
 ```sh
 $ hugo new content/posts/2021-12-01-example-title.md
 ```
