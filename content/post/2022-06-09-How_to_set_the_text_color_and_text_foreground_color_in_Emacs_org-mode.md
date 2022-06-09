@@ -13,9 +13,9 @@ This blog is a reminder.
 
 This is Org-mode before the change.  
 ![](/images/image1-2022-06-09.png)  
-The color of the level 1 headline is red, and the color of the level 2 headline and link is the same blue. It is very difficult to see.  
+The color of the `level 1 headline` is red, and the color of the `level 2 headline` and `link` is the same blue. It is very difficult to see.  
 
-I will change the level 1 headline to a pretty pink color and the color of the link to a more obvious color.  
+I will change the `level 1 headline` to a pretty pink color and the color of the `link` to a more obvious color.  
 
 ## Check the Face name
 ![](/images/image2-2022-06-09.png)  
