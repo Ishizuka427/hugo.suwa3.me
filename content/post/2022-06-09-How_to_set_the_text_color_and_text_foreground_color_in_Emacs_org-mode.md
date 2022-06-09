@@ -17,7 +17,7 @@ The color of the level 1 headline is red, and the color of the level 2 headline 
 
 I will change the level 1 headline to a pretty pink color and the color of the link to a more obvious color.  
 
-## Check the Face name.
+## Check the Face name
 ![](/images/image2-2022-06-09.png)  
 Place the cursor over the area you wish to examine and type the following command.  
 ```
