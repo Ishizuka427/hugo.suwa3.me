@@ -31,13 +31,13 @@ Now that you know the Face name, display the list of faces.
 ```
 M-x list-faces-display
 ```
-![](/images/image3 2022-06-09 18.02.39.png)  
+![](/images/image3-2022-06-09.png)  
 Look for `org-level-1`.  
 Click on the Face name you want to edit.  
 ex. org-level-1  
 
 ##  Edit text color and text foreground color
-![](/images/image4 2022-06-09 18.24.44.png)  
+![](/images/image4-2022-06-09.png)  
 Click `Apply` to try it out, or `Apply and save` to save it.  
 By the way, here is the cutest color combination I could think of.  
 - Foreground: PaleVioletRed1
