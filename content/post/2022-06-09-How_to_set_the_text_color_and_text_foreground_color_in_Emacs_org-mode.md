@@ -12,13 +12,13 @@ I wanted to change the text and background colors in Org-mode. I have changed th
 This blog is a reminder.
 
 This is Org-mode before the change.  
-![](../image1-2022-06-09)  
+![](/image1-2022-06-09.png)  
 The color of the level 1 headline is red, and the color of the level 2 headline and link is the same blue. It is very difficult to see.  
 
 I will change the level 1 headline to a pretty pink color and the color of the link to a more obvious color.  
 
 ## Check the Face name.
-![](/image2-2022-06-09)  
+![](/image2-2022-06-0.png)  
 Place the cursor over the area you wish to examine and type the following command.  
 ```
 M-x describe-face
@@ -31,22 +31,23 @@ Now that you know the Face name, display the list of faces.
 ```
 M-x list-faces-display
 ```
-![](/image3-2022-06-09)
+![](/image3-2022-06-09.png)
 Look for `org-level-1`.  
 Click on the Face name you want to edit.  
 ex. org-level-1  
 
 ##  Edit text color and text foreground color
-![](/image4-2022-06-09)  
+![](/image4-2022-06-09.png)  
 Click `Apply` to try it out, or `Apply and save` to save it.  
 By the way, here is the cutest color combination I could think of.  
 - Foreground: PaleVioletRed1
 - Background: LavenderBlush1
-![](/image5-2022-06-09)  
+
+![](/image5-2022-06-09.png)  
 Very cute.  
 
 ## Finally
 I changed the color of the link. It is much easier to see.  
-![](/image6-2022-06-09)
+![](/image6-2022-06-09.png)
 
 
