@@ -12,7 +12,7 @@ I wanted to change the text and background colors in Org-mode. I have changed th
 This blog is a reminder.
 
 This is Org-mode before the change.  
-![](/image1-2022-06-09)  
+![](../image1-2022-06-09)  
 The color of the level 1 headline is red, and the color of the level 2 headline and link is the same blue. It is very difficult to see.  
 
 I will change the level 1 headline to a pretty pink color and the color of the link to a more obvious color.  
