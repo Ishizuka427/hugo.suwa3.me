@@ -5,7 +5,7 @@ hugo.suwa3.me is based on Hugo and Vercel.
 
 ## How to Create A New post
 I can use the `new` command to do.  
-For example: When I write a blog with the title "example-title" on December 1, 2021
+Ref. Write a blog with the title "example-title" on December 1, 2021
 ```sh
 $ hugo new content/posts/2021-12-01-example-title.md
 ```
@@ -25,13 +25,13 @@ tags:
 
 Categories | Description
 -- | -- 
-tech-blog | When writing about technical content.
-note | When writing about non-technical content.
+tech-blog | Technical content
+note | Non-technical content
 
 Tags | Description
 -- | -- 
-Tech | When writing about technical content.
-life | When writing a poem.
+Tech | Technical content
+life | Poem
 
 ※ I want to subdivide and increase the number of tag types in the future.
 
