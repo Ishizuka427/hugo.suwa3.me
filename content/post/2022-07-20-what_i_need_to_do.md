@@ -18,6 +18,8 @@ Get in the habit of organizing
 - Value my daily habits  
 Be aware of routines such as getting up at a certain time, drinking coffee, brushing teeth, etc.  
 
+---
+
 https://github.com/hkchengrex/XMem  
 > Our method is inspired by the Atkinson-Shiffrin human memory model that has a sensory memory, a working memory, and a long-term memory.   
 
