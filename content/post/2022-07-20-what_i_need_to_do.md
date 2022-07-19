@@ -1,6 +1,6 @@
 ---
 title: "what I need to do"
-date: "2022-07-20T00:00:00.000Z"
+date: "2022-07-19T00:00:00.000Z"
 categories: 
   - "note"
 tags:
