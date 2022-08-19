@@ -17,7 +17,7 @@ https://github.com/Mstrodl/elcord
 `M-x package-list-packages`  
 → Select and install elcord  
 
-![](/images/image1_2022-08-14.png)  
+![](/images/image1_2022-08-14.png)
 
 ## init.el
 
@@ -33,8 +33,8 @@ Example
 User Settings > Game activity > Add it!  
 Specify Emacs.  
 
-![](/images/image2_2022-08-14.png)  
+![](/images/image2_2022-08-14.png)
 
 ## Done!
 
-![](/images/image3_2022-08-14.png)  
+![](/images/image3_2022-08-14.png)
