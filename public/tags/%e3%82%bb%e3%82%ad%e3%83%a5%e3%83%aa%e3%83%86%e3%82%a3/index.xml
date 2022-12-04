@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>%e3%82%bb%e3%82%ad%e3%83%a5%e3%83%aa%e3%83%86%e3%82%a3 on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/%e3%82%bb%e3%82%ad%e3%83%a5%e3%83%aa%e3%83%86%e3%82%a3/</link>
+    <description>Recent content in %e3%82%bb%e3%82%ad%e3%83%a5%e3%83%aa%e3%83%86%e3%82%a3 on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Fri, 13 Dec 2019 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/%e3%82%bb%e3%82%ad%e3%83%a5%e3%83%aa%e3%83%86%e3%82%a3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>セルフ盗聴</title>
+      <link>https://hugo.suwa3.me/post/2019-12-13-%E3%82%BB%E3%83%AB%E3%83%95%E7%9B%97%E8%81%B4/</link>
+      <pubDate>Fri, 13 Dec 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-12-13-%E3%82%BB%E3%83%AB%E3%83%95%E7%9B%97%E8%81%B4/</guid>
+      <description>暗号化されていないWi-Fi通信下では
+httpでのフォーム入力は外から見ることができてしまう
+というのは知識として知ってはいたのですが
+それらが『どういった仕組みで見ることが可能なのか』というのを
+説明するのは難しいなぁと感じたので
+実際に試してみることにしました。
+流れとしては、見る側と見られる側のデバイス機器を用意して
+PCから他デバイスの入力情報を盗聴してみます。
+まずは、下記の条件を満たす環境を用意します。
+PC 2台 (1台はスマホでも可) PCにWireSharkをインストール httpでフォーム入力ができるサイト 暗号化を解除したWi-Fi 注意事項: スタバなどの公衆Wi-Fi (無線LAN) 下で、WireSharkなどを用いたパケット解析ツールでの盗聴行為は違法になります。必ず自宅などの自前のWi-Fi環境下で行ってください。
+PCにWireSharkをインストール https://www.wireshark.org/download.html
+こちらでインストールします。
+install ChmodBPF to fix this をクリックして
+ChmodBPFをインストールします。 Wi-Fi: en0 をダブルクリックします。 httpでフォーム入力ができるサイト これは少し難易度が高いというか面倒な作業かもしれないです。
+かなり古いWebページの、サイト内検索フォームなどがtestしやすいかなぁと思いました。
+探すのが面倒だったため、自鯖にあるWordPressの設定を変更してhttp通信の環境を用意しました。
+Apacheの設定で、80番Portへリクエストが来た場合に443番Portへリダイレクトする仕組みになっていたため
+httpd.confの内容を下記のように書き換えます。
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+を、コメントアウトです。
+&amp;lt;VirtualHost wp.suwa3.me:80&amp;gt; DocumentRoot /var/www/html/ ServerName wp.suwa3.me # RewriteEngine On # RewriteCond %{HTTPS} off # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L] &amp;lt;/VirtualHost&amp;gt; &amp;lt;Virtualhost wp.suwa3.me:443&amp;gt; DocumentRoot /var/www/html/ ServerName wp.</description>
+    </item>
+    
+  </channel>
+</rss>

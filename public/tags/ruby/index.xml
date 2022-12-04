@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ruby on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/ruby/</link>
+    <description>Recent content in ruby on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 18 Sep 2019 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ただひらすら二日目</title>
+      <link>https://hugo.suwa3.me/post/2019-09-18-%E3%81%9F%E3%81%A0%E3%81%B2%E3%82%89%E3%81%99%E3%82%89%E4%BA%8C%E6%97%A5%E7%9B%AE/</link>
+      <pubDate>Wed, 18 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-18-%E3%81%9F%E3%81%A0%E3%81%B2%E3%82%89%E3%81%99%E3%82%89%E4%BA%8C%E6%97%A5%E7%9B%AE/</guid>
+      <description>キーボードの調子が悪いため
+スクショ撮れませんでした😢
+静的サイトジェネレータは他のものを試すことにした。
+Gatsbyに挑戦しましたが
+またNode.js問題発生したため撤退です（切り替えはやい）
+下記参考にしながらJekyllに挑戦してみた。
+Quickstart | Jekyll • Simple, blog-aware, static sites
+完全なRuby開発環境を整えよう。
+適当にrbenvの切り替え方法を調べて雑に実行してみたけれども動かない。
+そもそもrbenvのこと何もわかってない気がする。
+rbenv | global と local と .ruby-version の微妙な関係 - Qiita
+ふむふむ
+とりあえず
+つまり、ホームディレクトリに .ruby-version を作ってしまうと、global はどこからも参照されなくなる。
+しっかりホームディレクトリに.ruby-versionが居たので消してやりました。
+なのにerrorする😢
+Rubyのバージョンが切り替わらない時の対処法！ - Qiita
+これだあ参照先だあ。
+which超大事なんだなあ
+って学びました。
+jekyllコマンド動かない！！
+$PATHの設定かなあ
+そもそもgemコマンドの参照先の問題な可能性もある
+しかし眠いので寝ます 。
+今日は大量のディレクトリやファイルを削除して
+参照先を変える方法や
+permissionsって言われたらとりあえずsudoつけることを体が覚えました。
+バックトゥザフューチャーみたいな文字盤です。
+最近追加されたお気に入りデザインだよ。
+マンションの階段にいたクワガタ
+かちょいい</description>
+    </item>
+    
+    <item>
+      <title>Ruby コード懇親会</title>
+      <link>https://hugo.suwa3.me/post/2019-09-06-ruby-%E3%82%B3%E3%83%BC%E3%83%89%E6%87%87%E8%A6%AA%E4%BC%9A/</link>
+      <pubDate>Fri, 06 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-06-ruby-%E3%82%B3%E3%83%BC%E3%83%89%E6%87%87%E8%A6%AA%E4%BC%9A/</guid>
+      <description>Rubyのコード懇親会に行ってきました。
+二人一組でチームを組んで課題に取り組むという形式で
+わたしは社会人二年目の女の子と組みました。
+以下問題です。
+CodeIQに「カラオケマシン問題」を出題しました。みんなチャレンジしてね！ - give IT a try
+正直問題の意味もわからず、ひたすらわからないわからないと言いながら
+調べても一緒に考えてみてもわからず
+答えを聞いても意味がわからないなーとおもって終わりました。
+「やっぱりこういうの向いていないのかもしれない」
+と、おもいましたが
+さすがにRubyド初心者向けの問題ではないよなあと考え直し
+自分のペースで地道にやっていこうとおもいました。
+お昼に食べた、最近お気に入りの草です！</description>
+    </item>
+    
+    <item>
+      <title>Ruby予習/Raspberry Pi用途</title>
+      <link>https://hugo.suwa3.me/post/2019-08-30-1045/</link>
+      <pubDate>Fri, 30 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-30-1045/</guid>
+      <description>午前中は病院はしごしました。
+（最近忙しいなあ）
+とは、おもっていたのですが
+無理をすると知らないうちに病気になっていたりするので
+そのあたりのバランスが難しいなあと思いました。
+特にスケジュールは詰めすぎないように気をつけたいです。
+ちょこちょこRubyのおべんきょうしています。
+来週末にRuby on Railsハンズオンに参加するので、その予習です。
+まだまだ先は長いなあと感じる。
+夜はRaspberry Piがset upされるのを眺めていました。
+フォントがかわいい、Raspbianだから？
+Debianもこんなかんじのフォントなのかしら
+自鯖運用ラズパイでWordPressか
+（AWSはdon.suwa3.me用なので無料枠こえてしまいそうだから）
+GitHubなどで静的サイトジェネレーターかで迷っている。
+ラズパイは物置化して、blogは後者になりそうな予感。</description>
+    </item>
+    
+    <item>
+      <title>HP更新/Ruby基礎</title>
+      <link>https://hugo.suwa3.me/post/2019-08-28-hp%E6%9B%B4%E6%96%B0-ruby%E5%9F%BA%E7%A4%8E/</link>
+      <pubDate>Wed, 28 Aug 2019 13:00:23 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-28-hp%E6%9B%B4%E6%96%B0-ruby%E5%9F%BA%E7%A4%8E/</guid>
+      <description>本日の勉強時間は移動中とお昼休みのみでした。
+明日は夜に少しだけまとまった時間とれるかなあ、運が良ければってかんじ。
+HP更新しました！
+PCから開くと見ることができます。
+suwa HP
+より爽やかなかんじになった。
+秋なのでコスモスだよ。
+URLのhrefタグにtarget=&amp;quot;_blank&amp;quot;を追加した。
+クリックして新しいタブを開くよう統一しました。
+VSCode慣れてきた。
+Atomと比較してとにかく速い。
+あとAtomではプラグインが必要なものも
+最初からまあまあチューニングされている。
+なのに速い、良い感じ。
+差分は忘れずgit pushです。
+アイコンだとか画像のaddとrmが多かったので
+まとめて一気にやる方法を調べれば良かったなあ。
+あとはRubyのお勉強です。
+Pythonに似ているなあとおもった。
+Rubyに慣れたらRailsに触りたいです。
+未経験からRuby on Railsを学んで仕事につなげるまでの1000時間メニュー
+これカリキュラムとしてとても参考になりそう。
+開発環境は今のままで良いかなあ。
+MacOS/terminal/Ruby/Chrome/Git/postgreSQL
+模範的なかんじ。
+インフラに特化した学習をしていたけれども
+少しずつ別の分野も触っていきたい。</description>
+    </item>
+    
+    <item>
+      <title>TypeScriptのプラグインをいれてrbenvをinstallした日</title>
+      <link>https://hugo.suwa3.me/post/2019-08-22-typescript%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%92%E3%81%84%E3%82%8C%E3%81%A6rbenv%E3%82%92install%E3%81%97%E3%81%9F%E6%97%A5/</link>
+      <pubDate>Thu, 22 Aug 2019 13:00:14 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-22-typescript%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%92%E3%81%84%E3%82%8C%E3%81%A6rbenv%E3%82%92install%E3%81%97%E3%81%9F%E6%97%A5/</guid>
+      <description>お昼はType Scriptについて調べていました。
+TypeScriptってどんなもの？ プロ生ちゃんと始めてみよう！ これを見ながらAtomにatom-typescriptプラグインをinstallしてみました。
+AtomでType Scriptのコードを打ってみたら
+自動補完されるようになっていたよ。
+わーいわーい。
+.
+あとはRubyを入れました。
+MacOSでHomebrewだとこの記事が良いかなとおもった。
+【2018年版】macにrbenvを入れてrubyを管理できるようにしちゃう
+rbenv(ルビエンブ)
+複数のRubyのバージョンを管理できるの。
+｢この条件だと、このバージョンのRubyでは動作しない｣
+などが多いらしいRuby。
+.
+MacOSにはもともとRuby入っているらしいので
+rbenvをinstallしてからバージョン一覧を確認して
+最新バージョンを入れた。
+やったねえ。
+忘れずドヤ顔だよ(◦`꒳´◦)</description>
+    </item>
+    
+    <item>
+      <title>Rubyはヒトカゲ</title>
+      <link>https://hugo.suwa3.me/post/2019-08-21-ruby%E3%81%AF%E3%83%92%E3%83%88%E3%82%AB%E3%82%B2/</link>
+      <pubDate>Wed, 21 Aug 2019 13:00:41 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-21-ruby%E3%81%AF%E3%83%92%E3%83%88%E3%82%AB%E3%82%B2/</guid>
+      <description>朝と午前中はuser scriptについて調べていました。
+参考に見たQiita記事が軒並みjQueryで UserScriptで楽しくJavaScriptを覚えよう
+むぢゅい
+JSわからない。
+Chromeの拡張機能はとりあえず追加しました。
+なかなか新しい記事を見つけられなかった。
+type scriptも調べてみたい。
+.
+お昼は主にDockerとVagrantの違いについて調べていました。
+Web系のDocker民から見たVagrantについて
+(上記サイトから引用)
+この画像を見て
+Dockerコンテナ同士を結びつけるのがdocker-composeかなとおもったけれども
+これOSが独立しているので
+Kubernetesで結びつけるのが正確かな。
+違いを以下にまとめました。
+.
+Docker
+- OS以上を仮想化
+- 軽い
+- カーネル部分はホストマシンに依存するため、Windowsだと正常に作動しない場合がある
+Vagrant
+- カーネル以上を仮想化
+- 重い
+- カーネルから仮想化するため、そのぶんシミュレーションの精度がDockerよりも高い。
+- Vagrant上にDocker構築も可能
+実際にVagrantの構築も試したい。
+VagrantとDockerについて名前しか知らなかったので試した
+Qiita記事を参考にしつつ
+動画を観ながら進めてみよう。
+.
+18のプログラミング言語をポケモンに例えてみた！
+Rubyはヒトカゲで
+Pythonはゼニガメっぽいなあ
+ってイメージはあったの。
+でも、ここではPythonをカイリューだと言っていて
+確かにミニリュウ青いしカイリュー黄色くて
+ロゴの色味的にも合っているし
+育てるとまあまあ強い準伝なの納得感ある。
+Lispよく知らないけれども
+ラプラスの偉大で神聖な感じなのかあっておもった。
+しかし、アローラではラプラス大量発生していてレア感薄いけれども。
+.
+ポケモンとプログラミングについて
+知識の習得、コレクション
+環境が変わると一から育成をし直す必要があって
+ポケモンが成長するのと共にトレーナーも成長して強くなれるの
+プログラミングとポケモン
+親和性高いのでは、と感じた。
+とりあえずRuby使えるようになりたい。
+Rubyはリザードンらしいけれども
+まだわたしは弱小なのでヒトカゲGETするところからです。</description>
+    </item>
+    
+  </channel>
+</rss>

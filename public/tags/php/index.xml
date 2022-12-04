@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/php/</link>
+    <description>Recent content in php on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 01 Dec 2019 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>phpカンファレンス</title>
+      <link>https://hugo.suwa3.me/post/2019-12-01-php%E3%82%AB%E3%83%B3%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/</link>
+      <pubDate>Sun, 01 Dec 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-12-01-php%E3%82%AB%E3%83%B3%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/</guid>
+      <description>phpカンファレンスに行ってきました。
+セッションのメモをとったので載せます。
+PHP Conference Japan 2019
+言語系カンファレンスは初めてで
+正直セッションの内容はライブ映像で見ることが出来るし
+わざわざ会場まで行くことに意味があるのだとすれば
+phpに関わる、いろいろな人と交流して帰ることだよなぁと思っていたの。
+「目標は名刺交換！」
+と、考えていて
+お仕事の内容的に、とても親和性が高そうなサービス紹介のブースがあって
+同僚が積極的に関わりに行ってくれたおかげで
+名刺交換をすることができたの。目標達成できたよ😃
+そのあとは永田町にあるコワーキングスペース
+ガイアックスで作業です。
+WordPressのホスティングを昨日からはじめて
+結構、右も左もわからない状態だったのだけれども
+テーマやプラグイン、外観をどう編集するのか
+証明書やApacheの設定などについても教わることが出来て良かったです。
+わたしはデフォルトVPCを作成し直すのをやりました🙋
+もくもくと作業も捗るけれども
+お互いにわからないところを教え合うの楽しいなぁと感じました。
+目の前でblogの内容を参考に作業してもらって
+そのフィードバック貰えたのは、かなり大きかったです。
+記事の内容として
+「これくらいは書かなくても良いかな」
+と、省いてしまう箇所が結構あるなと感じたので
+出来る限り丁寧に書くよう気をつけたいです。</description>
+    </item>
+    
+    <item>
+      <title>phpをbrew install！！</title>
+      <link>https://hugo.suwa3.me/post/2019-09-10-php%E3%82%92brew-install/</link>
+      <pubDate>Tue, 10 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-10-php%E3%82%92brew-install/</guid>
+      <description>本日のやったことリストです。
+phpに触ったことがなかったため
+Djangoで味をしめたので
+まずフレームワークを見てみようとおもいinstall奮闘しました。
+Laravelというらしい。
+インストール 6.0 Laravel
+Laravelを始める前に、自分の開発機にComposerを確実にインストールしておいてください。
+Laravelを始めるためにはComposerをインストールする必要があるらしい。
+最近おもうのは、使ったことのない技術に触れようとするとき
+だいたい英語のサイトやドキュメントを頑張って読むのだけれども
+「これが必要なのね？はいコピペコピペ」
+とやっているの
+フィッシングサイトだったりなんかしたら即騙されそうだなと思いました。
+こわー
+食堂で食べたもち米入り麦ご飯が美味しすぎて
+おかわりしたら、その後２時間はおなかが破裂しそうでした。
+アホかな？
+満腹も、度を越すと苦しみなのだということを学びましたあ
+美味しかったのでまた食べたい。</description>
+    </item>
+    
+  </channel>
+</rss>

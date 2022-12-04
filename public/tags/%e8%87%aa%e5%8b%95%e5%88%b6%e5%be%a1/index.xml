@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>%e8%87%aa%e5%8b%95%e5%88%b6%e5%be%a1 on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/%e8%87%aa%e5%8b%95%e5%88%b6%e5%be%a1/</link>
+    <description>Recent content in %e8%87%aa%e5%8b%95%e5%88%b6%e5%be%a1 on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 24 Aug 2019 13:00:42 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/%e8%87%aa%e5%8b%95%e5%88%b6%e5%be%a1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ODC/PORTもくもく会</title>
+      <link>https://hugo.suwa3.me/post/2019-08-24-odc-port%E3%82%82%E3%81%8F%E3%82%82%E3%81%8F%E4%BC%9A/</link>
+      <pubDate>Sat, 24 Aug 2019 13:00:42 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-24-odc-port%E3%82%82%E3%81%8F%E3%82%82%E3%81%8F%E4%BC%9A/</guid>
+      <description>蒲田で行われていたODC (Open Developers Conference)に行ってきました。
+今回は専門学校の廊下がブースコーナーになっていて、ミニマムな感じでした。
+サラッと見て、一番テンション上がったのがこれ！
+世界最強ラズパイラジコン基板！
+たのしい電子工作クラブ
+ミニ四駆の自動制御やりたいねってことで
+ラズパイもくもく会の主催の方に話して貰って
+もくもく会のときに是非挑戦しよう
+と、おもっていたの。
+これはお話聞かなきゃ！
+とおもって、色々と質問できたので良かった。
+やったねえ。
+やはり、ステアリング機構をつけて左右に転回させたい。
+しかしミニ四駆の場合だと、まずモーターの制御からだなあ。
+ラジコンの制御のほうが、もしかしたらやりやすいのかもしれない。
+.
+あと、本の展示でお話を聞いたのが
+30日でできる! OS自作入門
+これー！
+自作OSぜひやりたい。
+60日かかっても良いのでやりたい♡
+これはロマンよね。
+今回も楽しかったです。
+次回OSCは渋谷なのだけれども
+平日なのよねー、参加できるかは微妙なところ。
+.
+お昼前には新宿に移動して、PORTもくもく会へ行きました。
+みそぴぴ来てたー♡
+最近PORTもくもく会の女子率が高いの嬉しいね。
+今回はAnsibleの設定をひたすらもくもくしました。
+Ansible Documentation
+Ansibleの公式ドキュメント、フォントが可愛いし全体的にオシャレ。
+HomebrewにAnsibleをinstallするところからスタートだよ。
+pingでテストして、なんとかsuccessしている画像。
+わーい。
+忘れずドヤ顔です(◦`꒳´◦)
+.
+最近おもうのが
+HelloWorldをやって終わってしまうものが多くて
+実際につかって
+｢つかえます｣
+って言えるレベルまでもっていきたいなあとおもうの。
+例えば、AWSのLambdaなんかもガンガン使いたいんだけど
+don.suwa3.meの運用の中で、多少無理してでも
+｢ええ？そこでLambdaつかうの？？｣
+みたいな運用でも良いので、ガシガシ書いて慣れたい。
+具体的にはbotのエンドポイントなど
+@でリプライを送るとそれをトリガーにして立ち上がるような使い方だとか。
+Lambdaも使えて、その中でPythonなども書く練習になるので
+そういった学習方法にシフトする
+転換期なのかなあとおもいました。
+もっと
+｢つかえます！｣
+を増やしたいね。</description>
+    </item>
+    
+  </channel>
+</rss>

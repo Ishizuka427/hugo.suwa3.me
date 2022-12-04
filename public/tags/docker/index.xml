@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/docker/</link>
+    <description>Recent content in docker on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 27 Oct 2019 12:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>蕁麻疹Docker</title>
+      <link>https://hugo.suwa3.me/post/2019-10-27-%E8%95%81%E9%BA%BB%E7%96%B9docker/</link>
+      <pubDate>Sun, 27 Oct 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-27-%E8%95%81%E9%BA%BB%E7%96%B9docker/</guid>
+      <description>昨夜の帰宅後から急に蕁麻疹が全身に出てきて
+びっくりして、とりあえず眠りました。
+疲れていたのかなぁ。
+今日も日中は眠って
+午後から皮膚科に行ってきました。
+風邪で免疫力が落ちていたので
+蕁麻疹が出てしまったよう。
+内服薬を貰ったよ。
+夕方はスタバで少しだけ作業です。
+docker-compose.ymlについて。
+今まで結構誤解していた部分が多かったなぁ
+って反省です。
+流れとしては
+docker-compose.ymlで
+アプリケーションが使うミドルウェアの接続・起動をできるようにして
+その状態で
+Dockerfileを書き進めつつdocker buildでDocker imageをつくって
+docker-compose upしてDocker imageを元にコンテナをつくるの。
+$ docker-compose ps
+これでコマンドやState、Portsなどの確認ができるので
+errorが起きている場合は
+$ docker-compose logs &amp;lt; Name &amp;gt;
+などでlogを見て原因究明をしたり
+$ docker-compose run &amp;ndash;entrypoint /bin/sh &amp;lt; application &amp;gt;
+などでDocker内に入って実際にコマンドを打ってerrorログを読んだりすれば
+地道なerror潰し作業で
+Dockerfileを作りあげることが
+理論上は出来る。
+実際にはerrorログ読んでも
+訳分からんくて詰むの多々あるかんじなので
+わかりそうなひとにログとともに見せて教えを請う作業です。
+趣味鯖でDocker上にアプリケーションを構築する際
+動きそうなdocker-compose.ymlをgit cloneしてきて
+こんな感じでerrorログを見ながら
+ひたすら「わからん」と唱えていた記憶があったの。
+わからんまま構築できてしまったのだけれども。
+一度復習しようと思ってふむふむしていた。
+Dockerfile内のRUNとCMDの違いだとか
+docker-compose.ymlを書いたら
+ローカルで接続・起動の確認をするのか
+Docker上でそれらの確認をするのか
+そもそもDocker imageとは
+って、かなり初歩的なレベルで理解が浅かったなぁって気づけたの。
+適当にソースコードgit cloneして構築できてしまうの便利だけれども
+オリジナルの独自設定アプリケーションを動かせるような環境構築
+きちんと理解して進めないと難しいのだなと感じた。</description>
+    </item>
+    
+    <item>
+      <title>Django GirlsチュートリアルでつくったものでDockerfile作成</title>
+      <link>https://hugo.suwa3.me/post/2019-10-20-django-girls%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%E3%81%A7%E3%81%A4%E3%81%8F%E3%81%A3%E3%81%9F%E3%82%82%E3%81%AE%E3%81%A7dockerfile%E4%BD%9C%E6%88%90/</link>
+      <pubDate>Sun, 20 Oct 2019 11:20:36 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-20-django-girls%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%E3%81%A7%E3%81%A4%E3%81%8F%E3%81%A3%E3%81%9F%E3%82%82%E3%81%AE%E3%81%A7dockerfile%E4%BD%9C%E6%88%90/</guid>
+      <description>まずDocker Hubで使いたいイメージを探します。
+公式のものなど、なるべく信頼できるイメージをつかった方が良さげです。
+Django Girlsチュートリアルでつくったものはこちらです。
+$ ls blog manage.py myvenv README.md db.sqlite3 mysite requirements.txt
+元になるイメージはpython:3.7.5-slim-busterを選びました。
+Django起動時に打ち込んでいるコマンドを
+Dockerfileに書き込んでいきます。
+$ vi Dockerfile
+FROM python:3.7.5-slim-buster COPY . /app/ WORKDIR /app RUN pip3 install -r requirements.txt RUN python3 manage.py collectstatic &amp;ndash;noinput CMD python3 manage.py runserver 0.0.0.0:8000
+イメージ名にはわかりやすい名前をつけて
+タグにはバージョン（日付や0.1.0など）を指定してあげると良いです。
+無記入だとlatestになります。
+$ docker build -t [イメージ名]:[タグ] . 例えば $ docker build -t djangogirls:0.1.0 .
+最後のドットを忘れないように注意です。
+一覧を出すには
+$ docker images REPOSITORY TAG IMAGE ID CREATED SIZE djangogirls latest 53a38ee83c1a 24 minutes ago</description>
+    </item>
+    
+    <item>
+      <title>Dockerfileまとめ</title>
+      <link>https://hugo.suwa3.me/post/2019-10-01-dockerfile%E3%81%BE%E3%81%A8%E3%82%81/</link>
+      <pubDate>Tue, 01 Oct 2019 13:00:47 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-01-dockerfile%E3%81%BE%E3%81%A8%E3%82%81/</guid>
+      <description>Dockerfileは管理しているリポジトリの.gitと同じ階層につくる 。
+Dockerfileを書いてみる - Qiita
+（上記サイトから引用）
+Dockerfileの具体的な書き方をふむふむした 。
+Dockerを使ってLaravel開発環境構築 - Qiita
+Laravel開発環境構築につかえそうなDockerfileを探したの 。
+FROM php:7.2-fpm COPY php.ini /usr/local/etc/php/
+RUN apt-get update \ &amp;amp;&amp;amp; apt-get install -y zlib1g-dev mysql-client \ &amp;amp;&amp;amp; docker-php-ext-install zip pdo_mysql
+#Composer install RUN php -r &amp;ldquo;copy(&amp;lsquo;https://getcomposer.org/installer&#39;, &amp;lsquo;composer-setup.php&amp;rsquo;);&amp;rdquo; RUN php -r &amp;ldquo;if (hash_file(&amp;lsquo;sha384&amp;rsquo;, &amp;lsquo;composer-setup.php&amp;rsquo;) === &amp;lsquo;a5c698ffe4b8e849a443b120cd5ba38043260d5c4023dbf93e1558871f1f07f58274fc6f4c93bcfd858c6bd0775cd8d1&amp;rsquo;) { echo &amp;lsquo;Installer verified&amp;rsquo;; } else { echo &amp;lsquo;Installer corrupt&amp;rsquo;; unlink(&amp;lsquo;composer-setup.php&amp;rsquo;); } echo PHP_EOL;&amp;rdquo; RUN php composer-setup.php RUN php -r &amp;ldquo;unlink(&amp;lsquo;composer-setup.php&amp;rsquo;);&amp;rdquo; RUN mv composer.</description>
+    </item>
+    
+    <item>
+      <title>パーティション設計/media remove on Docker</title>
+      <link>https://hugo.suwa3.me/post/2019-09-02-%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3%E8%A8%AD%E8%A8%88-media-remove-on-docker/</link>
+      <pubDate>Mon, 02 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-02-%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3%E8%A8%AD%E8%A8%88-media-remove-on-docker/</guid>
+      <description>最近言われて嬉しかった言葉は
+｢戦闘民族だよね。戦い生きるみたいな生き方をしている｣
+です。
+精神的腕力のあるゴリラを目指している身としては身に余る言葉です。
+なんか殺傷力高くて瞬発力ありそう。
+media削除のコマンドを試す前に
+「メディアストレージの容量を確認して、ビフォーアフター見てみたいなあ」
+と、いうことで
+postgresqlが稼働しているdisk容量を確認するコマンドを調べたの。
+$ df -Th dfコマンドにType付き＆人に優しいhumanizeな表示で見ることができました。
+/dev/xvda1 20G 13G 7.0G 65% /
+ふむふむ。
+ラズパイも見てみました。
+/dev/mmcblk0p1 vfat 253M 41M 213M 16% /boot
+mmcblk0p1で調べたらSDカードのパーティションとのこと。
+ふん？？
+（下記サイトより引用）
+ふむふむ。
+fdiskの操作方法
+また、重要なのが「swap」パーティションだ。
+このパーティションはメインメモリが不足しているときにメインメモリのかわりとして使用できる領域のことだ。
+これは高価なメインメモリを安価な記憶媒体で補うと同時に、メインメモリ以上の容量を確保するため、比較的に昔からある仕組みだ。とても便利だし、設定しない理由はない。
+やたらと大きくしてもパフォーマンスは発揮されないので注意しよう。
+Linuxのパーティションとは？とパーティションの区切り方を詳細解説
+https://eng-entrance.com/linux-partition
+パーティションの中でもswapって大事なんやなー
+swap領域を確保する一番手っ取り早い方法として、EC2のインスタンスストアスワップボリュームがあります。
+これは、EC2のインスタンスタイプがm1.smallとc1.mediumのときのみ
+/dev/xvda3ないし/dev/xvde3という900MBのmkswap済みディスクが
+EC2のブート時に自動で提供されます(デバイス名はAMIによりまちまちです)。
+他のインタンスタイプではm1/c1ファミリーであっても提供されず、
+またManagement ConsoleやAWS APIでは本ボリュームを確認できないことに注意しましょう。
+Amazon EC2(Linux)のswap領域ベストプラクティス ｜ DevelopersIO
+https://dev.classmethod.jp/cloud/ec2linux-swap-bestpractice/
+swapの設定しなきゃ！！
+してた！！！
+全く記憶にないけど、とりあえずコピペ頑張ったんだなってきもちです。
+$ sudo docker-compose run &amp;ndash;rm web bundle exec bin/tootctl media remove &amp;ndash;days=30
+↑いろいろ脇道にそれましたが、画像削除のコマンドを打ってみました。
+error</description>
+    </item>
+    
+    <item>
+      <title>厳しめモードDocker</title>
+      <link>https://hugo.suwa3.me/post/2019-08-26-%E5%8E%B3%E3%81%97%E3%82%81%E3%83%A2%E3%83%BC%E3%83%89docker/</link>
+      <pubDate>Mon, 26 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-26-%E5%8E%B3%E3%81%97%E3%82%81%E3%83%A2%E3%83%BC%E3%83%89docker/</guid>
+      <description>朝から活動的でした。
+デプロイの自動化は最優先で取得したい技術だなあとおもいました。
+初対面のひとと沢山はなした！
+本日も疲れる１日でしたが
+厳しめモードでDockerです。
+監視ツールからガンガンアラート来ていました。
+以下、奮闘記。
+streamingが二つあった証拠画像あります！
+証拠を残せて満足です。
+.
+Docker再起動で糞重たいのが起動できたの
+重すぎるのでsidekiqを止めた状態で再起動かけて、後から追加する作戦しました。
+が、結局重くて全部落ちました。
+Dockerふわふわどころじゃない。
+.
+結論：t2.microでdocker運用、そろそろきつい</description>
+    </item>
+    
+    <item>
+      <title>Rubyはヒトカゲ</title>
+      <link>https://hugo.suwa3.me/post/2019-08-21-ruby%E3%81%AF%E3%83%92%E3%83%88%E3%82%AB%E3%82%B2/</link>
+      <pubDate>Wed, 21 Aug 2019 13:00:41 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-21-ruby%E3%81%AF%E3%83%92%E3%83%88%E3%82%AB%E3%82%B2/</guid>
+      <description>朝と午前中はuser scriptについて調べていました。
+参考に見たQiita記事が軒並みjQueryで UserScriptで楽しくJavaScriptを覚えよう
+むぢゅい
+JSわからない。
+Chromeの拡張機能はとりあえず追加しました。
+なかなか新しい記事を見つけられなかった。
+type scriptも調べてみたい。
+.
+お昼は主にDockerとVagrantの違いについて調べていました。
+Web系のDocker民から見たVagrantについて
+(上記サイトから引用)
+この画像を見て
+Dockerコンテナ同士を結びつけるのがdocker-composeかなとおもったけれども
+これOSが独立しているので
+Kubernetesで結びつけるのが正確かな。
+違いを以下にまとめました。
+.
+Docker
+- OS以上を仮想化
+- 軽い
+- カーネル部分はホストマシンに依存するため、Windowsだと正常に作動しない場合がある
+Vagrant
+- カーネル以上を仮想化
+- 重い
+- カーネルから仮想化するため、そのぶんシミュレーションの精度がDockerよりも高い。
+- Vagrant上にDocker構築も可能
+実際にVagrantの構築も試したい。
+VagrantとDockerについて名前しか知らなかったので試した
+Qiita記事を参考にしつつ
+動画を観ながら進めてみよう。
+.
+18のプログラミング言語をポケモンに例えてみた！
+Rubyはヒトカゲで
+Pythonはゼニガメっぽいなあ
+ってイメージはあったの。
+でも、ここではPythonをカイリューだと言っていて
+確かにミニリュウ青いしカイリュー黄色くて
+ロゴの色味的にも合っているし
+育てるとまあまあ強い準伝なの納得感ある。
+Lispよく知らないけれども
+ラプラスの偉大で神聖な感じなのかあっておもった。
+しかし、アローラではラプラス大量発生していてレア感薄いけれども。
+.
+ポケモンとプログラミングについて
+知識の習得、コレクション
+環境が変わると一から育成をし直す必要があって
+ポケモンが成長するのと共にトレーナーも成長して強くなれるの
+プログラミングとポケモン
+親和性高いのでは、と感じた。
+とりあえずRuby使えるようになりたい。
+Rubyはリザードンらしいけれども
+まだわたしは弱小なのでヒトカゲGETするところからです。</description>
+    </item>
+    
+    <item>
+      <title>アイス3つたべた</title>
+      <link>https://hugo.suwa3.me/post/2019-08-05-%E3%82%A2%E3%82%A4%E3%82%B93%E3%81%A4%E3%81%9F%E3%81%B9%E3%81%9F/</link>
+      <pubDate>Mon, 05 Aug 2019 13:00:27 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-05-%E3%82%A2%E3%82%A4%E3%82%B93%E3%81%A4%E3%81%9F%E3%81%B9%E3%81%9F/</guid>
+      <description>平日で日中動けるの月曜日くらいなので
+本当はAWSのLoftまた行きたいなあとおもっていたのだけれども
+なんだかんだ昼近くなってしまったので
+近場のTully&amp;rsquo;sでアイスを食べながら作業しました。
+履歴書と職務経歴書は、大昔のExcelファイルを手直しして
+.odtファイルに変換して保存しました。
+MacでもExcelみたいなのあるのねえ。
+今までの振り返りができて良かったです。
+.
+これは極秘中の極秘なのですが
+cronはDockerコマンドでpg_dumpさせているの。
+.
+@女子部で講師の寺田さんが
+&amp;ldquo;Design for Failurea&amp;rdquo;
+--障害発生を前提としてシステムを設計しましょう&amp;ndash;
+という言葉を引用しつつ
+｢Docker上にDBを置いてはいけません｣
+と話していて
+docker-composeでコンテナ上にpostgreSQL置いているの
+アッてなったあ🐰
+しかも実際に不安定で数週間に一度Dockerに入れなくなる、笑
+とりあえずcronでdocker再起動かける？
+みたいな暫定的対応策で凌ごうとしているのだけれども
+しかしながらトラブル多いほうが
+むしろ勉強になるので
+わたしとしてはwelcomeな感じですᐠ( ᐛ )ᐟ</description>
+    </item>
+    
+    <item>
+      <title>Kubernetesハンズオン</title>
+      <link>https://hugo.suwa3.me/post/2019-08-03-kubernetes%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3/</link>
+      <pubDate>Sat, 03 Aug 2019 13:00:32 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-03-kubernetes%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3/</guid>
+      <description>朝起きてKubernetesの女子限定ハンズオンに行ってきました。
+会場に辿り着くまでに一時間近く迷って
+まあまあ遅刻しました。
+30分くらい余裕もって出たんだけどなあ。
+.
+Kubernetes
+Dockerってコンテナ(仮想環境)の機能を利用して
+それらをより複雑に組み合わせることができるの
+.
+5〜6人のチームに別れて
+それぞれ課題に取り組む形で行われたのだけれども
+今までチームで何か開発や作業をした経験ってなかったので
+かなり新鮮でした。
+.
+Azureやインフラ未経験の方々もいて
+それでも何とかなったし、楽しかったの。
+ランチもチームメンバーと食べて
+わちゃわちゃ話せたの良かった。
+.
+後半助っ人で来てくれた方が
+問題解決能力とても高い方で
+頼りになるなあ、凄いなあとおもった。
+わたしも問題解決能力の高い
+最強のエンジニアになりたいとおもいました。
+.
+講師の方は寺田さん (@yoshioterada) https://twitter.com/yoshioterada?s=09
+でした。
+https://github.com/yoshioterada/k8s-Azure-Container-Service-AKS--on-Azure
+教材は上記GitHub
+https://yoshio3.com/2018/12/06/kubernetes-tips-for-production/
+後半はこちらのスライドも利用していた。
+.
+帰り道すがらお祭りにふらっと寄りました。
+提灯が綺麗。
+.
+帰宅して復習したよ。
+とりあえずババーっと書いたものを貼ります。
+30階以上の階だったので
+窓からの眺めが良かったの。</description>
+    </item>
+    
+    <item>
+      <title>postgreSQL修了/Kubernetes予習</title>
+      <link>https://hugo.suwa3.me/post/2019-08-02-postgresql%E4%BF%AE%E4%BA%86-kubernetes%E4%BA%88%E7%BF%92/</link>
+      <pubDate>Fri, 02 Aug 2019 13:00:45 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-02-postgresql%E4%BF%AE%E4%BA%86-kubernetes%E4%BA%88%E7%BF%92/</guid>
+      <description>お昼はpostgreSQLの動画を観ていたよ。
+一通り全て見終わりました。
+わーい˙˚ʚ(｡･-･｡)ɞ˚˙
+手を動かして実際にデータベースつくったり触ったりしたいので
+もう少し動画にはお世話になりそう。
+Fab Cafeのサラダお気に入りなの。
+金曜日の楽しみだよ。
+草ってかんじ。
+土曜日はKubernetesの女子限定ハンズオンで
+参加型の座学なのだけれども
+不安過ぎて入門書を衝動買いしそうになった写真です。
+なので帰宅して少し予習しました。
+https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/
+この内容を実際にやってみた。
+DockerのアイコンからPreferenceでKubernetesを使うことできるのね。
+Nginxを3つDeploymentをつかってたてたけれども
+自動修復機能で、1つを消しても代わりのNginxが生まれるの。
+最初は
+｢消したのにNginx！｣
+とおもったけれども
+｢私が死んでも代わりはいるもの｣
+ってことかあ、と納得しました。</description>
+    </item>
+    
+    <item>
+      <title>どんすわ復活/postgreSQL</title>
+      <link>https://hugo.suwa3.me/post/2019-07-26-%E3%81%A9%E3%82%93%E3%81%99%E3%82%8F%E5%BE%A9%E6%B4%BB-postgresql/</link>
+      <pubDate>Fri, 26 Jul 2019 13:00:19 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-26-%E3%81%A9%E3%82%93%E3%81%99%E3%82%8F%E5%BE%A9%E6%B4%BB-postgresql/</guid>
+      <description>どんすわピンチでメンテナンスページにしていたの。
+とりあえずデータ保全を最優先してから
+docker-compose restartしてみた。
+Dockerのstatusを見てみたけれども
+unhealthyから、なかなかhealthyにならず不安定な状態が続いて
+泣く泣く師匠に相談したら
+DockerのIDが何故か重複しているとのこと。
+普通なら同じIDが二つ立ち上がる状況なさそうだけれども
+重すぎてそういった状態になったのかなあってかんじ。
+.
+なので重複したものを一つ削除して
+docker-composeのdownとupしたら
+時間をおいて正常化したので
+どんすわメンテナンス終了しました。
+.
+今回、何がうまくいっていないのか
+まではわかったけれども
+その原因まではわからなかったし
+.
+少し問題がややこしくなるとやっぱりわからないなあ。
+冷静に素早く対処できる最強のエンジニアになりたいです。
+.
+あと、PCが触れない移動時間には
+postgreSQLについて動画をみた。
+見た内容まとめ。
+データベース楽しい、また復習したい。
+使いこなせたら万能感すごそう。
+なんでも出来てしまう感じする。
+.
+データはとても大切で
+データが吹っ飛ぶと会社が吹っ飛ぶレベルの事故に繋がるし
+もし何かあったときには
+データの保全を最優先に動くことを意識していくと良い
+とアドバイスされた。
+.
+そしてデータベースにおける
+本当にあった怖い話を聞いたの。
+ヒヤリハットから、やらかしまで
+怖い話こわかった。</description>
+    </item>
+    
+    <item>
+      <title>どんすわピンチ</title>
+      <link>https://hugo.suwa3.me/post/2019-07-25-%E3%81%A9%E3%82%93%E3%81%99%E3%82%8F%E3%83%94%E3%83%B3%E3%83%81/</link>
+      <pubDate>Thu, 25 Jul 2019 13:00:35 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-25-%E3%81%A9%E3%82%93%E3%81%99%E3%82%8F%E3%83%94%E3%83%B3%E3%83%81/</guid>
+      <description>どんすわがとっても重くて
+構築後はじめてのトラブルだよ。
+わーわー‪\( ˙꒳˙ \三/ ˙꒳˙)/‬
+.
+朝から焦ってしまった。
+.
+お昼も焦っていた。
+.
+夕方あたりから
+｢焦ってもしかたないな｣
+ってマインドになったあ。
+.
+AWS開いてEC2見たり
+アタックされていないことを確認したり
+Dockerのコマンド触ってみたりして
+Docker動かないなーってことで
+データのバックアップをとってDocker再起動させる作戦にしました。
+なんだか1日おつかれさまだったよ。
+.
+トラブルは意図的に起こすこと難しくて
+責任を負わなくて良い環境で、こういったトラブルが起きたのは幸運なので
+対処がんばってみよう
+と、師匠にアドバイスされた。
+.
+どうせ利用者一人のSNSなので、データ飛ぶの覚悟で再起動かけても良かったのだけれども
+もしユーザー登録開放したときには、そうも言っていられないし
+ソロ防災訓練のつもりで対処方法を調べるのがんばりました。
+.
+とりあえず落ち着いて
+ひとつひとつ手を動かして
+どこまで動くのか確認するの大切なんだなあとおもった。</description>
+    </item>
+    
+    <item>
+      <title>ListとSESとメモ帳難民</title>
+      <link>https://hugo.suwa3.me/post/2019-07-23-%E3%83%AA%E3%82%B9%E3%83%88/</link>
+      <pubDate>Tue, 23 Jul 2019 13:00:39 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-23-%E3%83%AA%E3%82%B9%E3%83%88/</guid>
+      <description>やること増えてきたので
+まとめたのがこちらです。
+issueと書かれたものはGitHubでissue管理されているもの。
+最優先は就活と、期限の決まっているKubernetesかなあ。
+.
+Kubernetesは勉強会@女子部に登録したので
+その予習をできるだけやっていきたい。
+.
+最近気づいたのは、入門系の講習やセミナーに
+本気で予習無しや前提知識ゼロでいくと
+ただただ｢訳分からん｣な時間を過ごす羽目になるので
+できる限りじぶんで予習しておくべきだなとおもった。
+入門系の勉強会はむしろ復習なのね。
+.
+最優先の就活だけれども、焦りたくはないの。
+きちんと何がしたいのか見極めたいし
+特に急いでいないので慎重に進められたら良いなあとおもいます。
+.
+AWSサポートにSESの送信制限解除の申請をした。
+この申請が通れば、don.suwa3.meのメール登録開放ができるの。
+無事申請が通ると良いなあ。
+.
+blogにコードを書く際に
+イケてるメモ帳が欲しいなあとおもって探したよ。
+.
+Evernoteはターミナルの内容をコピペすると
+背景の黒も一緒にコピーしてしまうの。
+優秀なんだけれどもwordpressにコピペするときにジャマなので
+純粋にテキストのみで書けるメモ帳がないか
+お勧めを片っ端から試しました。
+Google keepのメモ帳がシンプルで
+クラウド対応しているの。
+PCから入力後すぐにスマホに反映されるのも良い。
+ダークテーマ
+良いじゃんとおもって使っていたら
+Evernoteがコードブロック可能なことを知った。
+.
+バッククオートでコードブロックしてあげれば
+背景の黒も取れて全て解決することに気づいてしまった。
+.
+メモ帳難民した1日でしたあ。</description>
+    </item>
+    
+    <item>
+      <title>Docker ネットワーク</title>
+      <link>https://hugo.suwa3.me/post/2019-07-07-docker-%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</link>
+      <pubDate>Sun, 07 Jul 2019 13:00:34 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-07-docker-%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</guid>
+      <description>マストドン構築における
+Dockerのネットワークについて、書いてまとめた。
+言葉だけだと理解しがたいね。
+結局、本の方も読んでみたのだけれども
+今の時点でおそらくネットワークの細かなところまで知識必要ないなと判断して
+マストドン構築のうえで必要最低限なものだけ覚えようとおもいました。
+.
+issueのひとつに｢バックアップをとる｣があったので
+それを片付けたの。
+まだ途中なので明日がんばる。
+.
+マイグレーション失敗しても
+｢でもバックアップあるから大丈夫！｣
+って言えたら、100てへぺろが
+10てへぺろくらいで済むもんね。</description>
+    </item>
+    
+    <item>
+      <title>Docker image</title>
+      <link>https://hugo.suwa3.me/post/2019-07-01-docker-image%E3%81%AE%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jul 2019 13:00:24 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-01-docker-image%E3%81%AE%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/</guid>
+      <description>Docker imageの操作方法 目次
+imageの検索 imageの取得 imageが取得できたか一覧で確認する imageの詳細を見る imageの削除 1. imageの検索 centosを検索してみます。
+$ docker search centos | more
+2. imageの取得 $ docker pull centos
+3. imageが取得できたか一覧で確認する 左から
+名前、タグ、IDの順、作られた日付、容量
+タグが違っていてもIDが同じであれば実体は同じ。
+$ docker images
+REPOSITORY TAG IMAGE ID CREATED SIZE misskey_web latest 0e061f36c9be 8 days ago 526MB ・・・・・・　・・・・・　・・・・・・・　・・・・・・　・・・・ centos latest 9f38484d220f 3 months ago 202MB
+4. imageの詳細を見る $ docker inspect &amp;ldquo;REPOSITORY&amp;rdquo;:&amp;ldquo;TAG&amp;rdquo;
+もしくは
+$ docker inspect &amp;ldquo;IMAGE ID&amp;rdquo;
+IMAGE IDで指定する場合は一つに絞ることができればOKなので、最初の3〜4文字を入力するだけでも見ることができる。</description>
+    </item>
+    
+    <item>
+      <title>EC2</title>
+      <link>https://hugo.suwa3.me/post/2019-06-18-468/</link>
+      <pubDate>Tue, 18 Jun 2019 13:00:28 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-18-468/</guid>
+      <description>AWSの動画不要説を唱えてしまったけれども
+よくよく考えてみたら
+何種類かある公式チュートリアルを見渡してみて
+｢仮想サーバーのインスタンスを立てたいのでEC2のチュートリアルはこれかな？｣
+と、探すことができたのは動画を観ていたからだし
+さらっとでも前提知識あるなしで見えるものかなり違うなとおもったので
+安易に切り捨てる癖よくないかなあ
+と、反省しました。
+マストドンのたてかた
+AWSをつかったものやVPSをつかったもの
+とりあえず色々と読んでいきます。
+躓きやすいポイントもメモしておこうね。
+あとはAWSの動画も、さらっと最後まで観るのと
+何種類か視聴しておきます。
+朝や昼休憩、移動や待ち時間だとかの
+隙間時間にちまちまやっているよ。
+ちりつも🐰
+めちゃ楽しい。
+自分の庭を持てた気分。
+Evernoteに今日の備忘録のこした。
+Dockerのスライドは、前半の歴史がおもしろかった。
+imageってなんやねん、とおもっていたけれど
+AWSでも触れて少しずつわかりかけてきた気がする。
+Docker入門-基礎編</description>
+    </item>
+    
+  </channel>
+</rss>

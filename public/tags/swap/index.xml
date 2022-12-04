@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>swap on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/swap/</link>
+    <description>Recent content in swap on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Tue, 17 Dec 2019 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/swap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DB接続確立error</title>
+      <link>https://hugo.suwa3.me/post/2019-12-17-db%E6%8E%A5%E7%B6%9A%E7%A2%BA%E7%AB%8Berror/</link>
+      <pubDate>Tue, 17 Dec 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-12-17-db%E6%8E%A5%E7%B6%9A%E7%A2%BA%E7%AB%8Berror/</guid>
+      <description>今日はまさかのWordPressがDB接続確立errorで見られなくなりました。
+かなりゾッとしたので、バックアップのcron回します。
+あとDB接続したらレイアウトがガタガタに崩れていたので
+きちんとgit管理します🙋
+異常終了によるロック状態になっていたため
+ロックファイルの削除をしてDB起動しました。
+以下、作業ログです。
+作業ログ、ここに残してもまたDB確立error起きたら見られないんだけどね..
+暗記しよう😃
+$ service mysqld status $ cd /var/lock/subsys/ $ rm -rf mysqld $ sudo su - # service mysqld start 帰宅後サーバー内に入り、原因調査をしました。
+$ cd /var/log/ $ tail -n200 mysqld.log 2019-12-17 03:44:07 3906 [ERROR] InnoDB: Cannot allocate memory for the buffer pool 2019-12-17 03:44:07 3906 [ERROR] Plugin &amp;#39;InnoDB&amp;#39; init function returned error. 2019-12-17 03:44:07 3906 [ERROR] Plugin &amp;#39;InnoDB&amp;#39; registration as a STORAGE ENGINE failed. 2019-12-17 03:44:07 3906 [ERROR] Unknown/unsupported storage engine: InnoDB 2019-12-17 03:44:07 3906 [ERROR] Aborting 2019-12-17 03:44:07 3906 [Note] Binlog end 2019-12-17 03:44:07 3906 [Note] Shutting down plugin &amp;#39;partition&amp;#39; 2019-12-17 03:44:07 3906 [Note] Shutting down plugin &amp;#39;INNODB_SYS_DATAFILES&amp;#39; 2019-12-17 03:44:07 3906 [Note] Shutting down plugin &amp;#39;INNODB_SYS_TABLESPACES&amp;#39; 2019-12-17 03:44:07 3906 [Note] Shutting down plugin &amp;#39;INNODB_SYS_FOREIGN_COLS&amp;#39; 2019-12-17 03:44:07 3906 [Note] Shutting down plugin &amp;#39;INNODB_SYS_FOREIGN&amp;#39; 2019-12-17 03:44:07 3906 [Note] Shutting down plugin &amp;#39;INNODB_SYS_FIELDS&amp;#39; ~~~~~~~略~~~~~~~ ERRORし始めて、しばらくしたらShutting down plugin が始まっているのが分かります。</description>
+    </item>
+    
+  </channel>
+</rss>

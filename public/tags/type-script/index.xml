@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>type-script on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/type-script/</link>
+    <description>Recent content in type-script on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Thu, 22 Aug 2019 13:00:14 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/type-script/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TypeScriptのプラグインをいれてrbenvをinstallした日</title>
+      <link>https://hugo.suwa3.me/post/2019-08-22-typescript%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%92%E3%81%84%E3%82%8C%E3%81%A6rbenv%E3%82%92install%E3%81%97%E3%81%9F%E6%97%A5/</link>
+      <pubDate>Thu, 22 Aug 2019 13:00:14 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-22-typescript%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%92%E3%81%84%E3%82%8C%E3%81%A6rbenv%E3%82%92install%E3%81%97%E3%81%9F%E6%97%A5/</guid>
+      <description>お昼はType Scriptについて調べていました。
+TypeScriptってどんなもの？ プロ生ちゃんと始めてみよう！ これを見ながらAtomにatom-typescriptプラグインをinstallしてみました。
+AtomでType Scriptのコードを打ってみたら
+自動補完されるようになっていたよ。
+わーいわーい。
+.
+あとはRubyを入れました。
+MacOSでHomebrewだとこの記事が良いかなとおもった。
+【2018年版】macにrbenvを入れてrubyを管理できるようにしちゃう
+rbenv(ルビエンブ)
+複数のRubyのバージョンを管理できるの。
+｢この条件だと、このバージョンのRubyでは動作しない｣
+などが多いらしいRuby。
+.
+MacOSにはもともとRuby入っているらしいので
+rbenvをinstallしてからバージョン一覧を確認して
+最新バージョンを入れた。
+やったねえ。
+忘れずドヤ顔だよ(◦`꒳´◦)</description>
+    </item>
+    
+  </channel>
+</rss>

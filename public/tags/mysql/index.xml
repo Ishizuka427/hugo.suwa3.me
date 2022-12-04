@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysql on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/mysql/</link>
+    <description>Recent content in mysql on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Tue, 17 Dec 2019 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DB接続確立error</title>
+      <link>https://hugo.suwa3.me/post/2019-12-17-db%E6%8E%A5%E7%B6%9A%E7%A2%BA%E7%AB%8Berror/</link>
+      <pubDate>Tue, 17 Dec 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-12-17-db%E6%8E%A5%E7%B6%9A%E7%A2%BA%E7%AB%8Berror/</guid>
+      <description>今日はまさかのWordPressがDB接続確立errorで見られなくなりました。
+かなりゾッとしたので、バックアップのcron回します。
+あとDB接続したらレイアウトがガタガタに崩れていたので
+きちんとgit管理します🙋
+異常終了によるロック状態になっていたため
+ロックファイルの削除をしてDB起動しました。
+以下、作業ログです。
+作業ログ、ここに残してもまたDB確立error起きたら見られないんだけどね..
+暗記しよう😃
+$ service mysqld status $ cd /var/lock/subsys/ $ rm -rf mysqld $ sudo su - # service mysqld start 帰宅後サーバー内に入り、原因調査をしました。
+$ cd /var/log/ $ tail -n200 mysqld.log 2019-12-17 03:44:07 3906 [ERROR] InnoDB: Cannot allocate memory for the buffer pool 2019-12-17 03:44:07 3906 [ERROR] Plugin &amp;#39;InnoDB&amp;#39; init function returned error. 2019-12-17 03:44:07 3906 [ERROR] Plugin &amp;#39;InnoDB&amp;#39; registration as a STORAGE ENGINE failed. 2019-12-17 03:44:07 3906 [ERROR] Unknown/unsupported storage engine: InnoDB 2019-12-17 03:44:07 3906 [ERROR] Aborting 2019-12-17 03:44:07 3906 [Note] Binlog end 2019-12-17 03:44:07 3906 [Note] Shutting down plugin &amp;#39;partition&amp;#39; 2019-12-17 03:44:07 3906 [Note] Shutting down plugin &amp;#39;INNODB_SYS_DATAFILES&amp;#39; 2019-12-17 03:44:07 3906 [Note] Shutting down plugin &amp;#39;INNODB_SYS_TABLESPACES&amp;#39; 2019-12-17 03:44:07 3906 [Note] Shutting down plugin &amp;#39;INNODB_SYS_FOREIGN_COLS&amp;#39; 2019-12-17 03:44:07 3906 [Note] Shutting down plugin &amp;#39;INNODB_SYS_FOREIGN&amp;#39; 2019-12-17 03:44:07 3906 [Note] Shutting down plugin &amp;#39;INNODB_SYS_FIELDS&amp;#39; ~~~~~~~略~~~~~~~ ERRORし始めて、しばらくしたらShutting down plugin が始まっているのが分かります。</description>
+    </item>
+    
+    <item>
+      <title>centOSにLAMP環境の構築をしてWordPressの引越し on AWS</title>
+      <link>https://hugo.suwa3.me/post/2019-11-30-centos%E3%81%ABlamp%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89%E3%82%92%E3%81%97%E3%81%A6wordpress%E3%81%AE%E5%BC%95%E8%B6%8A%E3%81%97-on-aws/</link>
+      <pubDate>Sat, 30 Nov 2019 14:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-11-30-centos%E3%81%ABlamp%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89%E3%82%92%E3%81%97%E3%81%A6wordpress%E3%81%AE%E5%BC%95%E8%B6%8A%E3%81%97-on-aws/</guid>
+      <description>備忘録としてまとめます。
+ざっくりとやった内容です。
+AWSでEC2インスタンスをたてる EC2内にLAMP環境を構築 EC2内にWordPressをインストール 旧WordPressからデータをエクスポート 新WordPressへデータをインポート Route53でサブドメインを切る Let’s Encryptで証明書発行 諸々の設定ファイルを書く AWSでEC2インスタンスをたてる 主に参考にした記事です。
+Amazon EC2 Linux インスタンスの開始方法 - Amazon Elastic Compute Cloud
+注意するポイントとして
+Amazon Linux 2ではなくAmazon Linux AMIを使用します。
+好みの問題かもしれないですが
+Amazon Linux 2
+$ sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+Amazon Linux AMI
+$ sudo yum install -y httpd24 php70 mysql56-server php70-mysqlnd
+この違いです。
+amazon-linux-extrasではなくyumを使いたかったので
+Amazon Linux AMIを使用しました。
+セキュリティグループは下記のとおりです。
+SSH: ポート範囲22
+HTTP: ポート範囲80
+HTTPS: ポート範囲443
+鍵を作成したら.ssh配下に移動します。
+$ mv ~/.Downloads/HogeKeyName.pem ~/.ssh/
+権限の変更をします。
+$ chmod 600 HogeKeyName.</description>
+    </item>
+    
+    <item>
+      <title>WordpressのEC2インスタンス内MySQLバックアップ</title>
+      <link>https://hugo.suwa3.me/post/2019-10-04-wordpress%E3%81%AEec2%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E5%86%85mysql%E3%82%92rds%E3%81%AB%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97/</link>
+      <pubDate>Fri, 04 Oct 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-04-wordpress%E3%81%AEec2%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E5%86%85mysql%E3%82%92rds%E3%81%AB%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97/</guid>
+      <description>WordpressのEC2インスタンス内にあるMySQLデータをバックアップします。
+MySQLのデータベースをmysqldumpでバックアップ/復元する方法
+上記を参考にして進めました。
+まずはEC2内に入りエクスポート
+$ mysqldump &amp;ndash;single-transaction &amp;ndash;databases [DB名] -u [ユーザー名] -p &amp;gt; /tmp/backup20191004.sql
+オプション解説
+--single-transaction
+データの整合性を維持する。ワントランザクションで作業を行う設定する
+--databases [DB名]
+DB名の指定
+-u [ユーザー名]
+ユーザー名の指定
+-p
+上で指定したユーザー名のパスワードを使用するオプション
+dumpファイルを取ることに成功しました！
+Next Step
+RDSを作成します。</description>
+    </item>
+    
+  </channel>
+</rss>

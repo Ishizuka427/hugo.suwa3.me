@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker-compose on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/docker-compose/</link>
+    <description>Recent content in docker-compose on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 27 Oct 2019 12:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>蕁麻疹Docker</title>
+      <link>https://hugo.suwa3.me/post/2019-10-27-%E8%95%81%E9%BA%BB%E7%96%B9docker/</link>
+      <pubDate>Sun, 27 Oct 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-27-%E8%95%81%E9%BA%BB%E7%96%B9docker/</guid>
+      <description>昨夜の帰宅後から急に蕁麻疹が全身に出てきて
+びっくりして、とりあえず眠りました。
+疲れていたのかなぁ。
+今日も日中は眠って
+午後から皮膚科に行ってきました。
+風邪で免疫力が落ちていたので
+蕁麻疹が出てしまったよう。
+内服薬を貰ったよ。
+夕方はスタバで少しだけ作業です。
+docker-compose.ymlについて。
+今まで結構誤解していた部分が多かったなぁ
+って反省です。
+流れとしては
+docker-compose.ymlで
+アプリケーションが使うミドルウェアの接続・起動をできるようにして
+その状態で
+Dockerfileを書き進めつつdocker buildでDocker imageをつくって
+docker-compose upしてDocker imageを元にコンテナをつくるの。
+$ docker-compose ps
+これでコマンドやState、Portsなどの確認ができるので
+errorが起きている場合は
+$ docker-compose logs &amp;lt; Name &amp;gt;
+などでlogを見て原因究明をしたり
+$ docker-compose run &amp;ndash;entrypoint /bin/sh &amp;lt; application &amp;gt;
+などでDocker内に入って実際にコマンドを打ってerrorログを読んだりすれば
+地道なerror潰し作業で
+Dockerfileを作りあげることが
+理論上は出来る。
+実際にはerrorログ読んでも
+訳分からんくて詰むの多々あるかんじなので
+わかりそうなひとにログとともに見せて教えを請う作業です。
+趣味鯖でDocker上にアプリケーションを構築する際
+動きそうなdocker-compose.ymlをgit cloneしてきて
+こんな感じでerrorログを見ながら
+ひたすら「わからん」と唱えていた記憶があったの。
+わからんまま構築できてしまったのだけれども。
+一度復習しようと思ってふむふむしていた。
+Dockerfile内のRUNとCMDの違いだとか
+docker-compose.ymlを書いたら
+ローカルで接続・起動の確認をするのか
+Docker上でそれらの確認をするのか
+そもそもDocker imageとは
+って、かなり初歩的なレベルで理解が浅かったなぁって気づけたの。
+適当にソースコードgit cloneして構築できてしまうの便利だけれども
+オリジナルの独自設定アプリケーションを動かせるような環境構築
+きちんと理解して進めないと難しいのだなと感じた。</description>
+    </item>
+    
+    <item>
+      <title>usermod/cronでdocker-compose</title>
+      <link>https://hugo.suwa3.me/post/2019-09-03-usermod-cron%E3%81%A7docker-compose/</link>
+      <pubDate>Tue, 03 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-03-usermod-cron%E3%81%A7docker-compose/</guid>
+      <description>本日のTODOリストです。
+ポートを変えるのは気休めだけれども、やってみたいなあと思います。
+ユーザー名を変えるのはできた！
+Linuxのユーザー名を変更する - そんなこと猫でもできる
+そんなこと猫でもできるらしい。
+うさぎでもできるかな。
+$ sudo docker-compose run &amp;ndash;rm web bundle exec bin/tootctl media remove &amp;ndash;days=25
+このコマンドをcronで実行しようとおもって調べた。
+# docker-composeコマンドについて
+- docker-compose.ymlがある場所で実行される
+- ファイルパス-fでdocker-compose.ymlがある場所を指定して実行させることも可能 （下記参照）
+$ 0 0 * * * docker-compose -f /******/*******/mastodon/docker-compose.yml run &amp;ndash;rm web &amp;hellip;..
+- rootのcrontabに設定する場合はsudoは不要
+- crontabは各ユーザーそれぞれにcrontabがある
+- rootになった状態で crontab -u（ユーザー名）のようにすれば、それぞれのcrontabを見ることができる
+- ユーザー名-uを指定しない場合は、今のユーザーのcrontabが表示される
+cron 3ステップ
+1.cronでやる前に手動で動くか確認。
+2.動いたらcronで毎分確認。
+3.動いたら定時で確認。
+最近、難しそうだなあってことでも
+「調べてやってみればできるのでは？」
+ってきもちになってきた。
+そして、案外やってみればできるということに気づいた。
+とにかくどんどん行動してみている。
+たのしいー
+ちなみにs3のビフォーアフターです！
+画像削除、成功です。やったねえ</description>
+    </item>
+    
+  </channel>
+</rss>

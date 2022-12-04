@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chrome%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3 on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/chrome%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3/</link>
+    <description>Recent content in chrome%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3 on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 07 Aug 2019 13:00:33 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/chrome%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rsyslog/拡張機能</title>
+      <link>https://hugo.suwa3.me/post/2019-08-07-rsyslog-%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD/</link>
+      <pubDate>Wed, 07 Aug 2019 13:00:33 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-07-rsyslog-%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD/</guid>
+      <description>朝からフラフラしていました😵
+立つと気持ち悪くなるの、貧血かなあとおもったけれども
+夏バテや疲れの蓄積もあるのでは
+と言われた。
+ふむ。
+横になると少しラクになって
+お昼過ぎにお粥を食べて
+Chromeの拡張機能を入れていたの。
+また気持ち悪くなり日中はほぼ横になって過ごしました。
+夜は、ほうれん草いっぱい食べたよ。
+そしたら元気が戻ってきたので
+何もしていないの不安になってきたのでぼちぼち作業しました。Ubuntuにrsyslogが入っていなかったので入れました。
+これでDockerがふわふわしても
+EC2に入れさえすればlogを見ることできるよ、やったあ。
+installは以下を参考にしました。https://www.rsyslog.com/ubuntu-repository
+.
+Chromeの拡張機能について
+翻訳やメモ、Evernoteの拡張機能なんかは入っていたけれども
+@女子部の問題解決能力高い先輩が拡張機能を色々と入れているのをみて
+いいなあーーとおもい真似しました。
+便利そうなのを幾つか調べたよ。
+.
+中でも使えそうだなとおもったのが
+Back menu for Google
+Googleの機能が使えるの
+ページを開きながら
+気になった単語をサッと調べられるの良いなとおもい導入しました。</description>
+    </item>
+    
+    <item>
+      <title>postgreSQLなど</title>
+      <link>https://hugo.suwa3.me/post/2019-08-06-postgresql%E3%81%AA%E3%81%A9/</link>
+      <pubDate>Tue, 06 Aug 2019 13:00:33 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-06-postgresql%E3%81%AA%E3%81%A9/</guid>
+      <description>Chromeの拡張機能でEvernote Webクリッパーを登録し
+Evernote経由で、PCとスマホ間の画像の連携をはかろうと思いついたのだけれども
+Webクリッパーでスクショできるのはブラウザ内だけなの。
+ターミナルやエディタのスクショはできないらしい。
+び、びみょう……
+とりあえずWeb閲覧時のmemo用だなあ。
+.
+お昼休みはcronの修正をしておわりました。
+cronの設定自体は難しくないことはわかったのだけれども
+その中のDockerコマンドがややこしいの。
+要復習だなあ。
+.
+夕方はHomebrewでpostgreSQLのinstallをしました。
+blogは下記を参照。
+macOs Sierra + homebrewな環境でPostgresqlを導入する備忘録
+後半のパス設定は要らなそうだったので、とりあえず触らず。
+.
+そういえば@女子部でターミナル半透明率かなり高くて
+真似してみたの、壁紙の色も相まって涼しげになった。
+帰りの移動時間は電車内でPythonの動画を観ていました。
+以前スクレイピングの本を読みながら書いた時もあったけれども
+もう一度きちんと基礎からやろうとおもいます。
+ザーッと読んでバババと書いて
+またスクレイピングと機械学習の書籍を参考書として
+手を動かすことで慣れたい。</description>
+    </item>
+    
+  </channel>
+</rss>

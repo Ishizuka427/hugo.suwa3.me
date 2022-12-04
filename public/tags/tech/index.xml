@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/tech/</link>
+    <description>Recent content in Tech on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 14 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Display Playing emacs in Discord</title>
+      <link>https://hugo.suwa3.me/post/2022-08-14-display_playing_emacs_in_discord/</link>
+      <pubDate>Sun, 14 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2022-08-14-display_playing_emacs_in_discord/</guid>
+      <description>Requirements Discord client app is installed.
+If you normally use it in a browser, you need to install it. Install elcord from MELPA https://github.com/Mstrodl/elcord
+M-x package-list-packages
+→ Select and install elcord
+init.el Example
+;;; Display &amp;#34;Playing emacs&amp;#34; in Discord (add-to-list &amp;#39;load-path &amp;#34;~/.emacs.d/elpa/elcord-20220723.33/&amp;#34;) (require &amp;#39;elcord) Discord-side settings User Settings &amp;gt; Game activity &amp;gt; Add it!
+Specify Emacs.
+Done! </description>
+    </item>
+    
+    <item>
+      <title>How to set the text color and text foreground color in Emacs org-mode</title>
+      <link>https://hugo.suwa3.me/post/2022-06-09-how_to_set_the_text_color_and_text_foreground_color_in_emacs_org-mode/</link>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2022-06-09-how_to_set_the_text_color_and_text_foreground_color_in_emacs_org-mode/</guid>
+      <description>Background I wanted to change the text and background colors in Org-mode. I have changed the Markdown text and background colors before. So I tried to remember how to do that, but I forgot, so I looked it up.
+This blog is a reminder.
+This is Org-mode before the change.
+The color of the level 1 headline is red, and the color of the level 2 headline and link is the same blue.</description>
+    </item>
+    
+    <item>
+      <title>Install iedit</title>
+      <link>https://hugo.suwa3.me/post/2022-05-25-iedit/</link>
+      <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2022-05-25-iedit/</guid>
+      <description>What is iedit? https://github.com/victorhge/iedit
+Tools for Bulk Editing
+Install M-x package-list-packages
+→ Select and install iedet
+init.el ;;iedit (add-to-list &amp;#39;load-path &amp;#34;~/.emacs.d/iedit&amp;#34;) (require &amp;#39;iedit) How to use Press C-; at the point where you want to edit the batch. (It&amp;rsquo;s default key bindings.)
+Then you will be in edit mode, and when you are done modifying, C-; again to finish editing.
+Note At first, I didn&amp;rsquo;t know how to use it. But I found it very useful to see what is going on in real time by looking at the *Messages*.</description>
+    </item>
+    
+    <item>
+      <title>make a list</title>
+      <link>https://hugo.suwa3.me/post/2022-04-10-make_a_list/</link>
+      <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2022-04-10-make_a_list/</guid>
+      <description>I have been very busy lately. Therefore, I couldn&amp;rsquo;t write my blog. Finally, now that my busyness has calmed down, I would like to spend my weekends posting blogs and catching up on technology.
+I updated my MindMap. I made a list of technologies I want to know about. (by Notion) I started living with a dog last month. He is a puppy, but he will be quite large. The house I live in now allows dogs.</description>
+    </item>
+    
+    <item>
+      <title>kafka on Docker</title>
+      <link>https://hugo.suwa3.me/post/2022-02-20-kafka_on_docker/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2022-02-20-kafka_on_docker/</guid>
+      <description>Kafka on Docker なんだか二度目な気がするけれど気のせいです
+docker-compose.yml version: &amp;#34;3&amp;#34; services: zookeeper: image: confluentinc/cp-zookeeper:5.5.1 hostname: zookeeper container_name: zookeeper ports: - &amp;#34;32181:32181&amp;#34; environment: ZOOKEEPER_CLIENT_PORT: 32181 ZOOKEEPER_TICK_TIME: 2000 broker: image: confluentinc/cp-kafka:5.5.1 hostname: broker container_name: broker depends_on: - zookeeper ports: - &amp;#34;9092:9092&amp;#34; - &amp;#34;29092:29092&amp;#34; environment: KAFKA_BROKER_ID: 1 KAFKA_ZOOKEEPER_CONNECT: &amp;#34;zookeeper:32181&amp;#34; KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:29092,PLAINTEXT_HOST://localhost:9092 KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1 CONFLUENT_SUPPORT_METRICS_ENABLE: &amp;#34;false&amp;#34; cli: image: confluentinc/cp-kafka:5.5.1 hostname: cli container_name: cli depends_on: - broker entrypoint: /bin/sh tty: true networks: default: external: name: iot_network そういえば、先日知ったのですが！docker-compose コマンドが、Docker CLI にサブコマンド compose という形で実装されて docker compose ps ができるようになったらしいです。Usage を見ると docker-compose のほうが少しだけ Options の種類が多そうに見えるのですが、docker-compose で非推奨のものはわざわざ実装しないという方針のよう？</description>
+    </item>
+    
+    <item>
+      <title>Looking back at 2021</title>
+      <link>https://hugo.suwa3.me/post/2021-12-26-looking_back_at_2021/</link>
+      <pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-12-26-looking_back_at_2021/</guid>
+      <description>2021の目標 昨年(2020年)の振り返りです。
+A look-back 2020
+2021年の目標は「体力づくり」でした。
+2021年の半ばから週に2〜3日出社するようになったため、体力はついたかなと思います。
+技術系イベント＆BLOG 以前は入門だったりハンズオンだったりのイベントに「広く浅く、とにかくたくさん！」という気持ちで参加していたのですが、だんだん専門的な内容を扱うようになるにつれて参加したい技術イベントの種類が減ってきたように感じます。
+Kubernetes Middle Way
+ふわっとしていた Kubernetes のネットワークについて、流れを把握することが出来ました。 Zapier
+日常生活での課題を解決したい！→技術選定→設計→実装→試験→新たな課題
+一連の流れを一つの BLOG でまとめることができました。
+メール送受信の仕組みとプロトコルについて、学ぶモチベーションのきっかけになりました。 Customize my Terminal
+バルタン星人にハマってターミナルに表示させてみました。 Contribute Anniversary
+初めて OSS に PR を出して merge され、晴れて contributor になれました。
+2021年で一番うれしかったです。 Django forms
+久しぶりに Django Girls へ参加してきました。
+チュートリアルの翻訳作業をもくもくとこなしました。
+「何故スタッフとして参加するのか」ということを言語化できたので良かったです。 他には、Netlify 上でホスティングしていた当 BLOG を Vercel▲ に移行したり、Emacs の理解を深めるために Lisp 入門したりしました。
+読んだ書籍 ITと数学
+データをもとにして予測をたてていく行為を、ノートの上で数式をもちいて行うための本でした。例えば、一年間の月別平均気温のグラフを四次関数で仮定します。そこから、最小二乗法で誤差を小さくしていくために紙に数式を書いて実際に解いていきました。また、パラメータの値を求めるために、偏微分や合成関数だとかの公式を思い出しつつ解いていきました。
+わたしにとって数学は現実逃避のための道具でしたが、数学を現実に役立てるために使う初めての経験でした。(本当に悲しいことがあったときは、読書をするより数学に没頭するほうが現実からより離れることができると感じます。)
+後述する転職活動が思いのほか難航してつらかったので、この書籍で数式を解きながら現実逃避していました。
+転職活動 転職活動、はじめはグダグダでした。
+エージェントに登録してみたのですが
+「とりあえず練習だと思って、多少興味の方向性が違っても面接を受けてみてください」
+というアドバイスの通りに、何社か受けてみました。そして、興味がないので明らかに顔と態度に出てしまい、企業側も
+「エージェント経由ということは何社か受けているとは思うのですが、その中で弊社を選んだ理由は何ですか？」
+といった内容で質問をしてくるのですが、正直(うーん、何でだろう？)という気持ちで答えるので、まったく的を得ない回答しかできずに相手を困惑させたと思います。
+そういった面接を50社近く受けました。だんだんと、面接する企業側に対して失礼だし、申し訳ないという気持ちが大きくなり、また(エージェントの『数を撃てば当たる』の転職方法は、わたしに向かないのでは・・)と、感じ始めたため、一旦エージェントを使わずに転職活動をしてみることにしました。
+「本当に転職したい」
+と心から思う、IT企業のSRE職に2社応募した結果、2社ともスムーズに内定を貰うことが出来ました。ここから得た教訓は、おそらく自分が思っている以上に、自分の本音が顔と態度にでるということでした。
+うそをつくことが苦手で、本音と建前を使い分けることが下手な人間は、常に人様にバレても問題のないような本音で生きたほうが、生きやすいと思います。普段の小さな考えごとでも、人が見ていないような場でも、恥ずかしくない生き方をしたいと思いました。</description>
+    </item>
+    
+    <item>
+      <title>Getting Started in lisp</title>
+      <link>https://hugo.suwa3.me/post/2021-12-19-getting_started_in_lisp/</link>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-12-19-getting_started_in_lisp/</guid>
+      <description>なぜ Lisp に入門したのか もともと Emacs の設定をするときに 「おおもとである Lisp の言語設計の思想を少しでも理解することで Emacs の設定にいかせるのでは？」 というモチベーションで、Lisp について調べていた。
+例えば、leaf みたいなパッケージ管理を使うと、本来なら自分で制御できる範囲の根っこの部分が他人依存になってしまうから使わないようにしていこうと考えた。
+ただ、そもそもその判断に妥当性があるのかイマイチ自分自身で納得できなかった。どこまでを自分で制御可能な射程距離だと考えるのかにもよるのかもしれない。
+調べていくなかで Lisp の言語設計の思想が Emacs の設計思想に影響を与えているように感じた。本体を小さくして必要に応じてモジュールを追加していく、そのモジュールも自分自身で実装していく(それが簡単にできるようになっている)といった価値観なんだなぁと思った。
+わたしは、機能性の高いペン立てが欲しくて探したけれども、どれも自分の欲しい機能を満たしていないし、そもそも将来的にどういった機能が欲しくなるかも未知数で
+「長く使いたいからこそ、最小構成で尚且つ拡張性の高いペン立ては存在するのか？」
+と考えたときに、レゴブロックでペン立てを作れば良いと思った。
+探したら、実際にレゴでペン立てを作る人たちは一定数いた。
+きっと彼らは Lisper ないしは、その価値観に共感する可能性の高い潜在的 Lisper なのかもしれない(？)
+入門してみて とりあえず近所の本屋に行って、検索機で「Lisp」と入力して、出てきた本を買って入門してみた。
+「括弧がそのまま構文木を表現している」と知ったときは、確かにそうだわ、そのまま図になる！と感動した。これは図で理解するタイプには分かりやすそう。
+演算式であっても前置記法という部分で「アセンブリもそうだったな」と思い出して、リストのメモリ配置の部分では「アセンブリでは自分でやらんといけんかったわ……」と、思い出した。普段コードをあまり書かないので、比較対象がOS自作のさいに触ったアセンブリ言語になってしまう。
+全体的にシンプルで入門向きな言語だと感じた。これで Emacs の設定も捗ると良いなぁ。(捗るのか？)</description>
+    </item>
+    
+    <item>
+      <title>Emacs etc</title>
+      <link>https://hugo.suwa3.me/post/2021-12-11-emacs_etc/</link>
+      <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-12-11-emacs_etc/</guid>
+      <description>emacs_卒leaf 使っている package の整理
+leaf とは: Homebrew みたいな感じ
+elpa (Emacs Lisp Package Archives)
+→ emacs 内で使われているパッケージを管理 これからは: use-package.el を使う 今後 github からのパッケージを入れる場合は？
+→ quelpa &amp;amp; quelpa-use-package を検討する
+使っている package 名一覧 (leaf leaf-keywords :ensure t :init (leaf hydra :ensure t) (leaf el-get :ensure t) (leaf blackout :ensure t) (leaf terraform-mode :ensure t) (leaf gfm-mode :ensure t) (leaf markdown-mode :ensure t) :config ;; initialize leaf-keywords.el (leaf-keywords-init))) ;;残り - Ivy - swiper - counsel - prescientc - ivy-prescient 今後も使うかどうか検討して必要なら入れる</description>
+    </item>
+    
+    <item>
+      <title>Try kafka</title>
+      <link>https://hugo.suwa3.me/post/2021-12-05-try_kafka/</link>
+      <pubDate>Sun, 05 Dec 2021 13:00:27 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-12-05-try_kafka/</guid>
+      <description>Kafkaとは ナンジャラホイから始まったので調べました。
+Kafka on Docker ざっくり概要を掴んだら Docker で試します。なんか local で試すの重そうだな、環境汚しそうだな・・と感じたら、とりあえず Docker で試せるか調べるとだいたいある。　リポジトリ: https://github.com/wurstmeister/kafka-docker
+チュートリアル: http://wurstmeister.github.io/kafka-docker/
+docker-compose.yml の書き換えなどが必要なので、本家をフォーク&amp;amp; clone して使うのが良さそう。 Kafka 完全に理解したｸﾏ-ʕ•ᴥ•ʔ</description>
+    </item>
+    
+    <item>
+      <title>Django forms</title>
+      <link>https://hugo.suwa3.me/post/2021-11-28-django_forms/</link>
+      <pubDate>Sun, 28 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-11-28-django_forms/</guid>
+      <description>Django Girls https://djangogirls.org/
+Python フレームワークである Django を題材に、女性や性的マイノリティーなどテクノロジーの知識習得に壁を感じる方々を対象にワークショップを開いている慈善団体です。
+コロナ以前は月イチ開かれるハンズオンにて Teaching Assistant として参加していました。(コロナでしばらく活動がなかったのだけれども、)最近小さなもくもく会があったので参加してきました。
+主に Django Girls チュートリアルのDjangoフォーム部分の翻訳作業をしました。
+チュートリアルは何度かやっているけれども、「ここって結局何がしたいんだっけ？」というところや「ここの考え方はどう翻訳(意訳)したら伝わりやすい？」など、つど悩みながらだったので思いのほか時間がかかりました。他のスタッフの方に相談しながら最後まで進められました。
+なぜやるのか Wantedly みたいやな！
+実際、女性向けの開発コミュニティは結構存在している。PyLadies や Java女子部、Women Who Go Tokyo etc..
+「スタッフとして参加したい」
+と、強く思ったのは Django Girls で、その理由は
+コミュニティの理念として門戸の広さを感じた 自分がやりたいことにちかいなぁと感じた というのが大きかったからかもしれない。
+他のコミュニティは、ある程度の前提知識がある女性向けだなぁと感じたのだけれども、Django Girls では
+「ファイルとディレクトリの違いって何？」
+だとか
+「ターミナルとは？」
+とか
+「PC の中の『仮想環境』という意味がどうしても納得できない」
+だとかの、参加者ひとりひとりの疑問に向き合いながら、スタッフたちで説明を試みたり一緒に考えたりする。
+地方に住む学生だった頃
+「エンジニアになりたい」 という意思はあれど、上京を反対されたり、地方に未経験者OKのエンジニア求人が無かったりした。そして、エンジニアと交流できるようなコミュニティも見つけられなかった。
+もし、当時の自分と同じような立場の学生や女性がいたら、そういった人たちの小さなきっかけになるようなコミュニティがあればなぁ・・
+と、考えたときに、そのコミュニティ像に一番近いと感じたのが Django Girls でした。
+女性や性的マイノリティーなどテクノロジーの知識習得に壁を感じる方々を救いたいのであれば、NPOだとか、未経験者向けのエンジニア養成学校のようなサービスも多くある。
+ただ、個人的に、エンジニアの「習得した知識をコミュニティを通して共有していく」という文化がとても好きで、わたし自身も Django Girls に参加することでたくさん学ばせてもらって感謝しているので、その恩返しのつもりでスタッフとして貢献していけたら良いのかなぁと思いました。
+色々と堅苦しく考えてしまいがちだけれども、肩の力を抜きつつコミュニティでの出会いを楽しみながら活動していきたいです。</description>
+    </item>
+    
+    <item>
+      <title>Git Large File Storage (LFS)</title>
+      <link>https://hugo.suwa3.me/post/2021-11-27-git_lfs/</link>
+      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-11-27-git_lfs/</guid>
+      <description>Hugo の画像をどこで管理するかの検討 候補
+Git Large File Storage (LFS) Git LFS で画像データなどを管理する際のイメージが湧いていないので調査して整理する
+https://git-lfs.github.com/ AWS S3 きっかけ Hugo on Vercel で blog を投稿した際に、記事内でつかっている画像 image が build 時大量に up されていて build が重いので何とかしたいと思いました。そもそも バイナリデータを大量に git で管理したくないなぁということで、いくつか候補を挙げて調査してみることにしました。
+候補1: Git Large File Storage (LFS) って何だろう Git で画像や動画のような大きなファイルを別サーバーに分けて管理する方法があるらしい？ということで、どういった構成でデータをもつことになるのかザックリ調べました。
+文字で読んでもサッパリ分からんだったので図で整理しました。
+ローカルで blog(Markdown) を編集して Github に push する push の直前に該当の画像ファイルなどは LFS API を通して Git Large File Storage にアップロード される (Github には画像のオブジェクトハッシュやファイルサイズなどのメタ情報のみ保存される) (text pointer から実体が紐付くイメージで構成図を書いたけど逆にややこしい図になっているな・・) Markdown で書かれた blog text と、Git Large File Storage が vercel に(たぶん)アップロードされる vercel 上で hugo の build によって html に変換される → その際に画像ファイルも都度アップロードされる〜〜〜 ここまで考えて「あれ？LFSで速度改善されないのでは？？」と、気づきました。気づいてよかったし、着手前にきちんと調査詰めて要件を満たしているか確認するの大事だなと思いました。</description>
+    </item>
+    
+    <item>
+      <title>Contribute Anniversary</title>
+      <link>https://hugo.suwa3.me/post/2021-11-25-contribute_anniversary/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-11-25-contribute_anniversary/</guid>
+      <description>Contribute Anniversary 先日、初めて OSS に PR を出して merge され、晴れて contributor になれたため経緯を書いていきたいと思います。
+該当 PR:
+https://github.com/kubernetes-sigs/kubespray/pull/8224
+経緯 ansible-playbook を実行したら「設定値が適切でないよ」と Error が出たので、Github で PR や issue を眺めて原因を探していました。見慣れたアイコンがあるなぁと思ったら、なんと職場の上司がそのソースコードに対して PR を出していて、わたしの Error 箇所である「適切ではない設定値」が merge されていました。
+何よりもまず「わたしの上司コントリビューターなの？！」ということに驚きました。「Error 箇所を特定していたら上司を見つけたよ！すごい！」と、上司へ報告をしに行ったところ、上司は
+「この設定で Error したの？もしバグだったら自分の修正が世界中のユーザーに迷惑をかけることになる・・どうしよう」
+と落ち込んで(？)いて、確かにそうだな・・大変そう・・と思いながらも
+「じゃあこの Error の原因調べるのお願いしますね」
+と、丸投げして一週間くらい放置していました。
+もし仮に修正が必要なバグがあったとしても、わたしじゃ恐らく原因を突き止められないしなぁという気持ちもありました。
+何の音沙汰もなく一週間経ち
+(世界中の人が使っているツールのはずなのに、わたし以外誰も何も文句を言ってこない。おかしい)
+と、流石に上司のせいではなく、自分の環境が悪いのだろうなと思い調査してみることにしました。
+該当箇所についてドキュメント内を調べたところ「設定値が適切でないよ」と警告が出ていた箇所とは、また別の設定値が出てきました。具体的には、上司が indentfirst=None と設定してたところは first=False と設定するように書かれていました。あれ？やっぱり上司は世界中の人に迷惑をかけているのかな？と不安になりながらも、それらパッケージのおおもとのソースコードを見てみることにしました。
+すると、以下のことが分かりました。
+現行バージョンでは indentfirst=None、新しいバージョンでは first=False と指定されている indentfirst=None は次期バージョンで Error になるため Warning である 現行バージョンでも first=False の設定を使うことができる つまり、わたしの環境のパッケージのバージョンが一つ飛び抜けて高くなっていて(requirement.txt で様々なパッケージの推奨バージョンは指定されていたのに、どんな構築をすればそうなるんだ？)それが原因で今回の Error が引き起こされていました。上司は世界中の人に迷惑をかけておらず、わたしが自分で掘った穴に勝手に落ちている状態でした。
+パッケージのダウングレードをすれば大丈夫そうということが分かったので、これで調査を切り上げようかと思いましたが、上司の出した PR を参考にして少し頑張ればわたしも今回の内容で PR を出せるのでは？と気づきました。</description>
+    </item>
+    
+    <item>
+      <title>Configure init.el so that twilight-bright-theme works</title>
+      <link>https://hugo.suwa3.me/post/2021-11-21-configure_init.el_so_that_twilight-bright-theme_works/</link>
+      <pubDate>Sun, 21 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-11-21-configure_init.el_so_that_twilight-bright-theme_works/</guid>
+      <description>Theme の設定が効いていない emacs のバージョンを上げてから Theme が効いていない Error を放置していたので何とかしました。ちなみにこの Error を解消したら Theme より下に設定されていたものたちが全て効くようになりました。今回の件で、Error は早めに摘もうという気持ちになりました。
+修正箇所 これは emacs のバージョンを上げるたびに起こりうる Error のため、忘れないように手順を残しておきます。
+emacs version: 27.2
+修正前の init.el
+;; Theme (leaf twilight-bright-theme :ensure t) (require &amp;#39;twilight-bright-theme) (load-theme twilight-bright t) 修正後の init.el
+;; Theme (leaf twilight-bright-theme :ensure t) (require &amp;#39;twilight-bright-theme) (setq custom-theme-directory &amp;#34;~/.emacs.d/elpa/twilight-bright-theme-20130605.843/&amp;#34;) (load-theme &amp;#39;twilight-bright t) &#39;twilight-bright-theme から Tag jump して /elpa 配下で設定しているフルパスを入手する ※ alt + . setq custom-theme-directory で、1で入手したフルパスを指定する twilight-bright の先頭にシングルクォートを付けてシンボルにする あとは ;; Theme 以下を上から一行ずつ eval して表示を確認していく</description>
+    </item>
+    
+    <item>
+      <title>css test</title>
+      <link>https://hugo.suwa3.me/post/2021-11-14-css_test/</link>
+      <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-11-14-css_test/</guid>
+      <description> test1 test2 *[ ] test3 *[ ] test4
+test5 test6 aaa bbb </description>
+    </item>
+    
+    <item>
+      <title>Fix checkbox</title>
+      <link>https://hugo.suwa3.me/post/2021-11-14-fix_checkbox/</link>
+      <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-11-14-fix_checkbox/</guid>
+      <description>暫定対処 https://github.com/zwbetz-gh/papercss-hugo-theme
+hugo の上記 Theme で、Markdown の チェックボックス表記が崩れている状態だった。
+custom.css に以下の修正を加えることで解消した。
+ul li input { display: inline; } ただ、この修正は根本的な解決にはならない。修正の影響範囲が大きくなってしまうため、予期せぬところでまた表記が崩れる可能性が出てくる。
+根本解決への道筋(仮) class 属性を付与してそれぞれ表記を指定する → 修正箇所が増えるけれど影響範囲は小さい hugo の Markdown レンダリングエンジンについて調査する → 大変 良い機会なので、hugo の Theme を何か作ってみたいなぁと思いました。
+郷に入っては郷に従え https://github.com/zwbetz-gh/papercss-hugo-theme/blob/master/static/css/paper.css#L745-L781
+「ul li xx の場合は」
+ul, li, xx, など、それぞれの場合について細かく指定しているようなので暫定的な対処で良さそう。
+issue&amp;amp;PR 作成の準備_TODO わたしは手元で既に custom.css に変更を加えてしまっている。
+papercss hugo theme を使用して最小構成で作成しなおす 同様の表記崩れがあることを確認する スクショを作成して、暫定対処の内容で issue&amp;amp;PR 作成 感想 hugo のレンダリングエンジンに手を加えるというのは Theme の世界から外れて hugo の修正になってしまう。まずは Theme の中で完結する(つまり暫定対処の)修正をせざるを得ないのかもしれない。
+ただ暫定的な対処の場合だと hugo 内で Markdown を表記させる場合には妥当だけれども、Org-mode からリスト表示させる場合は &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt; で行っているようだった。つまり Org-mode から表示させたときに、この修正は効かなくなってしまう。</description>
+    </item>
+    
+    <item>
+      <title>don.suwa3.me_2nd</title>
+      <link>https://hugo.suwa3.me/post/2021-11-07-don_suwa3_me_2nd/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-11-07-don_suwa3_me_2nd/</guid>
+      <description>さくらのVPS 何台もポコポコ建てる気はないので1台分の「さくらのVPS」に登録
+- [x] さくらのVPSに登録 CPU: 仮想2Core メモリ: 1GB SSD: 50GB 勘でこのスペックにしたけど多分足りない。
+おそらく build で失敗するし、力技で構築できたとしても実運用はできなさそう。(メモリ不足で落ちる)
+足りなくなったらサーバースペック上げれば良いか！
+構築しながら Ansible 書いてしまおう。がんばろう。
+スタートスクリプト Mastodon | さくらのクラウド ドキュメント
+Mastodon の構築を一発でやってくれるスクリプトがあるらしい。
+楽チンで良いなーと思ったけれど、運用中にどこで何の設定しているのかわからなくなりそうなので、さくらのスタートスクリプトは使わないことにしました。
+設定時にドキュメントと合わせてTODOリストとして使う。
+設定済みリスト 主にセキュリティ周りの設定 - [x] ssh 鍵の設定 - [x] id, pass でのログインを許可しない - [x] 作業用ユーザーを作成して sudo 権限を付与 - [x] デフォルトユーザーを削除 - [x] port の変更 (/etc/ssh/sshd_config) - [x] ufw の設定 - [x] さくらでパケットフィルタの設定解除 EC2 のときは稼働時間に応じて課金だったので、構築中の使わないときはサーバーを落としていた。 さくら VPN は定額？っぽいので落とさなくても良さそう。踏み台にされたくないので最低限の設定はしておく。。
+※ログイン試行の log を見やすくするために port の変更もしておく
+その他の設定 - [x] ~/.</description>
+    </item>
+    
+    <item>
+      <title>Change Theme and Font</title>
+      <link>https://hugo.suwa3.me/post/2021-10-10-change_theme_and_font/</link>
+      <pubDate>Sat, 09 Oct 2021 13:00:27 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-10-10-change_theme_and_font/</guid>
+      <description>hugo でフォントの編集 だいたい assets/css の下に custom.css がある。
+https://github.com/zwbetz-gh/papercss-hugo-theme/blob/master/assets/css/custom.css
+使いたいフォントの選定
+日本語の手書き風のやつ
+https://fonts.google.com/specimen/Yomogi#standard-styles
+@import url(https://fonts.googleapis.com/css?family=Yomogi); body { background-image: url(&amp;#39;{{ &amp;#34;img/geometry2.png&amp;#34; | relURL }}&amp;#39;); font-family: Neucha,Yomogi,sans-serif; } /* font */ tr { font-family: Neucha,Yomogi,sans-serif } p { font-family: Neucha,Yomogi,sans-serif } a { font-family: Neucha,Yomogi,sans-serif } h1,h2,h3,h4,h5,h6 { font-family: Neucha,Yomogi,sans-serif } th,td { font-family: Neucha,Yomogi,sans-serif } ↑年に2回くらいしかcss書かないから覚え書き。
+かなりクセ強めになったけどプライベートなBlogなので良し！</description>
+    </item>
+    
+    <item>
+      <title>testing</title>
+      <link>https://hugo.suwa3.me/post/2021-07-12-testing/</link>
+      <pubDate>Mon, 12 Jul 2021 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-07-12-testing/</guid>
+      <description>test</description>
+    </item>
+    
+    <item>
+      <title>Hacker Rank</title>
+      <link>https://hugo.suwa3.me/post/2021-06-26-hackerrank/</link>
+      <pubDate>Sat, 26 Jun 2021 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-06-26-hackerrank/</guid>
+      <description>諸事情あり Hacker Rank の Bash 試験の練習問題を解きました！
+いろいろあって悲しかったので、昇華するための output です。
+Linux Shell/Bash Let&amp;rsquo;s Echo Write a bash script that prints the string &amp;ldquo;HELLO&amp;rdquo;. echo &amp;#34;HELLO&amp;#34; Looping and Skipping Your task is to use for loops to display only odd natural numbers from 1 to 99. for i in {1..99} do if [ $((i % 2)) = 1 ] then echo $i fi done Looping with Numbers Use a for loop to display the natural numbers from 1 to 50.</description>
+    </item>
+    
+    <item>
+      <title>Customize my Terminal</title>
+      <link>https://hugo.suwa3.me/post/2021-05-03-customize_my_terminal/</link>
+      <pubDate>Mon, 03 May 2021 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-05-03-customize_my_terminal/</guid>
+      <description>GWだしターミナルのカスタマイズしたい！
+ということで、いじってみました。備忘録です。
+環境 macOS Catalina zsh 最終形態 /etc/zshrc
+source ~/.git-prompt.sh # Prompt option display settings GIT_PS1_SHOWDIRTYSTATE=true GIT_PS1_SHOWUNTRACKEDFILES=true GIT_PS1_SHOWSTASHSTATE=true GIT_PS1_SHOWUPSTREAM=auto # Default prompt setopt PROMPT_SUBST ; PS1=&amp;#39;💠 %F{cyan}%n@%m%f: %F{white}%~%f %F{red}$(__git_ps1 &amp;#34;(%s)&amp;#34;)%f \$ &amp;#39; # 表示 💠 suwa3@mbp-local: ~/Ishizuka427/ (master=) $ デスクトップの背景にはM78星雲を設定し、ターミナルの背景を半透明にしてうっすらと見えるようにしてあります。非常にエモいですね。
+制御文字で、ターミナルを起動するたびにバルタン星人が出現するようにしました。これでリモートサーバーと間違えません。
+プロンプト 表示させたいもの
+ユーザー名 ホスト名 カレントディレクトリ 現在のブランチ名 プロンプト部分の表示が長くなると入力できる長さが短くなってしまうので、入力部分のみ改行して表示させたい。
+パラメータ 出力内容 %n ユーザー名 %m ホスト名 %~ カレントディレクトリ ※ブランチ名については後述します
+シンプルに書くとこんな感じ
+PS1=&amp;#39;%n@%m: %~ %#&amp;#39; # 表示 ユーザー名@ホスト名: ~/Ishizuka427 % 色をつける %F{色}文字列%f
+ユーザー名、ホスト名の部分をcyan色にしてみます。
+%F{cyan}%n@%m%f black, red, green, yellow, blue, magenta, cyan, white の7色から選んで指定できます。</description>
+    </item>
+    
+    <item>
+      <title>Zapier</title>
+      <link>https://hugo.suwa3.me/post/2021-05-01-zapier/</link>
+      <pubDate>Sat, 01 May 2021 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-05-01-zapier/</guid>
+      <description>前提 プライベートのメールはYahoo!メールを長いこと愛用しているのですが
+「このメールの、この内容は見落としたくないからDiscordに転送したいなぁ」
+という思いがあり、ツールを使ってbotを作ってみることにしました。
+トリガー: 任意のメールが届いたら
+アクション: Discordに通知と内容が飛ぶ
+ツール選定 候補
+Zapier(有料あり) IFTTT(無料) Zapierについて Free プランの内容をザックリ
+100タスク/月 アプリケーションは5個まで 15分の制限あり シングルステップのみ 有料なら即却下だったけれども、要件としてはFreeで十分OKそうだったのでZapierに決めました。
+実装 Email Parser by Zapier で MailBox を作成(xxx@robot.zapier.com) Yahoo!メール側で転送設定をする Yahoo!メール側で xxx@robot.zapier.com を連絡用メールアドレスとして登録する Zapier の Trigger 設定で Email Parser by Zapier にて作成した MailBox に届くメールを取得する Zapier の Filter 設定で Subject や Body に含まれる任意の Text(単語)を登録してメールを絞り込む Zapier の Action 設定で Discord のサーバー#Channel に届くよう設定する →とりあえず動いたが課題あり
+課題 Yahoo!メールの仕様で、自動転送されたメールはYahoo!メールのメールサーバーに残らない。→残したい
+勘で試験を実施したらエラいことになったので試験設計はしっかりやる
+次回 ZapierからIMAP by Zapier Integrationsを利用して、Yahoo!メールのメールサーバーへ任意のメール情報を取りに行けないか。
+設計、実装まで行う。
+感想 メールってめちゃくちゃ古典的という印象だけれども、実はシンプルで扱いやすいのかなぁと感じました。</description>
+    </item>
+    
+    <item>
+      <title>Remote Emacs</title>
+      <link>https://hugo.suwa3.me/post/2021-03-13-remote_emacs/</link>
+      <pubDate>Sat, 13 Mar 2021 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-03-13-remote_emacs/</guid>
+      <description>Emacs 奮闘記 🌟 ゴール リモートサーバー上に、local にあるような Emacs 環境をつくりたい == 経緯 == リモートサーバー上に local で動いている spacemacs (emacs の設定群)の init.el を、そのまま貼ってみた。
+＿人人人人人人人人人人＿
+＞　まともに動かない　＜
+￣Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^￣
+素の Emacs だと動く・・。
+これを機に、卒spacemacs してプレーンな Emacs をカスタマイズしていきたいと思います！ 設定したものたち leaf
+スタンダードな設定と、ミニバッファの補完パッケージを入れました。
+(参考: https://emacs-jp.github.io/tips/emacs-in-2020)
+ssh
+多段 ssh できるように設定する。
+※ Trump を使って ssh 接続する際に踏み台を使う場合は、先に ~/.ssh/config の設定をしてしまうほうがラク。
+# Gateway host XXXX HostName XXX.XX.X.XX User hoge # RemoteHost-out Host YYYY HostName YY.YYY.YY.YY User huga ProxyCommand ssh -W %h:%p XXXX Trump
+デフォルトで入っているみたいなので特に設定はなし C-x C-f /ssh:huga@YYYY:/home/huga</description>
+    </item>
+    
+    <item>
+      <title>Evernote to Markdown</title>
+      <link>https://hugo.suwa3.me/post/2021-03-06-evernote_to_markdown/</link>
+      <pubDate>Fri, 05 Mar 2021 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-03-06-evernote_to_markdown/</guid>
+      <description>Evernote to Markdown ここのREADME.mdの通りに実行したらできました。
+https://github.com/wormi4ok/evernote2md
+今回はDockerを使ってみました🐳
+※バージョンが19系だったので最新の20系にUpdateしました
+Evernoteのエクスポートファイル.enexを.md形式に変換 先にEvernoteの記事をExportしておきます
+ノートをエクスポートする – Evernote ヘルプ＆参考情報
+% mkdir exports % mv ~/Downloads/Mynote.enex . % docker run -t --rm -v &amp;#34;$PWD&amp;#34;:/tmp -w /tmp wormi4ok/evernote2md:latest exports/Mynote.enex ./notes Unable to find image &amp;#39;wormi4ok/evernote2md:latest&amp;#39; locally latest: Pulling from wormi4ok/evernote2md ba3557a56b15: Pull complete 2c339f1d5460: Pull complete Digest: sha256:e4d5eb9715f4a8b096e58c393a227f88d3c79fcecb2d2d0da33b0e9c7f0561b2 Status: Downloaded newer image for wormi4ok/evernote2md:latest Notes: 5 / 5 [===========================================================================================] 100.00% 0s Done! あるか確認
+notes % ls Evernote_blog.md	Shell_Script.md	purpose_of_the_week.</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Middle Way</title>
+      <link>https://hugo.suwa3.me/post/2021-01-24-kubernetes_middle_way/</link>
+      <pubDate>Sun, 24 Jan 2021 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-01-24-kubernetes_middle_way/</guid>
+      <description>Kubernetes Middle Way Kubernetes Middle Way の最終セッションの内容が良さげだったのでまとめました！
+https://www.youtube.com/watch?v=KmM16GHwies&amp;amp;feature=youtu.be
+スライド資料
+整理しながら理解する、Kubernetesのネットワークの仕組み by @hhiroshell 1. イントロダクション Kubernetes のネットワークはいろいろな用語が出てきて把握が難しい
+このセッションのゴール
+Kubernetes のネットワークの全体像を理解する 様々な構成要素の役割と関係性を整理して把握 ネットワーク周りのドキュメントの言っていることがわかる 2. Kubernetes のネットワークのアーキテクチャ 全体を4つに分けて考えてみる
+インフラによって実態は異なる ベアメタルなど。なんだろうベアメタルって・・🤔🐻くま？ Node Network 2. Node Network 上にソフトウェア的に構成される論理ネットワーク
+要件がいろいろとあるらしい
+クラスター内の全 Pod が、互いのIPアドレスでNATなしで変換できるなど Pod Network / Cluster Network 3. Pod を Cluster 内のネットワークに参加させる
+kubelet が Pod を起動するときに CNI プラグインを実行することで上記を行っている kubelet と CNI プラグイン 4. Pod に対する通信において、名前解決・ロードバランシング・サービスディスカバリなどの機能を提供する Service Network
+3. Cluster Network 公式ドキュメントでは&amp;quot;Cluster Networking&amp;quot;。自力構築する場合は Flannel, Calico などを使う</description>
+    </item>
+    
+    <item>
+      <title>Shell Script</title>
+      <link>https://hugo.suwa3.me/post/2021-01-24-shell_script/</link>
+      <pubDate>Sun, 24 Jan 2021 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-01-24-shell_script/</guid>
+      <description>Shell Script Shell Script をキチンとやろうと思って色々さわったので備忘録メモです。
+独学プログラマーのPart3 (第16章 Bash, 第17章 正規表現) を読む Bash (オプション_コラム) $ ls --author -l # Ubuntu &amp;ndash;author オプション初めて使ったかも。ls の help を見たら -A とのこと。なるほど〜
+$ ls --help # Ubuntu Usage: ls [OPTION]... [FILE]... List information about the FILEs (the current directory by default). Sort entries alphabetically if none of -cftuvSUX nor --sort is specified. Mandatory arguments to long options are mandatory for short options too. -a, --all do not ignore entries starting with .</description>
+    </item>
+    
+    <item>
+      <title>Evernote blog</title>
+      <link>https://hugo.suwa3.me/post/2021-01-19-evernote_blog/</link>
+      <pubDate>Tue, 19 Jan 2021 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-01-19-evernote_blog/</guid>
+      <description>Evernote blog 今日から試験的に Evernote で blog を書いてみたいと思います。
+今まで Hugo+Netlify で3ヶ月ほどblogを運用していましたが、Postach.io という Evernote のノートブックをそのままブログにできるサービスがあることを知って、思うところもあり乗り換えてみようと考えました。
+Hugo+Netlify から Evernote+Postach.io へ乗り換えようと考えた理由 1) Hugo は Theme カスタマイズが大変そう GitHub上 などで公開されている Theme を読み込んで簡単に変更できますが、それらをカスタマイズするにはリポジトリをフォークして、cssファイルなどを上書きする必要があります。(ちょっと面倒くさい)
+2) git 管理が煩わしい 静的サイトジェネレーターは更新の度に git push するのが手間なうえ、書き直したエモい差分が GitHub 上で公開されてしまうなどの問題があります。(これはプライベートリポジトリで管理してしまえば解決します。)
+3) Markdown では細やかな色付けが難しい カスタマイズすることで不可能ではないですが、基本的にモノクロで少しさびしいです。
+4) WYSIWYGエディタマイブームが来ている GitHub 上でオープンソースの WYSIWYG エディタを探したり、「編集作業とは」について考えることが増えたり、人生で初の WYSIWYG ブームが到来中です。
+5) Evernote to Markdown のGitHubリポジトリを見つけた *.enex形式でエクスポートされた Evernote を、Markdown ファイルに変換する CLI ツールを見つけました。いつでも Hugo に戻ってこられるね♪
+Wordpress to Markdown の際も画像の移行で詰まったけれど、たぶん Evernote to Markdown も画像なり日本語のファイル名なりでエラーしそうな予感がしています。Wordpress on EC2 から Hugo+Netlify に乗り換えてから、すっかり blog の更新が減ってしまった。正直、Hugo を触っていて一番テンションが上がった瞬間って、Wordpress からエクスポートしてきた記事を CLI ツールで Markdown に変換して、それを Hugo で問題なく表示できた瞬間がピークでした。</description>
+    </item>
+    
+    <item>
+      <title>A look-back 2020</title>
+      <link>https://hugo.suwa3.me/post/2020-12-31-a-look-back-2020/</link>
+      <pubDate>Thu, 31 Dec 2020 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-12-31-a-look-back-2020/</guid>
+      <description>2019年年末のふりかえりです。
+2019年ふりかえり
+来年も楽しむ気持ちを忘れずに、少しずつ自身のキャリアや方向性などを 考えていくような内省を意識した一年にしたいです。
+確かに2019年は「楽しむ」をテーマに生きていた気がします。
+2020年は、外より内に目を向けることが多かった一年になった(かな？)と思います。
+以下、2020年のふりかえりです。
+技術系イベント 今年は様々なオンラインイベントに参加しました！ 住む場所を問わず交流ができるのがオンラインの良さだと感じました。 オンラインでのLTやハッカソンの経験が印象的でした。
+PythonでWebアプリを作ろう(女性対象/男女コーチ◎) 2020.01
+DjangoGirls の活動にスタッフとして参加しました。今年は物理イベントでの開催が難しく、参加したのは年明けの一度のみでした。女性向けの開発コミュニティには今後も関わっていきたいと思います。
+自作OSもくもく会
+サイボウズの日本橋オフィスが会場でした。コンピューターについての理解を深める目的で簡易的なOS自作に挑戦しました。
+初心者向けDocker/Kubernetesハンズオン(女性限定)
+こちらも会場がサイボウズで、サイボウズ社員の方が主催するイベントでした。当時はサイボウズについて詳しくなかったのですが、丁寧に作り込まれた資料や中心となる解説者も周囲のサポートも自然で、居心地の良さを感じたのが印象的でした。
+Ansiblejpディベロッパー部 2020.02
+参加したかったのですが、人気で抽選になるかと思い、上司に「抽選に協力してください。わたしが当たったらわたしが参加します。もし上司が当たってもわたしに参加させてください」と、ジャイアン理論で話を進めていたら、先着順だったのでジャイアンせずに参加できました🙌。親睦会に参加して、登壇者の方々と Twitter でも繋がり、今でも謎の仲間意識をもっています。(わたしだけ？)
+JAWS-UG 初心者支部#23 次回のハンズオン勉強会向けのチューター向け予習会
+LambdaとAWSのAI Services と連携させて「文字起こし &amp;amp; 翻訳パイプライン」を、作ってみるハンズオンに参加しました。今まで参加したハンズオンの中で一番楽しかったです。レベル感的にも合っていたのかも。
+Kubernetes Novice Tokyo #3
+「何かしらのオンラインイベントで登壇を経験しておきたい！」と、思いこちらの初心者向け LT 枠で参加しました。→スライド資料参加者の方たちとTwitterで繋がり、オンラインイベントでは名刺交換がない代わりに SNS などで繋がることが増えた印象でした。むしろそちらの方が個人的には有り難いです。
+RasPiハンズオン
+Raspberry Pi のオンラインハンズオンに参加しました。上海からの参加者や、セキュリティ関連の元研究職の女性参加者の話が面白かったです。
+社内ハッカソン
+人生初ハッカソンです。shell script や Pythonで、mecab を使った形態素解析＆整形を担当しました。チーム外の人とコミュニケーションをとるキッカケになって良かったです。
+技術Blog PostgreSQLの設定内容 〜PGTuneを使ってみて〜
+MySQL と違い、PostgreSQL は初期設定のままでまともに動かないということを学びました。最初に知っていればあれほどサービス運用に苦労しなかったかもしれない。。
+Slack見落とし撲滅作戦 Python + Selenium
+Python と自動化の練習用に書いた記事です。実際には Slack の UI 変更に依存してしまう機能なので悪手ですが。。目的が先にあったので、動機づけはオマケです！
+LambdaとPythonでAPI GatewayをエンドポイントにしてSlackに何かを送る
+Lambda を AWS 内のサービスと組み合わせることで IAM ロールの設定に慣れてしまいさえすれば、何でもできる万能感がありました。サービス運用している自鯖をAPIエンドポイントとして兼務させていたけれど、エンドポイントであることを忘れてサーバーを落としてしまうと機能移動が大変なので、Lambda 移行はサーバー代節約＆開発時間短縮に有効だと感じました。</description>
+    </item>
+    
+    <item>
+      <title>Customize_spacemacs_font_settings</title>
+      <link>https://hugo.suwa3.me/post/2020-12-09-customize_spacemacs_font_settings/</link>
+      <pubDate>Wed, 09 Dec 2020 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-12-09-customize_spacemacs_font_settings/</guid>
+      <description>今日は spacemacs の整備をしたよ。
+お仕事のタスク管理と日報管理をエディタでやりたいなと思って
+Org-mode を検討したけれど、そこまで高機能でなくても良いし
+優先度によっての色分けや、日報へのコピペがしやすい形式を考えて
+spacemacs の markdown-mode をカスタマイズすることにしました。
+Markdown の設定 M-x customize-face markdown- ↑タブを押す
+markdown-header-face-1 を選択
+設定画面が開くので Show All Attributes を押す。
+foreground: 文字色
+background: 背景色
+それぞれ設定して、.spacemacs/init.el を開きます。
+最後にこういった設定が追加されていると思うので、それらを user-config の中に移動します。
+あとは、他のものもこの形式どおりに書いていけば編集できます。
+(custom-set-faces ;; custom-set-faces was added by Custom. ;; If you edit it by hand, you could mess it up, so be careful. ;; Your init file should contain only one such instance. ;; If there is more than one, they won&amp;#39;t work right.</description>
+    </item>
+    
+    <item>
+      <title>Mindmap</title>
+      <link>https://hugo.suwa3.me/post/2020-11-28-mindmap/</link>
+      <pubDate>Sat, 28 Nov 2020 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-11-28-mindmap/</guid>
+      <description>目標マインドマップ 目標マインドマップを GitHub 上で git 管理したい 誰でもブラウザから最新のマインドマップを見られるようにしたい plantUML を png 形式で描画して、その画像を README.md に表示させることにしました。
+環境づくり まずは Mac に環境をつくったよ
+plantUML は java で動くとのことなので、バージョンを確認。
+% java -version No Java runtime present, requesting install. ＿人人人人人人＿
+＞　なかった　＜
+￣Y^Y^Y^Y^Y^Y^￣
+java、標準で入っているものだと思ったらなかった・・
+Mac OS XでのOracle Javaのインストールと使用に関する情報およびシステム要件
+Mac OS X 10.6以下: Mac OSには、AppleのJavaがプリインストールされています。 Mac OS X 10.7 (Lion)以上: Mac OS Xバージョン10.7以上には、Javaはプリインストールされていません。Oracleから最新のJavaを入手するには、Mac OS X 10.7.3以上が必要です。
+ほーー
+ということで、以下からインストールしました。
+https://www.oracle.com/jp/java/technologies/javase-jdk15-downloads.html
+% java -version java version &amp;#34;15.0.1&amp;#34; 2020-10-20 Java(TM) SE Runtime Environment (build 15.</description>
+    </item>
+    
+    <item>
+      <title>note拡張機能</title>
+      <link>https://hugo.suwa3.me/post/2020-07-19-note%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD/</link>
+      <pubDate>Sun, 19 Jul 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-07-19-note%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD/</guid>
+      <description>👆つくりました
+https://codepen.io/ishizuka427/pen/NWxEvpo
+https://github.com/Ishizuka427/note
+まずわたしのjsスキルがどのくらいかというと
+10年以上むかし html ファイル内に script タグを仕込んだな〜
+程度です。。
+この blog をホスティングするようになって、サイドバーを改造するときは jQuery のドキュメントからサッとコピペ職人していました。
+Chrome 拡張機能をつくるにあたって、jQuery で書こうかなと思ったのですが、謎の懐古主義に陥って MDN を読みながら生 js で書いてみることにしました。
+処理が進めば進むほどに苦しくて発狂するかと思いました！
+途中で、やりたい処理にはライブラリが必要になることが判明して
+「Javascript にライブラリとかめちゃくちゃ言語っぽい！」
+と感動しました。
+高校時代の js の印象って.htmlに書くタグの一つって感じだったのに、、進化したんだなぁと感慨深いです。
+申請までしたあとに、そういえば最近 cookie 規制のニュース見たけれども
+「この機能は大丈夫だろうか？」
+と、気になって調べたら、若干抵触しそう。
+ダメだったとしても腐らずまた元気に Javascript 書きましょう🙌</description>
+    </item>
+    
+    <item>
+      <title>Error establishing a database connection</title>
+      <link>https://hugo.suwa3.me/post/2020-05-14-error-establishing-a-database-connection/</link>
+      <pubDate>Thu, 14 May 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-05-14-error-establishing-a-database-connection/</guid>
+      <description>コマンド一覧
+$ ssh wp $ sudo su - $ tar cvJf wp.suwa3.me-backup-mysql-20200515.tar.xz /var/lib/mysql $ mv /root/wp.suwa3.me-backup-mysql-20200515.tar.xz /home/ec2-user/ $ chown ec2-user /home/ec2-user/wp.suwa3.me-backup-mysql-20200515.tar.xz # ローカルへ移動 $ scp wp:/home/ec2-user/wp.suwa3.me-backup-mysql-20200515.tar.xz ~/tmp/ # wpサーバーへ移動 $ service mysqld restart blog 開こうとしたらこれです(ゲンナリ)
+なんか前にもあったぞ。。
+これ前にもあって、対処方法と原因究明した作業ログを blog にまとめたのに
+DB の接続エラーのときは、その情報を見れなくない・・？ってなりました。
+自分でホスティングしているシステムがエラーで動かなくなった場合、仕事の予行演習だと思って取り組むがモットーなので、対処方法を作業ログとして残します！
+(だいたい再起動すれば動くことが多いですが)基本的にDB再起動は最終手段で、データの保全を最優先して情報収集に努めます。
+環境 Amazon Linux LAMP構成 WordPress ■ MySQL の接続エラー対処 $ ps -ef | grep mysql ec2-user 14969 14947 0 12:07 pts/1 00:00:00 grep --color=auto mysql ない
+# tail -n 100 /var/log/mysqld.</description>
+    </item>
+    
+    <item>
+      <title>まともに起動</title>
+      <link>https://hugo.suwa3.me/post/2020-03-14-%E3%81%BE%E3%81%A8%E3%82%82%E3%81%AB%E8%B5%B7%E5%8B%95/</link>
+      <pubDate>Sat, 14 Mar 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-03-14-%E3%81%BE%E3%81%A8%E3%82%82%E3%81%AB%E8%B5%B7%E5%8B%95/</guid>
+      <description>ようやく、まともにマストドンを起動して動かすことができたので
+作業ログをここに残します。
+感動を通り越して若干うんざりです😢
+経緯 EC2上にdocker-compose で SNS の運用をしていましたが、CPU使用率が100％のまま下がらない状態が続いているため EC2 のローカルへ移行することにしました。 まずは CPU をなんとかする。
+条件 データは死守する 移行対象は docker-compose on EC2 (まともに ssh ログインできない) アプリケーションのバージョン追従はしていない。 t2.micro 縛り(可能な限り) 今後のTODO 現状の設定ファイルは Docker 用のためEC2用に全部書き直し 最終的に DB のバージョンを変更する必要あり 懸念点 dump データが途中から明らかに容量が小さい。データ壊れている疑惑あり。 など、諸々の問題を抱えながらも一つ一つ潰して、構築を済ませることができました！とても勉強になりました。
+以下、CPU をなんとかした作業ログです。
+swapの設定 まず、swapの設定をしました。
+以前やったことがあったので その時のblog を参考に、そのままコピペでいけました。
+Docker上の不要なファイルをローカルに移動 ubuntu ユーザーの ~/ 直下に dump を移動 ファイルの権限変える chmod scp -i ~/.ssh/**.pem *****@3.***.6.***:/home/ubuntu/dump-latest.sql.gz /Users/a_ishizuka/tmp/ ■ CPUQuota の設定 CPU の張り付きを防ぐために、CPUQuota の設定をして CPU 使用率の制限を行いました。
+コントロールグループの変更 Red Hat Enterprise Linux 7 | Red Hat Customer Portal</description>
+    </item>
+    
+    <item>
+      <title>EKSのこと</title>
+      <link>https://hugo.suwa3.me/post/2020-02-19-eks%E3%81%AE%E3%81%93%E3%81%A8/</link>
+      <pubDate>Wed, 19 Feb 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-02-19-eks%E3%81%AE%E3%81%93%E3%81%A8/</guid>
+      <description>EKSにおいて定義、仮説、検証を繰り返している。
+専門用語が多い。
+Kubernates 用語と EKS 用語が混ざる。
+→ 言葉の定義が曖昧だと後々痛い目にあうので、手を抜けない。
+AWS 公式リファレンスは概要のみ
+OSS であればソースを読むことで予測できる部分があるけれど、マネジメントサービスは内部で何がどう動いているのかが分かりづらい。
+特にロールポリシーのアタッチなど、権限の種類などについては JSON を読み解きながら、仮説をたてて実際に検証することで内部構造を把握する必要がある。
+【疑問】 Fergate における Pod 実行ロールについての考え方
+■ Fergate を使わずにサービスロールの設定をする場合 Amazon EKS Service Policy Amazon EKS Cluster Policy 上記2つをアタッチした。
+■ Fergate を利用する場合 Amazon EKS Fargate Pod Execution Role Policy 上記をアタッチする必要があるという認識であっているのか。
+■ eksctl create コマンドを使用する場合 eksctl create コマンドで --fargate オプションをつけることで、上記の IAM ロールの代わりを自動で設定してくれる..らしい挙動。
+（IAM のロールを確認したら、コマンド実行したタイミングで「 Amazon EKS For Fargate Service Role Policy」が生成されていた）
+ECS も Fergate を利用することで IAM ロール自動設定されていた記憶ある。 =&amp;gt; ロール周りのポリシーについて JSON など確認する。</description>
+    </item>
+    
+    <item>
+      <title>Slack見落とし撲滅作戦 Python &#43; Selenium</title>
+      <link>https://hugo.suwa3.me/post/2020-01-19-slack%E8%A6%8B%E8%90%BD%E3%81%A8%E3%81%97%E6%92%B2%E6%BB%85%E4%BD%9C%E6%88%A6-python-selenium/</link>
+      <pubDate>Sun, 19 Jan 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-01-19-slack%E8%A6%8B%E8%90%BD%E3%81%A8%E3%81%97%E6%92%B2%E6%BB%85%E4%BD%9C%E6%88%A6-python-selenium/</guid>
+      <description>Slackで、自分宛てにメンションされたものを見落としてしまい
+どうしたものかと悩んでいた際に、同僚から
+「Slack内の検索窓で『to:@&amp;lt;自分の名前&amp;gt;』って検索すれば、自分宛てのメンションを検索できますよ」
+と、教えてもらい
+「そんな機能あるのか！」
+と、感動したと同時に
+「しかしその検索する行為ですら、わたしは忘れてしまう人間なのだ！」
+と、絶望したので
+なんとか教えていただいた便利機能を有効的に使えないかと考えたのが
+『Slack見落とし撲滅作戦』
+です。
+案① ブラウザ版Slack内の検索窓で｢to:@&amp;lt;自分の名前&amp;gt;｣と毎朝検索するのを習慣化する
+案② たぶん習慣化できないのでPython + Seleniumで自動化する
+とりあえず途中までやったので
+備忘録です。
+環境 MacOS Mojavi 10.14.6 Python3 pip 環境分離してseleniumをインストール selenium-slackディレクトリを作成します。
+$ mkdir selenium-slack $ cd selenium-slack/ 仮想環境を作成します。
+$ python3 -m venv myvenv 有効化します。
+$ source myvenv/bin/activate seleniumをインストールします。
+$ pip3 install selenium ChromeDriver のインストール ChromeDriverとは、Google Chromeを操作するために必要なドライバ（ソフト）です。 ブラウザごとに専用のドライバが用意されています。
+バージョンを指定してChromeDriverをインストールします。
+例えば、現在つかっているChromeのバージョンをチェックして
+それに合わせたバージョンのChromeDriverをインストールします。
+ChromeDriver - WebDriver for Chrome
+例えば79であれば、こちらです。
+ChromeDriverプログラムのパスを指定してあげます。
+$ driver = webdriver.Chrome(executable_path=&amp;#39;./chromedriver&amp;#39;) 試しにサンプルを書いてみます。
+$ vim sample.</description>
+    </item>
+    
+  </channel>
+</rss>

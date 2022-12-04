@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/linux/</link>
+    <description>Recent content in linux on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Mon, 25 Nov 2019 13:00:33 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>モノリシック</title>
+      <link>https://hugo.suwa3.me/post/2019-11-25-%E3%83%A2%E3%83%8E%E3%83%AA%E3%82%B7%E3%83%83%E3%82%AF/</link>
+      <pubDate>Mon, 25 Nov 2019 13:00:33 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-11-25-%E3%83%A2%E3%83%8E%E3%83%AA%E3%82%B7%E3%83%83%E3%82%AF/</guid>
+      <description>先日の勉強会でLinuxの話になって
+「モノリシックカーネルとマイクロカーネル、あなたはどちらが優れていると感じますか」
+と訊かれて
+「何じゃそりゃ？」
+となったので、そこで聞いたことと
+調べたこと、ふんわりと考えたことをまとめます。
+モノリシックカーネルは一枚岩ということで
+機能が分割されていないため実行速度が速い。
+マイクロカーネルは逆に、様々な機能がモジュールとして分割されているため
+一部のみの変更や更新などに対応することができる。
+カーネルにおける設計思想ということだな、と理解しました。
+以下にも詳細が載っています
+モノリシックカーネルとマイクロカーネル | Linux技術者認定試験 リナック | LPI-Japan
+すなわち、「完全にモノリシックカーネル」「完全にマイクロカーネル」というのは、最近では少なくなってきたのです。アーキテクチャや機能の多様化・進化に伴い、「この機能はカーネルに組み込む」「この機能はモジュールにする」のように使い分けるほうが、設計上もパフォーマンスの上でも好ましいため、と言えるでしょう。
+https://linuc.org/study/knowledge/460/
+これを読んで思い出したのが
+VimとEmacsのエディタ論争で
+シンプルさか、もしくはカスタマイズ性を求めるのかという部分では
+モノリシックかマイクロか、という部分で重なりました。
+「用途に合わせて」
+というのが前提にあるにせよ
+どちらが自分自身の考え方にあっているのかというのは
+対象に合わせて自分を変化させるのか
+対象を自分のコントロール下に置くのか
+そういったところに帰結するような気がする。
+何にせよ、自作OSやりたいので
+「カーネルにも色々と種類があって、設計思想的なものがあるのだなぁ」
+と知ることができたの良かったです。</description>
+    </item>
+    
+    <item>
+      <title>フリーマンカフェ/権限の指</title>
+      <link>https://hugo.suwa3.me/post/2019-09-13-%E3%83%95%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%AB%E3%83%95%E3%82%A7-%E6%A8%A9%E9%99%90%E3%81%AE%E6%8C%87/</link>
+      <pubDate>Fri, 13 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-13-%E3%83%95%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%AB%E3%83%95%E3%82%A7-%E6%A8%A9%E9%99%90%E3%81%AE%E6%8C%87/</guid>
+      <description>渋谷のフリーマンカフェに行きました。
+電源WIFIいい感じのおしゃカフェだった。
+肩の荷が降りたー
+ってかんじだったので
+開放感の中でピザを食べました。
+わあい
+近々やりたいことをLISTにまとめた。
+Linuxの権限確認と変更(chmod)（超初心者向け） - Qiita
+$ chmod u+x hoge.txt
+uが変更対象　+が変更方法　xが変更内容
+変更対象
+変更対象
+意味
+u
+ユーザー
+g
+グループ
+o
+その他
+a
+すべて
+変更方法
+変更方法
+意味
+=
+指定した権限にする
+指定した権限を付与する
+-
+指定した権限を除去する
+変更内容
+変更内容
+意味
+r
+読み取り
+w
+書き込み
+x
+実行
+権限の指で、数字を指定して変更する方法を以前教わったけれども
+アルファベットの方がわかりやすいなあと思ったのでメモです。
+https://www.youtube.com/watch?v=5W17cVtMgXg
+これは勢いでupした権限の指です。
+小声で数字を数えています。
+don.suwa3.meがDocker上にDBと共にキツキツで置いてあるせいか
+最近は週一でDockerがふわふわして
+メンテナンスモードに切り替えてstatusを確認して
+再起動かけて、場合によってはイメージID指定して削除して
+っていうの
+そろそろ飽きてきたので、早急にお引越ししたいです。
+なのでまずはNginx設定ファイルをAnsibleに展開するところからです！
+やるぞー</description>
+    </item>
+    
+    <item>
+      <title>~/.ssh/configの設定など</title>
+      <link>https://hugo.suwa3.me/post/2019-09-04-ssh-config%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%AA%E3%81%A9/</link>
+      <pubDate>Wed, 04 Sep 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-04-ssh-config%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%AA%E3%81%A9/</guid>
+      <description>はあい、本日のTODOです。
+~/.ssh/configの設定 先日Docker沈黙タイムがやたら長くて帰れない事態に陥ったので
+~/.ssh/configに、サーバーへ60秒毎に生きている報告をする設定を書きました。
+~/.ssh/configについて - Qiita
+ラズパイにログインするのも簡単になった。
+やったねえ
+cronをAnsibleに追加
+そしてメディア削除のDockerコマンドをcronで実行したもの。
+（参照）usermod/cronでdocker-compose – うさぎでもわかる
+これを構成管理に組み込むためAnsibleに設定しました。
+9ddで一気に9行消せた、わーい
+そしてdd連打していたら関係ないところも消してしまい
+ひーん😢となって調べたらuで元に戻せました。
+viコマンド *dd
+カーソルがあるところから*行削除 ex.3dd（3行削除）
+*yy
+カーソルがあるところから*行コピー
+p
+ペースト
+u
+操作を一つ戻す
+Ctrl+r
+戻すのを戻す
+※ dd,yyでそれぞれ1行削除/コピー
+デスクトップのゴミ箱化どうにかする
+デスクトップがゴミ箱代わりになっていて
+スクリーンの設定で見えないようにしていたの。
+きちんと整理したいとおもい
+スクショの保存先がデスクトップなのが諸悪の根源だと考え
+保存先を指定できるか調べました。
+Macのスクリーンショットの保存先を変更する｜MacFan
+ホームにSSディレクトリを作成して以下のコマンドを実行
+$ defaults write com.apple.screencapture location ~/SS/;killall SystemUIServer
+変更できた。わーい
+むかしスクショしたものが出てきたよ。
+たぶんvenvで仮想環境つくり、Pythonで春って単語を含むものをホニャララしたやつ。（忘れた）
+このころはコンテナもクラウドもなんでもかんでも仮想っていうから
+仮想わけわからんっておもっていた。懐かしい</description>
+    </item>
+    
+    <item>
+      <title>パーティション設計/media remove on Docker</title>
+      <link>https://hugo.suwa3.me/post/2019-09-02-%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3%E8%A8%AD%E8%A8%88-media-remove-on-docker/</link>
+      <pubDate>Mon, 02 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-02-%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3%E8%A8%AD%E8%A8%88-media-remove-on-docker/</guid>
+      <description>最近言われて嬉しかった言葉は
+｢戦闘民族だよね。戦い生きるみたいな生き方をしている｣
+です。
+精神的腕力のあるゴリラを目指している身としては身に余る言葉です。
+なんか殺傷力高くて瞬発力ありそう。
+media削除のコマンドを試す前に
+「メディアストレージの容量を確認して、ビフォーアフター見てみたいなあ」
+と、いうことで
+postgresqlが稼働しているdisk容量を確認するコマンドを調べたの。
+$ df -Th dfコマンドにType付き＆人に優しいhumanizeな表示で見ることができました。
+/dev/xvda1 20G 13G 7.0G 65% /
+ふむふむ。
+ラズパイも見てみました。
+/dev/mmcblk0p1 vfat 253M 41M 213M 16% /boot
+mmcblk0p1で調べたらSDカードのパーティションとのこと。
+ふん？？
+（下記サイトより引用）
+ふむふむ。
+fdiskの操作方法
+また、重要なのが「swap」パーティションだ。
+このパーティションはメインメモリが不足しているときにメインメモリのかわりとして使用できる領域のことだ。
+これは高価なメインメモリを安価な記憶媒体で補うと同時に、メインメモリ以上の容量を確保するため、比較的に昔からある仕組みだ。とても便利だし、設定しない理由はない。
+やたらと大きくしてもパフォーマンスは発揮されないので注意しよう。
+Linuxのパーティションとは？とパーティションの区切り方を詳細解説
+https://eng-entrance.com/linux-partition
+パーティションの中でもswapって大事なんやなー
+swap領域を確保する一番手っ取り早い方法として、EC2のインスタンスストアスワップボリュームがあります。
+これは、EC2のインスタンスタイプがm1.smallとc1.mediumのときのみ
+/dev/xvda3ないし/dev/xvde3という900MBのmkswap済みディスクが
+EC2のブート時に自動で提供されます(デバイス名はAMIによりまちまちです)。
+他のインタンスタイプではm1/c1ファミリーであっても提供されず、
+またManagement ConsoleやAWS APIでは本ボリュームを確認できないことに注意しましょう。
+Amazon EC2(Linux)のswap領域ベストプラクティス ｜ DevelopersIO
+https://dev.classmethod.jp/cloud/ec2linux-swap-bestpractice/
+swapの設定しなきゃ！！
+してた！！！
+全く記憶にないけど、とりあえずコピペ頑張ったんだなってきもちです。
+$ sudo docker-compose run &amp;ndash;rm web bundle exec bin/tootctl media remove &amp;ndash;days=30
+↑いろいろ脇道にそれましたが、画像削除のコマンドを打ってみました。
+error</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>html on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/html/</link>
+    <description>Recent content in html on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 11 Aug 2019 13:00:40 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Slider</title>
+      <link>https://hugo.suwa3.me/post/2019-08-11-830/</link>
+      <pubDate>Sun, 11 Aug 2019 13:00:40 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-11-830/</guid>
+      <description>帰省2日目です。
+静岡らしいもの食べたよ。
+生しらすや黒はんぺんとかね。
+.
+スマホ用ページで画像をスライドさせたいなあとおもい
+参考コードを探したのだけれども
+なかなかコードが長くて疲れてしまったので
+JSは使わずにHTMLとCSSだけで動くものを見つけて
+そちらを参考にしました。
+https://codepen.io/hw/pen/biEBz
+できたものがこちら
+動くのでスマホから下記ページを見てみてね。
+https://suwa3.github.io
+.
+コードをコピペして
+画像をちょろっと変更しただけなので
+こちらは数十分で完成したの。
+.
+でも、動きがあるからか
+SNSへ投稿したとき
+こっちのほうが10倍くらい反応あって
+やはり動きがあると違うのだなあとおもった。
+.
+昨日の編集には3時間溶かしたわりに
+反応の有無という意味では
+費用対効果が少なかったかもしれない。
+.
+しかし、デベロッパーツールの使い方を再確認できた点では
+成果が大きかったので良しだよ。</description>
+    </item>
+    
+    <item>
+      <title>デベロッパーツール</title>
+      <link>https://hugo.suwa3.me/post/2019-08-10-828/</link>
+      <pubDate>Sat, 10 Aug 2019 13:00:30 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-10-828/</guid>
+      <description>HPのスマホ用ページを編集したの。
+ハンバーガーメニュー持て余していたので。
+.
+移動時間にスマホ用ページのデザイン集を見つつ
+スプリングボードメニューが見やすそうだなあとおもい
+下記ページを参考にしつつ作りました。
+https://gardenplace.jp/
+(実際にはリンクを並べる形なのだけれども)
+.
+まずデベロッパーツールの使い方を調べるのに1時間。
+基本的な使い方ふわっと分かっていたので
+とりあえず欲しい場所のHTMLタグから
+対応しているStyleを
+自分のHPの既存内容と喧嘩しないようにコピペして
+ひたすら貼り付ける作業に2時間。
+計3時間かけて
+上画像から下画像に編集しなおしました。
+.
+高校生のころ、毎日
+｢今日はこのHTMLタグで遊ぼう｣
+ってノリでWeb編集していたけれども
+当時はデベロッパーツールとかなかったの。
+改めて、これめちゃ便利だね。
+PCでF12押すだけで参考にできるの強い。
+.
+静岡に帰省しました。
+1泊2日なの。
+従兄弟が大学で材料系と機械系について学んでいると知り
+Linuxやラズパイ周辺のことなど
+いろいろと話せたので楽しかった。</description>
+    </item>
+    
+    <item>
+      <title>Maintenance</title>
+      <link>https://hugo.suwa3.me/post/2019-07-08-maintenance/</link>
+      <pubDate>Mon, 08 Jul 2019 13:00:26 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-08-maintenance/</guid>
+      <description>メンテナンスページつくったの。
+適当なサイトの例をコピペして
+色とか文とかいじってみた。
+Hpをつくっていて
+構造ガン無視し過ぎてfooterが一番上にきてしまっている図です。
+動画のチュートリアルを粛々と観ていたのだけれども
+｢自分のつくりたいようにつくりたーい｣
+って自分でデザインしたらこのザマです。
+最終的な解決法
+footer要素も全て突っ込む。
+GitHubのほうは明日反映させる〜</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://hugo.suwa3.me/post/2019-07-04-raspberry-pi/</link>
+      <pubDate>Thu, 04 Jul 2019 13:00:44 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-04-raspberry-pi/</guid>
+      <description>OSCのセミナー、申込変更したの。
+Raspberry PiでIoT自動化や制御について紹介するやつ
+ラズパイ興味あるのでそれにした。
+.
+Webページちまちま書いていた。
+https://developer.mozilla.org/ja/docs/Web/HTML
+ここわからないときに参考にするの良さそう。
+https://developer.mozilla.org/ja/docs/Web/Guide/HTML/Content_categories#Phrasing_content
+ここのあたりとか英語の文法みたいだなあとおもった。
+文法にがて〜〜
+.
+夜は久しぶりにMastodon張り付いたあ、
+そして音声upできるようになったので
+早速試した。
+最初はamrで投稿エラーでて
+mp3に変換したら投稿できたよ。
+んぱかマーチ！
+クレヨン王国のOPがエンドレスループしていたので
+それを歌いました。
+楽しかったので、ぼちぼちupしていきたい。</description>
+    </item>
+    
+  </channel>
+</rss>

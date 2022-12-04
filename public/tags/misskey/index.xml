@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>misskey on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/misskey/</link>
+    <description>Recent content in misskey on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 23 Jun 2019 13:00:44 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/misskey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Misskeyローカル構築成功</title>
+      <link>https://hugo.suwa3.me/post/2019-06-23-489/</link>
+      <pubDate>Sun, 23 Jun 2019 13:00:44 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-23-489/</guid>
+      <description>Misskeyをローカルでたてることに成功しました。
+溺れながらMisskey構築や運用をがんばるよりも
+まずはMastodonで慣れてから
+またMisskeyに挑戦してみたいなあとおもったよ。
+何かしら問題が起こったときに
+おそらく、うまく助けを求められないので
+うごかない！停止！
+を、繰り返してしまうとおもう。
+マストドンで鯖立て頑張ろう。
+.
+色々と勉強になった。
+.
+次にやりたいことはクライアントアプリづくりです。
+まずは動画で開発環境づくりを学んだあと
+簡単につくれそうなアプリから少しずつステップアップしつつ
+アプリ制作等、目的が明確な勉強会にも参加していきたい。
+勉強会とても良いと思う。
+ひとりだと本当にエラーや詰みの嵐なので
+誰かしら聞ける相手がいるかいないかで
+雲泥の差だなあとおもうの。
+.
+日曜日の夜は
+焼肉を食べに行きました。
+お酒も少し飲みました。
+.
+週末、頑張り過ぎてしまったのか
+帰宅して、気持ちがぎゅーってなって
+なぜか泣いてしまった。
+理由がわからないの。
+色々と
+｢なぜ泣いたのか？｣
+って、理由を考えてみたんだけれども
+どれもそれらしい気もするし、違う気もするのね。
+ゆっくり休もうかな。</description>
+    </item>
+    
+    <item>
+      <title>レシピづくり</title>
+      <link>https://hugo.suwa3.me/post/2019-06-20-%E3%83%AC%E3%82%B7%E3%83%94%E3%81%A5%E3%81%8F%E3%82%8A/</link>
+      <pubDate>Thu, 20 Jun 2019 13:00:39 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-20-%E3%83%AC%E3%82%B7%E3%83%94%E3%81%A5%E3%81%8F%E3%82%8A/</guid>
+      <description>AWSにおけるwordpressのチュートリアル読んでいるけれども
+ステップ2で
+Linux 仮想マシンの起動のステップ 2 d.～2 f. とステップ 3 を参照
+って書いてあるの
+おそらく参照するのはステップ 3 d.〜3 f.とステップ4のことだし
+（そもそも仮想マシン起動のステップ2にfは存在しない）
+その上wordpressチュートリアルのステップ3
+システムlogにおいて
+ssh設定再度試して探してもユーザーpassでてこないの
+RDSでデータベースの設定を先にしておかないとダメなんか？
+DBの設定について何も言及ないけれども実は必要なのか？
+どちらにせよチュートリアルううううてかんじです。
+.
+謎は深まるけれども、いったんWeb上にwordpressたてられたので
+ひとまず部屋のすみに置いておいて
+本来の目的を見失いそうになってしまう。
+wordpressはAWSに慣れるための練習で
+目的はMisskeyの構築です。
+.
+今日の隙間時間はMisskeyのレシピづくりをすることに決定しました。
+.
+MastodonをAWSとDocker利用でたてるレシピと
+MisskeyのReadMeを横に並べてみて
+どこがどこの代替なのか
+Mastodonとの違いは何なのかをきちんと整理したいとおもいます。
+ふわっとだけど書いてみたの。
+答え合わせがこわいけど楽しみだにゃ( •ω•ฅ)
+Dockerわからんちなので後乗せクジラするかもしれない。
+.
+そしていつのまにかKnzkLiveの配信権限が付与されていた。
+やったねえ
+作業キャスもできちゃう。
+8割うまくいかないひとなので
+舌打ちしかしなさそう。
+ツイキャスよりも気軽に配信できて
+勝手に延長されていくの良さげ。
+週末にでもKnzkLive試してみたいなあ。</description>
+    </item>
+    
+  </channel>
+</rss>

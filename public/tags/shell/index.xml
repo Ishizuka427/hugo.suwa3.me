@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shell on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/shell/</link>
+    <description>Recent content in shell on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 11 Sep 2019 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>shell/CLAS</title>
+      <link>https://hugo.suwa3.me/post/2019-09-11-shell-clas/</link>
+      <pubDate>Wed, 11 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-11-shell-clas/</guid>
+      <description>本日やったことのまとめです。
+５分で一通り理解できる！Linuxのリダイレクト 使い方と種類まとめ
+これ
+こんなことできるのねえ、テンション上がった。
+なかなか基本的なところぽいけれども
+これから、必要に応じて
+こういうコマンドを覚えるたびに
+テンション上がるのかなあとおもったら、ワクワクしました。
+夜はCLASのイベントに参加して来ました。
+渋谷でお仕事おわって
+目黒駅かなーとおもって目黒待機していたら
+調べたところ、中目黒かもしれないと感じて
+中目黒に移動したところ
+神泉が正解だということに気づき
+一瞬タクシーに乗って無事間に合いました！！
+都内で一人でタクシー乗るの初めてかもしれない。
+しかも道わからない。
+CLASのエンジニアの方とお話できて楽しかったです。
+帰り際に、参加者の女の子と仲良くなり
+連絡先を交換したの。
+ナンパの才能あるかもしれない、わーい🙌</description>
+    </item>
+    
+    <item>
+      <title>README.md整備/$ ls -l</title>
+      <link>https://hugo.suwa3.me/post/2019-08-29-readme-md%E6%95%B4%E5%82%99-ls-l/</link>
+      <pubDate>Thu, 29 Aug 2019 13:00:46 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-29-readme-md%E6%95%B4%E5%82%99-ls-l/</guid>
+      <description>お昼はGitHubのAnsibleリポジトリを見栄え良くするために
+README.mdを書いていました。
+suwa3/don.suwa3.me-ansible
+【GitHub】README.md に画像を表示させる簡単な方法
+↑この記事、裏技的だけど確かにラクだった。
+以前はwikiを使った気がする。
+README.mdに埋め込む画像、terminalのgifでも良かったかもしれない。
+明日にでも時間を見つけて更新しちゃおーっと。
+lsコマンドの-lについて学びました。
+まとめた。
+3ビット内で、権限が
+有るか/無いか
+なので、
+2進数で最大7まで表すことができるの、
+たまたまなのかもしれないけれども
+偶然8より下にできたから、それを採用したのかしら。
+経緯を知りたいとおもった。
+機械側としてわかりやすいもの
+人間側としてわかりやすいもの
+コンピューター内で、それぞれ少しずつ譲歩している軌跡みたいなもの
+たまに見つけると、そこに至った経緯を知りたいなあとおもう。</description>
+    </item>
+    
+  </channel>
+</rss>

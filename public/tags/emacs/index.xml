@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emacs on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/emacs/</link>
+    <description>Recent content in emacs on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 13 Mar 2021 10:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remote Emacs</title>
+      <link>https://hugo.suwa3.me/post/2021-03-13-remote_emacs/</link>
+      <pubDate>Sat, 13 Mar 2021 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-03-13-remote_emacs/</guid>
+      <description>Emacs 奮闘記 🌟 ゴール リモートサーバー上に、local にあるような Emacs 環境をつくりたい == 経緯 == リモートサーバー上に local で動いている spacemacs (emacs の設定群)の init.el を、そのまま貼ってみた。
+＿人人人人人人人人人人＿
+＞　まともに動かない　＜
+￣Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^￣
+素の Emacs だと動く・・。
+これを機に、卒spacemacs してプレーンな Emacs をカスタマイズしていきたいと思います！ 設定したものたち leaf
+スタンダードな設定と、ミニバッファの補完パッケージを入れました。
+(参考: https://emacs-jp.github.io/tips/emacs-in-2020)
+ssh
+多段 ssh できるように設定する。
+※ Trump を使って ssh 接続する際に踏み台を使う場合は、先に ~/.ssh/config の設定をしてしまうほうがラク。
+# Gateway host XXXX HostName XXX.XX.X.XX User hoge # RemoteHost-out Host YYYY HostName YY.YYY.YY.YY User huga ProxyCommand ssh -W %h:%p XXXX Trump
+デフォルトで入っているみたいなので特に設定はなし C-x C-f /ssh:huga@YYYY:/home/huga</description>
+    </item>
+    
+    <item>
+      <title>スマホからgit/Vim/Emacs</title>
+      <link>https://hugo.suwa3.me/post/2019-07-18-%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%8B%E3%82%89git-vim-emacs/</link>
+      <pubDate>Thu, 18 Jul 2019 13:00:25 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-18-%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%8B%E3%82%89git-vim-emacs/</guid>
+      <description>JSの練習していたの。
+だいぶ触っていなかったので・・
+図で説明されるとわかりやすいなあとおもう。
+Vue.js練習したいなあとおもいます。
+.
+Github、スマホからissueのClosedができたので
+もしやとおもって試してみたら、スマホから編集/反映できた。
+そしてgit cloneできるのか調べたらTermuxというアプリをいれることで
+Android上でLinuxのようなshellをつかえるようになるらしい。
+shellとgitコマンドが使えるならgit clone可能なんだねえ
+https://qiita.com/0uts1de/items/7eb13fea6ac5f02da44b
+ついでに、iPhoneにVimが入っていたのおもいだして
+iでinsert modeに入れたけれども
+どうやって抜けるのかわからず
+まさかの脱出ゲームだった。
+emacsも入れていたので開いたよ。
+iPhoneのアプリはnot emacsだけれども
+Androidアプリはemacsだったよ。なぞい
+ちなみにAtomのスマホ用エディタは見つけられず
+VSCodeはありました。</description>
+    </item>
+    
+  </channel>
+</rss>

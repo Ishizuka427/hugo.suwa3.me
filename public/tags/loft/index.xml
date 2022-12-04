@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>loft on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/loft/</link>
+    <description>Recent content in loft on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Mon, 19 Aug 2019 13:00:23 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/loft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>監視ツール</title>
+      <link>https://hugo.suwa3.me/post/2019-08-19-945/</link>
+      <pubDate>Mon, 19 Aug 2019 13:00:23 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-19-945/</guid>
+      <description>早起きして朝Tully&amp;rsquo;sしました。
+主にAnsible化について調べたよ。
+Ansibleをはじめる人に。
+ここでAnsibleの名付けのもとになった小説が紹介されていて
+Ansibleが登場するSF小説「エンダーのゲーム」読んだ
+絶対に面白そうなので読みたいとおもいました。
+SFすき。
+Ansibleって自動化させるための機能なんだとおもっていたけれども
+構成管理ツールと呼ばれているらしく
+Ansibleの他にも色々とあるのね。
+最近のトレンドがAnsibleらしい。
+シンプルで使いやすいとのこと。
+とりあえず調べるだけ調べて
+AWSのコワーキングスペースLoftに移動しました。
+AWSのアカウントを持っているだけで
+平日ここのスペースを無料で使えるの、かなり大きい。
+あまり時間もなかったので
+とりあえずメッセージの返信やスケジュールの調整など雑務を片付けて
+軽くお昼を食べて出ました。
+SNSがDockerふわふわタイムに突入して重くなったの。
+簡易的な監視ツール入れたいなとおもって登録だけしました。
+uptime robot
+.
+美容院で前髪カットして部分パーマかけて
+根元リタッチして
+髪の毛のメンテナンスしたよ。</description>
+    </item>
+    
+  </channel>
+</rss>

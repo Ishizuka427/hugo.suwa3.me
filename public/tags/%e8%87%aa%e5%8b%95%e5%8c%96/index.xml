@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>%e8%87%aa%e5%8b%95%e5%8c%96 on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/%e8%87%aa%e5%8b%95%e5%8c%96/</link>
+    <description>Recent content in %e8%87%aa%e5%8b%95%e5%8c%96 on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 19 Jan 2020 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/%e8%87%aa%e5%8b%95%e5%8c%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Slack見落とし撲滅作戦 Python &#43; Selenium</title>
+      <link>https://hugo.suwa3.me/post/2020-01-19-slack%E8%A6%8B%E8%90%BD%E3%81%A8%E3%81%97%E6%92%B2%E6%BB%85%E4%BD%9C%E6%88%A6-python-selenium/</link>
+      <pubDate>Sun, 19 Jan 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-01-19-slack%E8%A6%8B%E8%90%BD%E3%81%A8%E3%81%97%E6%92%B2%E6%BB%85%E4%BD%9C%E6%88%A6-python-selenium/</guid>
+      <description>Slackで、自分宛てにメンションされたものを見落としてしまい
+どうしたものかと悩んでいた際に、同僚から
+「Slack内の検索窓で『to:@&amp;lt;自分の名前&amp;gt;』って検索すれば、自分宛てのメンションを検索できますよ」
+と、教えてもらい
+「そんな機能あるのか！」
+と、感動したと同時に
+「しかしその検索する行為ですら、わたしは忘れてしまう人間なのだ！」
+と、絶望したので
+なんとか教えていただいた便利機能を有効的に使えないかと考えたのが
+『Slack見落とし撲滅作戦』
+です。
+案① ブラウザ版Slack内の検索窓で｢to:@&amp;lt;自分の名前&amp;gt;｣と毎朝検索するのを習慣化する
+案② たぶん習慣化できないのでPython + Seleniumで自動化する
+とりあえず途中までやったので
+備忘録です。
+環境 MacOS Mojavi 10.14.6 Python3 pip 環境分離してseleniumをインストール selenium-slackディレクトリを作成します。
+$ mkdir selenium-slack $ cd selenium-slack/ 仮想環境を作成します。
+$ python3 -m venv myvenv 有効化します。
+$ source myvenv/bin/activate seleniumをインストールします。
+$ pip3 install selenium ChromeDriver のインストール ChromeDriverとは、Google Chromeを操作するために必要なドライバ（ソフト）です。 ブラウザごとに専用のドライバが用意されています。
+バージョンを指定してChromeDriverをインストールします。
+例えば、現在つかっているChromeのバージョンをチェックして
+それに合わせたバージョンのChromeDriverをインストールします。
+ChromeDriver - WebDriver for Chrome
+例えば79であれば、こちらです。
+ChromeDriverプログラムのパスを指定してあげます。
+$ driver = webdriver.Chrome(executable_path=&amp;#39;./chromedriver&amp;#39;) 試しにサンプルを書いてみます。
+$ vim sample.</description>
+    </item>
+    
+  </channel>
+</rss>

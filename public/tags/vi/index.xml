@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vi on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/vi/</link>
+    <description>Recent content in vi on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 04 Sep 2019 09:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/vi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>~/.ssh/configの設定など</title>
+      <link>https://hugo.suwa3.me/post/2019-09-04-ssh-config%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%AA%E3%81%A9/</link>
+      <pubDate>Wed, 04 Sep 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-04-ssh-config%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%AA%E3%81%A9/</guid>
+      <description>はあい、本日のTODOです。
+~/.ssh/configの設定 先日Docker沈黙タイムがやたら長くて帰れない事態に陥ったので
+~/.ssh/configに、サーバーへ60秒毎に生きている報告をする設定を書きました。
+~/.ssh/configについて - Qiita
+ラズパイにログインするのも簡単になった。
+やったねえ
+cronをAnsibleに追加
+そしてメディア削除のDockerコマンドをcronで実行したもの。
+（参照）usermod/cronでdocker-compose – うさぎでもわかる
+これを構成管理に組み込むためAnsibleに設定しました。
+9ddで一気に9行消せた、わーい
+そしてdd連打していたら関係ないところも消してしまい
+ひーん😢となって調べたらuで元に戻せました。
+viコマンド *dd
+カーソルがあるところから*行削除 ex.3dd（3行削除）
+*yy
+カーソルがあるところから*行コピー
+p
+ペースト
+u
+操作を一つ戻す
+Ctrl+r
+戻すのを戻す
+※ dd,yyでそれぞれ1行削除/コピー
+デスクトップのゴミ箱化どうにかする
+デスクトップがゴミ箱代わりになっていて
+スクリーンの設定で見えないようにしていたの。
+きちんと整理したいとおもい
+スクショの保存先がデスクトップなのが諸悪の根源だと考え
+保存先を指定できるか調べました。
+Macのスクリーンショットの保存先を変更する｜MacFan
+ホームにSSディレクトリを作成して以下のコマンドを実行
+$ defaults write com.apple.screencapture location ~/SS/;killall SystemUIServer
+変更できた。わーい
+むかしスクショしたものが出てきたよ。
+たぶんvenvで仮想環境つくり、Pythonで春って単語を含むものをホニャララしたやつ。（忘れた）
+このころはコンテナもクラウドもなんでもかんでも仮想っていうから
+仮想わけわからんっておもっていた。懐かしい</description>
+    </item>
+    
+  </channel>
+</rss>

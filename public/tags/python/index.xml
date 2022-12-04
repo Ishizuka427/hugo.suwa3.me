@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/python/</link>
+    <description>Recent content in python on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Fri, 20 Mar 2020 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazon Linux AMIにPython3系をインストール</title>
+      <link>https://hugo.suwa3.me/post/2020-03-20-amazon-linux-ami%E3%81%ABpython3%E7%B3%BB%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+      <pubDate>Fri, 20 Mar 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-03-20-amazon-linux-ami%E3%81%ABpython3%E7%B3%BB%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+      <description>https://wp.suwa3.me/2019/12/28/pixela%e3%81%a8%e3%81%84%e3%81%86%e8%8d%89api%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%82%92%e5%88%a9%e7%94%a8%e3%81%97%e3%81%a6%e3%80%81wordpress%e3%81%aepv%e6%95%b0%e3%82%92github%e9%a2%a8%e3%81%ab-2/
+Pixela × GA cronの中身が置いてあるGitHubリポジトリです。
+こちらのcronがうまく実行できていなかったので
+まずは手動で実行してみて
+何のerrorが出るかを確認して対処しました。
+日付を指定して実行 日付を指定して実行するには
+コメントのように書き直します。
+参照: datetime &amp;mdash; 基本的な日付型および時間型 — Python 3.8.2 ドキュメント
+def main(): analytics = initialize_analyticsreporting() yesterday = date.today() - datetime.timedelta(days=1) # yesterday = datetime.date(2020, 2, 24) # 日付を指定して実行する場合 response = get_report(analytics, yesterday) 手動実行してerrorの確認 サーバーにログイン後
+登録されているcron一覧を表示します。
+# crontab -l 0 2 * * * cd /opt/wp-pixela &amp;amp;&amp;amp; python3 google_analytics_access.py 試しに手で実行してみました。
+# cd /opt/wp-pixela &amp;amp;&amp;amp; python3 google_analytics_access.py -bash: python3: command not found errorの原因 python3が無いっぽい。</description>
+    </item>
+    
+    <item>
+      <title>Python復習</title>
+      <link>https://hugo.suwa3.me/post/2020-03-06-%E5%BE%A9%E7%BF%92/</link>
+      <pubDate>Fri, 06 Mar 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-03-06-%E5%BE%A9%E7%BF%92/</guid>
+      <description>今日は大事大事な基礎って部分をやったと思うので備忘録です。
+このblogの続き作業です。
+https://wp.suwa3.me/2020/03/04/%e3%80%8c%e3%81%93%e3%82%8c%e3%81%8c%e7%84%a1%e3%81%84%e3%81%a8%e5%8b%95%e3%81%8b%e3%81%aa%e3%81%84%e3%80%8d%e7%b3%bb/
+from datetime import date してきて、date関数を使えるようにしたら
+自分のほしい形式になるように整形して
+出力されるものが文字列なのか数値なのかを考えて代入する。
+datetime &amp;mdash; 基本的な日付型および時間型 — Python 3.8.2 ドキュメント
+from datetime import date (略) def get_report(analytics, date_): (略) return analytics.reports().batchGet( body={ &amp;#39;reportRequests&amp;#39;: [ { &amp;#39;viewId&amp;#39;: VIEW_ID, &amp;#39;dateRanges&amp;#39;: [{&amp;#39;startDate&amp;#39;: date_.strftime(&amp;#34;%Y-%m-%d&amp;#34;), &amp;#39;endDate&amp;#39;: date_.strftime(&amp;#34;%Y-%m-%d&amp;#34;)}], &amp;#39;metrics&amp;#39;: [{&amp;#39;expression&amp;#39;: &amp;#39;ga:sessions&amp;#39;}], &amp;#39;dimensions&amp;#39;: [{&amp;#39;name&amp;#39;: &amp;#39;ga:country&amp;#39;}] }] } ).execute() (略) def main(): analytics = initialize_analyticsreporting() yesterday = date(2020, 3, 9) - datetime.timedelta(days=1) response = get_report(analytics, yesterday) data = { &amp;#34;date&amp;#34;: yesterday.strftime(&amp;#34;%Y%m%d&amp;#34;), &amp;#34;quantity&amp;#34;: response[&amp;#34;reports&amp;#34;][0][&amp;#34;data&amp;#34;][&amp;#34;totals&amp;#34;][0][&amp;#34;values&amp;#34;][0], } 使う関数は、その都度公式リファレンスで使い方の詳細を確認する。</description>
+    </item>
+    
+    <item>
+      <title>「これが無いと動かない」系</title>
+      <link>https://hugo.suwa3.me/post/2020-03-04-%E3%81%93%E3%82%8C%E3%81%8C%E7%84%A1%E3%81%84%E3%81%A8%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84%E7%B3%BB/</link>
+      <pubDate>Wed, 04 Mar 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-03-04-%E3%81%93%E3%82%8C%E3%81%8C%E7%84%A1%E3%81%84%E3%81%A8%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84%E7%B3%BB/</guid>
+      <description>今日は少しだけ.pyを触ったので備忘録です。
+GitHub
+https://github.com/Ishizuka427/wp-pixela
+経緯 サイドバーにあるGitHubの草風PV表示ですが
+PixelaというAPIで提供されているサービスと、Google Analytics APIを連携させているの。そこの連携部分をPythonで書いています。
+諸々の方法などは下記の記事にまとめてあるので、気になった方は読んでください。
+https://wp.suwa3.me/2019/12/28/pixela%e3%81%a8%e3%81%84%e3%81%86%e8%8d%89api%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%82%92%e5%88%a9%e7%94%a8%e3%81%97%e3%81%a6%e3%80%81wordpress%e3%81%aepv%e6%95%b0%e3%82%92github%e9%a2%a8%e3%81%ab-2/
+EC2上でSNS運用していて、そこのインスタンスでcron実行させていたのだけれども
+サーバーの引っ越しなどしていたらcronの存在をすっかり忘れていて、草を生やし忘れていたの。
+**そもそも1日1回のジョブならLambdaで良いのでは？
+**って感じなので、移行作業をしようと思って
+その準備として
+「とりあえずローカルで実行させてみよう」
+と、作業したら依存パッケージ絡みで躓いたので書き記します。
+＿人人人人人人人人人人人人人人人人人＿
+＞　今回Lambdaの話は出てきません　＜
+￣Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y￣
+PypI Pythonのサードパーティパッケージ
+https://pypi.org/
+$ pip install &amp;lt;パッケージ名&amp;gt; でインストールできます。
+環境変数を.envにまとめて.pyに読み込ませて実行させていたのですが
+その際に使うモジュールを検索していて
+dotenv かなぁ。と思ってインストールしたら違いました。
+$ pip install dotenv すると、長いerrorを吐かれます。
+py-dotenv や dotenv-python などもそれっぽいですが、実はひっかけです。
+最終Releaseが 3年前 とかです。
+正解は python-dotenv です！
+**こんなんわかるか！
+**って気持ちになったので、そのモチベーションだけでblogを書きました。
+dotenv , python などでググれば出てくるといえば出てくるので
+ググり方がカスなだけでしたが、ここに備忘録として残します。
+こういった「これが無いと動かない」系は、GitHubのREADME.mdに忘れずに書いておこうと思いました。</description>
+    </item>
+    
+    <item>
+      <title>LambdaとPythonでAPI GatewayをエンドポイントにしてSlackに何かを送る</title>
+      <link>https://hugo.suwa3.me/post/2020-02-11-lambda%E3%81%A8python%E3%81%A7api-gateway%E3%82%92%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%AB%E3%81%97%E3%81%A6slack%E3%81%AB%E4%BD%95%E3%81%8B%E3%82%92%E9%80%81%E3%82%8B/</link>
+      <pubDate>Tue, 11 Feb 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-02-11-lambda%E3%81%A8python%E3%81%A7api-gateway%E3%82%92%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%AB%E3%81%97%E3%81%A6slack%E3%81%AB%E4%BD%95%E3%81%8B%E3%82%92%E9%80%81%E3%82%8B/</guid>
+      <description>経緯 今週の水曜日にJAWS-UG 初心者支部#23 次回のハンズオン勉強会向けのチューター向け予習会へ参加することになりました。
+Lambdaは、花屋時代にローカル環境でテスト実行してみてQiitaに上げたきりだったので
+その時の記事 =&amp;gt; Pythonでaws-sam-cliをローカル実行するまで
+もうすこし踏み込んで
+(実用性を意識しながらLambdaを触ってみたいなぁ)
+と、思った＆予習も兼ねて
+『API GatewayをエンドポイントにしてLambdaを起動しSlackに何かを流す』
+というのをやってみました。
+API Gatewayをエンドポイントにした実行を試したいと考えた理由として
+外部から連携したい場合、HTTPリクエストを受けて発火させる場面が多くあるので
+これから効率化を考える際に、よく使いそうな手法として要領を掴んで慣れておきたかったからです。
+逆にAPI Gatewayを使わないパターンとして
+AWS内のサービスを使うときは、わざわざエンドポイントを外に置かなくても
+AWSのサービス同士はだいたいIAMロールを使えばAWS内でセキュアに連携できます。
+流れ 流れとしては
+SlackでIncoming Webhookの設定をしてWebhook URLを控えます。
+Lambdaのコンソール上で関数を作成して
+Webhook URLをその関数内で使用し、連携させます。
+API Gatewayのコンソール上でLambda関数を紐付けて
+エンドポイントをデプロイすると、発火用のURLが発行されます。
+そのURLにアクセスする(HTTPリクエストが届く)と
+それを合図にしてLambdaが起動して
+SlackのBotが起動する、という仕組みです。
+Slack
+1. Incoming Webhookの設定
+2. Webhook URLを控える Lambda
+1. 関数の作成
+2. 関数内にWebhook URLを仕込む API Gateway
+1. Lambda関数の紐付け
+2. エンドポイントをデプロイして発火用URLを控える (例えば)ブラウザなど
+エンドポイントURLにアクセスしてみる Slack
+Botが起動する Slack Incoming Webhookの設定 まずはSlackの設定です。
+『Slackをカスタマイズ』を選択します。
+左上の『MENU』から
+『App 管理』を選択します。
+『 Incoming Webhook』を検索し、アプリを『Slackに追加』します。</description>
+    </item>
+    
+    <item>
+      <title>Slackの自動化</title>
+      <link>https://hugo.suwa3.me/post/2020-01-20-slack%E3%81%AE%E8%87%AA%E5%8B%95%E5%8C%96/</link>
+      <pubDate>Mon, 20 Jan 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-01-20-slack%E3%81%AE%E8%87%AA%E5%8B%95%E5%8C%96/</guid>
+      <description>Slackの自動化はとりあえず最後までいきました。
+PythonやXPathなど勉強になってよかったです。
+クローラ作成に必須！XPATHの記法まとめ - Qiita
+作ったものは隠すところを環境変数化してGitHubにupしました。
+selenium-slack - github
+あとはREADME.mdなどまとめたいです。
+自動化で、手こずるなぁと感じたのが
+CSSのidで指定できないときにXPathでの指定で、
+まぁまぁややこしいなと感じた。
+あとは直接入力なのか、クリック入力なのか
+細かな差でコードがかなり変わるので
+実際に手で操作方法を念入りに確認しながら進めるのが近道だなと感じました。
+今回はデバッガーがとても役立った。
+import pdb #pdbをインポート pdb.set_trace() #止めたい位置に挟む 本当にのんびりとした歩みだけれども
+少しずつ出来ることが増えていくの嬉しい。</description>
+    </item>
+    
+    <item>
+      <title>Slack見落とし撲滅作戦 Python &#43; Selenium</title>
+      <link>https://hugo.suwa3.me/post/2020-01-19-slack%E8%A6%8B%E8%90%BD%E3%81%A8%E3%81%97%E6%92%B2%E6%BB%85%E4%BD%9C%E6%88%A6-python-selenium/</link>
+      <pubDate>Sun, 19 Jan 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-01-19-slack%E8%A6%8B%E8%90%BD%E3%81%A8%E3%81%97%E6%92%B2%E6%BB%85%E4%BD%9C%E6%88%A6-python-selenium/</guid>
+      <description>Slackで、自分宛てにメンションされたものを見落としてしまい
+どうしたものかと悩んでいた際に、同僚から
+「Slack内の検索窓で『to:@&amp;lt;自分の名前&amp;gt;』って検索すれば、自分宛てのメンションを検索できますよ」
+と、教えてもらい
+「そんな機能あるのか！」
+と、感動したと同時に
+「しかしその検索する行為ですら、わたしは忘れてしまう人間なのだ！」
+と、絶望したので
+なんとか教えていただいた便利機能を有効的に使えないかと考えたのが
+『Slack見落とし撲滅作戦』
+です。
+案① ブラウザ版Slack内の検索窓で｢to:@&amp;lt;自分の名前&amp;gt;｣と毎朝検索するのを習慣化する
+案② たぶん習慣化できないのでPython + Seleniumで自動化する
+とりあえず途中までやったので
+備忘録です。
+環境 MacOS Mojavi 10.14.6 Python3 pip 環境分離してseleniumをインストール selenium-slackディレクトリを作成します。
+$ mkdir selenium-slack $ cd selenium-slack/ 仮想環境を作成します。
+$ python3 -m venv myvenv 有効化します。
+$ source myvenv/bin/activate seleniumをインストールします。
+$ pip3 install selenium ChromeDriver のインストール ChromeDriverとは、Google Chromeを操作するために必要なドライバ（ソフト）です。 ブラウザごとに専用のドライバが用意されています。
+バージョンを指定してChromeDriverをインストールします。
+例えば、現在つかっているChromeのバージョンをチェックして
+それに合わせたバージョンのChromeDriverをインストールします。
+ChromeDriver - WebDriver for Chrome
+例えば79であれば、こちらです。
+ChromeDriverプログラムのパスを指定してあげます。
+$ driver = webdriver.Chrome(executable_path=&amp;#39;./chromedriver&amp;#39;) 試しにサンプルを書いてみます。
+$ vim sample.</description>
+    </item>
+    
+    <item>
+      <title>Pixelaという草APIサービスを利用して、WordPressのPV数をGitHub風に草生やしてサイドバーに表示させたい(丁寧に)</title>
+      <link>https://hugo.suwa3.me/post/2019-12-28-pixela%E3%81%A8%E3%81%84%E3%81%86%E8%8D%89api%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6wordpress%E3%81%AEpv%E6%95%B0%E3%82%92github%E9%A2%A8%E3%81%AB-2/</link>
+      <pubDate>Sat, 28 Dec 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-12-28-pixela%E3%81%A8%E3%81%84%E3%81%86%E8%8D%89api%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6wordpress%E3%81%AEpv%E6%95%B0%E3%82%92github%E9%A2%A8%E3%81%AB-2/</guid>
+      <description>https://wp.suwa3.me/2019/12/25/pixela%e3%81%a8%e3%81%84%e3%81%86%e8%8d%89api%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%82%92%e5%88%a9%e7%94%a8%e3%81%97%e3%81%a6%e3%80%81wordpress%e3%81%aepv%e6%95%b0%e3%82%92github%e9%a2%a8%e3%81%ab/
+こちらのblog内容の続きです。
+準備内容だとか箇条書きな感じになっているので
+もう少し丁寧に書きます。
+まず、GitHub風に草を生やすことができるPixela
+超かわいい！！と、見た瞬間一目惚れして
+ぜひこれでblogのPV数をサイドバーなどに表示させたいと思いました。
+(スマホの場合は下にスクロールしてもらうと記事＆検索窓の下に表示されます)
+順序としては以下のとおりです。
+PixelaでユーザーとIDを作成してグラフを表示させてみる PV数を調べるため、対象blogにGoogleAnalyticsを導入する GoogleAnalytics APIを利用してjsonファイルをDLする PythonでjsonファイルからPixelaの求める出力ができるように整形する ディレクトリをサーバーなどに置いてcron実行させる htmlにで埋め込む PixelaでユーザーとIDを作成してグラフを表示させてみる https://pixe.la/
+こちらのサービスですが
+基本的にすべてWeb APIで構成されるサービスになるため
+ユーザーやIDの登録など、設定もAPIで行います。
+初めはユーザー登録からAPIで設定することにハードルの高さを感じたのですが
+使ううちに、無駄がなくて洗練されているなぁと感じるようになりました。
+以下の
+a-know には自分の希望ユーザー名
+thisissecret にはパスワードを入力します。
+$ curl -X POST https://pixe.la/v1/users -d &amp;#39;{&amp;#34;token&amp;#34;:&amp;#34;thisissecret&amp;#34;, &amp;#34;username&amp;#34;:&amp;#34;a-know&amp;#34;, &amp;#34;agreeTermsOfService&amp;#34;:&amp;#34;yes&amp;#34;, &amp;#34;notMinor&amp;#34;:&amp;#34;yes&amp;#34;}&amp;#39; 成功すると以下が表示されます。
+{&amp;#34;message&amp;#34;:&amp;#34;Success.&amp;#34;,&amp;#34;isSuccess&amp;#34;:true} test-graph には希望するID(URLに使われます)
+graph-name には希望する名前
+commit には希望する単位(kgやｍなどでもOK)
+int は、今回はPV数ということで整数を扱うのでそのままです。
+shibafu には色を入力します。
+green,red,blue,yellow,purple,blackから選べます。
+$ curl -X POST https://pixe.la/v1/users/a-know/graphs -H &amp;#39;X-USER-TOKEN:thisissecret&amp;#39; -d &amp;#39;{&amp;#34;id&amp;#34;:&amp;#34;test-graph&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;graph-name&amp;#34;,&amp;#34;unit&amp;#34;:&amp;#34;commit&amp;#34;,&amp;#34;type&amp;#34;:&amp;#34;int&amp;#34;,&amp;#34;color&amp;#34;:&amp;#34;shibafu&amp;#34;}&amp;#39; 成功すると以下が表示されます。
+{&amp;#34;message&amp;#34;:&amp;#34;Success.&amp;#34;,&amp;#34;isSuccess&amp;#34;:true} ブラウザで以下にアクセスします。
+a-know にはユーザー名 test-graph にはIDを指定してください。
+https://pixe.la/v1/users/a-know/graphs/test-graph
+(ユーザー名にsuwa3/IDにtest-graphを指定した例)</description>
+    </item>
+    
+    <item>
+      <title>DjangoGirls</title>
+      <link>https://hugo.suwa3.me/post/2019-12-07-djangogirls/</link>
+      <pubDate>Sat, 07 Dec 2019 13:00:22 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-12-07-djangogirls/</guid>
+      <description>コーチとしてDjangoGirlsのワークショップに参加しました。
+先日、AWSのハンズオンを主催してみて
+｢参加する側よりも主催する側の方が
+勉強に繋がって成長できるのでは｣
+と感じたのをキッカケに
+自分自身が理想としていたDjangoGirlsのハンズオンに
+スタッフとして参加してみようと思いました。
+受けた質問を一通りまとめて、躓きやすいポイントを整理しながら
+｢どういったサポートが相手のためになるのか、どういった伝え方がスムーズに受け入れられるか｣
+など考えました。
+ただ訊かれたことに答えるだけではなく
+その周辺情報を伝えることで、より理解が深まる場合もあると思うのだけれども
+もともとインフラよりの方と
+フロントよりの方では質問内容や興味のもちかたの傾向がかなり違うだとか
+非エンジニアの方への伝え方で、なるべく専門的な用語を使わないだとか
+テクニックが要るなぁと感じました。
+チュートリアルの完成度の高さがあってこそ
+こういった面について考えることができるのだなぁ
+と思いました。
+まだまだ勉強不足な部分たくさんあるので
+これからも頑張りたいです。
+今日の収穫、いっぱいあったのですが
+個人的に面白いなと思ったのが
+DjangoのMTVという考え方で
+Laravelの話も少し出ていてわかりやすかったです。
+Djangoの魅力をもっと知りたいなと感じました。
+自分で書いたものをどんどん試して改造してみたい〜😃
+あとはFlaskというフレームワークの存在を知ったので
+これも軽く試してみたいです。
+初めてDjangoGirlsのハンズオンに参加したとき
+Django自体の魅力はもちろん
+チュートリアルの完成度の高さと
+コーチ役との距離感のちょうど良さと
+DjangoGirls代表であるマミさんの牽引力に惹かれて
+「このコミュニティに所属したいなぁ」
+と、一目惚れに近い気持ちになったの。
+今後も、開発コミュニティを通して交流を深めつつ
+技術の幅を広げていきたいなと思いました。</description>
+    </item>
+    
+    <item>
+      <title>Django GirlsチュートリアルでつくったものでDockerfile作成</title>
+      <link>https://hugo.suwa3.me/post/2019-10-20-django-girls%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%E3%81%A7%E3%81%A4%E3%81%8F%E3%81%A3%E3%81%9F%E3%82%82%E3%81%AE%E3%81%A7dockerfile%E4%BD%9C%E6%88%90/</link>
+      <pubDate>Sun, 20 Oct 2019 11:20:36 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-20-django-girls%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%E3%81%A7%E3%81%A4%E3%81%8F%E3%81%A3%E3%81%9F%E3%82%82%E3%81%AE%E3%81%A7dockerfile%E4%BD%9C%E6%88%90/</guid>
+      <description>まずDocker Hubで使いたいイメージを探します。
+公式のものなど、なるべく信頼できるイメージをつかった方が良さげです。
+Django Girlsチュートリアルでつくったものはこちらです。
+$ ls blog manage.py myvenv README.md db.sqlite3 mysite requirements.txt
+元になるイメージはpython:3.7.5-slim-busterを選びました。
+Django起動時に打ち込んでいるコマンドを
+Dockerfileに書き込んでいきます。
+$ vi Dockerfile
+FROM python:3.7.5-slim-buster COPY . /app/ WORKDIR /app RUN pip3 install -r requirements.txt RUN python3 manage.py collectstatic &amp;ndash;noinput CMD python3 manage.py runserver 0.0.0.0:8000
+イメージ名にはわかりやすい名前をつけて
+タグにはバージョン（日付や0.1.0など）を指定してあげると良いです。
+無記入だとlatestになります。
+$ docker build -t [イメージ名]:[タグ] . 例えば $ docker build -t djangogirls:0.1.0 .
+最後のドットを忘れないように注意です。
+一覧を出すには
+$ docker images REPOSITORY TAG IMAGE ID CREATED SIZE djangogirls latest 53a38ee83c1a 24 minutes ago</description>
+    </item>
+    
+    <item>
+      <title>UNIX歴史講座/スクレイピングハンズオン</title>
+      <link>https://hugo.suwa3.me/post/2019-10-14-unix%E6%AD%B4%E5%8F%B2%E8%AC%9B%E5%BA%A7-%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3/</link>
+      <pubDate>Mon, 14 Oct 2019 13:00:25 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-14-unix%E6%AD%B4%E5%8F%B2%E8%AC%9B%E5%BA%A7-%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3/</guid>
+      <description>きょうは座学とハンズオンのハシゴでした。
+ハシゴは結構疲れることを学んだ。
+平成生まれのためのUNIX&amp;amp;IT歴史講座 〜jus黎明期編/UNIX Fair編〜 - connpass
+これです。
+登壇されていた 岸田孝一さん(jus初代会長)
+シグマ作戦の初代リーダーもしていたと知って驚きました。
+花の手配の関係上、名前は知っていたので
+実物がみたいなあとおもって行ったのだけれども
+想像以上の、歴史の生き証人といった感じだった。
+1970年代当時、UNIXのライセンス料は1台目が43000ドルで
+当時230円/ドルだったため
+ライセンス料だけで約一千万円して
+今の物価で考えると気が遠くなるような値段だなとおもいました。
+導入している企業や団体も少なくて
+当然root権限をもっているもごくわずかで
+「root権限をもっているひとの会」
+のような集まりもあったらしい。
+root権限って普通にあるものじゃなかったのか&amp;hellip;
+コードをネットからDLもできなかったので
+（そもそもインターネットが無い）
+コードを手打ちして性能を見るなどしていたという話を聞いて
+できないことが多すぎてびびりました。
+日本UNIXユーザ会(jus)が主催していたUNIX Fairについて
+セミナーへの参加費が9万円だとかで
+最近だと無料のセミナーが溢れているのに
+当時の会報には
+「 参加費が5桁に収まったのが画期的」
+と書かれていて、感覚が違うの。たっか！ってなった。
+Bill Joy氏の講演があって
+&amp;gt; ジョイの最大の貢献としてはviエディタとCシェル（csh）の開発がある。
+Wikipediaより引用
+ものすごいひと呼んでいるなあとおもった。
+viエディタの開発者、、、ふつうに講演聴きたい。
+「平成生まれの」と銘打ってはありましたが
+参加者はほとんど昭和生まれのように見えました。
+面白かったけどなぁ。
+司会の方がとても上手くて
+司会が本職ではなく、普段はフリーランスエンジニアの
+日本UNIXユーザ会幹事(元会長)という肩書きの方なのに
+会場のメインな視聴者でもある
+昭和生まれの方々にも通じるようなジョークもまじえつつ
+平成生まれが置いてきぼりにならないように
+解説的な合いの手を入れて進めてくださったので、手腕に感動しました。
+すごい
+そのあとは、そのままスクレイピングのハンズオンです。
+[秋葉原] 初心者向けPython入門会 スクレイピング編 (初心者大歓迎！) - connpass
+教材はこちらをつかいました。
+https://github.com/KengoTobita/python_scraping
+PCの🍎マークに重ねてラズパイのスッテカー貼ってあるので
+さっそく
+「素敵なラズパイですね！」
+ってやりとりしました。
+実はMacBookというオチ付きです。
+特にPython系の勉強会では、必ずといって良いほど触れてもらえるし
+ラズパイのひとで覚えて貰えるので
+目印になって良いかもしれない。</description>
+    </item>
+    
+    <item>
+      <title>Webアプリ制作byPython@DjangoGirls</title>
+      <link>https://hugo.suwa3.me/post/2019-09-07-1148/</link>
+      <pubDate>Sat, 07 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-07-1148/</guid>
+      <description>DjangoGirls主催の女子限定ハンズオンへ行ってきました。
+PythonでWebアプリを作ろう [女性対象/男女コーチ◎] 2019.9 - connpass
+初めてWebアプリつくったの、とっても楽しかった。
+チュートリアルを参考につくったの。
+とてもわかりやすくて、よく出来ているなあと感じたので
+ぜひトライしてみてください。
+Django Girls Tutorial
+最初はvimのみでディレクトリの作成からファイル内の編集までやっていて
+途中からVSCode使ってみようかな？
+とおもって使い分けをはじめたの。
+今まで設定ファイルなんかはvimで
+MastodonでAnsibleの設定を書くときはもっぱらvimなので
+&amp;lsquo;ターミナルから何かするときはvim&amp;rsquo; という謎の固定観念があって
+自分のやりやすい方法を見つければいいんだなあとおもったら
+とてもサクサク進むようになった。
+Djangoをいれてディレクトリやファイルなどがバーっと作られて
+それをターミナルからチェックしていたため
+ファイルなどもvimで編集していたの。
+VSCode見やすいねえ。
+基本的にvimのチューニング一切していないのもあるのだけれども
+いままでサーバー内で作業することが多かったので
+「VSCodeでも見ることができる！！」というのがプチ感動だった。
+ターミナル内でさっと開ける上にとてもシンプルで
+ショートカットを覚えるとどんどん使いやすくなって
+改めてvimが好きになりました。
+Emacsをもっと使いこなせるようになりたいです。
+自分でキーバインド設定も魅力的よね。
+完成品こちらです
+GitHubにはあげました。
+suwa3/djangogirls
+デプロイまだです。
+ラズパイに置きたい♡</description>
+    </item>
+    
+    <item>
+      <title>nail/Lodge</title>
+      <link>https://hugo.suwa3.me/post/2019-07-27-nail-lodge/</link>
+      <pubDate>Sat, 27 Jul 2019 13:00:28 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-27-nail-lodge/</guid>
+      <description>久しぶりのネイルいってきました。
+グレージュにしたの、くすんだピンクぽくて気に入った。
+.
+ネイルのあとはそのままYahoo!のLodgeへ直行した。
+.
+Kubernetesの予習をしていて
+https://kubernetes.io/blog/2019/07/23/get-started-with-kubernetes-using-python/
+.
+PythonをつかってKubernetesをやってみようのページを試していました。
+.
+途中で低気圧のせいか頭痛がして
+お薬を買いに行く途中吐き続けて、意識朦朧としてきたので帰宅したよ。
+.
+低気圧で具合が悪くなり過ぎるので
+先日病院でいろいろと検査をして頂いて
+｢問題ないです｣
+と言われたばかりなのだけれども
+台風の前や弾丸低気圧あると体調つらいなあ。
+.
+夜には少し体調が回復したので
+Mastodonのユーザー開放で
+登録してくれた方々の承認をしました。
+脱おひとり様した。
+保全を最優先してがんばるぞ。
+.
+EC2上にどんすわのDocker上にあるものを
+そのまま直置きでサブ鯖立てよかなとおもっていたけれども
+せっかくKubernetesの予習しているなら
+クーバでクラスタ組む練習やってみたいなあとおもいました。</description>
+    </item>
+    
+    <item>
+      <title>ブラシ付きモータードライバIC</title>
+      <link>https://hugo.suwa3.me/post/2019-07-17-%E3%83%96%E3%83%A9%E3%82%B7%E4%BB%98%E3%81%8D%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90ic/</link>
+      <pubDate>Wed, 17 Jul 2019 13:00:02 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-17-%E3%83%96%E3%83%A9%E3%82%B7%E4%BB%98%E3%81%8D%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90ic/</guid>
+      <description>有用そうな記事を見つけたので貼るね。
+https://qiita.com/stnk20/items/f614ae1471b9e555708a
+(上記サイトから引用)
+Raspberry Piを基盤にカメラの画像からPythonで自動制御させている。
+組み立て方がハマりやすいところまで詳細に書かれているしソースコードもある。
+.
+https://tech.drecom.co.jp/self-driving_on_raspberrypi/
+(上記サイトから引用)
+こちらはDeep Learningさせている。
+かなり理想に近いものなので参考にしたい。
+.
+秋葉原のパーツショップいくつか目星をつけて
+この商品があるか問い合せたの。
+マルツには在庫無しで千石電商さんの分店に電話したら
+｢本店にあるかも｣
+ということで
+本店に1時間で5回ほどかけてようやく繋がり(通話中だった)
+在庫あること確認しました。やったねえ。
+週末にブレッドボードやジャンプワイヤもあわせて買いにいきたい。
+秋葉原なんでもそろうの素晴らしいね。
+.
+なんだか気持ちが忙しないなあとおもった。
+朝は満員電車で日中は職場のひとのなかで
+渋谷はどこを歩いていてもだいたい周りにひとが沢山いるし
+帰りも満員電車にのって
+家にいても一人になれる時間がなくて
+数時間で良いので、一人でゆっくりする時間ほしいなあとおもいました。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>%e7%9b%a3%e8%a6%96 on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/%e7%9b%a3%e8%a6%96/</link>
+    <description>Recent content in %e7%9b%a3%e8%a6%96 on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Tue, 20 Aug 2019 13:00:48 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/%e7%9b%a3%e8%a6%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>監視など</title>
+      <link>https://hugo.suwa3.me/post/2019-08-20-%E7%9B%A3%E8%A6%96%E3%81%AA%E3%81%A9/</link>
+      <pubDate>Tue, 20 Aug 2019 13:00:48 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-20-%E7%9B%A3%E8%A6%96%E3%81%AA%E3%81%A9/</guid>
+      <description>夏バテ過ぎる。
+ぴぴお花屋さんだけど今日はコードも少し書いたよ。
+システムのお仕事したいなあ。
+.
+お昼はdon.suwa3.meに簡易的な監視ツールを入れるため
+Uptime Robotの設定をしていました。
+監視対象のURLと通知先のメールアドレスを登録するだけなので
+2分で完了した。
+念の為Slackにも届くようにしてみた。
+.
+don.suwa3.meをメンテナンスモードに切り替えて
+Uptime Robotから通知がくるか試したの。
+5分毎にcheckしているはずなのに
+なかなか通知が来なくて
+｢おかしいなー？｣
+とおもったんだけど
+よくよく考えたらメンテナンスページは
+通常と同様に200を返すので
+Uptime Robot的には問題なしと判断されるのだった。
+.
+ということで
+設定したURLをhttps://don.suwa3.me/about
+にして
+メンテナンスモードに切り替えて404を返すようにしてみたら
+しばらくして期待値通り
+Uptime Robotから通知がきたので
+これでdon.suwa3.meに異常が起きたら即通知くるようになったᐠ( ᐛ )ᐟ♡ᐠ( ᐖ )ᐟ
+わーいわーい
+そしてそのまましばらくメンテナンスモード戻し忘れて
+don.suwa3.meはロングラビットチャンス到来していました。
+.
+夜はHPの編集をしていた。
+背景画像を変えていたの。
+相対パスが未だによくわからんちで
+なんだか血縁関係の
+｢従兄弟は何親等か？｣
+みたいなかんじやんね。
+.
+とりあえずディレクトリのドット一つが
+｢今いる場所ここのディレクトリのこと｣
+ドット二つが
+｢今いる場所の一つ上のディレクトリのこと｣
+というのは覚えた。
+.
+../←これに慣れよう。
+あとね
+何故かHPのindex.html等が入ったディレクトリがローカルのhomeとdesktopそれぞれにあって
+ほぼ同じファイルなんだけれども
+.
+homeのディレクトリはgit管理されていて
+ターミナルからgit addとかしているのはhomeの方なの。
+.
+desktopのディレクトリはgit管理されていないんだけれども
+Atomから編集するのはdesktopのディレクトリにあるindex.html等で
+ブラウザから手作業でgit pushしているのは
+いつもdesktopのindex.htmlなの。
+｢ん？？？？｣
+ってかんじなので
+desktopのディレクトリは封印して
+homeのgit管理されているものを</description>
+    </item>
+    
+  </channel>
+</rss>

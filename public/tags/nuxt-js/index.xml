@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nuxt-js on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/nuxt-js/</link>
+    <description>Recent content in nuxt-js on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 18 Aug 2019 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/nuxt-js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript =&gt; Nuxt.js（二日目）</title>
+      <link>https://hugo.suwa3.me/post/2019-08-18-javascript-nuxt-js%E4%BA%8C%E6%97%A5%E7%9B%AE/</link>
+      <pubDate>Sun, 18 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-18-javascript-nuxt-js%E4%BA%8C%E6%97%A5%E7%9B%AE/</guid>
+      <description>Nuxt.jsへの移植作業二日目です。
+Nuxt.js ディレクトリ構造
+ディレクトリ構造について書かれていて
+「それぞれこういった役割を振り分けられているのね」
+と、ふむふむしました。
+USER-no-MacBook-Air:nuxt.Rabbit-game suwa$ tree . ├── README.md ├── assets │ └── README.md ├── components │ ├── Logo.vue │ └── README.md ├── layouts │ ├── README.md │ └── default.vue ├── middleware │ └── README.md ├── nuxt.config.js ├── package-lock.json ├── package.json ├── pages │ ├── README.md │ └── index.vue ├── plugins │ └── README.md ├── static │ ├── README.md │ └── favicon.ico └── store └── README.md 8 directories, 16 files</description>
+    </item>
+    
+    <item>
+      <title>Nuxt.js移植</title>
+      <link>https://hugo.suwa3.me/post/2019-08-17-926/</link>
+      <pubDate>Sat, 17 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-17-926/</guid>
+      <description>恵比寿でネイルしてきたよ。
+くすんだベージュで落ち着いた感じになりました。
+そのあとは六本木に移動して、しばらく作業。
+ひたすらWordPressのタグつけ作業だよ。
+PCからだと左側にタグ群が表示されて
+スマホからだと右上のハンバーガーメニュー（三本線）から
+タグ群が表示されるようになりました。
+やったねえ。
+.
+母に頼まれて大昔に作ったHPの、ログインボタンを復活させるなどしました。
+すべてgit管理したいなあ。
+.
+Rabbit-gameのNuxt.jsへの移植もすこしやったよ。
+標準ライブラリやサードパーティライブラリについて
+あと、コンパイルとビルドまでやるのかと知って
+JavaScriptなのにJavaぶっているなと感じました。
+.
+わたしは浦島太郎なのでjQueryに触れずにきて
+最新の恩恵がわからず、ただひたすら複雑化して
+JS書くだけなのに何故こんなにも段階を踏まされるのか分からん😠
+って気持ちだったのだけど
+思い返せばdocker-composeも仮想サーバーも
+以前なら存在すらしなかったけれども
+現在の技術進歩によって生み出されて
+複雑化してはいるのだけれども、便利だし覚えた方が良いよね。
+って、ノリで覚えてきたし
+JSも膨大に散らかったものを一つ一つ見るのではなく
+自動化して整理されるようなツールがあるのならば
+それの使い方は、積極的に覚えてしまった方がラクなのかもしれないと思いました。
+こちらGitHubのブラウザ上でJSを移植しようとして一気にコピペしてpushしていたの。
+移植は一行一行やっていかないとerrorだらけでわけわからんくなる😢
+と、いうことで
+$ git log
+で、今までのgit履歴を確認して
+$ git revert [ID]
+で、IDを指定して消し
+git pushしました。
+git管理だいじ</description>
+    </item>
+    
+    <item>
+      <title>Nuxt.js</title>
+      <link>https://hugo.suwa3.me/post/2019-07-22-nuxt-js/</link>
+      <pubDate>Mon, 22 Jul 2019 13:00:20 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-22-nuxt-js/</guid>
+      <description>Nuxt.jsを導入する練習をするために
+Rabbit gameをexampleとして
+GitHubにリポジトリを作成しました。
+開発サーバーかわいい
+色々と機能があるのね。
+https://ja.nuxtjs.org/guide
+サーバーサイドレンダリングはやらなかった。
+あとGitHubの使い方少しずつ慣れてきたんだけれども
+GitHub上にpushしたあとshellで修正するの慣れないので
+もう少し復習したいなあってきもちです。
+.
+$ rm -rf .git
+-rfは-rと-fくっつけたもの
+-rディレクトリを消す、ファイルの場合は不要
+-fはforce、無理やり
+.
+$ git commit -m &amp;lsquo;scaffolding&amp;rsquo;
+-mはcommit messes
+.
+$ mv * ../
+*ワイルドカードで全部
+../を指定して上の階層にmv移動させる
+.
+$ cd ..
+じぶんも上の階層に移動
+.
+$ mv .editorconfig ../
+$ mv .gitignore ../
+$ mv .nuxt/ ../
+.がつく隠しファイルは*で指定できないので手動で移動
+.
+このblogドット.だらけで意味わからんくなっているな。
+できたあ、かわいい。
+そしてspacemacsをいれました。
+Evilモードではない方にしました。
+Evilって名称にemacsの悪意のようなものをやんわりと感じつつ
+調べたら建前上きちんとした意味はあるぽい。
+真実は謎のまま。
+これから色々と設定を加えていけたら良いなあとおもいました。
+.
+現在AtomユーザーなのでAtomの使い方も復習しながら
+WebのコーディングはVSCode使いこなせたら良いなあって目標です。</description>
+    </item>
+    
+  </channel>
+</rss>

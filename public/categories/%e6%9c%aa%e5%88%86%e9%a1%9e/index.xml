@@ -1,0 +1,6360 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>%e6%9c%aa%e5%88%86%e9%a1%9e on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/categories/%e6%9c%aa%e5%88%86%e9%a1%9e/</link>
+    <description>Recent content in %e6%9c%aa%e5%88%86%e9%a1%9e on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Mon, 07 Oct 2019 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/categories/%e6%9c%aa%e5%88%86%e9%a1%9e/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>苦戦中</title>
+      <link>https://hugo.suwa3.me/post/2019-10-07-%E8%8B%A6%E6%88%A6%E4%B8%AD/</link>
+      <pubDate>Mon, 07 Oct 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-07-%E8%8B%A6%E6%88%A6%E4%B8%AD/</guid>
+      <description>どんすわアプデか
+dumpとってDockerからおろして再接続＆再設定か
+って延々と言っている気がする。
+Dockerから降ろしたいです。
+降ろせるかなあ。
+いまの職場になって
+仕事に夢中になり時間を忘れてタイムスリップ現象が頻繁に起こるので
+朝ごはんを食べなくても働けてしまうのでは
+ってかんじする。
+お腹空かない。
+正確には、没頭するとお腹空いていることに気づかないので気をつける。
+わからなくて絶望感になることもあるけれども
+「たぶんここまではできる」
+を見極めて
+なにかerrorが起きた場合に切り分けがしやすいよう計画を立てて
+ハマったらどうするかまで考えておくと
+だいぶ安心だと思った。自分が。
+いままで趣味サーバーで独学でやってきたときは
+わりと
+「わからんとおもったら即諦めて次！」
+ってテンションでやっていたので
+達成感だとかの報酬系を、自分で用意するのに苦戦中です。</description>
+    </item>
+    
+    <item>
+      <title>VPCやサブネットについて理解が深まった</title>
+      <link>https://hugo.suwa3.me/post/2019-10-06-vpc%E3%82%84%E3%82%B5%E3%83%96%E3%83%8D%E3%83%83%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E7%90%86%E8%A7%A3%E3%81%8C%E6%B7%B1%E3%81%BE%E3%81%A3%E3%81%9F/</link>
+      <pubDate>Sun, 06 Oct 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-06-vpc%E3%82%84%E3%82%B5%E3%83%96%E3%83%8D%E3%83%83%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E7%90%86%E8%A7%A3%E3%81%8C%E6%B7%B1%E3%81%BE%E3%81%A3%E3%81%9F/</guid>
+      <description>午前中は朝活で作業していました。
+冗長化サーバーでWordPressの構築やりました。
+デプロイまでこぎつけた！
+DBの設定方法などがすっぽり抜けいていて
+EC2でWordPressがインストールされているAMIを使ったのだけれども
+デフォルトでtestDB（MySQL）があって
+EC2の中に入ってDB見てみたら「あるじゃん！」ってかんじでした。
+VPCやサブネットについて理解が深まった。
+インフラのお仕事をはじめて
+今まで技術blogとして書いてきたけれども
+なかなかお仕事の内容は書けないので
+趣味サーバーで試してみたことや
+覚えた便利コマンドなど
+気をつけて書きたいなあと思いました。</description>
+    </item>
+    
+    <item>
+      <title>DATADOG/LAMP</title>
+      <link>https://hugo.suwa3.me/post/2019-10-05-datadog-lamp/</link>
+      <pubDate>Sat, 05 Oct 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-05-datadog-lamp/</guid>
+      <description>麻生区にある王禅寺ふるさと公園で行われていたイベントに行ってきました。
+動物のふれあいコーナー目当てです。
+ヤギが可愛かったあ🐑
+どんすわにDATADOG導入しました。
+ひとつのサーバーなら無料プランで入れられるとのことで試してみました。
+GUIでメモリ容量やCPU稼働率をパッと見られるの便利ねえ。
+CPUやばい。
+あとはAWSでLAMP構成の構築やりました。
+VPC、サブネットの設定です。
+チョコミントココア的なもの
+タピオカが入っていたあ。
+以前は些細なコマンドを打つのにも怖くてなかなか下調べに時間がかかったのだけれども
+最近とりあえずやってみて
+うまく行かなければerrorになるし
+どんどんやってみようみたいな感じになってきた。
+特に趣味サーバーなら、ガンガン遊び倒そうとおもいました。</description>
+    </item>
+    
+    <item>
+      <title>RDS作成時ポイント、お引っ越し</title>
+      <link>https://hugo.suwa3.me/post/2019-10-04-rds%E4%BD%9C%E6%88%90%E6%99%82%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%8A%E5%BC%95%E3%81%A3%E8%B6%8A%E3%81%97/</link>
+      <pubDate>Fri, 04 Oct 2019 13:10:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-04-rds%E4%BD%9C%E6%88%90%E6%99%82%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%8A%E5%BC%95%E3%81%A3%E8%B6%8A%E3%81%97/</guid>
+      <description>RDSとは：AWSのDBマネジメントサービスです。
+作成時のポイント
+作成時になるべく既存のMySQLと近いversionを選ぶようにします。
+作成後エンドポイントを控えておくと作業がスムーズです。
+EC2インスタンス内でdumpファイルのある
+/tmp下に移動し、下記コマンドを実行してインポート。
+$ mysql -u [ユーザー名] -p &amp;ndash;host [エンドポイント] &amp;lt; backup20191004.sql
+オプション解説
+--host [エンドポイントなどのホスト名]
+RDSの場合はAmazon RDS DBインスタンスのエンドポイント
+エンドポイントは、RDSマネジメントコンソールのインスタンス詳細で確認できます。
+MySQL DB または MariaDB DB から Amazon RDS MySQL または MariaDB DB インスタンスへのデータのインポート
+インポートが完了したらRDSにログインしてみます。
+$ mysql -u [ユーザー名] -p &amp;ndash;host [エンドポイント]
+DBの一覧を確認して、引っ越しができているか見ます。
+mysql&amp;gt; show databases;
+RDSが完成したら向きの指定を変えます。
+EC2インスタンス内に入り下記に移動（Apacheなどの設定により違う）
+/var/www/html/wp-config.php
+// ** MySQL 設定 - この情報はホスティング先から入手してください。 ** // /** WordPress のためのデータベース名 */ define(&amp;lsquo;DB_NAME&amp;rsquo;, &amp;lsquo;[DB名]&amp;rsquo;);
+/** MySQL データベースのユーザー名 */ define(&amp;lsquo;DB_USER&amp;rsquo;, &amp;lsquo;[ユーザー名]&amp;rsquo;);</description>
+    </item>
+    
+    <item>
+      <title>WordpressのEC2インスタンス内MySQLバックアップ</title>
+      <link>https://hugo.suwa3.me/post/2019-10-04-wordpress%E3%81%AEec2%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E5%86%85mysql%E3%82%92rds%E3%81%AB%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97/</link>
+      <pubDate>Fri, 04 Oct 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-04-wordpress%E3%81%AEec2%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E5%86%85mysql%E3%82%92rds%E3%81%AB%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97/</guid>
+      <description>WordpressのEC2インスタンス内にあるMySQLデータをバックアップします。
+MySQLのデータベースをmysqldumpでバックアップ/復元する方法
+上記を参考にして進めました。
+まずはEC2内に入りエクスポート
+$ mysqldump &amp;ndash;single-transaction &amp;ndash;databases [DB名] -u [ユーザー名] -p &amp;gt; /tmp/backup20191004.sql
+オプション解説
+--single-transaction
+データの整合性を維持する。ワントランザクションで作業を行う設定する
+--databases [DB名]
+DB名の指定
+-u [ユーザー名]
+ユーザー名の指定
+-p
+上で指定したユーザー名のパスワードを使用するオプション
+dumpファイルを取ることに成功しました！
+Next Step
+RDSを作成します。</description>
+    </item>
+    
+    <item>
+      <title>dig</title>
+      <link>https://hugo.suwa3.me/post/2019-10-03-dig/</link>
+      <pubDate>Thu, 03 Oct 2019 13:00:58 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-03-dig/</guid>
+      <description>きょうはねえ、午前中ふがいなくて
+お昼は泣きながらハンバーグ食べたの😢
+でも大先輩のワザをいくつか盗めたので
+嬉しくてニヤニヤしたよ。
+これつかえるようになったの嬉しいなあ
+ってきもち。
+$ dig ドメイン名
+IPアドレス見れる
+$ dig -x IPアドレス
+ドメイン名見れる
+digれるようになったあ。
+digったあとはブラウザのデベロッパーツールから、ネットワークでIPアドレスの確認だよ。
+あと、 権限の指つかいかたを完全にマスターした。
+「権限多すぎ！」と言われたら600なの。
+システム関連ファイルは、デフォルトで設定された権限で実行するのが好ましい
+なのでsudoする ！
+今日の学びはhostsファイルです。
+ローカル専用のDNS代替ってかんじ。
+Linuxのシステム関連ファイルについて
+もっと知りたいなあ。
+サーバーの冗長化やロードバランサー、DNSや踏み台についても
+週末にLAMP構成で一瞬たててみるやつやりたい。
+あれ？というかいま思ったのだけれども
+冗長化しているサーバーそれぞれに踏み台経由で入るの
+何か作業するにしても片方だけ編集することになってしまうのか。
+もし踏み台を置くのならどういった構成が良いのかなあ。
+寝ながら考えます。</description>
+    </item>
+    
+    <item>
+      <title>気絶</title>
+      <link>https://hugo.suwa3.me/post/2019-10-02-%E6%B0%97%E7%B5%B6/</link>
+      <pubDate>Wed, 02 Oct 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-02-%E6%B0%97%E7%B5%B6/</guid>
+      <description>sshのコマンドオプション調べていました。
+帰宅直後、記憶がないので気絶していたとおもわれます！
+まだ二日目だけれども
+少しずつ内容や進め方がわかってきて
+むむ、楽しいかもしれない
+と、おもうようになってきたあ。
+ランチで学食つかえるの地味に嬉しい。
+Lispのホニャララって本、名前わすれた
+Lispだったかな？古い言語だからLispだったはず（ググる）
+あっこの気持ちわるい生き物はLispだ！
+https://www.amazon.co.jp/計算機プログラムの構造と解釈-ジェラルド・ジェイ-サスマン/dp/489471163X/
+ということで見つけました。
+計算機プログラムの構造と解釈
+いつか読みたいほんのひとつです😀</description>
+    </item>
+    
+    <item>
+      <title>Dockerfileまとめ</title>
+      <link>https://hugo.suwa3.me/post/2019-10-01-dockerfile%E3%81%BE%E3%81%A8%E3%82%81/</link>
+      <pubDate>Tue, 01 Oct 2019 13:00:47 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-01-dockerfile%E3%81%BE%E3%81%A8%E3%82%81/</guid>
+      <description>Dockerfileは管理しているリポジトリの.gitと同じ階層につくる 。
+Dockerfileを書いてみる - Qiita
+（上記サイトから引用）
+Dockerfileの具体的な書き方をふむふむした 。
+Dockerを使ってLaravel開発環境構築 - Qiita
+Laravel開発環境構築につかえそうなDockerfileを探したの 。
+FROM php:7.2-fpm COPY php.ini /usr/local/etc/php/
+RUN apt-get update \ &amp;amp;&amp;amp; apt-get install -y zlib1g-dev mysql-client \ &amp;amp;&amp;amp; docker-php-ext-install zip pdo_mysql
+#Composer install RUN php -r &amp;ldquo;copy(&amp;lsquo;https://getcomposer.org/installer&#39;, &amp;lsquo;composer-setup.php&amp;rsquo;);&amp;rdquo; RUN php -r &amp;ldquo;if (hash_file(&amp;lsquo;sha384&amp;rsquo;, &amp;lsquo;composer-setup.php&amp;rsquo;) === &amp;lsquo;a5c698ffe4b8e849a443b120cd5ba38043260d5c4023dbf93e1558871f1f07f58274fc6f4c93bcfd858c6bd0775cd8d1&amp;rsquo;) { echo &amp;lsquo;Installer verified&amp;rsquo;; } else { echo &amp;lsquo;Installer corrupt&amp;rsquo;; unlink(&amp;lsquo;composer-setup.php&amp;rsquo;); } echo PHP_EOL;&amp;rdquo; RUN php composer-setup.php RUN php -r &amp;ldquo;unlink(&amp;lsquo;composer-setup.php&amp;rsquo;);&amp;rdquo; RUN mv composer.</description>
+    </item>
+    
+    <item>
+      <title>PATH</title>
+      <link>https://hugo.suwa3.me/post/2019-09-30-1326/</link>
+      <pubDate>Mon, 30 Sep 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-30-1326/</guid>
+      <description>午前中は転職に必要な書類や準備等のため
+市役所、銀行、郵便局、年金事務所とコンプリートしました。
+これらを午前中に回りきったの人生初だし、コンプリートと言って差し支えないと思う。
+あとズボンの裾直しもしてもらった！
+午後はAWSのLoftに行ったのですが
+n回目の充電器わすれで
+仕方ないので書類を書いたり、ノートのまとめをしたりしつつ軽食をとって離脱。
+そのままApple Store渋谷に直行して、持ち運び用の充電器を購入しました。
+実行環境のつくりかたを復習しておこうとおもい
+PATHを理解して、コマンドの在りかを探してみよう (1/3)：“応用力”をつけるためのLinux再入門（8） - ＠IT
+ふむふむしていました。
+必要なツールとインストーラを確認したら
+そのツールが何でつくられているのか確認して
+（だいたいドキュメントよめばわかる）
+PATHを通す流れなのだけれども、なんだかイマイチ納得いかない。
+たぶん
+「サーバとは何か」
+「仮想環境とは何か」
+っていうのをひたすら調べても
+腹の底から納得いかず
+「命とは何か」
+ってことをひたすら調べる行為なのでは&amp;hellip;
+って気持ちになったのと
+心理構造としては似ているかもしれないとおもいました。
+自作OSから自作コンピュータやったら解決できるかなあ。
+errorしたら励ましてくれるような
+優しいコンピュータを作りたいです。
+そして、本日のツボはsleepコマンドです 。
+$ sleep 1
+で、1秒コテンって寝てくれるの
+素直でとても可愛い 。</description>
+    </item>
+    
+    <item>
+      <title>未だかつてない完璧さ</title>
+      <link>https://hugo.suwa3.me/post/2019-09-29-%E6%9C%AA%E3%81%A0%E3%81%8B%E3%81%A4%E3%81%A6%E3%81%AA%E3%81%84%E5%AE%8C%E7%92%A7%E3%81%95/</link>
+      <pubDate>Sun, 29 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-29-%E6%9C%AA%E3%81%A0%E3%81%8B%E3%81%A4%E3%81%A6%E3%81%AA%E3%81%84%E5%AE%8C%E7%92%A7%E3%81%95/</guid>
+      <description>午前中はネイルに行ってきました。
+短さ、透明感、全てにおいて未だかつてない完璧さ！
+やったねえ🙋‍♀️
+午後は頭痛で眠っていましたあ。
+スタートアップについて話していて
+「これは知人の書いた記事だけれども、読んでみてほしい」
+と言われ読んでみたの
+ソフトウェアエンジニア社長として起業してから会社清算するまでの4年間の振り返り （前編）｜池内 孝啓｜note
+ディティールを詰める技術者の視点と、風呂敷を広げる経営者の視点を単一の人格に同居させることに対する不和が大きかった。
+ここ印象的でした。
+現実的な二重思考は難しいのだなあと思いました。
+あと印象的だったのが
+とはいえ開発業務としてインフラからバックエンドとフロントエンドまで、バックオフィス業務としては経理や行政手続など、その他、名刺制作やブランドデザインなどを実際に手を動かして遂行できたことはとてもよい経験でした。
+何でもやるのすごいなあ。
+今後、どうしていきたいのかなあと考えるときに
+技術面や働き方はもちろん
+10年20年先の長期的な目標もあれば
+見通しが立つなあとおもったの。
+週末の勉強会は、様々な立場のエンジニア職の方と対等に話せるので
+先人の成功談から失敗談までを聞けるのとても身になるなあと思いました。
+正直なところ今は目先の不安が大きくて
+エンジニア職として働くことにはなったけれども
+働き出して急に辛くなってしまったらどうしようだとか
+考えてもしかたない穴に落ちるので
+健康第一でがんばろうとおもいます。</description>
+    </item>
+    
+    <item>
+      <title>LT記念日</title>
+      <link>https://hugo.suwa3.me/post/2019-09-28-lt%E8%A8%98%E5%BF%B5%E6%97%A5/</link>
+      <pubDate>Sat, 28 Sep 2019 13:00:19 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-28-lt%E8%A8%98%E5%BF%B5%E6%97%A5/</guid>
+      <description>PORTのもくもく会に参加してきました。
+ほぼランチからの参加でした。
+お気に入りの変な人いました！やったねえ
+みそぴ磁石のルービックキューブ触らせてくれた
+動きの滑らかさに感動したあ。
+超絶美女と仲良くなりました、笑　わーい
+ランチタイムは
+「どうやって就活したのか」
+などについて話しました。
+就活の流れや、それにともなった技術的な勉強の進め方も
+まとめられたらいいなあ。
+初めてLT（Lightning Talks）をしました。
+簡単な発表なのだけれども
+内容は昨日あげたスライドをそのまま使いました。
+反応が良く、質問もたくさん出てくれたので嬉しかったです。
+いくつか質問をピックアップしてまとめました。
+本日のもくもく会では
+主にAWS CLIの設定をしたので書きます。
+$ aws &amp;ndash;version -bash: aws: command not found
+AWSコマンドの設定しないと！
+AWS CLI の設定
+$ ls ~/Library/Python/3.7/bin
+$ vi ~/.bash_profile export PATH=~/Library/Python/3.7/bin:$PATH
+↑を追記
+設定ファイルと認証情報ファイル
+頻繁に利用される構成設定および認証情報を AWS CLI が維持するファイルに保存することができます。
+$ vi ~/.aws/credentials
+[default] aws_access_key_id=ひみつ aws_secret_access_key=ひみつ
+$ vi ~/.aws/config
+[default] region=us-west-2 output=json
+awsコマンド使えるようになっているかなあ
+$ aws &amp;ndash;version aws-cli/1.16.248 Python/3.7.4 Darwin/17.7.0 botocore/1.12.238
+わーい、できた\( ˆoˆ )/</description>
+    </item>
+    
+    <item>
+      <title>LT</title>
+      <link>https://hugo.suwa3.me/post/2019-09-27-lt/</link>
+      <pubDate>Fri, 27 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-27-lt/</guid>
+      <description>LTの資料を作って
+夜はいつのまにか気絶していたので記憶ありません！
+ちなみにEverNoteでつくって
+PDF化してSpeakerdeckというサービスを使い
+スライドにしてみました。
+https://speakerdeck.com/suwa3/ji-nian-ri
+今日が、今の職場の最終出勤日でした。
+来月から新しい職場です。
+職場の人から何度も使えるホットアイマスクを貰いました。
+「これから目を酷使するだろうし使ってね」
+ってことでした。うるー😢</description>
+    </item>
+    
+    <item>
+      <title>IAMで苦労したくありません</title>
+      <link>https://hugo.suwa3.me/post/2019-09-26-iam%E3%81%A7%E8%8B%A6%E5%8A%B4%E3%81%97%E3%81%9F%E3%81%8F%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93/</link>
+      <pubDate>Thu, 26 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-26-iam%E3%81%A7%E8%8B%A6%E5%8A%B4%E3%81%97%E3%81%9F%E3%81%8F%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93/</guid>
+      <description>今日強くおもったのでタイトルにしました。
+強い意志の表明です。
+Installing Terraform | Terraform - HashiCorp Learn
+Terraformやってみた。
+HashiCorp社ってVagrantの開発もしているのねえ
+Dockerに似てるなあっておもいながら少し触っただけだけれども、Vagrant。
+使用感は似ているらしい。
+$ brew install terraform
+スムーズにbrewできただけで感動してしまう。
+AWSのIAMコンソール開いてポチポチしました。
+これらのユーザーなんで作ったんだろう。
+何に使っているんだろう。
+アクティビティ今日らしいけれども。
+作業ログ残さないと、怖くて消せない塩漬けユーザーが増えるということを学びましたあ。
+TerraformでAWSのIAMユーザのグループポリシーを管理する - Qiita
+よくわからんからTerraformやるのに
+やる前に「権限決めて」とか、わけわからんなとおもいました( *｀ω´)
+ポリシーの設定に悩みあぐねた結果
+知らんがな状態で決定を迫られて
+しかも「後から変更するのが面倒臭い」というのは
+よくないなあ〜とおもったので
+タイトルにも強めに書いておきました。
+チュートリアルは一度置いておいて
+IAMロールでEC2からS3をアクセス制御 | 技術情報ブログ | マネージドホスティングのディーネット
+S3のバケットを作るのやる。
+$HOME/.aws/
+この下に
+credentials
+という名前で
+[default] aws_access_key_id = no aws_secret_access_key = no
+アクセスキーとシークレットキーを保存します。
+とりあえずCSVでDLはしたので
+続きは明日やろうとおもいます。
+今日は、お皿を洗いながら
+渇いた叫びを聴いていたら捗ったの。
+たまには音楽聴きながら作業しちゃおうかなあ。
+音楽プレーヤー代わりのiphoneです。
+最近またテトリスブーム復活してきたうさぎです。
+電車のなかでひたすらテトリスしながら渇いた叫び聴いている。
+しかし、みそぴは電車の中でおもむろにルービックキューブやりだすので
+それと比較したら全然普通なのでセーフです。</description>
+    </item>
+    
+    <item>
+      <title>Netlify</title>
+      <link>https://hugo.suwa3.me/post/2019-09-25-netlify/</link>
+      <pubDate>Wed, 25 Sep 2019 13:00:22 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-25-netlify/</guid>
+      <description>HexoをNetlify上にデプロイしてみた。
+GitHubリポジトリ一覧から公開するものを選択をして
+ビルドコマンドの設定をして
+ドメインの設定をしました。
+DNSはAWSのRoute53を使いました🙋‍♀️
+CNAMEにNetlifyサブドメイン（デフォルトで割り振られているドメイン）の値を入れて
+Let&amp;rsquo;s Encryptやってくれるの嬉しい！
+証明書の発行には少し時間がかかるみたい。
+わーい
+hexo.suwa3.meだよ。
+11月23日でblog開始一周年になるので
+hexoがいい感じにカスタマイズできたら
+お引越ししちゃおうかなあ。
+ふんふん
+あ！ドキュメント眺めていたらステータスバッジ発見した
+Hexo-blog suwa$ vi README.md
+git pushしてGitHub開いたよ。
+Successやったねえ</description>
+    </item>
+    
+    <item>
+      <title>.gitignore&amp;新リポジトリ</title>
+      <link>https://hugo.suwa3.me/post/2019-09-24-gitignore/</link>
+      <pubDate>Tue, 24 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-24-gitignore/</guid>
+      <description>静的サイトジェネレーターの続きやりました。
+Hexoのローカルサーバーを hexo server コマンドで起動しようとしたら
+すでに何か走っているらしく起動できなかったので、調べてみた。
+$ lsof -i:4000 $ ps -ef | grep 80174
+ふむふむ
+Hexoだな。
+ヘクソって屁糞みたいで汚い。
+C+cしても止まらないので、まあいいやとおもい放置です。
+$ kill -KILL 80174
+で指定して止めることも可能ぽい。
+Hexoのディレクトリをgit管理してNetlifyでデプロイするのを早くやりたいので
+リポジトリを作るまえにtreeで確認したら
+942 directories, 6294 files
+途方もない量でした。
+どうやら
+$HOME/blog/node_modules
+この下に大量のディレクトリやファイルがあるみたい。
+$ vi .gitignore
+と書いたら
+なんと最初から不要そうなものが書いてある！
+ふしぎ！
+gitignore とは Git の管理に含めないファイルを指定するためのファイル。 設定方法：無視設定を行いたいフォルダに .gitignore という名前でテキストファイルを作成する。
+gitignore のテンプレ、ググると各言語ごとに用意されている。
+なるほどー
+チェックを入れずにリポジトリつくって
+$ git init .
+$ git remote add origin git@github.com:suwa3/Hexo-blog.git
+$ git commit -m &amp;lsquo;Initial commit&amp;rsquo; &amp;ndash;allow-empty
+$ git push --set-upstream origin master</description>
+    </item>
+    
+    <item>
+      <title>碑文谷</title>
+      <link>https://hugo.suwa3.me/post/2019-09-23-%E7%A2%91%E6%96%87%E8%B0%B7/</link>
+      <pubDate>Mon, 23 Sep 2019 13:00:15 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-23-%E7%A2%91%E6%96%87%E8%B0%B7/</guid>
+      <description>午前中は、お掃除の神様が降りてきたのか
+部屋がとても綺麗になりました。
+午後は目黒にある碑文谷公園に行ってきた。
+碑文谷公園　目黒区
+池があってボートに乗れるし
+小動物のふれあい広場や、ポニー園があるの楽しそうだなあ
+と、おもい行ってみました。
+学芸大学駅からの道もわかりやすくて良かったです。
+帰りにパスタ屋さん寄ったの。
+エビたこズッキーニのジェノベーゼ🙌
+にこたま寄り道して、日用品を購入して帰宅。
+アンディ・ウォーホルのバスポーチが可愛かったので買いました。
+かわいいい
+NO SOURCE,
+NO LIFE.
+かわいいい
+特に中身も入れずに
+リュックサックに入れて持ち歩くことにしました。
+お気に入りです！</description>
+    </item>
+    
+    <item>
+      <title>人間関係</title>
+      <link>https://hugo.suwa3.me/post/2019-09-22-%E4%BA%BA%E9%96%93%E9%96%A2%E4%BF%82/</link>
+      <pubDate>Sun, 22 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-22-%E4%BA%BA%E9%96%93%E9%96%A2%E4%BF%82/</guid>
+      <description>みそみそデートしてきましたあ🐰
+FabCafeだよ。
+FabCafeの良いところは宇宙兄弟が置いてあるところ。
+宇宙兄弟すきー
+いろいろ話せてガス抜きできたので良かったあ😙
+そのあとは人間関係という店名の老舗カフェに行きました。
+みそぴがエモい写真を撮っていたので借用😃笑
+みそぴ朝から友人のルービックキューブ大会に付き添って
+カメラマンをしたとのことで、今日はきもち早めの解散でしたあ。
+来週のもくもく会でLTやるつもりと宣言してしまったので
+がんばってスライド作ります！</description>
+    </item>
+    
+    <item>
+      <title>ポート番号の変更</title>
+      <link>https://hugo.suwa3.me/post/2019-09-21-%E3%83%9D%E3%83%BC%E3%83%88%E7%95%AA%E5%8F%B7%E3%81%AE%E5%A4%89%E6%9B%B4/</link>
+      <pubDate>Sat, 21 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-21-%E3%83%9D%E3%83%BC%E3%83%88%E7%95%AA%E5%8F%B7%E3%81%AE%E5%A4%89%E6%9B%B4/</guid>
+      <description>もくもく会に参加してきました。
+ProLabo渋谷もくもく会
+黙々と作業しました！
+ポート番号を変えるだけで攻撃数が激減するらしいという噂をきいて
+早速試してみた。
+まずログファイルからアクセス数を確認します。
+$ cat /var/log/auth.log | grep -v sximada | grep -v ubuntu | grep -v CRON | grep -v &amp;lsquo;Sep 20&amp;rsquo; | wc -l
+626件でした。
+1日に600件以上のピンポンダッシュ&amp;hellip;&amp;hellip;恐怖でしかないです。
+SSHログインのポート番号の設定を変える前に
+万が一ログインができなくなった場合に備えて
+（クラウドでSSHログインができなくなったら致命的なので）
+スナップショットを撮っておきます。
+AWSのEC2インスタンスのステータスをStoppingにしました。
+なんと鯖立て初のStoppingです。
+怒られてしまうかもしれない。
+EC2の再起動をかけたら、立ち上がりにかなり時間がかかって
+冷や汗もんでした😢
+こわー！
+無事EC2インスタンスが立ち上がり
+/etc/ssh/sshd_config
+こちらのファイルに
+Port 22 Port 2222
+と書いて
+Port22はデフォルトの設定でコメントアウトしてあったのですが
+なにも記述がなければ
+22が自動的にSSH用の番号として割り振られるようです。
+念のため22も残して2222からログインできるかテスト。
+設定を適用させるため忘れずssh再起動です。
+$ sudo service ssh restart
+2222ポートからsshログインできるか確認。
+$ ssh don.suwa3.me -p2222
+ログインできました！
+やったねえ
+EC2インスタンスのセキュリティグループも変更しました。
+忘れず変更したのえらーい、わーい
+図でまとめておきました。
+セキュリティグループのほうは</description>
+    </item>
+    
+    <item>
+      <title>キーボードとiTerm2の設定</title>
+      <link>https://hugo.suwa3.me/post/2019-09-20-%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%81%A8iterm2%E3%81%AE%E8%A8%AD%E5%AE%9A/</link>
+      <pubDate>Fri, 20 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-20-%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%81%A8iterm2%E3%81%AE%E8%A8%AD%E5%AE%9A/</guid>
+      <description>ITの分野って広大だなあとおもいました。
+まったく知らない単語や、見たことあるけど知らない単語おおいので
+上から順にググるマンします。
+話題に出たとき、脳内にサッと図が出てきて欲しいし
+「何それ」
+って聞かれたらパッと答えられる程度に身につけておきたい。
+キーボードやiTerm2の設定をしたよ。
+キーボードの設定はこれ使いました
+Karabiner-Elements - Software for macOS
+MacにわざわざWindowsのキーボード繋いで設定しているひと少ないのか
+参考にできそうな記事が少なくて探すのに難儀したの。
+無変換と変換キー
+Windowsで必ずと言っていいほど誤操作するので
+真っ先に設定した。
+iTerm2の導入方法＆初期設定や使い方まとめ | vdeep
+iTerm2に魂を売った。
+Java女子部でiTerm2使っている子がいて
+へえええっておもったので導入してみた。
+今のところ可もなく不可もなくです。
+ショートカットいっぱいあって便利かもしれない。</description>
+    </item>
+    
+    <item>
+      <title>Node.js環境整理</title>
+      <link>https://hugo.suwa3.me/post/2019-09-19-node-js%E7%92%B0%E5%A2%83%E6%95%B4%E7%90%86/</link>
+      <pubDate>Thu, 19 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-19-node-js%E7%92%B0%E5%A2%83%E6%95%B4%E7%90%86/</guid>
+      <description>環境汚染が酷い有様だったので整理しました！
+【2019年4月版】node-gyp と grpc のインストールに詰まったら。@macOS + node.js - Qiita
+ここを参考にしました。
+Rubyは色々なところにRubyが増殖している感じでしたが
+Node.jsもそんな感じだったので
+$ brew uninstall node
+$ brew uninstall yarn
+$ brew uninstall node
+あれ二回アンインストールしている🙄
+$ sudo rm -rf /usr/local/bin/node /usr/local/bin/npm /usr/local/lib/node_modules/
+/usr/local/bin/nodeと/usr/local/bin/npmと/usr/local/lib/node_modules/の三つ一気消しです。
+$ sudo rm -rf /Users/suwa/.nodebrew/
+nodebrewで入れたNode.jsが原因ぽいのでバイバイしました。
+GitHubで下記参照し入れ直し。
+nvm-sh/nvm: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+$ vi .bash_profile
+export NVM_DIR=&amp;quot;$HOME/.nvm&amp;quot; [ -s &amp;ldquo;$NVM_DIR/nvm.sh&amp;rdquo; ] &amp;amp;&amp;amp; \.</description>
+    </item>
+    
+    <item>
+      <title>ただひらすら二日目</title>
+      <link>https://hugo.suwa3.me/post/2019-09-18-%E3%81%9F%E3%81%A0%E3%81%B2%E3%82%89%E3%81%99%E3%82%89%E4%BA%8C%E6%97%A5%E7%9B%AE/</link>
+      <pubDate>Wed, 18 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-18-%E3%81%9F%E3%81%A0%E3%81%B2%E3%82%89%E3%81%99%E3%82%89%E4%BA%8C%E6%97%A5%E7%9B%AE/</guid>
+      <description>キーボードの調子が悪いため
+スクショ撮れませんでした😢
+静的サイトジェネレータは他のものを試すことにした。
+Gatsbyに挑戦しましたが
+またNode.js問題発生したため撤退です（切り替えはやい）
+下記参考にしながらJekyllに挑戦してみた。
+Quickstart | Jekyll • Simple, blog-aware, static sites
+完全なRuby開発環境を整えよう。
+適当にrbenvの切り替え方法を調べて雑に実行してみたけれども動かない。
+そもそもrbenvのこと何もわかってない気がする。
+rbenv | global と local と .ruby-version の微妙な関係 - Qiita
+ふむふむ
+とりあえず
+つまり、ホームディレクトリに .ruby-version を作ってしまうと、global はどこからも参照されなくなる。
+しっかりホームディレクトリに.ruby-versionが居たので消してやりました。
+なのにerrorする😢
+Rubyのバージョンが切り替わらない時の対処法！ - Qiita
+これだあ参照先だあ。
+which超大事なんだなあ
+って学びました。
+jekyllコマンド動かない！！
+$PATHの設定かなあ
+そもそもgemコマンドの参照先の問題な可能性もある
+しかし眠いので寝ます 。
+今日は大量のディレクトリやファイルを削除して
+参照先を変える方法や
+permissionsって言われたらとりあえずsudoつけることを体が覚えました。
+バックトゥザフューチャーみたいな文字盤です。
+最近追加されたお気に入りデザインだよ。
+マンションの階段にいたクワガタ
+かちょいい</description>
+    </item>
+    
+    <item>
+      <title>ただひたすらerrror</title>
+      <link>https://hugo.suwa3.me/post/2019-09-17-%E3%81%9F%E3%81%A0%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89errror/</link>
+      <pubDate>Tue, 17 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-17-%E3%81%9F%E3%81%A0%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89errror/</guid>
+      <description>以下を参考に静的サイトジェネレーターを試してみようとおもいました。
+WordPressの代わりになる！2018年注目の静的サイトジェネレーター6選｜ferret
+Hexo入れてみようということで
+僕がMacを買い換えてすぐにいれるツール&amp;amp;すぐにする初期設定【2016年9月版】 | dotstudio
+まずはこれでNode.jsの環境整備です。
+わたしはzshではなくてbashを使っているので
+$ echo &amp;ldquo;export PATH=$HOME/.nodebrew/current/bin:$PATH&amp;rdquo; &amp;raquo; .zshrc
+ここのぶぶんだけ
+$ echo &amp;ldquo;export PATH=$HOME/.nodebrew/current/bin:$PATH&amp;rdquo; &amp;raquo; ~/.bash_profile
+こんな感じで書き換えました。
+環境整備まではなんとかスムーズに進み
+その後はhexoのREADMEを参考に進めました。
+hexo/README.md at master · hexojs/hexo
+最初はbrewで試してerror出たので
+素直にnpmでインストールすることにしました。
+error吐いて権限が足りない感じだったので
+sudoつけて実行を試みましたが
+/Users/suwa/.nodebrew/current/bin
+ではなく
+/usr/local/bin
+こちらの下にあるNode.jsを使ってしまっているようで
+ずっとerrorです😢
+予定では10分でHelloWorldまでいくつもりだったのに
+1時間かけてerror画面とにらめっこでした！
+なぞだなあ。
+いちど撤退です🏃‍♀️💨</description>
+    </item>
+    
+    <item>
+      <title>AnsibleでMaintenanceモード切り替え</title>
+      <link>https://hugo.suwa3.me/post/2019-09-16-ansible%E3%81%A7maintenance%E3%83%A2%E3%83%BC%E3%83%89%E5%88%87%E3%82%8A%E6%9B%BF%E3%81%88/</link>
+      <pubDate>Mon, 16 Sep 2019 05:00:22 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-16-ansible%E3%81%A7maintenance%E3%83%A2%E3%83%BC%E3%83%89%E5%88%87%E3%82%8A%E6%9B%BF%E3%81%88/</guid>
+      <description>ふだんdon.suwa3.meが不安定になって
+Maintenanceモードに切り替えるとき手動で行っていたので
+Ansibleの構成管理に組み込みました。
+完成品こちらです
+ファイルモジュールでシンボリックリンクの切り替えを設定 $ sudo ln -sf /etc/nginx/sites-available/don.suwa3.me-mainte /etc/nginx/sites-enabled/don.suwa3.me
+↑普段切り替えに使っているコマンド
+（ 参照ドキュメントページ ）
+file – Manage files and file properties — Ansible Documentation
+- name: changed maintenance page become: yes file: src: /etc/nginx/sites-available/don.suwa3.me-mainte dest: /etc/nginx/sites-enabled/don.suwa3.me state: link
+become: yesはsudo実行
+Src:は、どこから
+dest:は、どこへ
+state:は、何を？ってかんじ
+serviceモジュールでNginxのリロードを設定 $ sudo service nginx reload
+↑普段リロードに使っているコマンド
+（ 参照ドキュメントページ ）
+service – Manage services — Ansible Documentation
+- name: Restart service httpd, in all cases become: yes service: name: nginx.</description>
+    </item>
+    
+    <item>
+      <title>Sleeping Day</title>
+      <link>https://hugo.suwa3.me/post/2019-09-15-sleeping-day/</link>
+      <pubDate>Sun, 15 Sep 2019 01:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-15-sleeping-day/</guid>
+      <description>午前中はとても気持ちよく眠りました。
+お昼過ぎから家事やプチ衣替えを始め
+午後はネイルに行ってきました。
+なんだか派手になったけれども、室内だといい感じなの。
+もう外出せずに引き籠ろう。
+夕方は、また気持ちよく眠りました。
+いま夜中ですが、眠いのでblogを書き終えたら寝るとおもいます。
+今日はSleeping Dayでしたあ。
+IT Mediaに登録してアプリをDLしたので
+しばらく眺めていた。
+うまくいってもいかなくても、お金はください (1/3)：「訴えてやる！」の前に読む IT訴訟 徹底解説（69） - ＠IT
+レベニューシェアって初めて聞いたの。
+「作ったけれどもうまく行きませんでした」
+ってとき、どうするんだろう
+って最近ずっとモヤモヤしていたので
+こういう事例記事を少しずつ読みたいなとおもいました。
+考えるときのバランス感覚を養いたい。
+東芝、ミリ秒オーダーで大規模な「組み合わせ最適化問題」を計算する技術を2019年中に適用実験　金融分野などに期待 - ITmedia NEWS
+既存のアルゴリズムを実装した従来のコンピュータや組み合わせ最適化問題に特化した量子コンピュータより、高速かつ大規模に解けるとしている。
+ここの部分、ほおーってなった。
+量子コンピューターきになる分野なのでセミナーなど探しているのだけれども
+やたら小難しそうなものが多くて二の足を踏んでいる。
+難しすぎるものわからん😢
+「多産多死」による新規事業開発 (1/2) - ITmedia エグゼクティブ
+ふむふむした。
+最近スタートアップの企業へお話を聞きに行くことが多かったの。
+こういったノウハウというか
+椅子取りゲームで必要な素早さみたいなもの
+特に意識してこなかったので読んでいて面白かった。
+視点が増えるだけで見える世界が変わるねえ。</description>
+    </item>
+    
+    <item>
+      <title>circleCI</title>
+      <link>https://hugo.suwa3.me/post/2019-09-14-circleci/</link>
+      <pubDate>Sat, 14 Sep 2019 11:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-14-circleci/</guid>
+      <description>circleCIの設定をやってみました。
+Continuous Integration and Delivery - CircleCI
+まずgit hubアカウントでユーザー登録を済ませたら
+なにかを自動化するリポジトリを選択して
+以下ターミナル
+サンプルコードはここ参考にしました。
+CircleCIでのPythonアプリケーションの構成-CircleCI
+config.ymlの中身はこんなかんじです。
+$ mkdir .circleci
+$ cd .circleci/ $ vi config.yml $ git add config.yml $ git commit -m ‘config.yml&amp;rsquo; $ git push
+$ cd ../ $ source myvenv/bin/activate
+=&amp;gt; venvの中に入る場合
+$ pip freeze
+今入っているパッケージの情報を表示
+$ pip freeze &amp;gt; requirements.txt
+=&amp;gt; そしてgit push
+ふむ
+大人数で管理しているリポジトリなんか
+みんなブランチ編集して
+成功しているのかどうか一つ一つテストするの
+確かに大変そうなので、これは便利だなあとおもいました。
+バッヂも付けたよ。
+Status BadgesのコードをコピペしてREADME.mdに貼り付けたの。
+こんな感じで緑のバッヂがついた。
+ちょっとかっこよくなった、やったねえ🙋‍♀️</description>
+    </item>
+    
+    <item>
+      <title>フリーマンカフェ/権限の指</title>
+      <link>https://hugo.suwa3.me/post/2019-09-13-%E3%83%95%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%AB%E3%83%95%E3%82%A7-%E6%A8%A9%E9%99%90%E3%81%AE%E6%8C%87/</link>
+      <pubDate>Fri, 13 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-13-%E3%83%95%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%AB%E3%83%95%E3%82%A7-%E6%A8%A9%E9%99%90%E3%81%AE%E6%8C%87/</guid>
+      <description>渋谷のフリーマンカフェに行きました。
+電源WIFIいい感じのおしゃカフェだった。
+肩の荷が降りたー
+ってかんじだったので
+開放感の中でピザを食べました。
+わあい
+近々やりたいことをLISTにまとめた。
+Linuxの権限確認と変更(chmod)（超初心者向け） - Qiita
+$ chmod u+x hoge.txt
+uが変更対象　+が変更方法　xが変更内容
+変更対象
+変更対象
+意味
+u
+ユーザー
+g
+グループ
+o
+その他
+a
+すべて
+変更方法
+変更方法
+意味
+=
+指定した権限にする
+指定した権限を付与する
+-
+指定した権限を除去する
+変更内容
+変更内容
+意味
+r
+読み取り
+w
+書き込み
+x
+実行
+権限の指で、数字を指定して変更する方法を以前教わったけれども
+アルファベットの方がわかりやすいなあと思ったのでメモです。
+https://www.youtube.com/watch?v=5W17cVtMgXg
+これは勢いでupした権限の指です。
+小声で数字を数えています。
+don.suwa3.meがDocker上にDBと共にキツキツで置いてあるせいか
+最近は週一でDockerがふわふわして
+メンテナンスモードに切り替えてstatusを確認して
+再起動かけて、場合によってはイメージID指定して削除して
+っていうの
+そろそろ飽きてきたので、早急にお引越ししたいです。
+なのでまずはNginx設定ファイルをAnsibleに展開するところからです！
+やるぞー</description>
+    </item>
+    
+    <item>
+      <title>shell/CLAS</title>
+      <link>https://hugo.suwa3.me/post/2019-09-11-shell-clas/</link>
+      <pubDate>Wed, 11 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-11-shell-clas/</guid>
+      <description>本日やったことのまとめです。
+５分で一通り理解できる！Linuxのリダイレクト 使い方と種類まとめ
+これ
+こんなことできるのねえ、テンション上がった。
+なかなか基本的なところぽいけれども
+これから、必要に応じて
+こういうコマンドを覚えるたびに
+テンション上がるのかなあとおもったら、ワクワクしました。
+夜はCLASのイベントに参加して来ました。
+渋谷でお仕事おわって
+目黒駅かなーとおもって目黒待機していたら
+調べたところ、中目黒かもしれないと感じて
+中目黒に移動したところ
+神泉が正解だということに気づき
+一瞬タクシーに乗って無事間に合いました！！
+都内で一人でタクシー乗るの初めてかもしれない。
+しかも道わからない。
+CLASのエンジニアの方とお話できて楽しかったです。
+帰り際に、参加者の女の子と仲良くなり
+連絡先を交換したの。
+ナンパの才能あるかもしれない、わーい🙌</description>
+    </item>
+    
+    <item>
+      <title>phpをbrew install！！</title>
+      <link>https://hugo.suwa3.me/post/2019-09-10-php%E3%82%92brew-install/</link>
+      <pubDate>Tue, 10 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-10-php%E3%82%92brew-install/</guid>
+      <description>本日のやったことリストです。
+phpに触ったことがなかったため
+Djangoで味をしめたので
+まずフレームワークを見てみようとおもいinstall奮闘しました。
+Laravelというらしい。
+インストール 6.0 Laravel
+Laravelを始める前に、自分の開発機にComposerを確実にインストールしておいてください。
+Laravelを始めるためにはComposerをインストールする必要があるらしい。
+最近おもうのは、使ったことのない技術に触れようとするとき
+だいたい英語のサイトやドキュメントを頑張って読むのだけれども
+「これが必要なのね？はいコピペコピペ」
+とやっているの
+フィッシングサイトだったりなんかしたら即騙されそうだなと思いました。
+こわー
+食堂で食べたもち米入り麦ご飯が美味しすぎて
+おかわりしたら、その後２時間はおなかが破裂しそうでした。
+アホかな？
+満腹も、度を越すと苦しみなのだということを学びましたあ
+美味しかったのでまた食べたい。</description>
+    </item>
+    
+    <item>
+      <title>筋トレ💪</title>
+      <link>https://hugo.suwa3.me/post/2019-09-09-%E7%AD%8B%E3%83%88%E3%83%AC/</link>
+      <pubDate>Mon, 09 Sep 2019 13:00:59 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-09-%E7%AD%8B%E3%83%88%E3%83%AC/</guid>
+      <description>やんわりと気付いてきたのですが
+プログラミングってもしかして
+ひたすら書きまくって覚える系なのでは
+ガンガン書かねば🙆🏻わーい
+Pythonの基礎中の基礎みたいなのを書いていて
+読むより書くだなーとおもったの。
+例題的なものを発見したら
+即座に類題を自分でつくり時間制限設けて書きつつ
+その都度わざとerrorを起こして
+｢こういうerrorが出るのね｣
+と、errorにも慣れていきたいとおもいました。
+筋トレ💪</description>
+    </item>
+    
+    <item>
+      <title>低気圧</title>
+      <link>https://hugo.suwa3.me/post/2019-09-08-1157/</link>
+      <pubDate>Sun, 08 Sep 2019 01:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-08-1157/</guid>
+      <description>午前中は一週間の疲れを癒すべく
+とても気持ちよく眠っていたのですが
+午後から低気圧で頭痛＆吐き気と戦いました。
+頓服を飲んで寝る作戦です。
+車酔いと同じで、寝てしまえば乗り切れる。
+いま夜中で少しマシになりました。
+関東に台風直撃で、電車が運休で大変みたい。
+台風の日は、停電対策で電子レンジや調理不要の食料を買ったら
+早々に引きこもるマンです！自然災害こわい。
+最近は今後のキャリアなどについて考えることが多く
+わたしなんかが、そんな考えることもあるんだなあー
+ってレベルなんだけど
+今まであまり選択肢のない中で
+その時その時で生きてきた気がする。
+エンジニアってお仕事は
+「技術を用いて何をするのか」
+を選べるところ、とても魅力的だなあと感じた。</description>
+    </item>
+    
+    <item>
+      <title>Webアプリ制作byPython@DjangoGirls</title>
+      <link>https://hugo.suwa3.me/post/2019-09-07-1148/</link>
+      <pubDate>Sat, 07 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-07-1148/</guid>
+      <description>DjangoGirls主催の女子限定ハンズオンへ行ってきました。
+PythonでWebアプリを作ろう [女性対象/男女コーチ◎] 2019.9 - connpass
+初めてWebアプリつくったの、とっても楽しかった。
+チュートリアルを参考につくったの。
+とてもわかりやすくて、よく出来ているなあと感じたので
+ぜひトライしてみてください。
+Django Girls Tutorial
+最初はvimのみでディレクトリの作成からファイル内の編集までやっていて
+途中からVSCode使ってみようかな？
+とおもって使い分けをはじめたの。
+今まで設定ファイルなんかはvimで
+MastodonでAnsibleの設定を書くときはもっぱらvimなので
+&amp;lsquo;ターミナルから何かするときはvim&amp;rsquo; という謎の固定観念があって
+自分のやりやすい方法を見つければいいんだなあとおもったら
+とてもサクサク進むようになった。
+Djangoをいれてディレクトリやファイルなどがバーっと作られて
+それをターミナルからチェックしていたため
+ファイルなどもvimで編集していたの。
+VSCode見やすいねえ。
+基本的にvimのチューニング一切していないのもあるのだけれども
+いままでサーバー内で作業することが多かったので
+「VSCodeでも見ることができる！！」というのがプチ感動だった。
+ターミナル内でさっと開ける上にとてもシンプルで
+ショートカットを覚えるとどんどん使いやすくなって
+改めてvimが好きになりました。
+Emacsをもっと使いこなせるようになりたいです。
+自分でキーバインド設定も魅力的よね。
+完成品こちらです
+GitHubにはあげました。
+suwa3/djangogirls
+デプロイまだです。
+ラズパイに置きたい♡</description>
+    </item>
+    
+    <item>
+      <title>Ruby コード懇親会</title>
+      <link>https://hugo.suwa3.me/post/2019-09-06-ruby-%E3%82%B3%E3%83%BC%E3%83%89%E6%87%87%E8%A6%AA%E4%BC%9A/</link>
+      <pubDate>Fri, 06 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-06-ruby-%E3%82%B3%E3%83%BC%E3%83%89%E6%87%87%E8%A6%AA%E4%BC%9A/</guid>
+      <description>Rubyのコード懇親会に行ってきました。
+二人一組でチームを組んで課題に取り組むという形式で
+わたしは社会人二年目の女の子と組みました。
+以下問題です。
+CodeIQに「カラオケマシン問題」を出題しました。みんなチャレンジしてね！ - give IT a try
+正直問題の意味もわからず、ひたすらわからないわからないと言いながら
+調べても一緒に考えてみてもわからず
+答えを聞いても意味がわからないなーとおもって終わりました。
+「やっぱりこういうの向いていないのかもしれない」
+と、おもいましたが
+さすがにRubyド初心者向けの問題ではないよなあと考え直し
+自分のペースで地道にやっていこうとおもいました。
+お昼に食べた、最近お気に入りの草です！</description>
+    </item>
+    
+    <item>
+      <title>シュールな見た目から味が想像できないお気に入り</title>
+      <link>https://hugo.suwa3.me/post/2019-09-05-%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%AB%E3%81%AA%E8%A6%8B%E3%81%9F%E7%9B%AE%E3%81%8B%E3%82%89%E5%91%B3%E3%81%8C%E6%83%B3%E5%83%8F%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%81%8A%E6%B0%97%E3%81%AB%E5%85%A5/</link>
+      <pubDate>Thu, 05 Sep 2019 13:00:44 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-05-%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%AB%E3%81%AA%E8%A6%8B%E3%81%9F%E7%9B%AE%E3%81%8B%E3%82%89%E5%91%B3%E3%81%8C%E6%83%B3%E5%83%8F%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%81%8A%E6%B0%97%E3%81%AB%E5%85%A5/</guid>
+      <description>PCの充電を忘れてしまったので
+今日のお昼休みは読書です！
+LAMP環境での簡単なキャンペーンサイトの構築方法を学びました。
+VPCを完全に理解したうさぎです。
+実際に試してみたいなあ。
+夜はフジイユウジさんとご飯たべました🙋
+お仕事のお話を聞きつつインターネッツのことを話しました。
+フジタさんと混ざるのでユージさんと呼んでいるの。
+これ、シュール見た目から味の想像ができなくてお気に入りです。
+これからどうしていきたいのか
+もっと考えようとおもいました！
+あと明日のRuby on Railsハンズオン
+予習はおろかRubyですらまともにできていない。
+やばばばぴんちです</description>
+    </item>
+    
+    <item>
+      <title>~/.ssh/configの設定など</title>
+      <link>https://hugo.suwa3.me/post/2019-09-04-ssh-config%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%AA%E3%81%A9/</link>
+      <pubDate>Wed, 04 Sep 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-04-ssh-config%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%AA%E3%81%A9/</guid>
+      <description>はあい、本日のTODOです。
+~/.ssh/configの設定 先日Docker沈黙タイムがやたら長くて帰れない事態に陥ったので
+~/.ssh/configに、サーバーへ60秒毎に生きている報告をする設定を書きました。
+~/.ssh/configについて - Qiita
+ラズパイにログインするのも簡単になった。
+やったねえ
+cronをAnsibleに追加
+そしてメディア削除のDockerコマンドをcronで実行したもの。
+（参照）usermod/cronでdocker-compose – うさぎでもわかる
+これを構成管理に組み込むためAnsibleに設定しました。
+9ddで一気に9行消せた、わーい
+そしてdd連打していたら関係ないところも消してしまい
+ひーん😢となって調べたらuで元に戻せました。
+viコマンド *dd
+カーソルがあるところから*行削除 ex.3dd（3行削除）
+*yy
+カーソルがあるところから*行コピー
+p
+ペースト
+u
+操作を一つ戻す
+Ctrl+r
+戻すのを戻す
+※ dd,yyでそれぞれ1行削除/コピー
+デスクトップのゴミ箱化どうにかする
+デスクトップがゴミ箱代わりになっていて
+スクリーンの設定で見えないようにしていたの。
+きちんと整理したいとおもい
+スクショの保存先がデスクトップなのが諸悪の根源だと考え
+保存先を指定できるか調べました。
+Macのスクリーンショットの保存先を変更する｜MacFan
+ホームにSSディレクトリを作成して以下のコマンドを実行
+$ defaults write com.apple.screencapture location ~/SS/;killall SystemUIServer
+変更できた。わーい
+むかしスクショしたものが出てきたよ。
+たぶんvenvで仮想環境つくり、Pythonで春って単語を含むものをホニャララしたやつ。（忘れた）
+このころはコンテナもクラウドもなんでもかんでも仮想っていうから
+仮想わけわからんっておもっていた。懐かしい</description>
+    </item>
+    
+    <item>
+      <title>usermod/cronでdocker-compose</title>
+      <link>https://hugo.suwa3.me/post/2019-09-03-usermod-cron%E3%81%A7docker-compose/</link>
+      <pubDate>Tue, 03 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-03-usermod-cron%E3%81%A7docker-compose/</guid>
+      <description>本日のTODOリストです。
+ポートを変えるのは気休めだけれども、やってみたいなあと思います。
+ユーザー名を変えるのはできた！
+Linuxのユーザー名を変更する - そんなこと猫でもできる
+そんなこと猫でもできるらしい。
+うさぎでもできるかな。
+$ sudo docker-compose run &amp;ndash;rm web bundle exec bin/tootctl media remove &amp;ndash;days=25
+このコマンドをcronで実行しようとおもって調べた。
+# docker-composeコマンドについて
+- docker-compose.ymlがある場所で実行される
+- ファイルパス-fでdocker-compose.ymlがある場所を指定して実行させることも可能 （下記参照）
+$ 0 0 * * * docker-compose -f /******/*******/mastodon/docker-compose.yml run &amp;ndash;rm web &amp;hellip;..
+- rootのcrontabに設定する場合はsudoは不要
+- crontabは各ユーザーそれぞれにcrontabがある
+- rootになった状態で crontab -u（ユーザー名）のようにすれば、それぞれのcrontabを見ることができる
+- ユーザー名-uを指定しない場合は、今のユーザーのcrontabが表示される
+cron 3ステップ
+1.cronでやる前に手動で動くか確認。
+2.動いたらcronで毎分確認。
+3.動いたら定時で確認。
+最近、難しそうだなあってことでも
+「調べてやってみればできるのでは？」
+ってきもちになってきた。
+そして、案外やってみればできるということに気づいた。
+とにかくどんどん行動してみている。
+たのしいー
+ちなみにs3のビフォーアフターです！
+画像削除、成功です。やったねえ</description>
+    </item>
+    
+    <item>
+      <title>パーティション設計/media remove on Docker</title>
+      <link>https://hugo.suwa3.me/post/2019-09-02-%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3%E8%A8%AD%E8%A8%88-media-remove-on-docker/</link>
+      <pubDate>Mon, 02 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-02-%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3%E8%A8%AD%E8%A8%88-media-remove-on-docker/</guid>
+      <description>最近言われて嬉しかった言葉は
+｢戦闘民族だよね。戦い生きるみたいな生き方をしている｣
+です。
+精神的腕力のあるゴリラを目指している身としては身に余る言葉です。
+なんか殺傷力高くて瞬発力ありそう。
+media削除のコマンドを試す前に
+「メディアストレージの容量を確認して、ビフォーアフター見てみたいなあ」
+と、いうことで
+postgresqlが稼働しているdisk容量を確認するコマンドを調べたの。
+$ df -Th dfコマンドにType付き＆人に優しいhumanizeな表示で見ることができました。
+/dev/xvda1 20G 13G 7.0G 65% /
+ふむふむ。
+ラズパイも見てみました。
+/dev/mmcblk0p1 vfat 253M 41M 213M 16% /boot
+mmcblk0p1で調べたらSDカードのパーティションとのこと。
+ふん？？
+（下記サイトより引用）
+ふむふむ。
+fdiskの操作方法
+また、重要なのが「swap」パーティションだ。
+このパーティションはメインメモリが不足しているときにメインメモリのかわりとして使用できる領域のことだ。
+これは高価なメインメモリを安価な記憶媒体で補うと同時に、メインメモリ以上の容量を確保するため、比較的に昔からある仕組みだ。とても便利だし、設定しない理由はない。
+やたらと大きくしてもパフォーマンスは発揮されないので注意しよう。
+Linuxのパーティションとは？とパーティションの区切り方を詳細解説
+https://eng-entrance.com/linux-partition
+パーティションの中でもswapって大事なんやなー
+swap領域を確保する一番手っ取り早い方法として、EC2のインスタンスストアスワップボリュームがあります。
+これは、EC2のインスタンスタイプがm1.smallとc1.mediumのときのみ
+/dev/xvda3ないし/dev/xvde3という900MBのmkswap済みディスクが
+EC2のブート時に自動で提供されます(デバイス名はAMIによりまちまちです)。
+他のインタンスタイプではm1/c1ファミリーであっても提供されず、
+またManagement ConsoleやAWS APIでは本ボリュームを確認できないことに注意しましょう。
+Amazon EC2(Linux)のswap領域ベストプラクティス ｜ DevelopersIO
+https://dev.classmethod.jp/cloud/ec2linux-swap-bestpractice/
+swapの設定しなきゃ！！
+してた！！！
+全く記憶にないけど、とりあえずコピペ頑張ったんだなってきもちです。
+$ sudo docker-compose run &amp;ndash;rm web bundle exec bin/tootctl media remove &amp;ndash;days=30
+↑いろいろ脇道にそれましたが、画像削除のコマンドを打ってみました。
+error</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Piにsshログイン</title>
+      <link>https://hugo.suwa3.me/post/2019-09-01-raspberry-pi%E3%81%ABssh%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3/</link>
+      <pubDate>Sun, 01 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-01-raspberry-pi%E3%81%ABssh%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3/</guid>
+      <description>Raspberry Piにsshログインしてみました。
+わあい
+新しいサーバーにログインするのわくわくする。
+そして、自分用の小さな庭って感じする。
+ここで何してもいいんだなあ。
+さっそく海外からアタックきていました。
+ポートの設定やセキュリティの整備するところからだな。
+夕方頃から落ちこみモードでした。
+たまには気のすむまで落ち込もうとおもって、しばらく凹んでいました。
+そのあとはなんだか落ち込みながらも話し合いが進んで
+平和的に（？）解決の方向に進みました。
+これから、より身を引き締めて勉強していきたいし
+精神的腕力のあるゴリラを目指します。</description>
+    </item>
+    
+    <item>
+      <title>中華街/外部メディアファイルを削除する</title>
+      <link>https://hugo.suwa3.me/post/2019-08-31-%E4%B8%AD%E8%8F%AF%E8%A1%97-%E5%A4%96%E9%83%A8%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sat, 31 Aug 2019 01:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-31-%E4%B8%AD%E8%8F%AF%E8%A1%97-%E5%A4%96%E9%83%A8%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</guid>
+      <description>なんちにくはらむーさんらと中華街で食べ歩きしました！
+小籠包だよ。
+今まで小籠包を誤解していたの。
+お饅頭の類だとおもっていた。
+いくらやプチトマトの仲間なんだということを知った。
+おいしかったなあ。また食べたい。
+最近ほんとうに忙しくて、余裕がなくて
+こうやって作業優先しないで、何も考えずに話して食べてってするの
+なんだか現実味がなかった。
+こういう時間も大切なのかもしれないと思いました。
+そのあとはコメダに移動して作業です。
+むーさんと渋谷まで行って嶋田さんと顔だけ合わせてバイバイしました。
+渋谷の宮益坂をのぼった先にあるコメダは何故かいつも集中できるの。
+git pushしようとしたら、このコマンドで設定をしてくださいと言われた。
+設定しようとしたらコンフリクト起こしていたため
+一度git pullして設定しろと言われ、その設定でうまくいったので
+再度pullして、その後はいつも通りいい感じで終わりました。
+最後にgit remote -vでリモートブランチのブランチが確認できます。
+Dockerで構築したMastodonの外部メディアファイルを削除する方法
+ここを参考に画像削除のcronコマンドを書きました。
+らしおさんに教わったコマンドでは
+$ &amp;ndash;rm web bundle exec bin/tootctl media remove &amp;ndash;days 1
+確かこんな感じで
+ただ&amp;ndash;days 1だと「やっぱりやりなおしたい」とおもっても
+一日前までの画像を消しちゃったらtestしづらいね、ということで
+--days 30 「あ、まちがえた」
+--days 29 「もう少し違う方法したいかも」
+--days 28「cronで設定したいなあ」
+--days 27「Ansibleで設定したい〜」
+みたいな感じで30回くらいtestできるといいよねってことになり
+--days 30から行ってみたいと思います！</description>
+    </item>
+    
+    <item>
+      <title>Ruby予習/Raspberry Pi用途</title>
+      <link>https://hugo.suwa3.me/post/2019-08-30-1045/</link>
+      <pubDate>Fri, 30 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-30-1045/</guid>
+      <description>午前中は病院はしごしました。
+（最近忙しいなあ）
+とは、おもっていたのですが
+無理をすると知らないうちに病気になっていたりするので
+そのあたりのバランスが難しいなあと思いました。
+特にスケジュールは詰めすぎないように気をつけたいです。
+ちょこちょこRubyのおべんきょうしています。
+来週末にRuby on Railsハンズオンに参加するので、その予習です。
+まだまだ先は長いなあと感じる。
+夜はRaspberry Piがset upされるのを眺めていました。
+フォントがかわいい、Raspbianだから？
+Debianもこんなかんじのフォントなのかしら
+自鯖運用ラズパイでWordPressか
+（AWSはdon.suwa3.me用なので無料枠こえてしまいそうだから）
+GitHubなどで静的サイトジェネレーターかで迷っている。
+ラズパイは物置化して、blogは後者になりそうな予感。</description>
+    </item>
+    
+    <item>
+      <title>README.md整備/$ ls -l</title>
+      <link>https://hugo.suwa3.me/post/2019-08-29-readme-md%E6%95%B4%E5%82%99-ls-l/</link>
+      <pubDate>Thu, 29 Aug 2019 13:00:46 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-29-readme-md%E6%95%B4%E5%82%99-ls-l/</guid>
+      <description>お昼はGitHubのAnsibleリポジトリを見栄え良くするために
+README.mdを書いていました。
+suwa3/don.suwa3.me-ansible
+【GitHub】README.md に画像を表示させる簡単な方法
+↑この記事、裏技的だけど確かにラクだった。
+以前はwikiを使った気がする。
+README.mdに埋め込む画像、terminalのgifでも良かったかもしれない。
+明日にでも時間を見つけて更新しちゃおーっと。
+lsコマンドの-lについて学びました。
+まとめた。
+3ビット内で、権限が
+有るか/無いか
+なので、
+2進数で最大7まで表すことができるの、
+たまたまなのかもしれないけれども
+偶然8より下にできたから、それを採用したのかしら。
+経緯を知りたいとおもった。
+機械側としてわかりやすいもの
+人間側としてわかりやすいもの
+コンピューター内で、それぞれ少しずつ譲歩している軌跡みたいなもの
+たまに見つけると、そこに至った経緯を知りたいなあとおもう。</description>
+    </item>
+    
+    <item>
+      <title>HP更新/Ruby基礎</title>
+      <link>https://hugo.suwa3.me/post/2019-08-28-hp%E6%9B%B4%E6%96%B0-ruby%E5%9F%BA%E7%A4%8E/</link>
+      <pubDate>Wed, 28 Aug 2019 13:00:23 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-28-hp%E6%9B%B4%E6%96%B0-ruby%E5%9F%BA%E7%A4%8E/</guid>
+      <description>本日の勉強時間は移動中とお昼休みのみでした。
+明日は夜に少しだけまとまった時間とれるかなあ、運が良ければってかんじ。
+HP更新しました！
+PCから開くと見ることができます。
+suwa HP
+より爽やかなかんじになった。
+秋なのでコスモスだよ。
+URLのhrefタグにtarget=&amp;quot;_blank&amp;quot;を追加した。
+クリックして新しいタブを開くよう統一しました。
+VSCode慣れてきた。
+Atomと比較してとにかく速い。
+あとAtomではプラグインが必要なものも
+最初からまあまあチューニングされている。
+なのに速い、良い感じ。
+差分は忘れずgit pushです。
+アイコンだとか画像のaddとrmが多かったので
+まとめて一気にやる方法を調べれば良かったなあ。
+あとはRubyのお勉強です。
+Pythonに似ているなあとおもった。
+Rubyに慣れたらRailsに触りたいです。
+未経験からRuby on Railsを学んで仕事につなげるまでの1000時間メニュー
+これカリキュラムとしてとても参考になりそう。
+開発環境は今のままで良いかなあ。
+MacOS/terminal/Ruby/Chrome/Git/postgreSQL
+模範的なかんじ。
+インフラに特化した学習をしていたけれども
+少しずつ別の分野も触っていきたい。</description>
+    </item>
+    
+    <item>
+      <title>Ansibleでcronの設定まとめ</title>
+      <link>https://hugo.suwa3.me/post/2019-08-27-1019/</link>
+      <pubDate>Tue, 27 Aug 2019 13:00:12 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-27-1019/</guid>
+      <description>本日はAnsibleの設定をして、そのコードをまとめました。
+隠してあるのはユーザー名と、鍵の置き場所です。
+$ vi crontab
+これは今いる場所にcrontabというファイルをつくってvimで編集
+$ crontab -e
+これはcrontabというコマンドの中身をvimで編集。
+なんか似ててわからんってなったのでまとめです。
+cron.yamlは忘れずgit pushです。
+最近git操作も慣れてきたよ。
+本日のTODO
+やることがどんどん増えている。
+早くやりたいい、一日６時間くらい作業時間ほしい。
+でも疲れちゃうから、せめて３時間かなあ。
+いまは一日に１時間も作業時間ないです。
+動画を観る / 技術書を読む
+この二つは電車やバスなんかの移動中にもできるので
+移動中は、なるべくこの時間にあてよう。</description>
+    </item>
+    
+    <item>
+      <title>厳しめモードDocker</title>
+      <link>https://hugo.suwa3.me/post/2019-08-26-%E5%8E%B3%E3%81%97%E3%82%81%E3%83%A2%E3%83%BC%E3%83%89docker/</link>
+      <pubDate>Mon, 26 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-26-%E5%8E%B3%E3%81%97%E3%82%81%E3%83%A2%E3%83%BC%E3%83%89docker/</guid>
+      <description>朝から活動的でした。
+デプロイの自動化は最優先で取得したい技術だなあとおもいました。
+初対面のひとと沢山はなした！
+本日も疲れる１日でしたが
+厳しめモードでDockerです。
+監視ツールからガンガンアラート来ていました。
+以下、奮闘記。
+streamingが二つあった証拠画像あります！
+証拠を残せて満足です。
+.
+Docker再起動で糞重たいのが起動できたの
+重すぎるのでsidekiqを止めた状態で再起動かけて、後から追加する作戦しました。
+が、結局重くて全部落ちました。
+Dockerふわふわどころじゃない。
+.
+結論：t2.microでdocker運用、そろそろきつい</description>
+    </item>
+    
+    <item>
+      <title>甘えモードAnsible/WordPress.comにGA導入</title>
+      <link>https://hugo.suwa3.me/post/2019-08-25-996/</link>
+      <pubDate>Sun, 25 Aug 2019 13:00:34 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-25-996/</guid>
+      <description>朝からすっかり疲れていました。
+本日は完全に甘えモードで、Ansibleのcronモジュールでcrontabの設定です。
+自分用の備忘録です。
+もともとUbuntu内の権限周りの設定がわけわかめだったのですが
+今回Ansibleでcronの設定をやろうということで、権限周り問題が複雑化したように感じます。
+ただ、本日は甘えモードのため
+「よくわからないけど、動いた設定内容を備忘録としてまとめればOK」
+を、目標としたので
+本日の目標は完全に達成しました！
+.
+WordPressにGoogle Analytics導入も試しました。
+結論、断念したのですが
+scriptタグが許可されていないっぽい。
+WordPress.orgとWordPress.com、どっちのワードプレスを選ぶ？
+WordPress.orgであれば、自前サーバーでの管理になるので
+自由度が高いためプラグインを使って解決できるのだけれども
+WordPress.comは有料プランでないとプラグインを使えず、月々3000円ほどのビジネスプランに登録必要があるの。
+.
+EC2使えるのであればWordPress.orgに移行して自分で運用すれば？
+って感じなんですが
+don.suwa3.meの運用ですら保守にあっぷあっぷしているので
+もう少し慣れてからかなあってかんじです。
+具体的には、セキュリティの設定面やアプデに追従できるのかが不安なので
+そのあたり慣れたらぜひやりたいです🙋‍♀️
+.
+vimに慣れたいので、カンペ貼ったよ。
+©️はコマンドモードのcです。
+便利なショートカット覚えたらどんどん追記したい。</description>
+    </item>
+    
+    <item>
+      <title>ODC/PORTもくもく会</title>
+      <link>https://hugo.suwa3.me/post/2019-08-24-odc-port%E3%82%82%E3%81%8F%E3%82%82%E3%81%8F%E4%BC%9A/</link>
+      <pubDate>Sat, 24 Aug 2019 13:00:42 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-24-odc-port%E3%82%82%E3%81%8F%E3%82%82%E3%81%8F%E4%BC%9A/</guid>
+      <description>蒲田で行われていたODC (Open Developers Conference)に行ってきました。
+今回は専門学校の廊下がブースコーナーになっていて、ミニマムな感じでした。
+サラッと見て、一番テンション上がったのがこれ！
+世界最強ラズパイラジコン基板！
+たのしい電子工作クラブ
+ミニ四駆の自動制御やりたいねってことで
+ラズパイもくもく会の主催の方に話して貰って
+もくもく会のときに是非挑戦しよう
+と、おもっていたの。
+これはお話聞かなきゃ！
+とおもって、色々と質問できたので良かった。
+やったねえ。
+やはり、ステアリング機構をつけて左右に転回させたい。
+しかしミニ四駆の場合だと、まずモーターの制御からだなあ。
+ラジコンの制御のほうが、もしかしたらやりやすいのかもしれない。
+.
+あと、本の展示でお話を聞いたのが
+30日でできる! OS自作入門
+これー！
+自作OSぜひやりたい。
+60日かかっても良いのでやりたい♡
+これはロマンよね。
+今回も楽しかったです。
+次回OSCは渋谷なのだけれども
+平日なのよねー、参加できるかは微妙なところ。
+.
+お昼前には新宿に移動して、PORTもくもく会へ行きました。
+みそぴぴ来てたー♡
+最近PORTもくもく会の女子率が高いの嬉しいね。
+今回はAnsibleの設定をひたすらもくもくしました。
+Ansible Documentation
+Ansibleの公式ドキュメント、フォントが可愛いし全体的にオシャレ。
+HomebrewにAnsibleをinstallするところからスタートだよ。
+pingでテストして、なんとかsuccessしている画像。
+わーい。
+忘れずドヤ顔です(◦`꒳´◦)
+.
+最近おもうのが
+HelloWorldをやって終わってしまうものが多くて
+実際につかって
+｢つかえます｣
+って言えるレベルまでもっていきたいなあとおもうの。
+例えば、AWSのLambdaなんかもガンガン使いたいんだけど
+don.suwa3.meの運用の中で、多少無理してでも
+｢ええ？そこでLambdaつかうの？？｣
+みたいな運用でも良いので、ガシガシ書いて慣れたい。
+具体的にはbotのエンドポイントなど
+@でリプライを送るとそれをトリガーにして立ち上がるような使い方だとか。
+Lambdaも使えて、その中でPythonなども書く練習になるので
+そういった学習方法にシフトする
+転換期なのかなあとおもいました。
+もっと
+｢つかえます！｣
+を増やしたいね。</description>
+    </item>
+    
+    <item>
+      <title>うさぎの弟子</title>
+      <link>https://hugo.suwa3.me/post/2019-08-23-%E3%81%86%E3%81%95%E3%81%8E%E3%81%AE%E5%BC%9F%E5%AD%90/</link>
+      <pubDate>Fri, 23 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-23-%E3%81%86%E3%81%95%E3%81%8E%E3%81%AE%E5%BC%9F%E5%AD%90/</guid>
+      <description>お昼過ぎにAWSの大規模障害が起きて
+職場がざわついていました。
+うさぎは心がざわついていました。
+サーバーが不安定になると心も不安定になってしまう。
+疲れたあ、18時半には復旧してきたのでよかった。
+.
+そのあとは職場の飲み会でした。
+送別会だよ。
+なかなか強烈なのでてきた。
+「弟子入りさせてください」
+と言われた。
+誰かに教えられるほどの知識ないです。
+けど、教えて欲しいって言われたの初めてだったので嬉しいなあ。
+ひとに教えるの生半可な知識ではダメだとおもうので
+ふわっとした勉強方法は卒業します。
+きちんとやります。</description>
+    </item>
+    
+    <item>
+      <title>AWS大規模障害</title>
+      <link>https://hugo.suwa3.me/post/2019-08-23-aws%E5%A4%A7%E8%A6%8F%E6%A8%A1%E9%9A%9C%E5%AE%B3/</link>
+      <pubDate>Fri, 23 Aug 2019 09:16:44 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-23-aws%E5%A4%A7%E8%A6%8F%E6%A8%A1%E9%9A%9C%E5%AE%B3/</guid>
+      <description>AWSで大規模な障害が起きていますね。
+don.suwa3.meはAWSのEC2インスタンスを利用しているので
+急いでログインしてDashboardのOpen issuesをcheckしました。
+以下まとめ。
+EC2インスタンスに関する障害報告
+こちらは日本時間とGoogle翻訳です。
+RDSに関する障害報告
+こちらは日本時間とGoogle翻訳です。
+現在いまだ復旧していないようです。
+心がそわそわするー。</description>
+    </item>
+    
+    <item>
+      <title>TypeScriptのプラグインをいれてrbenvをinstallした日</title>
+      <link>https://hugo.suwa3.me/post/2019-08-22-typescript%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%92%E3%81%84%E3%82%8C%E3%81%A6rbenv%E3%82%92install%E3%81%97%E3%81%9F%E6%97%A5/</link>
+      <pubDate>Thu, 22 Aug 2019 13:00:14 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-22-typescript%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%92%E3%81%84%E3%82%8C%E3%81%A6rbenv%E3%82%92install%E3%81%97%E3%81%9F%E6%97%A5/</guid>
+      <description>お昼はType Scriptについて調べていました。
+TypeScriptってどんなもの？ プロ生ちゃんと始めてみよう！ これを見ながらAtomにatom-typescriptプラグインをinstallしてみました。
+AtomでType Scriptのコードを打ってみたら
+自動補完されるようになっていたよ。
+わーいわーい。
+.
+あとはRubyを入れました。
+MacOSでHomebrewだとこの記事が良いかなとおもった。
+【2018年版】macにrbenvを入れてrubyを管理できるようにしちゃう
+rbenv(ルビエンブ)
+複数のRubyのバージョンを管理できるの。
+｢この条件だと、このバージョンのRubyでは動作しない｣
+などが多いらしいRuby。
+.
+MacOSにはもともとRuby入っているらしいので
+rbenvをinstallしてからバージョン一覧を確認して
+最新バージョンを入れた。
+やったねえ。
+忘れずドヤ顔だよ(◦`꒳´◦)</description>
+    </item>
+    
+    <item>
+      <title>Rubyはヒトカゲ</title>
+      <link>https://hugo.suwa3.me/post/2019-08-21-ruby%E3%81%AF%E3%83%92%E3%83%88%E3%82%AB%E3%82%B2/</link>
+      <pubDate>Wed, 21 Aug 2019 13:00:41 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-21-ruby%E3%81%AF%E3%83%92%E3%83%88%E3%82%AB%E3%82%B2/</guid>
+      <description>朝と午前中はuser scriptについて調べていました。
+参考に見たQiita記事が軒並みjQueryで UserScriptで楽しくJavaScriptを覚えよう
+むぢゅい
+JSわからない。
+Chromeの拡張機能はとりあえず追加しました。
+なかなか新しい記事を見つけられなかった。
+type scriptも調べてみたい。
+.
+お昼は主にDockerとVagrantの違いについて調べていました。
+Web系のDocker民から見たVagrantについて
+(上記サイトから引用)
+この画像を見て
+Dockerコンテナ同士を結びつけるのがdocker-composeかなとおもったけれども
+これOSが独立しているので
+Kubernetesで結びつけるのが正確かな。
+違いを以下にまとめました。
+.
+Docker
+- OS以上を仮想化
+- 軽い
+- カーネル部分はホストマシンに依存するため、Windowsだと正常に作動しない場合がある
+Vagrant
+- カーネル以上を仮想化
+- 重い
+- カーネルから仮想化するため、そのぶんシミュレーションの精度がDockerよりも高い。
+- Vagrant上にDocker構築も可能
+実際にVagrantの構築も試したい。
+VagrantとDockerについて名前しか知らなかったので試した
+Qiita記事を参考にしつつ
+動画を観ながら進めてみよう。
+.
+18のプログラミング言語をポケモンに例えてみた！
+Rubyはヒトカゲで
+Pythonはゼニガメっぽいなあ
+ってイメージはあったの。
+でも、ここではPythonをカイリューだと言っていて
+確かにミニリュウ青いしカイリュー黄色くて
+ロゴの色味的にも合っているし
+育てるとまあまあ強い準伝なの納得感ある。
+Lispよく知らないけれども
+ラプラスの偉大で神聖な感じなのかあっておもった。
+しかし、アローラではラプラス大量発生していてレア感薄いけれども。
+.
+ポケモンとプログラミングについて
+知識の習得、コレクション
+環境が変わると一から育成をし直す必要があって
+ポケモンが成長するのと共にトレーナーも成長して強くなれるの
+プログラミングとポケモン
+親和性高いのでは、と感じた。
+とりあえずRuby使えるようになりたい。
+Rubyはリザードンらしいけれども
+まだわたしは弱小なのでヒトカゲGETするところからです。</description>
+    </item>
+    
+    <item>
+      <title>監視など</title>
+      <link>https://hugo.suwa3.me/post/2019-08-20-%E7%9B%A3%E8%A6%96%E3%81%AA%E3%81%A9/</link>
+      <pubDate>Tue, 20 Aug 2019 13:00:48 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-20-%E7%9B%A3%E8%A6%96%E3%81%AA%E3%81%A9/</guid>
+      <description>夏バテ過ぎる。
+ぴぴお花屋さんだけど今日はコードも少し書いたよ。
+システムのお仕事したいなあ。
+.
+お昼はdon.suwa3.meに簡易的な監視ツールを入れるため
+Uptime Robotの設定をしていました。
+監視対象のURLと通知先のメールアドレスを登録するだけなので
+2分で完了した。
+念の為Slackにも届くようにしてみた。
+.
+don.suwa3.meをメンテナンスモードに切り替えて
+Uptime Robotから通知がくるか試したの。
+5分毎にcheckしているはずなのに
+なかなか通知が来なくて
+｢おかしいなー？｣
+とおもったんだけど
+よくよく考えたらメンテナンスページは
+通常と同様に200を返すので
+Uptime Robot的には問題なしと判断されるのだった。
+.
+ということで
+設定したURLをhttps://don.suwa3.me/about
+にして
+メンテナンスモードに切り替えて404を返すようにしてみたら
+しばらくして期待値通り
+Uptime Robotから通知がきたので
+これでdon.suwa3.meに異常が起きたら即通知くるようになったᐠ( ᐛ )ᐟ♡ᐠ( ᐖ )ᐟ
+わーいわーい
+そしてそのまましばらくメンテナンスモード戻し忘れて
+don.suwa3.meはロングラビットチャンス到来していました。
+.
+夜はHPの編集をしていた。
+背景画像を変えていたの。
+相対パスが未だによくわからんちで
+なんだか血縁関係の
+｢従兄弟は何親等か？｣
+みたいなかんじやんね。
+.
+とりあえずディレクトリのドット一つが
+｢今いる場所ここのディレクトリのこと｣
+ドット二つが
+｢今いる場所の一つ上のディレクトリのこと｣
+というのは覚えた。
+.
+../←これに慣れよう。
+あとね
+何故かHPのindex.html等が入ったディレクトリがローカルのhomeとdesktopそれぞれにあって
+ほぼ同じファイルなんだけれども
+.
+homeのディレクトリはgit管理されていて
+ターミナルからgit addとかしているのはhomeの方なの。
+.
+desktopのディレクトリはgit管理されていないんだけれども
+Atomから編集するのはdesktopのディレクトリにあるindex.html等で
+ブラウザから手作業でgit pushしているのは
+いつもdesktopのindex.htmlなの。
+｢ん？？？？｣
+ってかんじなので
+desktopのディレクトリは封印して
+homeのgit管理されているものを</description>
+    </item>
+    
+    <item>
+      <title>監視ツール</title>
+      <link>https://hugo.suwa3.me/post/2019-08-19-945/</link>
+      <pubDate>Mon, 19 Aug 2019 13:00:23 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-19-945/</guid>
+      <description>早起きして朝Tully&amp;rsquo;sしました。
+主にAnsible化について調べたよ。
+Ansibleをはじめる人に。
+ここでAnsibleの名付けのもとになった小説が紹介されていて
+Ansibleが登場するSF小説「エンダーのゲーム」読んだ
+絶対に面白そうなので読みたいとおもいました。
+SFすき。
+Ansibleって自動化させるための機能なんだとおもっていたけれども
+構成管理ツールと呼ばれているらしく
+Ansibleの他にも色々とあるのね。
+最近のトレンドがAnsibleらしい。
+シンプルで使いやすいとのこと。
+とりあえず調べるだけ調べて
+AWSのコワーキングスペースLoftに移動しました。
+AWSのアカウントを持っているだけで
+平日ここのスペースを無料で使えるの、かなり大きい。
+あまり時間もなかったので
+とりあえずメッセージの返信やスケジュールの調整など雑務を片付けて
+軽くお昼を食べて出ました。
+SNSがDockerふわふわタイムに突入して重くなったの。
+簡易的な監視ツール入れたいなとおもって登録だけしました。
+uptime robot
+.
+美容院で前髪カットして部分パーマかけて
+根元リタッチして
+髪の毛のメンテナンスしたよ。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript =&gt; Nuxt.js（二日目）</title>
+      <link>https://hugo.suwa3.me/post/2019-08-18-javascript-nuxt-js%E4%BA%8C%E6%97%A5%E7%9B%AE/</link>
+      <pubDate>Sun, 18 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-18-javascript-nuxt-js%E4%BA%8C%E6%97%A5%E7%9B%AE/</guid>
+      <description>Nuxt.jsへの移植作業二日目です。
+Nuxt.js ディレクトリ構造
+ディレクトリ構造について書かれていて
+「それぞれこういった役割を振り分けられているのね」
+と、ふむふむしました。
+USER-no-MacBook-Air:nuxt.Rabbit-game suwa$ tree . ├── README.md ├── assets │ └── README.md ├── components │ ├── Logo.vue │ └── README.md ├── layouts │ ├── README.md │ └── default.vue ├── middleware │ └── README.md ├── nuxt.config.js ├── package-lock.json ├── package.json ├── pages │ ├── README.md │ └── index.vue ├── plugins │ └── README.md ├── static │ ├── README.md │ └── favicon.ico └── store └── README.md 8 directories, 16 files</description>
+    </item>
+    
+    <item>
+      <title>Nuxt.js移植</title>
+      <link>https://hugo.suwa3.me/post/2019-08-17-926/</link>
+      <pubDate>Sat, 17 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-17-926/</guid>
+      <description>恵比寿でネイルしてきたよ。
+くすんだベージュで落ち着いた感じになりました。
+そのあとは六本木に移動して、しばらく作業。
+ひたすらWordPressのタグつけ作業だよ。
+PCからだと左側にタグ群が表示されて
+スマホからだと右上のハンバーガーメニュー（三本線）から
+タグ群が表示されるようになりました。
+やったねえ。
+.
+母に頼まれて大昔に作ったHPの、ログインボタンを復活させるなどしました。
+すべてgit管理したいなあ。
+.
+Rabbit-gameのNuxt.jsへの移植もすこしやったよ。
+標準ライブラリやサードパーティライブラリについて
+あと、コンパイルとビルドまでやるのかと知って
+JavaScriptなのにJavaぶっているなと感じました。
+.
+わたしは浦島太郎なのでjQueryに触れずにきて
+最新の恩恵がわからず、ただひたすら複雑化して
+JS書くだけなのに何故こんなにも段階を踏まされるのか分からん😠
+って気持ちだったのだけど
+思い返せばdocker-composeも仮想サーバーも
+以前なら存在すらしなかったけれども
+現在の技術進歩によって生み出されて
+複雑化してはいるのだけれども、便利だし覚えた方が良いよね。
+って、ノリで覚えてきたし
+JSも膨大に散らかったものを一つ一つ見るのではなく
+自動化して整理されるようなツールがあるのならば
+それの使い方は、積極的に覚えてしまった方がラクなのかもしれないと思いました。
+こちらGitHubのブラウザ上でJSを移植しようとして一気にコピペしてpushしていたの。
+移植は一行一行やっていかないとerrorだらけでわけわからんくなる😢
+と、いうことで
+$ git log
+で、今までのgit履歴を確認して
+$ git revert [ID]
+で、IDを指定して消し
+git pushしました。
+git管理だいじ</description>
+    </item>
+    
+    <item>
+      <title>Lambda</title>
+      <link>https://hugo.suwa3.me/post/2019-08-16-lambda/</link>
+      <pubDate>Fri, 16 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-16-lambda/</guid>
+      <description>AWSで例えば
+&amp;ldquo;S3へファイルがあがったら、それをトリガーにして何かプログラムが走る&amp;rdquo;
+というような
+簡単な動作をさせたいねという話から
+Lambdaならコードさえ書けば、EC2要らずで動くの便利なのでは？
+と、いうことでLambdaについてザッと調べました。
+.
+AWS初心者入門 第7回～「Lambda」ってなにがスゴイんですか？
+説明はそこそこにサッサと現物を触ってみようということで
+Python による Lambda 関数のビルド
+AWSのチュートリアルを参考にコンソールをポチポチしてから
+ローカル環境で実行も出来るらしいということで
+Qiitaの記事をいくつか参考にしつつ試してみました。
+.
+aws-sam-local 改め aws-sam-cli の新機能 sam init を試す
+[AWS SAM CLIでLambda Functionを開発する](http:// https://qiita.com/te20/items/5a28cef4966c75886218)
+Pythonの参考に出来る新しい記事が見当たらなかったのと
+タイポミスで、記事通りだと実際に動作しないものや
+若干の変更点もあったので
+自分で備忘録用に記事をまとめてみることにしました。
+Pythonでaws-sam-cliをローカル実行するまで
+Mastodonにもupしたのだけれども、ほぼ反応なかったの寂しい😢
+ま、いいけどねえ。
+treeコマンドを使えるようになった画像です。
+LambdaをGitHubにあげるところまでやったよ。
+.
+そういえば
+gitコマンド操作に慣れるため
+ブラウザからのGitHub禁止令が出されました。
+ひいい
+git stashなどのコマンド操作や
+サーバー内でgit操作をしたいときに
+gitコマンドに慣れていた方が良いよね。
+と、いうことでしばらく封印です。
+少しだけgitコマンド慣れたよ☺️</description>
+    </item>
+    
+    <item>
+      <title>横になる日</title>
+      <link>https://hugo.suwa3.me/post/2019-08-15-%E6%A8%AA%E3%81%AB%E3%81%AA%E3%82%8B%E6%97%A5/</link>
+      <pubDate>Thu, 15 Aug 2019 13:00:16 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-15-%E6%A8%AA%E3%81%AB%E3%81%AA%E3%82%8B%E6%97%A5/</guid>
+      <description>低気圧fuckin&amp;rsquo;だったので
+頭痛薬を飲んで
+ほぼ横になって過ごしました。
+.
+このあいだ台風が近づいたときは
+無理に出かけたせいか
+外出先でひたすら吐き続けてしまい
+意識朦朧として帰るのが至難なかんじだったので
+今回はきちんと大人しくしていたよ。
+.
+あまりにも低気圧に弱いので
+病院で検査を受けたの
+特に異常無しだったので
+頭痛薬でしのぎつつ
+あまり薬も効かないので
+台風が近づくと吐き気と闘うマンだよ。
+吐くのがツラい、お出かけしづらくなってしまう。
+.
+車酔いならぬ台風酔いってかんじする。
+気圧が安定すればケロッと治るのだけどねえ。</description>
+    </item>
+    
+    <item>
+      <title>ナノビーズ</title>
+      <link>https://hugo.suwa3.me/post/2019-08-14-%E3%83%8A%E3%83%8E%E3%83%93%E3%83%BC%E3%82%BA/</link>
+      <pubDate>Wed, 14 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-14-%E3%83%8A%E3%83%8E%E3%83%93%E3%83%BC%E3%82%BA/</guid>
+      <description>週末は台風がくるらしいので
+低気圧fuckin&amp;rsquo;で出掛けられなくなる前に
+ニコタマデートしてきました。
+蔦屋家電ぶらぶらするの。
+ちょいブレなのうけるね。
+今日と明日は
+作業が難しいだろうなあ
+ということで
+そういう日は潔く諦めて
+作業は完全offで過ごしました。
+.
+夜にちまちま作ったよ。
+ナノビーズ
+根気のいる作業でした。
+細かな作業すきなので楽しかったあ。
+またやりたい。</description>
+    </item>
+    
+    <item>
+      <title>13時間寝た</title>
+      <link>https://hugo.suwa3.me/post/2019-08-13-13%E6%99%82%E9%96%93%E5%AF%9D%E3%81%9F/</link>
+      <pubDate>Tue, 13 Aug 2019 13:00:32 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-13-13%E6%99%82%E9%96%93%E5%AF%9D%E3%81%9F/</guid>
+      <description>昨夜は22時に寝落ちしたはずなのに
+起きたら11時で焦ったわよね。
+.
+お昼過ぎに渋谷でひとと会う用事があったので
+急いで支度して間に合わせました。
+活動的！
+しかし、蓄積された疲れはどこかで歪みとして出てくるので気をつけないとね。
+.
+安定のFab Cafe
+今日は草食べたの。
+服は祖母がつくってくれたものだよ。
+洋服のデザインをしたり
+作ったり売ったりしているひとなの。
+腰のリボンが可愛い。
+.
+Rabbitｰgameにコンテニューボタンつけたの。
+Rabbitｰgameの謎クオリティどうにかしたい。
+デザインも機能面も謎なかんじなので、きちんとします。
+GitHub充実させよう。
+俺流に寄って帰りました。</description>
+    </item>
+    
+    <item>
+      <title>v2.9.2 =&gt; v2.9.3</title>
+      <link>https://hugo.suwa3.me/post/2019-08-12-v2-9-2-v2-9-3/</link>
+      <pubDate>Mon, 12 Aug 2019 13:00:43 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-12-v2-9-2-v2-9-3/</guid>
+      <description>午前中はお部屋の片付けをしていたの。
+お昼過ぎに渋谷へ行って
+Fab Cafeで作業をしたよ。
+どんすわ無事にアップデートしました。
+ターミナルのhistoryをまとめて
+Evernoteにメモしました。
+差分をきちんと確認して
+それに合わせてアプデしないといけないのねえ。
+git diffコマンド
+便利なので覚えよう。
+.
+Illustratorで
+スマホページの画像と
+SNSのトップページの素材をつくっていたの。
+Illustratorもっと使いこなせるようになりたいなあ。
+夕方は山ちゃんに寄ってビール飲んだよ。
+昭和の歌謡曲すきだなあとおもった。</description>
+    </item>
+    
+    <item>
+      <title>Slider</title>
+      <link>https://hugo.suwa3.me/post/2019-08-11-830/</link>
+      <pubDate>Sun, 11 Aug 2019 13:00:40 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-11-830/</guid>
+      <description>帰省2日目です。
+静岡らしいもの食べたよ。
+生しらすや黒はんぺんとかね。
+.
+スマホ用ページで画像をスライドさせたいなあとおもい
+参考コードを探したのだけれども
+なかなかコードが長くて疲れてしまったので
+JSは使わずにHTMLとCSSだけで動くものを見つけて
+そちらを参考にしました。
+https://codepen.io/hw/pen/biEBz
+できたものがこちら
+動くのでスマホから下記ページを見てみてね。
+https://suwa3.github.io
+.
+コードをコピペして
+画像をちょろっと変更しただけなので
+こちらは数十分で完成したの。
+.
+でも、動きがあるからか
+SNSへ投稿したとき
+こっちのほうが10倍くらい反応あって
+やはり動きがあると違うのだなあとおもった。
+.
+昨日の編集には3時間溶かしたわりに
+反応の有無という意味では
+費用対効果が少なかったかもしれない。
+.
+しかし、デベロッパーツールの使い方を再確認できた点では
+成果が大きかったので良しだよ。</description>
+    </item>
+    
+    <item>
+      <title>デベロッパーツール</title>
+      <link>https://hugo.suwa3.me/post/2019-08-10-828/</link>
+      <pubDate>Sat, 10 Aug 2019 13:00:30 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-10-828/</guid>
+      <description>HPのスマホ用ページを編集したの。
+ハンバーガーメニュー持て余していたので。
+.
+移動時間にスマホ用ページのデザイン集を見つつ
+スプリングボードメニューが見やすそうだなあとおもい
+下記ページを参考にしつつ作りました。
+https://gardenplace.jp/
+(実際にはリンクを並べる形なのだけれども)
+.
+まずデベロッパーツールの使い方を調べるのに1時間。
+基本的な使い方ふわっと分かっていたので
+とりあえず欲しい場所のHTMLタグから
+対応しているStyleを
+自分のHPの既存内容と喧嘩しないようにコピペして
+ひたすら貼り付ける作業に2時間。
+計3時間かけて
+上画像から下画像に編集しなおしました。
+.
+高校生のころ、毎日
+｢今日はこのHTMLタグで遊ぼう｣
+ってノリでWeb編集していたけれども
+当時はデベロッパーツールとかなかったの。
+改めて、これめちゃ便利だね。
+PCでF12押すだけで参考にできるの強い。
+.
+静岡に帰省しました。
+1泊2日なの。
+従兄弟が大学で材料系と機械系について学んでいると知り
+Linuxやラズパイ周辺のことなど
+いろいろと話せたので楽しかった。</description>
+    </item>
+    
+    <item>
+      <title>blog整備</title>
+      <link>https://hugo.suwa3.me/post/2019-08-08-758/</link>
+      <pubDate>Thu, 08 Aug 2019 13:00:07 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-08-758/</guid>
+      <description>昼間はお盆のschedule2019をまとめました。
+外出そこそこに作業時間を確保できたら良いなあ。
+.
+最近暑くて夏バテ気味なので
+栄養がままならず貧血になり
+諸々の体調不良の原因となっている気がするので
+鉄分補給を心掛けようとおもいます。
+干しプルーンを朝夜たべよう。
+.
+postgreSQLのコマンド
+実際に手を動かして操作してみているの。
+キーボードを替えたばかりで、ショートカットなど探りつつだよ。
+早く慣れたいなあ。
+HPのデザインなんだけれども
+https://automotiveoem.com/About-Us
+ここのページデザインとても好きだなあとおもった。
+参考にしたいの。
+先週のblogの訪問者が41名で
+じわじわと増えているので
+blogをきちんと整備したいとおもいました。</description>
+    </item>
+    
+    <item>
+      <title>rsyslog/拡張機能</title>
+      <link>https://hugo.suwa3.me/post/2019-08-07-rsyslog-%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD/</link>
+      <pubDate>Wed, 07 Aug 2019 13:00:33 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-07-rsyslog-%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD/</guid>
+      <description>朝からフラフラしていました😵
+立つと気持ち悪くなるの、貧血かなあとおもったけれども
+夏バテや疲れの蓄積もあるのでは
+と言われた。
+ふむ。
+横になると少しラクになって
+お昼過ぎにお粥を食べて
+Chromeの拡張機能を入れていたの。
+また気持ち悪くなり日中はほぼ横になって過ごしました。
+夜は、ほうれん草いっぱい食べたよ。
+そしたら元気が戻ってきたので
+何もしていないの不安になってきたのでぼちぼち作業しました。Ubuntuにrsyslogが入っていなかったので入れました。
+これでDockerがふわふわしても
+EC2に入れさえすればlogを見ることできるよ、やったあ。
+installは以下を参考にしました。https://www.rsyslog.com/ubuntu-repository
+.
+Chromeの拡張機能について
+翻訳やメモ、Evernoteの拡張機能なんかは入っていたけれども
+@女子部の問題解決能力高い先輩が拡張機能を色々と入れているのをみて
+いいなあーーとおもい真似しました。
+便利そうなのを幾つか調べたよ。
+.
+中でも使えそうだなとおもったのが
+Back menu for Google
+Googleの機能が使えるの
+ページを開きながら
+気になった単語をサッと調べられるの良いなとおもい導入しました。</description>
+    </item>
+    
+    <item>
+      <title>postgreSQLなど</title>
+      <link>https://hugo.suwa3.me/post/2019-08-06-postgresql%E3%81%AA%E3%81%A9/</link>
+      <pubDate>Tue, 06 Aug 2019 13:00:33 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-06-postgresql%E3%81%AA%E3%81%A9/</guid>
+      <description>Chromeの拡張機能でEvernote Webクリッパーを登録し
+Evernote経由で、PCとスマホ間の画像の連携をはかろうと思いついたのだけれども
+Webクリッパーでスクショできるのはブラウザ内だけなの。
+ターミナルやエディタのスクショはできないらしい。
+び、びみょう……
+とりあえずWeb閲覧時のmemo用だなあ。
+.
+お昼休みはcronの修正をしておわりました。
+cronの設定自体は難しくないことはわかったのだけれども
+その中のDockerコマンドがややこしいの。
+要復習だなあ。
+.
+夕方はHomebrewでpostgreSQLのinstallをしました。
+blogは下記を参照。
+macOs Sierra + homebrewな環境でPostgresqlを導入する備忘録
+後半のパス設定は要らなそうだったので、とりあえず触らず。
+.
+そういえば@女子部でターミナル半透明率かなり高くて
+真似してみたの、壁紙の色も相まって涼しげになった。
+帰りの移動時間は電車内でPythonの動画を観ていました。
+以前スクレイピングの本を読みながら書いた時もあったけれども
+もう一度きちんと基礎からやろうとおもいます。
+ザーッと読んでバババと書いて
+またスクレイピングと機械学習の書籍を参考書として
+手を動かすことで慣れたい。</description>
+    </item>
+    
+    <item>
+      <title>アイス3つたべた</title>
+      <link>https://hugo.suwa3.me/post/2019-08-05-%E3%82%A2%E3%82%A4%E3%82%B93%E3%81%A4%E3%81%9F%E3%81%B9%E3%81%9F/</link>
+      <pubDate>Mon, 05 Aug 2019 13:00:27 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-05-%E3%82%A2%E3%82%A4%E3%82%B93%E3%81%A4%E3%81%9F%E3%81%B9%E3%81%9F/</guid>
+      <description>平日で日中動けるの月曜日くらいなので
+本当はAWSのLoftまた行きたいなあとおもっていたのだけれども
+なんだかんだ昼近くなってしまったので
+近場のTully&amp;rsquo;sでアイスを食べながら作業しました。
+履歴書と職務経歴書は、大昔のExcelファイルを手直しして
+.odtファイルに変換して保存しました。
+MacでもExcelみたいなのあるのねえ。
+今までの振り返りができて良かったです。
+.
+これは極秘中の極秘なのですが
+cronはDockerコマンドでpg_dumpさせているの。
+.
+@女子部で講師の寺田さんが
+&amp;ldquo;Design for Failurea&amp;rdquo;
+--障害発生を前提としてシステムを設計しましょう&amp;ndash;
+という言葉を引用しつつ
+｢Docker上にDBを置いてはいけません｣
+と話していて
+docker-composeでコンテナ上にpostgreSQL置いているの
+アッてなったあ🐰
+しかも実際に不安定で数週間に一度Dockerに入れなくなる、笑
+とりあえずcronでdocker再起動かける？
+みたいな暫定的対応策で凌ごうとしているのだけれども
+しかしながらトラブル多いほうが
+むしろ勉強になるので
+わたしとしてはwelcomeな感じですᐠ( ᐛ )ᐟ</description>
+    </item>
+    
+    <item>
+      <title>浴衣</title>
+      <link>https://hugo.suwa3.me/post/2019-08-04-730/</link>
+      <pubDate>Sun, 04 Aug 2019 13:00:51 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-04-730/</guid>
+      <description>みんなで浴衣きて船に乗ってきたの。
+ら塩さん久しぶりに会えたの嬉しかったなあ。
+初対面な方も何人かいて
+挨拶できたので良かった。
+わたしは浴衣ではなく私服で行ったあ。
+このワンピースお気に入り。
+うさぎのピンズつくったの
+それも自慢したあ、かわいい。
+.
+船上でまさかのdon.suwa3.meが落ちてしまい
+恐らく、またDockerの調子が悪いんだろうなということで
+急いで帰宅してlog確認し再起動かけました。
+.
+再起動かけて復活を確認したら
+疲れてフラフラだったので
+そのまま気絶です。
+.
+船の上でいろいろなひとと
+たくさん話せて良かった♡
+.
+たーのしかったの
+皆さん優しい。
+ありがたやー、だよ。</description>
+    </item>
+    
+    <item>
+      <title>Kubernetesハンズオン</title>
+      <link>https://hugo.suwa3.me/post/2019-08-03-kubernetes%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3/</link>
+      <pubDate>Sat, 03 Aug 2019 13:00:32 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-03-kubernetes%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3/</guid>
+      <description>朝起きてKubernetesの女子限定ハンズオンに行ってきました。
+会場に辿り着くまでに一時間近く迷って
+まあまあ遅刻しました。
+30分くらい余裕もって出たんだけどなあ。
+.
+Kubernetes
+Dockerってコンテナ(仮想環境)の機能を利用して
+それらをより複雑に組み合わせることができるの
+.
+5〜6人のチームに別れて
+それぞれ課題に取り組む形で行われたのだけれども
+今までチームで何か開発や作業をした経験ってなかったので
+かなり新鮮でした。
+.
+Azureやインフラ未経験の方々もいて
+それでも何とかなったし、楽しかったの。
+ランチもチームメンバーと食べて
+わちゃわちゃ話せたの良かった。
+.
+後半助っ人で来てくれた方が
+問題解決能力とても高い方で
+頼りになるなあ、凄いなあとおもった。
+わたしも問題解決能力の高い
+最強のエンジニアになりたいとおもいました。
+.
+講師の方は寺田さん (@yoshioterada) https://twitter.com/yoshioterada?s=09
+でした。
+https://github.com/yoshioterada/k8s-Azure-Container-Service-AKS--on-Azure
+教材は上記GitHub
+https://yoshio3.com/2018/12/06/kubernetes-tips-for-production/
+後半はこちらのスライドも利用していた。
+.
+帰り道すがらお祭りにふらっと寄りました。
+提灯が綺麗。
+.
+帰宅して復習したよ。
+とりあえずババーっと書いたものを貼ります。
+30階以上の階だったので
+窓からの眺めが良かったの。</description>
+    </item>
+    
+    <item>
+      <title>postgreSQL修了/Kubernetes予習</title>
+      <link>https://hugo.suwa3.me/post/2019-08-02-postgresql%E4%BF%AE%E4%BA%86-kubernetes%E4%BA%88%E7%BF%92/</link>
+      <pubDate>Fri, 02 Aug 2019 13:00:45 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-02-postgresql%E4%BF%AE%E4%BA%86-kubernetes%E4%BA%88%E7%BF%92/</guid>
+      <description>お昼はpostgreSQLの動画を観ていたよ。
+一通り全て見終わりました。
+わーい˙˚ʚ(｡･-･｡)ɞ˚˙
+手を動かして実際にデータベースつくったり触ったりしたいので
+もう少し動画にはお世話になりそう。
+Fab Cafeのサラダお気に入りなの。
+金曜日の楽しみだよ。
+草ってかんじ。
+土曜日はKubernetesの女子限定ハンズオンで
+参加型の座学なのだけれども
+不安過ぎて入門書を衝動買いしそうになった写真です。
+なので帰宅して少し予習しました。
+https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/
+この内容を実際にやってみた。
+DockerのアイコンからPreferenceでKubernetesを使うことできるのね。
+Nginxを3つDeploymentをつかってたてたけれども
+自動修復機能で、1つを消しても代わりのNginxが生まれるの。
+最初は
+｢消したのにNginx！｣
+とおもったけれども
+｢私が死んでも代わりはいるもの｣
+ってことかあ、と納得しました。</description>
+    </item>
+    
+    <item>
+      <title>BEGIN;</title>
+      <link>https://hugo.suwa3.me/post/2019-08-01-begin/</link>
+      <pubDate>Thu, 01 Aug 2019 13:00:22 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-01-begin/</guid>
+      <description>お昼はpostgreSQLの復習をしていたよ。
+少しずつ、わかってきたかもなかんじ。
+.userのIDが何番の**さんのblogを表示させるもしくは内容を書き換えるなどの操作
+Tootにも使えるのでは。
+.
+その場合whereをつけ忘れて
+すべてUPDATEしてしまうだとかのミスを犯さないためにも
+BEGIN;
+COMMIT;
+で、トランザクション機能をつかう習慣をつけようと言われた。
+確かに。
+間違えたらROLLBACK;だそうです。
+.
+なかなか思うように進まなくて
+遅遅として進まないってかんじなの。
+.
+夕方はPC開く時間をとらずに
+無印良品に寄り道して帰宅しました。
+そして帰宅直後にベッドで気絶した。
+帰りながら、疲れてるなあとおもったの。
+あまり疲れを溜めないようにしたい。
+.
+Kubernetesの予習ちっとも出来ていないの。
+仕方ないにゃー。</description>
+    </item>
+    
+    <item>
+      <title>ッぱち</title>
+      <link>https://hugo.suwa3.me/post/2019-07-31-%E3%83%83%E3%81%B1%E3%81%A1/</link>
+      <pubDate>Wed, 31 Jul 2019 13:00:01 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-31-%E3%83%83%E3%81%B1%E3%81%A1/</guid>
+      <description>ピンズを注文しました。
+可愛いのが出来上がったらupするねえ。
+.
+知人の舞台を観にいってきた。
+下北沢のこじんまりとした劇場でした。
+.
+劇を観ながら、ご縁がなければこういった場には来なかっただろうなあとおもって
+観に来れて良かったなあとしみじみしてしまった。
+.
+&amp;lsquo;夏の日の、ダメな大人達のはなし&amp;rsquo;
+という表現をしているひとがいて
+まさしくそれだなあとおもった。
+.
+それでも、嬉しかった気持ちは（ホンモノだ）
+って台詞は
+その気持ちが本当か嘘なのか本人にしか分からないけれども
+それでもそういってくれるだけで
+言われた側も救われるのかもなあとおもった。
+.
+次は年末にあるとのことなので
+是非観にいきたい。
+呼ばれなくても行きたい。笑
+.
+最近は本も前ほど読まないし
+映画もドラマも観ないし
+何かフィクションや物語に触れる機会が少なかったので
+たまには良いなあとおもいました。
+リアルなミニシアターといったかんじ。
+.
+お昼は色々なクラウドサービスについて調べていました。
+GCP、Azure、IBM cloudなど。
+だいたいどこのクラウドサービスもAWSと比較していたり
+軽く敵視していたりしていてワロタ
+一強なんだなあ。
+.
+postgreSQL
+greenチームのsakakiさんが取得したscoreは、redチームの平均より何score高いとか
+マジでどうでも良いので
+.
+Toot数のDaily平均値推移とか見てみたいなあ。
+楽しみなのでがんばれる。</description>
+    </item>
+    
+    <item>
+      <title>ピンズ</title>
+      <link>https://hugo.suwa3.me/post/2019-07-30-700/</link>
+      <pubDate>Tue, 30 Jul 2019 13:00:30 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-30-700/</guid>
+      <description>To-Doリストつくるの習慣化出来たらいいな。
+うさぎのデザインでピンズを発注しました。
+出来上がるの楽しみ😊
+.
+postgreSQLの内容は、まとめて自分用メモつくりつつ
+実際に書いてみて動くのか確認したい。
+HPの背景を変更しました。
+夏ぽい、スマホページも夏らしくしたいなあ。
+今日のblogは画像いっぱい。
+.
+職場のお姉様が明日までの出勤で
+記念品を渡しました。
+CAFÉ de CRIÉのレシートを沢山くれて
+コースターgetに協力してくれた方だよ。
+寂しいねえ</description>
+    </item>
+    
+    <item>
+      <title>Loft</title>
+      <link>https://hugo.suwa3.me/post/2019-07-29-loft/</link>
+      <pubDate>Mon, 29 Jul 2019 13:00:59 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-29-loft/</guid>
+      <description>目黒にあるAWSのコワーキングLoftに行ってきました。
+↓参考としてAWSの紹介blog貼ります。
+https://goworkship.com/magazine/aws-loft-tokyo/
+(上記サイトより引用)
+広くてきれい。
+WiFiのSSIDとpassは、受付のお姉さんに聞いたらわかりました。
+気合い入れてTo-Doリストつくったよ。
+何やるつもりだったのか忘れてしまうので
+整理大事。
+8割できたら次に進もうかなってなるしね。
+.
+綺麗だし景色も良くて気に入ったので
+また平日に来れそうなときは来よう。
+エレベーターが段ボールだった、テンションあがる。
+移動時間はpostgreSQLの動画をみていた。
+内容きちんと復習して
+実際に手をうごかして整理します。</description>
+    </item>
+    
+    <item>
+      <title>SHISHA</title>
+      <link>https://hugo.suwa3.me/post/2019-07-28-shisha/</link>
+      <pubDate>Sun, 28 Jul 2019 13:00:36 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-28-shisha/</guid>
+      <description>午前中はぷらぷらお散歩したよ。
+日差しが強くてThe夏ってかんじ。
+夏好きだなあ。
+.
+お昼過ぎに三十路さんと合流して
+みそぴぴデートした。
+上野のANDUというシーシャCafeにいったよ。
+初のタバコがまさかの水タバコでした。
+お店の雰囲気とても良かった。
+みそぴとは人間関係のことなど話しました。
+合う合わないってあるねえ。
+普段みていて、わたしだったらダルく感じてしまうようなことでも
+きちんと丁寧に対応していて
+それを、彼女の育ちの良さと表現しているひとがいたの、
+本当にそうだなあとおもう。
+わたしは耐え難くなってしまって
+対応が雑になってしまう。
+.
+人付き合い、狭く深くなタイプなので
+当たり障りなくでOKな部分はうまくこなしつつ
+近しいひとを大切にしていきたいとおもいました。
+.
+そのあとは渋谷のconceal cafe宮益坂へ行った。
+くるみとバナナのシフォンケーキ
+好きでたまに食べたくなる。
+.
+don.suwa3.meのユーザーが何人か増えたので
+バックアップ手順を再度確認をして整備しながら
+7/28付けでlocalにバックアップ保存しました。
+.
+移動時間は主にpostgreSQLの復習をしていたのだけれども
+EC2上にシンプルな構成でMastodonマスター版たてて
+botたくさん登録し
+postgreSQLなどのデータベース修正
+練習したいなあとおもった。
+.
+昨日はKubernetesで構築を考えていたけれども
+postgreSQLのほうを先にやりたいので
+試すだけ試してみたい。
+.
+月イチで鯖立てすると宣言して
+今月あと3日くらいしか残っていません。
+急げ急げだよ。</description>
+    </item>
+    
+    <item>
+      <title>nail/Lodge</title>
+      <link>https://hugo.suwa3.me/post/2019-07-27-nail-lodge/</link>
+      <pubDate>Sat, 27 Jul 2019 13:00:28 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-27-nail-lodge/</guid>
+      <description>久しぶりのネイルいってきました。
+グレージュにしたの、くすんだピンクぽくて気に入った。
+.
+ネイルのあとはそのままYahoo!のLodgeへ直行した。
+.
+Kubernetesの予習をしていて
+https://kubernetes.io/blog/2019/07/23/get-started-with-kubernetes-using-python/
+.
+PythonをつかってKubernetesをやってみようのページを試していました。
+.
+途中で低気圧のせいか頭痛がして
+お薬を買いに行く途中吐き続けて、意識朦朧としてきたので帰宅したよ。
+.
+低気圧で具合が悪くなり過ぎるので
+先日病院でいろいろと検査をして頂いて
+｢問題ないです｣
+と言われたばかりなのだけれども
+台風の前や弾丸低気圧あると体調つらいなあ。
+.
+夜には少し体調が回復したので
+Mastodonのユーザー開放で
+登録してくれた方々の承認をしました。
+脱おひとり様した。
+保全を最優先してがんばるぞ。
+.
+EC2上にどんすわのDocker上にあるものを
+そのまま直置きでサブ鯖立てよかなとおもっていたけれども
+せっかくKubernetesの予習しているなら
+クーバでクラスタ組む練習やってみたいなあとおもいました。</description>
+    </item>
+    
+    <item>
+      <title>どんすわ復活/postgreSQL</title>
+      <link>https://hugo.suwa3.me/post/2019-07-26-%E3%81%A9%E3%82%93%E3%81%99%E3%82%8F%E5%BE%A9%E6%B4%BB-postgresql/</link>
+      <pubDate>Fri, 26 Jul 2019 13:00:19 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-26-%E3%81%A9%E3%82%93%E3%81%99%E3%82%8F%E5%BE%A9%E6%B4%BB-postgresql/</guid>
+      <description>どんすわピンチでメンテナンスページにしていたの。
+とりあえずデータ保全を最優先してから
+docker-compose restartしてみた。
+Dockerのstatusを見てみたけれども
+unhealthyから、なかなかhealthyにならず不安定な状態が続いて
+泣く泣く師匠に相談したら
+DockerのIDが何故か重複しているとのこと。
+普通なら同じIDが二つ立ち上がる状況なさそうだけれども
+重すぎてそういった状態になったのかなあってかんじ。
+.
+なので重複したものを一つ削除して
+docker-composeのdownとupしたら
+時間をおいて正常化したので
+どんすわメンテナンス終了しました。
+.
+今回、何がうまくいっていないのか
+まではわかったけれども
+その原因まではわからなかったし
+.
+少し問題がややこしくなるとやっぱりわからないなあ。
+冷静に素早く対処できる最強のエンジニアになりたいです。
+.
+あと、PCが触れない移動時間には
+postgreSQLについて動画をみた。
+見た内容まとめ。
+データベース楽しい、また復習したい。
+使いこなせたら万能感すごそう。
+なんでも出来てしまう感じする。
+.
+データはとても大切で
+データが吹っ飛ぶと会社が吹っ飛ぶレベルの事故に繋がるし
+もし何かあったときには
+データの保全を最優先に動くことを意識していくと良い
+とアドバイスされた。
+.
+そしてデータベースにおける
+本当にあった怖い話を聞いたの。
+ヒヤリハットから、やらかしまで
+怖い話こわかった。</description>
+    </item>
+    
+    <item>
+      <title>どんすわピンチ</title>
+      <link>https://hugo.suwa3.me/post/2019-07-25-%E3%81%A9%E3%82%93%E3%81%99%E3%82%8F%E3%83%94%E3%83%B3%E3%83%81/</link>
+      <pubDate>Thu, 25 Jul 2019 13:00:35 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-25-%E3%81%A9%E3%82%93%E3%81%99%E3%82%8F%E3%83%94%E3%83%B3%E3%83%81/</guid>
+      <description>どんすわがとっても重くて
+構築後はじめてのトラブルだよ。
+わーわー‪\( ˙꒳˙ \三/ ˙꒳˙)/‬
+.
+朝から焦ってしまった。
+.
+お昼も焦っていた。
+.
+夕方あたりから
+｢焦ってもしかたないな｣
+ってマインドになったあ。
+.
+AWS開いてEC2見たり
+アタックされていないことを確認したり
+Dockerのコマンド触ってみたりして
+Docker動かないなーってことで
+データのバックアップをとってDocker再起動させる作戦にしました。
+なんだか1日おつかれさまだったよ。
+.
+トラブルは意図的に起こすこと難しくて
+責任を負わなくて良い環境で、こういったトラブルが起きたのは幸運なので
+対処がんばってみよう
+と、師匠にアドバイスされた。
+.
+どうせ利用者一人のSNSなので、データ飛ぶの覚悟で再起動かけても良かったのだけれども
+もしユーザー登録開放したときには、そうも言っていられないし
+ソロ防災訓練のつもりで対処方法を調べるのがんばりました。
+.
+とりあえず落ち着いて
+ひとつひとつ手を動かして
+どこまで動くのか確認するの大切なんだなあとおもった。</description>
+    </item>
+    
+    <item>
+      <title>リュックとどいた</title>
+      <link>https://hugo.suwa3.me/post/2019-07-24-%E3%83%AA%E3%83%A5%E3%83%83%E3%82%AF%E3%81%A8%E3%81%A9%E3%81%84%E3%81%9F/</link>
+      <pubDate>Wed, 24 Jul 2019 13:00:16 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-24-%E3%83%AA%E3%83%A5%E3%83%83%E3%82%AF%E3%81%A8%E3%81%A9%E3%81%84%E3%81%9F/</guid>
+      <description>リュクサックかわいいの届いた(●´ω`●)♡
+すてきなpink
+.
+お昼はJSの動画をみていたの。
+後半は実際に手を動かしたよ。
+JSについては歴史を学んでいる気分です。
+.
+spacemacsは
+M-x describe-bindings RETで有効なキーバインド一覧を見てみました。
+毎日少しずつ慣れていこう。
+.
+モータードライバー(TA7291P)の使い方
+https://www.petitmonte.com/robot/motor_driver_ta7291p.html
+(上記サイトから引用)
+電気系の知識ぜんぜんないので
+これから勉強します。
+とりあえず、わからない単語ググるマンするの。
+.
+今日はアニマルプラネットぼーっと観る時間あったよ。
+かわいいなあと癒されながら観ていると
+突然自然の猛威で血塗れの決闘が始まるの
+油断ならない番組だよ。</description>
+    </item>
+    
+    <item>
+      <title>ListとSESとメモ帳難民</title>
+      <link>https://hugo.suwa3.me/post/2019-07-23-%E3%83%AA%E3%82%B9%E3%83%88/</link>
+      <pubDate>Tue, 23 Jul 2019 13:00:39 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-23-%E3%83%AA%E3%82%B9%E3%83%88/</guid>
+      <description>やること増えてきたので
+まとめたのがこちらです。
+issueと書かれたものはGitHubでissue管理されているもの。
+最優先は就活と、期限の決まっているKubernetesかなあ。
+.
+Kubernetesは勉強会@女子部に登録したので
+その予習をできるだけやっていきたい。
+.
+最近気づいたのは、入門系の講習やセミナーに
+本気で予習無しや前提知識ゼロでいくと
+ただただ｢訳分からん｣な時間を過ごす羽目になるので
+できる限りじぶんで予習しておくべきだなとおもった。
+入門系の勉強会はむしろ復習なのね。
+.
+最優先の就活だけれども、焦りたくはないの。
+きちんと何がしたいのか見極めたいし
+特に急いでいないので慎重に進められたら良いなあとおもいます。
+.
+AWSサポートにSESの送信制限解除の申請をした。
+この申請が通れば、don.suwa3.meのメール登録開放ができるの。
+無事申請が通ると良いなあ。
+.
+blogにコードを書く際に
+イケてるメモ帳が欲しいなあとおもって探したよ。
+.
+Evernoteはターミナルの内容をコピペすると
+背景の黒も一緒にコピーしてしまうの。
+優秀なんだけれどもwordpressにコピペするときにジャマなので
+純粋にテキストのみで書けるメモ帳がないか
+お勧めを片っ端から試しました。
+Google keepのメモ帳がシンプルで
+クラウド対応しているの。
+PCから入力後すぐにスマホに反映されるのも良い。
+ダークテーマ
+良いじゃんとおもって使っていたら
+Evernoteがコードブロック可能なことを知った。
+.
+バッククオートでコードブロックしてあげれば
+背景の黒も取れて全て解決することに気づいてしまった。
+.
+メモ帳難民した1日でしたあ。</description>
+    </item>
+    
+    <item>
+      <title>Nuxt.js</title>
+      <link>https://hugo.suwa3.me/post/2019-07-22-nuxt-js/</link>
+      <pubDate>Mon, 22 Jul 2019 13:00:20 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-22-nuxt-js/</guid>
+      <description>Nuxt.jsを導入する練習をするために
+Rabbit gameをexampleとして
+GitHubにリポジトリを作成しました。
+開発サーバーかわいい
+色々と機能があるのね。
+https://ja.nuxtjs.org/guide
+サーバーサイドレンダリングはやらなかった。
+あとGitHubの使い方少しずつ慣れてきたんだけれども
+GitHub上にpushしたあとshellで修正するの慣れないので
+もう少し復習したいなあってきもちです。
+.
+$ rm -rf .git
+-rfは-rと-fくっつけたもの
+-rディレクトリを消す、ファイルの場合は不要
+-fはforce、無理やり
+.
+$ git commit -m &amp;lsquo;scaffolding&amp;rsquo;
+-mはcommit messes
+.
+$ mv * ../
+*ワイルドカードで全部
+../を指定して上の階層にmv移動させる
+.
+$ cd ..
+じぶんも上の階層に移動
+.
+$ mv .editorconfig ../
+$ mv .gitignore ../
+$ mv .nuxt/ ../
+.がつく隠しファイルは*で指定できないので手動で移動
+.
+このblogドット.だらけで意味わからんくなっているな。
+できたあ、かわいい。
+そしてspacemacsをいれました。
+Evilモードではない方にしました。
+Evilって名称にemacsの悪意のようなものをやんわりと感じつつ
+調べたら建前上きちんとした意味はあるぽい。
+真実は謎のまま。
+これから色々と設定を加えていけたら良いなあとおもいました。
+.
+現在AtomユーザーなのでAtomの使い方も復習しながら
+WebのコーディングはVSCode使いこなせたら良いなあって目標です。</description>
+    </item>
+    
+    <item>
+      <title>ちらし寿司</title>
+      <link>https://hugo.suwa3.me/post/2019-07-21-%E3%81%A1%E3%82%89%E3%81%97%E5%AF%BF%E5%8F%B8/</link>
+      <pubDate>Sun, 21 Jul 2019 13:00:11 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-21-%E3%81%A1%E3%82%89%E3%81%97%E5%AF%BF%E5%8F%B8/</guid>
+      <description>朝から親戚のおうちへ出向き
+少しだけ外に出てゆっくりする時間があったので
+一緒にPRONTOへ行って軽く飲みながら
+1時間ほどかけて最近は何をしているのかの発表をしました。
+相手もIT系の方だったけれども
+ふむふむってかんじで
+最後は書店に寄ってwordpressの本を探したよ。
+.
+wordpressのバージョン5.0以上を探していて
+4.0のものが結構あった。
+そしてサーバー構築からやりたかったのだけれども
+サーバー構築よりもHTMLなどのコーディングについて書かれているものがおおく
+AWSではなくロリポップなどのレンタルサーバー利用の本しかなかったの。
+.
+AWSの書籍コーナーを少し見てみたけれども
+先月Web上で公開されているAWSのwordpress公式チュートリアルを見ていて
+誤植やログの表記違いで躓いたので
+書籍で公式チュートリアル以上のものあるのだろうかとおもい
+とりあえず、わたしは何も買わず出てきました。
+また引き続き探していこう。
+ちらし寿司食べたの、おいしかったあ。</description>
+    </item>
+    
+    <item>
+      <title>PORTもくもくメンテナンス</title>
+      <link>https://hugo.suwa3.me/post/2019-07-20-616/</link>
+      <pubDate>Sat, 20 Jul 2019 13:00:56 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-20-616/</guid>
+      <description>PORTのもくもく会へ行ってきました。
+おやつタイムに配られたシュークリームアイス😊
+ランチタイムも色々と会話できたの楽しかったです。
+主にMastodonのバックアップ/メンテナンスやりました。
+.
+やったこと
+- postgreSQLのバックアップ
+- GitHubで設定ファイルの保全
+- EC2上へメンテナンスページの設置
+- メンテナンスの流れ確認(設定ファイルについてなど)
+.
+postgreSQLのバックアップとったの。
+.
+第 23章バックアップとリストア
+https://www.postgresql.jp/document/8.1/html/backup.html
+復習しておこう。
+Docker上にバックアップ用のディレクトリを作成して
+pg_dumpを実行しました。
+.
+Nginx設定ファイル内の整理をして
+Mastodonの設定ファイルとNginxの設定ファイルを
+scpコマンドをつかいDLしてGitHubに保存。
+.
+EC2インスタンス上にメンテナンスページ用のディレクトリを作成して
+GitHub上にメンテナンスページを置いていたので
+それをgit cloneしてメンテナンスの準備をしたよ。
+.
+site-availableにメンテナンス用のNginx設定ファイルを置いて
+中の設定ファイルをメンテナンス用に変更したの。
+シンボリックリンクを書き換えて、設定ファイルをテストし
+忘れずにNginxをリロード。
+.
+これblog書いていて
+下書き保存がうまくいかず
+一度ぜんぶ消えてしまったので
+もう一度はじめから書き直したの
+復習バッチリです！！！
+.
+帰りは一杯飲んで帰ったよお。</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://hugo.suwa3.me/post/2019-07-19-raspberry-pi-2/</link>
+      <pubDate>Fri, 19 Jul 2019 13:00:34 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-19-raspberry-pi-2/</guid>
+      <description>昼間は引き続きJSのお勉強をして
+きちんと一つ一つ
+手でも、頭でも慣れて
+まとめたいなあとおもいました。
+.
+夜は秋葉原でお買い物したよ。
+Raspberry Piかわいいなあ。
+ミニ四駆は、上にボードやラズパイのせるので
+72mmのシャフトとアルミスペーサーでトレッド幅を広げます。
+.
+わからないこと沢山あるけれども
+とりあえず仮説をたてて組み立ててみて
+わからーん！ってなったら
+Raspberry Piの勉強会に参加して
+有識者にお話を伺おうとおもいました。</description>
+    </item>
+    
+    <item>
+      <title>スマホからgit/Vim/Emacs</title>
+      <link>https://hugo.suwa3.me/post/2019-07-18-%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%8B%E3%82%89git-vim-emacs/</link>
+      <pubDate>Thu, 18 Jul 2019 13:00:25 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-18-%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%8B%E3%82%89git-vim-emacs/</guid>
+      <description>JSの練習していたの。
+だいぶ触っていなかったので・・
+図で説明されるとわかりやすいなあとおもう。
+Vue.js練習したいなあとおもいます。
+.
+Github、スマホからissueのClosedができたので
+もしやとおもって試してみたら、スマホから編集/反映できた。
+そしてgit cloneできるのか調べたらTermuxというアプリをいれることで
+Android上でLinuxのようなshellをつかえるようになるらしい。
+shellとgitコマンドが使えるならgit clone可能なんだねえ
+https://qiita.com/0uts1de/items/7eb13fea6ac5f02da44b
+ついでに、iPhoneにVimが入っていたのおもいだして
+iでinsert modeに入れたけれども
+どうやって抜けるのかわからず
+まさかの脱出ゲームだった。
+emacsも入れていたので開いたよ。
+iPhoneのアプリはnot emacsだけれども
+Androidアプリはemacsだったよ。なぞい
+ちなみにAtomのスマホ用エディタは見つけられず
+VSCodeはありました。</description>
+    </item>
+    
+    <item>
+      <title>ブラシ付きモータードライバIC</title>
+      <link>https://hugo.suwa3.me/post/2019-07-17-%E3%83%96%E3%83%A9%E3%82%B7%E4%BB%98%E3%81%8D%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90ic/</link>
+      <pubDate>Wed, 17 Jul 2019 13:00:02 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-17-%E3%83%96%E3%83%A9%E3%82%B7%E4%BB%98%E3%81%8D%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90ic/</guid>
+      <description>有用そうな記事を見つけたので貼るね。
+https://qiita.com/stnk20/items/f614ae1471b9e555708a
+(上記サイトから引用)
+Raspberry Piを基盤にカメラの画像からPythonで自動制御させている。
+組み立て方がハマりやすいところまで詳細に書かれているしソースコードもある。
+.
+https://tech.drecom.co.jp/self-driving_on_raspberrypi/
+(上記サイトから引用)
+こちらはDeep Learningさせている。
+かなり理想に近いものなので参考にしたい。
+.
+秋葉原のパーツショップいくつか目星をつけて
+この商品があるか問い合せたの。
+マルツには在庫無しで千石電商さんの分店に電話したら
+｢本店にあるかも｣
+ということで
+本店に1時間で5回ほどかけてようやく繋がり(通話中だった)
+在庫あること確認しました。やったねえ。
+週末にブレッドボードやジャンプワイヤもあわせて買いにいきたい。
+秋葉原なんでもそろうの素晴らしいね。
+.
+なんだか気持ちが忙しないなあとおもった。
+朝は満員電車で日中は職場のひとのなかで
+渋谷はどこを歩いていてもだいたい周りにひとが沢山いるし
+帰りも満員電車にのって
+家にいても一人になれる時間がなくて
+数時間で良いので、一人でゆっくりする時間ほしいなあとおもいました。</description>
+    </item>
+    
+    <item>
+      <title>ステアリング機構つき自動制御ミニ四駆構想</title>
+      <link>https://hugo.suwa3.me/post/2019-07-16-%E3%83%9F%E3%83%8B%E5%9B%9B%E9%A7%86/</link>
+      <pubDate>Tue, 16 Jul 2019 13:00:36 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-16-%E3%83%9F%E3%83%8B%E5%9B%9B%E9%A7%86/</guid>
+      <description>今日は1日ミニ四駆について考えていたの。
+先日のOSC名古屋で
+Raspberry Piでラジコンカーを自動制御しているブースがあったのだけれども
+それをきっかけに
+｢Raspberry Piでミニ四駆の自動制御ができたら面白そうだよね｣
+となり
+ちょっとだけ考えてみました。
+.
+Raspberry Piでミニ四駆をIoT化して遠隔操作している記事
+https://cad-kenkyujo.com/2018/10/30/mini4ku/
+[wpvideo R53F5fCO]
+(上記サイトから引用)
+.
+ミニ四駆にステアリング機構をつけてスマホから遠隔操作させる記事
+https://qiita.com/Google_Homer/items/109913f5394712ca07aa
+.
+このあたりを参考にして実際に作ってみたい。
+.
+前輪ハンドル機構(公式パーツ)
+http://www.powers-rainbow.com/cgi-bin/tkxcgi/shop/goods_detail.cgi?CategoryID=&amp;amp;GoodsID=00000172
+(上記サイトから引用)
+このパーツも使えるかもしれないので
+取り寄せ可能か確認する。
+.
+車やドローンの自動制御はトレンドなので
+ひとに聞いたり記事を調べてみたりで
+情報集め頑張りたいです。
+.
+｢後輪駆動改造してステアリング機構をもたせたうえで自動制御してみたい｣
+って、まあまあぶっ飛んだリクエストを
+一緒に真剣に考えてくれて
+有益なアドバイスをくれた店員さんに感謝です。
+.
+とりあえず本体を組み立てたので
+あとはパーツ取り寄せだよ。
+.
+最初はもっと大掛かりな改造を想定していて
+https://www.taus.ac.jp/blog/371
+(上記サイトから引用)
+この仕組みを利用して
+http://www.f-palette.org/works/students/2584/
+(上記サイトから引用)
+こういった改造をミニ四駆規模に落とし込む想定をしていたの。
+.
+むしろ三輪車の後輪駆動にして
+不安定さを解消するために低速改造するか？
+ってレベルで考えていたのだけれども
+たくさん調べたら少しできるかもって気持ちになってきた。
+楽しくなってきたᐠ( ᐛ )ᐟ♡ᐠ( ᐖ )ᐟ</description>
+    </item>
+    
+    <item>
+      <title>Yahoo!LODGE</title>
+      <link>https://hugo.suwa3.me/post/2019-07-15-yahoolodge/</link>
+      <pubDate>Mon, 15 Jul 2019 13:00:07 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-15-yahoolodge/</guid>
+      <description>Yahoo!オフィス内にあるコワーキングスペース
+Yahoo!Lodgeへ行ってきた。
+たくさんのひとが個人だったりグループだったりで作業していた。
+とても広くて綺麗だし
+何より無料で使えるの魅力的だなあとおもいました。
+隅のソファ席お気に入りだよ。
+少し狭くて落ち着くの。
+半分くらい片付いたので
+まあ上々かなあといったかんじ。
+.
+帰りは赤坂まで歩いて
+和風スパゲティのお店に寄りました。
+明太子ベーコンと
+納豆梅しそパスタだよ。
+スタミナ満点なので夏バテ知らずになれるね。
+.
+8月の初めに
+Kubernetesハンズオン@女子部へ参加することにしました。
+Dockerマスターへの一歩だよ。
+.
+内容はQiita記事にでもまとめられたら良いなあ。</description>
+    </item>
+    
+    <item>
+      <title>OSC名古屋</title>
+      <link>https://hugo.suwa3.me/post/2019-07-14-572/</link>
+      <pubDate>Sun, 14 Jul 2019 13:00:39 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-14-572/</guid>
+      <description>オープンソースカンファレンス名古屋に行ってきました。
+オープンソースのお祭りだったよ。
+企業ブースや個人のブースがあって
+エンジニア向け同人イベントみたいだなあという印象でした。
+.
+Raspberry Piのセミナーと、gitのセミナーを受講したの。
+Raspberry Piの講師は年配の方で
+｢最近のひとはPythonとかで制御するみたいですが、わたしはPythonよく分からないので全てshell scriptで書きました｣
+と言っていて、すごいなあとおもったよ。
+.
+あと面白いなとおもったのが
+ポーチライトを外の照度で管理するの
+“外が明るかったらポーチライトの灯りを消す、暗かったら点ける”
+という仕組みをつくるのに
+太陽光電池つきの100均電卓を分解して
+照度が高いと電圧も高くなるのを利用していたの。
+閾値処理である電圧以上になったら消す/以下になったら点ける
+という設定をしたらしい。
+アイディアだなあとおもった。
+.
+講師の方はスマホに音声で指示を出していたんだけど
+スマートウォッチで指示が出せたらラクよね。
+海外ではスマートウォッチでIoTの遠隔操作をすることが増えてきているらしく
+それがスマートウォッチ普及の一翼を担っていると知って
+自動制御や遠隔操作の開発
+今後も活発化しそうだし、たのしそうだなあとおもいました。
+.
+Raspberry PiのステッカーをgetしたのでMacBookに貼った♡
+可愛い。
+.
+gitのセミナーは
+最近GitHubを使い始めて
+shellコマンドでのgit操作を記事にまとめたし
+https://qiita.com/suwa3/items/0a180e9833c0146e36b5
+初歩的な仕組みについては知っているつもりだったの。
+前半はわたしにとって復習的な要素が大きくて
+｢んー、たしかに｣
+とおもいながら聞いていたけれども
+後半の重複(コンフリクト)対策の仕組みはなるほどとおもった。
+https://www.slideshare.net/mobile/ToruMiyahara/git-osc2018
+帰宅してスライドもう一度復習しました。
+図解がわかりやすくて良いなあ。
+.
+その後ポケマス管理者のナツキさんと合流して
+WordPressのはなしや
+マストドンについて
+お互いに今日受講したセミナーの感想を話しつつ
+ナツキさんが最近ハマっているたまごっちの話や
+星ドラの話も聞いたよ。
+解散後はダッシュで会場に戻って
+ギリギリLT（発表）を聞くことができた。
+.
+新幹線で地元の静岡に寄り道して
+地元の、昔からの知人が働いているダイニングバーで夕食をとったよ。
+元SEのひとでWindows 3.1を使っていたはなしから
+当時はPCが扱えてもオタクに人権がなかった
+というはなしに、歴史を感じました〜。
+.
+今日盛りだくさんᐠ( ᐛ )ᐟ♡ᐠ( ᐖ )ᐟ</description>
+    </item>
+    
+    <item>
+      <title>appendChild</title>
+      <link>https://hugo.suwa3.me/post/2019-07-12-appendchild/</link>
+      <pubDate>Fri, 12 Jul 2019 13:00:01 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-12-appendchild/</guid>
+      <description>Rabbit gameをつくっていて
+左側に謎のBoxがひとつ余分にできていたのと
+センタリングできない問題があったの。
+謎Boxは、ただの消し忘れで
+.
+センタリングできない問題は、親子問題で解決しました。
+appendChildがなかなか理解できなくて
+図に描いたら分かった。
+バツが間違い、星が正しい。
+scriptタグ内に、divをbodyの子要素として追加してしまっていたので
+boxが外に出てしまっていたの。
+developerツールをみて中身理解しようとおもいました。
+.
+https://suwa3.github.io/Rabbit-game
+Rabbit gameは加点式にして
+ポイントを貯められる要素つけたい。
+.
+メンテナンスページに置いて
+メンテナンス中にだけ出現するgame良いなあとおもいました🐰</description>
+    </item>
+    
+    <item>
+      <title>GitHub pages</title>
+      <link>https://hugo.suwa3.me/post/2019-07-11-github-pages/</link>
+      <pubDate>Thu, 11 Jul 2019 13:00:53 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-11-github-pages/</guid>
+      <description>GitHub pagesでhttps化したよ。PC用ページです。
+https://suwa3.github.io/
+.
+お名前.comのほうで
+suwa3.meのサブドメイン設定しようとおもったけれども
+設定うにゃにゃにゃーで面倒くさいので
+時間あるときにやろうとおもいました。
+.
+スマホ用ページはまだ整理してないのん、
+明日やるー
+JS練習で簡単なゲームつくったので
+それもソースコードだけGitHubに保存しておいた。
+.
+くるりと回ってうさぎさん出てくるところまでは書けたので
+あとはそれをグラデーションでぬるぬるーとさせたら
+数を増やしてランダム要素つけようとおもいます。
+.
+数式というか関数みたいでおもしろいなあとおもった。
+代入の仕方や順番、式さえ間違えなければまあまあ動くし
+もっと階層を省略できる場合は
+導き出される解はひとつでも解法が様々ある
+って感じで
+クイズみたいでたのしいです。
+数学もそうだけれども
+数こなせばこなすほど解法のひらめきが強くなって
+はやく効率的に解けるようになるんだろうなあ。
+.
+JSステップアップしたらNode.jsやりたいなあとおもっていたの
+師匠曰くReactかGoにいこう、とのことなので
+そちらに向かいます。</description>
+    </item>
+    
+    <item>
+      <title>Rabbit-game</title>
+      <link>https://hugo.suwa3.me/post/2019-07-10-rabbit-game/</link>
+      <pubDate>Wed, 10 Jul 2019 13:00:55 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-10-rabbit-game/</guid>
+      <description>スマホ用のページもかいた。
+こういうタップすると見えるような
+三本線のメニューって
+ハンバーガーメニューっていうんだねえ。
+iPhone5で見られるならOKかな。
+.
+JSの動画を最後まで観たの。
+Rabbit-gameってファイルつくって
+すわぴぴHOMEに貼ったろ。
+.
+ハズレはやぎで
+うさぎが当たりの簡単ゲームだよ。
+.
+レベルアップしたら、その都度
+Rabbit-gameは更新しよう。
+｢なんか謎のゲームある｣
+みたいな感じでいきます。</description>
+    </item>
+    
+    <item>
+      <title>Owl</title>
+      <link>https://hugo.suwa3.me/post/2019-07-09-owl/</link>
+      <pubDate>Tue, 09 Jul 2019 13:00:17 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-09-owl/</guid>
+      <description>お昼休みはJSの動画を観て
+夕休みにはCSSひたすらいじっていたの。
+だんだん完成イメージに近づいてきた。
+GitHubにupしておけば
+ローカルでいくらでもいじれるの心強いねえ。
+.
+スマホ用のページも別途つくりたい。
+それに慣れてきたらフレームワーク使ってみたいなあ。
+.
+今週やりたいこと盛りだくさんなの
+スマホ用のWebページ組み立ててフレームワークチャレンジしたら
+GitHub pagesでhome.suwa3.meのドメイン設定して
+週末のオープンソースカンファレンスの予習もしたいし
+Ruby on Railsで簡単なアプリつくるチュートリアルもやりたい。
+.
+水木金の昼休みと夕休みと夜にちょろっとやっていくᐠ( ᐛ )ᐟ♡ᐠ( ᐖ )ᐟ</description>
+    </item>
+    
+    <item>
+      <title>Maintenance</title>
+      <link>https://hugo.suwa3.me/post/2019-07-08-maintenance/</link>
+      <pubDate>Mon, 08 Jul 2019 13:00:26 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-08-maintenance/</guid>
+      <description>メンテナンスページつくったの。
+適当なサイトの例をコピペして
+色とか文とかいじってみた。
+Hpをつくっていて
+構造ガン無視し過ぎてfooterが一番上にきてしまっている図です。
+動画のチュートリアルを粛々と観ていたのだけれども
+｢自分のつくりたいようにつくりたーい｣
+って自分でデザインしたらこのザマです。
+最終的な解決法
+footer要素も全て突っ込む。
+GitHubのほうは明日反映させる〜</description>
+    </item>
+    
+    <item>
+      <title>Docker ネットワーク</title>
+      <link>https://hugo.suwa3.me/post/2019-07-07-docker-%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</link>
+      <pubDate>Sun, 07 Jul 2019 13:00:34 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-07-docker-%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</guid>
+      <description>マストドン構築における
+Dockerのネットワークについて、書いてまとめた。
+言葉だけだと理解しがたいね。
+結局、本の方も読んでみたのだけれども
+今の時点でおそらくネットワークの細かなところまで知識必要ないなと判断して
+マストドン構築のうえで必要最低限なものだけ覚えようとおもいました。
+.
+issueのひとつに｢バックアップをとる｣があったので
+それを片付けたの。
+まだ途中なので明日がんばる。
+.
+マイグレーション失敗しても
+｢でもバックアップあるから大丈夫！｣
+って言えたら、100てへぺろが
+10てへぺろくらいで済むもんね。</description>
+    </item>
+    
+    <item>
+      <title>Qiita</title>
+      <link>https://hugo.suwa3.me/post/2019-07-06-qiita/</link>
+      <pubDate>Sat, 06 Jul 2019 13:00:12 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-06-qiita/</guid>
+      <description>カラーコードよく使うものは暗記していたの。
+赤緑青の16進数の組み合わせだということを知り
+｢例えばピンクなら255,160,90くらいかなと目当てつけて16進数に換算すればカラーコードだいたいわかるのでは｣
+と、気づいて
+30分くらい目当てをつけて16進数に換算するの暗算チャレンジしていたのだけれども
+普通にカラーチャートから選択してカラーコード調べる方が早いことに気づきました。
+.
+あとはAtomからGitHubに直接リポジトリつくれないかしらとおもって
+色々と試していたの。
+Gitタブや、GitHubタブあるので
+おそらくそこからできるの。
+しかし検索しても方法を何通りか試したのにうまくいかない。
+最終的に諦めてターミナルからやっているblog散見したので
+ターミナルから反映する方法をQiitaにまとめました。
+https://qiita.com/suwa3/items/0a180e9833c0146e36b5
+GitHub開発したエディタのはずなんだけど
+何故GitHubに直接リポジトリつくるのグダるのか謎い。
+でも便利機能として覚えるよりも
+きちんと中で何をしているのか把握出来たので
+まあ良いかなあとおもいました。</description>
+    </item>
+    
+    <item>
+      <title>WAFは月5ドル</title>
+      <link>https://hugo.suwa3.me/post/2019-07-05-waf%E3%81%AF%E6%9C%885%E3%83%89%E3%83%AB/</link>
+      <pubDate>Fri, 05 Jul 2019 13:00:03 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-05-waf%E3%81%AF%E6%9C%885%E3%83%89%E3%83%AB/</guid>
+      <description>自鯖のセキュリティについて考えていて
+地味だけど最優先で考えなければいけないなあと思うことのひとつなの。
+先月のアクセスlogを確認したら
+海外から攻撃がきていた衝撃の事実。
+先月はEC2上にWordPressを立ち上げてすぐにstoppingさせていたけれども
+こちらは、いったんセキュリティ周りを見直してから
+もう一度サーバーを立て直そうかなあと思ったよ。
+WordPress脆弱性こわい。
+AWSのWAF（セキュリティ対策サービス）は月に5ドルでした。
+地味に高い、笑
+.
+ファイアウォールの設定と
+ポートスキャン、公開鍵認証方式はマストドンで散々やったので大丈夫そう。
+マストドンの方は攻撃の可視化ツールいれたい。監視監視！
+やることが山積みで時間が3倍欲しいです。
+.
+GitHubのリポジトリばばばっと作ってみた。
+主にTODOです。
+スマホからissueをすぐ見られるようにした。
+パッと確認したいときに便利〜</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://hugo.suwa3.me/post/2019-07-04-raspberry-pi/</link>
+      <pubDate>Thu, 04 Jul 2019 13:00:44 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-04-raspberry-pi/</guid>
+      <description>OSCのセミナー、申込変更したの。
+Raspberry PiでIoT自動化や制御について紹介するやつ
+ラズパイ興味あるのでそれにした。
+.
+Webページちまちま書いていた。
+https://developer.mozilla.org/ja/docs/Web/HTML
+ここわからないときに参考にするの良さそう。
+https://developer.mozilla.org/ja/docs/Web/Guide/HTML/Content_categories#Phrasing_content
+ここのあたりとか英語の文法みたいだなあとおもった。
+文法にがて〜〜
+.
+夜は久しぶりにMastodon張り付いたあ、
+そして音声upできるようになったので
+早速試した。
+最初はamrで投稿エラーでて
+mp3に変換したら投稿できたよ。
+んぱかマーチ！
+クレヨン王国のOPがエンドレスループしていたので
+それを歌いました。
+楽しかったので、ぼちぼちupしていきたい。</description>
+    </item>
+    
+    <item>
+      <title>OSC申込</title>
+      <link>https://hugo.suwa3.me/post/2019-07-03-osc%E7%94%B3%E8%BE%BC/</link>
+      <pubDate>Wed, 03 Jul 2019 13:00:51 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-03-osc%E7%94%B3%E8%BE%BC/</guid>
+      <description>朝から怒涛の褒め倒しに恐縮ぴぴだったよ。
+.
+お昼休みのうちにオープンソースカンファレンスのセミナー申し込みした。
+楽しみだなあ。
+gitとLimeSurveyについて、2つ参加するの。
+.
+残り時間でお昼ご飯たべながら
+Dockerのcontainer操作方法について動画をみた。
+.
+WordPressで技術blog書けたので
+Qiitaでも試し書きしてみる。
+書きやすいほうで書こう。
+.
+やることlist着々と消化しつつある。
+できることから一つ一つ片付けるの。</description>
+    </item>
+    
+    <item>
+      <title>自戒です</title>
+      <link>https://hugo.suwa3.me/post/2019-07-02-%E8%87%AA%E6%88%92%E3%81%A7%E3%81%99/</link>
+      <pubDate>Tue, 02 Jul 2019 13:00:37 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-02-%E8%87%AA%E6%88%92%E3%81%A7%E3%81%99/</guid>
+      <description>最近のすわぴぴの褒められ方がやばい。
+とても褒められる。
+褒められ過ぎなのでは、
+ってくらい。
+.
+褒められるために頑張る
+って、ならないように気をつける。
+.
+自分が楽しいからやる。
+楽しくないのに
+｢褒められたいから｣
+って動機でやろうとすると挫折するの。
+.
+わたしの場合は、褒められることが目的になるとダメなタイプです。
+.
+気持ちはありがたく受け取るけれども、それに振り回されないようにしたい。 .
+いろいろなひとに見てもらえてラッキー✌
+嬉しいね！
+.
+でも、それが当たり前だとか
+もっともっと認めて欲しい
+に、なっちゃダメよ。
+自戒です。</description>
+    </item>
+    
+    <item>
+      <title>Docker image</title>
+      <link>https://hugo.suwa3.me/post/2019-07-01-docker-image%E3%81%AE%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jul 2019 13:00:24 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-01-docker-image%E3%81%AE%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/</guid>
+      <description>Docker imageの操作方法 目次
+imageの検索 imageの取得 imageが取得できたか一覧で確認する imageの詳細を見る imageの削除 1. imageの検索 centosを検索してみます。
+$ docker search centos | more
+2. imageの取得 $ docker pull centos
+3. imageが取得できたか一覧で確認する 左から
+名前、タグ、IDの順、作られた日付、容量
+タグが違っていてもIDが同じであれば実体は同じ。
+$ docker images
+REPOSITORY TAG IMAGE ID CREATED SIZE misskey_web latest 0e061f36c9be 8 days ago 526MB ・・・・・・　・・・・・　・・・・・・・　・・・・・・　・・・・ centos latest 9f38484d220f 3 months ago 202MB
+4. imageの詳細を見る $ docker inspect &amp;ldquo;REPOSITORY&amp;rdquo;:&amp;ldquo;TAG&amp;rdquo;
+もしくは
+$ docker inspect &amp;ldquo;IMAGE ID&amp;rdquo;
+IMAGE IDで指定する場合は一つに絞ることができればOKなので、最初の3〜4文字を入力するだけでも見ることができる。</description>
+    </item>
+    
+    <item>
+      <title>Knzk.me</title>
+      <link>https://hugo.suwa3.me/post/2019-06-30-knzk-me/</link>
+      <pubDate>Sun, 30 Jun 2019 13:00:25 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-30-knzk-me/</guid>
+      <description>あしゅふぃさんの
+マストドンセキュリティガイドライン
+を参考に、セキュリティチェックをしました。
+.
+HSTSの設定
+HTTPヘッダでnginxのバージョン情報を隠す設定
+ポートスキャン
+料金監視
+ここらへんやった。
+メールについては個人鯖なので、今の時点では設定不要かなあという判断でskipしました。
+.
+今後の最優先事項はdon.suwa3.meの保守です。
+.
+鯖立て楽しかったので色んな環境でもう10回くらい立ててみたい。
+Web制作やIllustratorは今後も気分転換として進めたい。
+WordPressは扱い方すこし慣れてきたので、書籍で勉強したいなあ。
+クライアントアプリ作りは、動画で流れ把握しつつ簡単なものからステップアップして
+週末のプログラミング勉強会にて、優先的にアプリ制作系のもの参加していきたいです。
+.
+.
+今日でknzk.me最終日なので
+お引越しも何とか間に合ったよ。
+.
+knzk.me閉鎖をきっかけに
+自鯖を立てようとおもいたって
+それが自分の人生の方向性を大きくかえたなあとおもうの
+さびしいけれども、頑張りたいです。
+.
+しんみりしちゃうのニガテだから
+明るいトゥートしたいなあ
+なんておもうけれども、やっぱり寂しいの。
+.
+ローカルに沢山トゥート流れているのみるだけでうれしい。
+好きだなあっておもいました。</description>
+    </item>
+    
+    <item>
+      <title>流れ</title>
+      <link>https://hugo.suwa3.me/post/2019-06-29-%E6%B5%81%E3%82%8C/</link>
+      <pubDate>Sat, 29 Jun 2019 13:00:36 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-29-%E6%B5%81%E3%82%8C/</guid>
+      <description>5/31 knzk.me閉鎖と知る、1日落ち込む
+6/1 自鯖をたてると決意する。三十路さんにホスティングサービスについて聞く
+6/3 ドメイン購入、ホスティングサービスの選定
+6/4 m.toで鯖立て
+6/5 m.toで自鯖にログイン
+6/6 ホスティングサービスですんなりいけたので、自分で構築しようと調べ出す
+6/7 vimの使い方を調べる
+6/10 ローカル開発環境の構築やDocker、UNIXコマンドなど必要そうな知識をpick upする
+6/11 Linuxとは何か、UNIXコマンドについて調べる
+6/12 UNIXコマンドに慣れるため練習する
+6/14 証明書につまずくが、なんとかローカルにマストドンがたつ。ターミナルの背景を黒くしてフォントも変えて気分があがる
+6/15 ローカルにたてたマストドンにAdminユーザーとしてログイン。管理画面にちょっと感動
+6/16 Misskeyに興味をもつ。ライ塩さんのblogめちゃ読む
+6/17 AWSに登録する。プログラミング系の学習動画サイトに片っ端から登録する
+6/18 AWSでEC2インスタンスをたてる。Dockerコマンドについて調べる
+6/19 AWSでwordpressのWebページを立ち上げる。gitとGitHubはメールとGmailの関係だと知る
+6/20 Misskeyとマストドンのレシピを書いて並べてみる
+6/21 DNS(Route53)でドメイン設定する。sudoについて調べる
+6/22 Misskey構築するがファイルの設定につまり最後の90％で止まる。初めてプログラミングの勉強会に参加する
+6/23 Misskeyをローカルにたてることに成功。上級者向けのためMisskeyの運用は諦める。マストドンに慣れてからMisskeyに挑戦してみようと決意する
+6/24 疲れたので1日休む
+6/25 マストドンたちあげる。Misskeyの構築でだいたいの骨組みは完成していたため移植する。メールサーバーについて調べる。PCについて知るため、ラズパイが欲しくなる
+6/26 メールサーバーの設定できた。メディアストレージの設定につまる
+6/27 メディアストレージの設定できた。errorがでると人に聞いていたが、少しずつ自分で解決策を探せることも増えた
+6/28 Webページ制作で気分転換する
+6/29 セキュリティチェック</description>
+    </item>
+    
+    <item>
+      <title>昔話</title>
+      <link>https://hugo.suwa3.me/post/2019-06-28-%E6%98%94%E8%A9%B1/</link>
+      <pubDate>Fri, 28 Jun 2019 13:00:39 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-28-%E6%98%94%E8%A9%B1/</guid>
+      <description>高校生の頃は今みたいにTwitterがなくて
+自分でHPやblogをつくるのが主流だった。
+blogのデザインも今みたく豊富なデザインから選べることはなくて
+HTMLで、ある程度自分で組み立てないといけなかったの。
+なのでCSSに書くような内容も
+全てHTMLにぶっ込んだThe独学な書き方をしていて
+改行とかも一切しないで
+予測変換とかもないので、全て手打ち＆暗記していたの。
+カラーコードも暗記していたので
+｢トップの文字色これだったから、こっちは少し薄めにしようかなあ｣
+なんて、脳内でシュミレーションして
+ほかの人が見たら相当見づらいだろうな って内容で書いていたのね。
+あとはC言語でゲームづくり挑戦して
+独学つらすぎて挫折しました。
+.
+高校時代は理系だったので
+大学は情報系の学部に進んで、Web制作やったのだけれども
+まず最初に驚いたのが
+｢CSS？！構造と装飾に分けるの必要？？しかも改行多い｣
+ってところからだった。
+田舎過ぎて書店の技術書コーナーには
+WordとExcelの本しか置いていなかったので
+(技術書コーナー自体ない場合も多い)
+なかなか学ぶための情報収集ができなかったのよね。
+.
+就活はもちろんWebエンジニアで探したのだけれども
+畑しかないような町で探したところで
+.
+｢Webエンジニアの求人はないですね。Webデザインなら年に2回くらい求人ありますね。未経験OKのものは0件です｣
+.
+ってレベルで
+二年に一度くらい
+｢やっぱり自分のやりたい仕事に就きたい｣
+と、思い立っては
+求人ないですねーってやりとりを地元のハロワで繰り返したので
+｢そうなのかあ｣
+と、なんかもう激レアなお仕事なんだろうと諦めていたのだけれども
+東京ならその数百倍は求人あると知って
+愕然としたわよね。
+さっさと上京すれば良かったとおもった。
+学生で、まだ子どもみたいなもんで
+仕事を探すにしても、何もわかってなかったんだなあとおもう。
+.
+なんやかんやあって
+最近ようやく生活が安定してきたので
+今まで、やりたかったのに諦めていたこと
+全部やったろってきもちです。
+.
+勉強会なんかはconnpassで探しているのだけれども
+都内のIT系勉強会は、週末に100件近くあるのに
+地元で探したら月に5件とかなのね。
+.
+格差があり過ぎない？
+上京しておもったのは
+IT系の文化って、それがそのまま関東圏の独自文化なのでは
+と言えるくらい地域格差あるよなあってことです。
+.
+田舎の大学の情報学部
+Web制作について教えてくれたのは、物理学の教授でした。
+手作りの教科書で、タグなども全て板書されたものをレジュメに手書きで写した。
+試験も手でタグを書くかんじだったよ。
+.
+Web制作の授業でPC使わないんかーい！
+みたいな日も多々ありました。
+PCの数が少なかったので、なかなか難しかったのかもしれない。
+.
+数学だとか計算機の歴史だとか
+そんな授業内容だけの日もあった。
+まあでも楽しかったので良いです。</description>
+    </item>
+    
+    <item>
+      <title>Dockerマスターになりたい</title>
+      <link>https://hugo.suwa3.me/post/2019-06-27-docker%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%9F%E3%81%84/</link>
+      <pubDate>Thu, 27 Jun 2019 13:00:08 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-27-docker%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%9F%E3%81%84/</guid>
+      <description>最初はAWS日本語だしAWSの設定なら楽チン！
+とおもっていたけれども、これ日本語が意味不明だと突然
+｢何言ってるのかな？？｣
+に、なるのつらい。
+vimで設定ファイル編集するほうが
+言われたとおり素直にコピペするだけなので
+ラクだなと思うようになってきた。
+素直にコピペして動く場合であれば。
+.
+パブリックアクセスのブロックは全解除でいけました。
+公開しても良い画像で、ファイルをひとつ作ってみて
+それを投稿してerror出ないかテストしてみました。
+.
+パケットポリシーエディタの中身は
+AWSのポリシージェネレーターでパパッと生成できた。
+しかしジェネレーターの選択欄ものすごく種類あるので
+どれ選択したら良いのか初見わからないのでは…
+.
+で、メディアストレージの設定ファイルの編集なんですが
+参考にしていたblogの内容の表記っていうのかな
+若干違っていて
+どれが正しいのかわからないので
+設定ファイルを書き直して
+Docker立ち上げ直して
+マストドンで画像投稿してみて
+Dockerのログみてerror探して
+というのを10回ほど繰り返し
+まだerror出ています。
+うお〜〜〜〜〜〜
+アプリ開発の動画みて気分転換しよ🙋
+また明日がんばります。
+.
+でもねでもね
+最初の頃はerrorの特定も全くわからなかったの。
+最近は、だんだん流れがわかってきたの嬉しい。
+こういうリズムで、こういう順序で
+こういう角度からerrorの原因を潰していくのかあ
+って、少しずつ見えてきた。
+メディアストレージのerrorちっともわからんけども‪ᐠ( ᐛ )ᐟ笑
+まじでわからん</description>
+    </item>
+    
+    <item>
+      <title>表参道の上島珈琲店</title>
+      <link>https://hugo.suwa3.me/post/2019-06-26-501/</link>
+      <pubDate>Wed, 26 Jun 2019 13:00:51 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-26-501/</guid>
+      <description>朝から低気圧で体調不良でした。
+強く打った歯がグラグラしていて
+打撲痛なんだけれども、いててだったよ。
+痛み止め飲みすぎて効かなくなっているのがつらい。
+.
+表参道の上島珈琲店とても良かった。
+明る過ぎず、暗過ぎずの照明で目が疲れない。
+WiFiちゃんと繋がる。
+内装がオシャレで尚且つ落ち着く。
+ソファ椅子が固くない。
+素晴らしいね。
+.
+メールサーバーの設定をしていました。
+SESってSimple email serviceの略なんだけど
+どこがSimpleなんだ？ってかんじです。
+.
+躓いていた原因は
+登録完了メールのアドレスをGmailで設定していて
+登録するメールはYahooアドレスを使っていたの。
+SESのEmail address欄でGmailのアドレスのみ登録していて
+Yahooアドレスも登録いるんだなあと後から気づいた。
+.
+本来なら送信制限の解除をして、不特定多数からのメール送信許可をするから
+そんな個別設定は不要なんだけれども
+おひとり様だし、何かしら穴があっても嫌なので
+今の時点でやらなくても良いリスキーな設定は避けてきたのね。
+で結局つまずいて、GmailもYahooも両方登録して事なきを得ました。
+設定ファイルの編集はスムーズにできた。
+.
+メディアストレージについては、パブリックアクセス許可の管理でつまずいています。
+まず日本語がわからん。
+元々英語なものがChromeの自動翻訳でわけわからん
+って事が多々ある。
+日本語の解読からです。
+｢新しいアクセスコントロールリスト(ACL)を介して許可されたパケットとオブジェクトへのパブリックアクセスをブロックする｣
+その下に
+｢任意のアクセスコントロールリスト(ACL)を介して許可されたパケットとオブジェクトへのパブリックアクセスをブロックする｣
+って続いてて、似たような文面であと2つ続いて
+チェックボックスがついているんだけど
+｢は？｣
+ってなって全くもって意味不明なのでググります。
+.
+夜はメンタルよわよわだった。
+体調不良と低気圧でダメだったねえ。
+.
+夢中になってやっていて
+あまり勉強しているって感覚はなくて
+ただひたすら楽しいので知りたいやりたい！
+ってきもちなの。
+あまり頑張ったり努力したりしている感覚はなくて苦しくない。
+.
+しかし、楽しいと余計に自分の体力を無視してやり続けてしまうところがあるので
+体調には気をつけたいと思いました。
+意識して休みます。</description>
+    </item>
+    
+    <item>
+      <title>鯖缶記念日</title>
+      <link>https://hugo.suwa3.me/post/2019-06-25-495/</link>
+      <pubDate>Tue, 25 Jun 2019 13:00:53 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-25-495/</guid>
+      <description>設定が諸々残っていますが
+なんとか鯖立て成功しました。
+.
+メールサーバーとメディアストレージを
+なんとかしなきゃなの。
+まず、どこのものを使おうか悩んで
+猿毛さんからSend Gridを教えてもらったり
+Mail gunってサービス名も
+マストドンの設定で使っている鯖多いよーだとか
+なんとなく聞いていたりしたので
+比較や登録、チュートリアル検索して調べた。
+.
+おそらく無料系サービスは、無料枠をこえると
+こえた時点で一度ストッパーが働いてしまうみたいで
+おひとり様なら全然良いのだけれども
+ひとが増えた際にパスワード変更が出来ないだとかの
+不具合がおこる可能性を考えると
+AWSのSESで自動的にスケールアップしてくれる方が良いのかなあ
+とおもったり。
+.
+機能面だけなら、門戸を開くときや必要に迫られたタイミングでSESへ設定し直せば良いじゃない？
+って話になるのだけれども
+自分の勉強のためにあえてAWSを選択したので
+(オーバースペックでは？と言われる)
+おひとり様で気楽なときに無料枠内でSESに慣れることができるのは、それならそれで良いかなあとおもうの。
+多少の授業料なら全然払います！ってきもち。
+.
+そしてメールサーバーの設定をしたのですが、メール来ないので明日なんとかします。
+まとめて、整理して、切り分け作業だよ。
+お昼休みに少し触って無理そうならメディアストレージの設定進めとこ。
+これも良さそうなチュートリアルが見つかればAWSのS3で進めるとおもいます。
+.
+あと全然話が変わるんだけれども、ラズパイ欲しい。
+うちにデスクトップのWindowsが2台あって
+まあまあ年季の入ってるものと
+それ以上に年季の入っているものの2台なので
+MacBookを買ってからは、なかなか使わなくなってしまった。
+.
+しかしOSがWindowsだと開発するにしてもあまり使い道がなさそうなのがネック
+むしろ物理サーバーにしてしまえば？
+って案も出ているけれども、住んでいる地域バレが少し怖いかも。
+単純に目的が
+｢パソコンの中身や仕組みもっと知りたい！｣
+なので、せっかくなら楽しいおもちゃにしたいなあってきもちで
+ラズパイの使い道アイディアゆるぼです。</description>
+    </item>
+    
+    <item>
+      <title>フサスグリ</title>
+      <link>https://hugo.suwa3.me/post/2019-06-24-%E3%83%95%E3%82%B5%E3%82%B9%E3%82%B0%E3%83%AA/</link>
+      <pubDate>Mon, 24 Jun 2019 13:00:37 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-24-%E3%83%95%E3%82%B5%E3%82%B9%E3%82%B0%E3%83%AA/</guid>
+      <description>低気圧のせいなのかなあ、
+朝から体調不良だったの。
+.
+夕方から少し回復しました。
+今日は休むためにPCを持ち歩きませんでした。
+フサスグリとトルコキキョウだよ。
+色も形もとてもきれい。
+花が好きだなあ。
+.
+心がざわざわする。
+どうして現実逃避してしまうのかな。
+おもっているよりも、自分のことがわからない。
+本当はどうしたいのか、だとか
+でも実際には、とか
+現実的ではないよなあ
+とか、自分じゃどうしようも出来ないことだとかが
+グルグルしているんだけれども
+.
+結局、ぜんぶ窓からぶん投げて逃げ出したいだけなんだよなあ。
+今までもずっとそうだったんだとおもう。
+耐えられなくなると、ぜんぶ窓からぶん投げて逃げる。</description>
+    </item>
+    
+    <item>
+      <title>Misskeyローカル構築成功</title>
+      <link>https://hugo.suwa3.me/post/2019-06-23-489/</link>
+      <pubDate>Sun, 23 Jun 2019 13:00:44 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-23-489/</guid>
+      <description>Misskeyをローカルでたてることに成功しました。
+溺れながらMisskey構築や運用をがんばるよりも
+まずはMastodonで慣れてから
+またMisskeyに挑戦してみたいなあとおもったよ。
+何かしら問題が起こったときに
+おそらく、うまく助けを求められないので
+うごかない！停止！
+を、繰り返してしまうとおもう。
+マストドンで鯖立て頑張ろう。
+.
+色々と勉強になった。
+.
+次にやりたいことはクライアントアプリづくりです。
+まずは動画で開発環境づくりを学んだあと
+簡単につくれそうなアプリから少しずつステップアップしつつ
+アプリ制作等、目的が明確な勉強会にも参加していきたい。
+勉強会とても良いと思う。
+ひとりだと本当にエラーや詰みの嵐なので
+誰かしら聞ける相手がいるかいないかで
+雲泥の差だなあとおもうの。
+.
+日曜日の夜は
+焼肉を食べに行きました。
+お酒も少し飲みました。
+.
+週末、頑張り過ぎてしまったのか
+帰宅して、気持ちがぎゅーってなって
+なぜか泣いてしまった。
+理由がわからないの。
+色々と
+｢なぜ泣いたのか？｣
+って、理由を考えてみたんだけれども
+どれもそれらしい気もするし、違う気もするのね。
+ゆっくり休もうかな。</description>
+    </item>
+    
+    <item>
+      <title>勉強会</title>
+      <link>https://hugo.suwa3.me/post/2019-06-22-%E5%8B%89%E5%BC%B7%E4%BC%9A/</link>
+      <pubDate>Sat, 22 Jun 2019 13:00:06 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-22-%E5%8B%89%E5%BC%B7%E4%BC%9A/</guid>
+      <description>PORT勉強会に行ってきました。
+ノージャンルもくもく会といったかんじ。
+人数も多くて会場も綺麗でLT(発表)もあるし
+アクセスも良くて月イチで開催しているの。
+とても良い感じだったので継続して参加していきたいです。
+.
+Mastodonの構築
+調べて、レシピをつくって
+主にローカル汚すだとか
+セキュリティ面でとんでもないレシピになっていないか
+わかりそうなひとにチェックをして貰ってから
+動くかどうかはコンピューターで答え合わせをする
+みたいな感じで、マストドンのほうはわりとゆるゆる出来ていたの。
+.
+Misskeyマジでそんな余裕ないくらい
+まず出回っている情報が少ないので
+情報収集がままならず
+AWS利用での構築方法を模索しなくてはならなくて
+OSが違うだけで、こんなにも大変なのかとおもいました。
+構築方法には書かれていないけれども
+インストールしなくてはいけないものだとか
+ファイルの設定内容についても
+どこをどう編集したら良いかわからず。
+とりあえず流れをgistにまとめました。
+https://gist.github.com/suwa3/e2a4ea4d5558b6995cf2f0affaa9447e
+でもこれ90％で動いてないの。
+残り10％を調べなければいけないの。
+.
+夜からはみそぴぴデートだよ。
+最近どうよ、
+から始まって
+近況報告しつつも
+やっぱりMisskeyの構築のこと色々と聞いてもらった。
+なんだかねえ、うまくいかないのよ。
+みそぴぴもAWS使っているので
+これから一緒に勉強していけたらいいなあ。
+一緒に勉強できる仲間ほしいね。</description>
+    </item>
+    
+    <item>
+      <title>DNS</title>
+      <link>https://hugo.suwa3.me/post/2019-06-21-dns/</link>
+      <pubDate>Fri, 21 Jun 2019 13:00:12 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-21-dns/</guid>
+      <description>DNS(Route53)でドメインの設定をしました。
+OSがAmazon Linuxなので
+Linux同様root権限でnode.jsやpostgreSQLをインストールするのかしら
+とおもい、suやsudoについて調べていたけれども
+EC2へのインストールはパッケージマネージャをつかうのね。
+とりあえずググって明日やろうになりました。
+.
+お昼過ぎからバタバタしてしまった。
+EXCELSIOR CAFEでサンドイッチぱぱっと食べてお昼済ました。
+.
+Misskeyについて情報を得られるかしら
+とおもって、めいめいさんをフォロしました。
+口調がうつりそうだなとおもいました。
+.
+夜はキャスを聴いたよ。
+行動を制限されたり束縛されたりするのがとても嫌で
+多少は我慢できるけれども
+親から押さえつけられるのですら
+10代の頃なんかは、ひたすら反発し続けてきたのに
+他人からそれをやられて反発しないワケがないのよね。
+ああ、日頃の行いかもしれない。</description>
+    </item>
+    
+    <item>
+      <title>レシピづくり</title>
+      <link>https://hugo.suwa3.me/post/2019-06-20-%E3%83%AC%E3%82%B7%E3%83%94%E3%81%A5%E3%81%8F%E3%82%8A/</link>
+      <pubDate>Thu, 20 Jun 2019 13:00:39 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-20-%E3%83%AC%E3%82%B7%E3%83%94%E3%81%A5%E3%81%8F%E3%82%8A/</guid>
+      <description>AWSにおけるwordpressのチュートリアル読んでいるけれども
+ステップ2で
+Linux 仮想マシンの起動のステップ 2 d.～2 f. とステップ 3 を参照
+って書いてあるの
+おそらく参照するのはステップ 3 d.〜3 f.とステップ4のことだし
+（そもそも仮想マシン起動のステップ2にfは存在しない）
+その上wordpressチュートリアルのステップ3
+システムlogにおいて
+ssh設定再度試して探してもユーザーpassでてこないの
+RDSでデータベースの設定を先にしておかないとダメなんか？
+DBの設定について何も言及ないけれども実は必要なのか？
+どちらにせよチュートリアルううううてかんじです。
+.
+謎は深まるけれども、いったんWeb上にwordpressたてられたので
+ひとまず部屋のすみに置いておいて
+本来の目的を見失いそうになってしまう。
+wordpressはAWSに慣れるための練習で
+目的はMisskeyの構築です。
+.
+今日の隙間時間はMisskeyのレシピづくりをすることに決定しました。
+.
+MastodonをAWSとDocker利用でたてるレシピと
+MisskeyのReadMeを横に並べてみて
+どこがどこの代替なのか
+Mastodonとの違いは何なのかをきちんと整理したいとおもいます。
+ふわっとだけど書いてみたの。
+答え合わせがこわいけど楽しみだにゃ( •ω•ฅ)
+Dockerわからんちなので後乗せクジラするかもしれない。
+.
+そしていつのまにかKnzkLiveの配信権限が付与されていた。
+やったねえ
+作業キャスもできちゃう。
+8割うまくいかないひとなので
+舌打ちしかしなさそう。
+ツイキャスよりも気軽に配信できて
+勝手に延長されていくの良さげ。
+週末にでもKnzkLive試してみたいなあ。</description>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>https://hugo.suwa3.me/post/2019-06-19-ssh/</link>
+      <pubDate>Wed, 19 Jun 2019 13:00:44 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-19-ssh/</guid>
+      <description>にゃにゃーん！
+AWSのマーケットプレイスから
+WordPressのWebページ立ち上げできたよ。
+庭に遊具を置けた気分。
+チュートリアルの参考画像が英語で
+色々とすっ飛ばしたけれども
+あとから
+｢これ足りてなくね？｣
+って修正してなんとか形になりました。
+.
+ドットインストールでWebページの生成方法は
+なんとなく見ていたので
+それがパッケージになっているものなんだなあ
+って把握した。
+.
+ログインしたいんだけど
+ログインpassの取得方法
+チュートリアルには
+｢システムlogに載っています｣
+ってあって、丁寧に参考画像まで付いているのに
+実際にシステムlog開いてみたけれどもログインpassわからないんだなあ。
+sshのhost keyが載っているの。
+おそらくsshの設定すっ飛ばしている。
+復習兼ねてチュートリアルを最初からやります😢
+英語わからん😢
+.
+gitについても動画でふむふむした。
+gitとGitHubの関係を
+メールとGmailの関係です
+って説明していて
+なるほどとおもった。
+gitの使い方をさらっと学んだけれども
+GitHubって便利機能なんだなあとおもいました。</description>
+    </item>
+    
+    <item>
+      <title>EC2</title>
+      <link>https://hugo.suwa3.me/post/2019-06-18-468/</link>
+      <pubDate>Tue, 18 Jun 2019 13:00:28 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-18-468/</guid>
+      <description>AWSの動画不要説を唱えてしまったけれども
+よくよく考えてみたら
+何種類かある公式チュートリアルを見渡してみて
+｢仮想サーバーのインスタンスを立てたいのでEC2のチュートリアルはこれかな？｣
+と、探すことができたのは動画を観ていたからだし
+さらっとでも前提知識あるなしで見えるものかなり違うなとおもったので
+安易に切り捨てる癖よくないかなあ
+と、反省しました。
+マストドンのたてかた
+AWSをつかったものやVPSをつかったもの
+とりあえず色々と読んでいきます。
+躓きやすいポイントもメモしておこうね。
+あとはAWSの動画も、さらっと最後まで観るのと
+何種類か視聴しておきます。
+朝や昼休憩、移動や待ち時間だとかの
+隙間時間にちまちまやっているよ。
+ちりつも🐰
+めちゃ楽しい。
+自分の庭を持てた気分。
+Evernoteに今日の備忘録のこした。
+Dockerのスライドは、前半の歴史がおもしろかった。
+imageってなんやねん、とおもっていたけれど
+AWSでも触れて少しずつわかりかけてきた気がする。
+Docker入門-基礎編</description>
+    </item>
+    
+    <item>
+      <title>AWS、動画学習サイトの感想</title>
+      <link>https://hugo.suwa3.me/post/2019-06-17-aws%E5%8B%95%E7%94%BB%E5%AD%A6%E7%BF%92%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E6%84%9F%E6%83%B3/</link>
+      <pubDate>Mon, 17 Jun 2019 13:00:33 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-17-aws%E5%8B%95%E7%94%BB%E5%AD%A6%E7%BF%92%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E6%84%9F%E6%83%B3/</guid>
+      <description>朝起きてせっせと
+動画でAWSの手順を観ていて
+2012年だとか2014年の動画
+みる意味あるのか？
+と考え直し、動画のプログラミング学習サイトを片っ端から登録してみた。
+無料の動画学習系でおそらく最も幅広い範囲を扱っているドットインストールでも
+2012年から更新していません！
+なお質問は受け付けません！
+ってかんじだし
+｢とりあえず登録したほうが早くないか？｣
+と、おもいなおして
+さっさと登録してみました。
+.
+結論︰さっさと登録した方が良い
+.
+AWSの公式チュートリアル見た方がわかりやすい。
+動画学習サイトのものは古い情報なので、ログイン後の画面が若干違っていた。
+AWSログイン直後にちゃんと公式のチュートリアル案内があるのね。
+恐らく2012年頃は
+動画の画面から察するに、そういったログイン直後のチュートリアルや手引きはなかったのかなあと思われます。
+.
+ついでに、片っ端から登録した動画の学習サイトの感想を備忘録がてら書きます。
+.
+ドットインストール
+長所
+-扱っている範囲が広い
+-動画が短くまとめられている
+-レベルのムラが少ない
+短所
+-情報が古い、だいたい2014年頃かそれ以前で止まっている
+.
+progate
+長所
+-専用アプリがある
+-キャラクターがかわいい
+-恐らく学生向けに授業する教授や先生向けなのでは
+短所
+-無料会員では視聴可能動画がかなり少ない
+-そもそも動画の種類が少ない
+（有料会員登録して一つの言語を掘り下げるのであればアリなのかもしれない）
+-有料会員登録は月額1000円程度
+.
+Schoo
+長所
+-動画の種類が多い
+-生放送であれば無料で視聴可能
+短所
+-録画したものは有料会員にならないと観られない(月額1000円程度)
+-AWSに限ればここも若干情報古めでした。2014年
+(登録したほうが早いのでAWSの動画不要説ある)
+.
+paiza
+長所
+-転職サイトの附属として学習動画サービスがついてくるかんじ
+-ついでに転職もできるかもしれない
+短所
+-扱っている範囲はそこまで広くない
+.
+コードモンキー
+長所
+-猿がでてくる
+短所
+-動画学習サイトというより普通にゲームだった
+.
+.
+用途に合わせて動画サイトは使っていきたいです。
+なので随時更新するつもり。
+いつか表なんかにまとめられたらいいね。
+時間が無限に欲しい。
+.</description>
+    </item>
+    
+    <item>
+      <title>Misskey</title>
+      <link>https://hugo.suwa3.me/post/2019-06-16-misskey/</link>
+      <pubDate>Sun, 16 Jun 2019 13:00:13 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-16-misskey/</guid>
+      <description>あのね
+Misskeyいいなあ
+っておもいはじめてね
+でもね
+上級者向けだよなあ
+ってかんじもビシビシ感じるの
+Misskey構築の手引き(日本語版)
+日本語ならいけるのでは？
+↑甘い
+.
+Node.jsわけわからんちなのでこれから調べます。
+とりあえずまたReadme読みながら
+ローカルにたててみて
+｢これは何やってるのかなあ｣
+というのを調べるかんじでやるとおもいます。
+そんなことしていたら夜中でした。
+.
+クラウドサービスやメディアストレージは
+選定する前の調べる作業に疲れてしまったので
+ライ塩さんのところのものを
+丸パクリすることに決定しました。
+節約術の鬼(尊敬)
+そしてライ塩さんのblog穴があくほどみているので
+おそらくアクセス数めちゃ上がっているとおもいます
+犯人わたしです🙋♡
+.
+昼間に掃除機とクイックルワイパーで
+部屋をピカピカにしたから
+今日は既に大勝利だよ。
+洗濯もしたし花の水も替えたし
+観葉植物の根と葉の様子から
+｢植え替えが必要だな｣
+って判断もしたもんねえ。
+鉢植え買わなきゃ🌳</description>
+    </item>
+    
+    <item>
+      <title>愛のポテト</title>
+      <link>https://hugo.suwa3.me/post/2019-06-15-%E6%84%9B%E3%81%AE%E3%83%9D%E3%83%86%E3%83%88/</link>
+      <pubDate>Sat, 15 Jun 2019 13:00:50 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-15-%E6%84%9B%E3%81%AE%E3%83%9D%E3%83%86%E3%83%88/</guid>
+      <description>朝活でローカルにマストドンたてました。
+Adminユーザーとしてログインしてみたよ。
+管理画面みて
+｢こんなかんじかあ！｣
+ってなりました。
+.
+夕方からポケマス飲兵衛部だよ。
+ナツキさんに愛のポテトを贈った。
+3杯で眠くなるわ頭痛くなるわで
+だいぶお酒弱いひとでした。
+.
+バーにチンザノやノイリーがなくて
+逆に
+｢フレンチベルモットならドランがありますよ｣
+って案内されたんだけど
+フレンチベルモットですらまあまあレアなのに
+ドラン？！ってなったよ
+ジンジャーエール辛口で割って飲みました。
+美味しかったのでまた飲みたいです。
+次は甘口で割って飲んでみたいなあ、
+.
+2軒目の後半ほぼ寝ていた気もする😢
+なんか最近2軒目で既に眠いってこと増えた気がが
+.
+ケンカしないのが目標の飲み会でしたが
+ちゃんと仲良く飲めたので良かったです。</description>
+    </item>
+    
+    <item>
+      <title>Hasklig</title>
+      <link>https://hugo.suwa3.me/post/2019-06-14-hasklig/</link>
+      <pubDate>Fri, 14 Jun 2019 13:00:33 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-14-hasklig/</guid>
+      <description>ローカルにマストドンたてるため奮闘しました。
+証明書ほんとにわからん。
+きちんと調べます。
+.
+鍵を生成→わかる
+サーバー証明書を作成→わかる
+Docker image→これをもとにホニャララしている(わからない)
+Docker compose→なんか接続するのかしてるのか(わからない)
+SQL→よく目にする(わからない)
+.
+とりあえずレシピ通りにやったら
+何とかなったけれども
+中身の理解が追いついていないパターンなので
+基礎学習しつつ図にまとめる作業を続行します。
+.
+なんだかんだマストドンのローカルたてていたら
+vimそこそこ使う羽目になって
+簡単なコマンド覚えておいて良かったなとおもいました。
+.
+ターミナルのフォント設定いじっていたの。
+ゼロの中に点があるフォント可愛いよなあとおもっていて
+調べたらHaskligというらしく
+探したらGitHubにソースあったので設定してみました。
+Hasklig
+可愛い。テンション上がる。
+Atomの設定もついでに変えた。
+.
+あと、来週から勉強会デビューします。
+connpassで検索して
+都内で気軽に参加できそうな無料の勉強会に登録した。
+発表はしません。
+いつかそういった場で発表できるくらいには
+きちんとやりたいなあ。
+.
+人見知りなので初めての場所、緊張する。</description>
+    </item>
+    
+    <item>
+      <title>Frederick</title>
+      <link>https://hugo.suwa3.me/post/2019-06-13-frederick/</link>
+      <pubDate>Thu, 13 Jun 2019 13:00:49 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-13-frederick/</guid>
+      <description>職場のお姉様ブーストで
+一気にレシートが10枚以上たまったので
+コースター2枚GETした♡
+これで合計4枚です。
+CAFÉ de CRIÉコースターやったね☕
+.
+東急渋谷のイベント販売コーナーで
+フレデリック売られていた。
+パスケース買ったよ、かわいい。
+.
+お花屋さんに寄ってヒマワリも飾りました。
+夏ってかんじ🌻</description>
+    </item>
+    
+    <item>
+      <title>再帰的に</title>
+      <link>https://hugo.suwa3.me/post/2019-06-12-%E5%86%8D%E5%B8%B0%E7%9A%84%E3%81%AB/</link>
+      <pubDate>Wed, 12 Jun 2019 13:00:31 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-12-%E5%86%8D%E5%B8%B0%E7%9A%84%E3%81%AB/</guid>
+      <description>UNIXコマンドに慣れる練習しました。
+再帰的にコピーって何やねんとおもいましたが
+中身があったら、その中身までcopyするってことなのね。
+.
+珍しく残業したの
+いつもなら時間調整して残業しないように気をつけているんだけれども
+今日は沼にハマってしまった。
+ややこしいの朝イチで片付けなければいけない。
+.
+残業したので寄り道しないで帰りました。
+時間は有限なので
+何にどれだけ振り分けるのかを
+きちんと考えて生活したいです。</description>
+    </item>
+    
+    <item>
+      <title>うさぎだけどまあわかる</title>
+      <link>https://hugo.suwa3.me/post/2019-06-11-424/</link>
+      <pubDate>Tue, 11 Jun 2019 13:00:44 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-11-424/</guid>
+      <description>｢プログラミング自体が、世の中の営みを抽象化すること｣
+という言葉から
+抽象化？オブジェクト指向のことかな？
+とおもい、調べてふむふむした。
+ついでにクラスやインスタンスについても調べて
+なるほどーとなった。
+（似たような構造という意味合いで）
+マストドンのインスタンスはそこからきているけれど
+その呼称について
+｢非推奨なのでは｣
+と言われているの、ウームってかんじ。
+言葉の正確性って難しいね。
+オブジェクト指向は、抽象化の方法の一つだということを学びました。
+.
+例えばひとの脳ミソがプログラムのように動いているとして
+低次元での、一発目の抽象化作業は
+それが可能か、それをするかの判断はどうやっているのかしら。
+.
+モノの抽象化は犬猫にはできないらしい。
+というのを何かの本で読んだの。
+りんごは目の前にあるりんごだけ。
+愛だとか努力だとか、ひとによって解釈のおおきく違う言葉を理解できないらしい。
+.
+うさぎだけど、愛だとか努力は
+まあなんとなくわかるよ。
+プログラミングについて考えるとき
+何をどう抽象化しているのか
+というのを、改めて考えてみるのも良いかもしれないとおもいました。
+UNIXコマンドについて動画を観ながらおべんきょしていたの。
+まず全体像を把握しないと進めないし
+自分がどこにいるのか分からないと不安になる。
+そして図で描かないと理解むずかしいマンなので
+全体像の把握→単語の定義・範囲などを図式化
+って手順を踏むの。
+参考書はにがてだけど
+動画のおかげでスムーズに学べるの、助かるー</description>
+    </item>
+    
+    <item>
+      <title>list</title>
+      <link>https://hugo.suwa3.me/post/2019-06-10-list/</link>
+      <pubDate>Mon, 10 Jun 2019 13:00:02 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-10-list/</guid>
+      <description>ググりつつ必要そうな知識pick upして
+取り急ぎローカルでMastodon鯖立てするのに要るものをめもめも
+アーカイブまだやってません。
+今夜もまとまった時間確保できそうなので
+時間があるときにできることからやろう。
+番外のAtomは、エディタの上手な使い方もっと知りたいなあとおもったので
+マストドンに直接関係はないけれども
+いったんVimは忘れてAtomだよ。</description>
+    </item>
+    
+    <item>
+      <title>GODZILLA</title>
+      <link>https://hugo.suwa3.me/post/2019-06-09-godzilla/</link>
+      <pubDate>Sun, 09 Jun 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-09-godzilla/</guid>
+      <description>土曜日は映画を観に行きました。
+GODZILLAだよ。
+モスラが可愛かった。
+ｷｭｲｰｰε(◦`꒳´◦)зってかんじ
+モスラ好きかもしれない。
+もう一度観たいくらい。
+キングギドラ怖かった。
+キングギドラ怖いから嫌い。
+.
+何かに縛られるのすごくいやなの。
+精神的に押さえつけられるのが嫌。
+ほっといて欲しい。
+二重思考だよ、自由は隷属なの。
+正しくそれだなぁとおもう。
+ひとがどうおもうかは関係なくて
+もっと言ってしまえば、自分が何を発言するのかも最終的にはどうでも良いの。
+.
+物理的にでも社会的にでも
+何かしらの支配下に自分がいたとしても
+むしろその中にいることで精神的な自由を手に入れられるのであれば
+それは本質的に正しく自由なんだよ。
+オブライエンが言ってた。
+.
+長々書いたけれど
+正直わたしはどうでも良いです。</description>
+    </item>
+    
+    <item>
+      <title>1984</title>
+      <link>https://hugo.suwa3.me/post/2019-06-08-1984/</link>
+      <pubDate>Sat, 08 Jun 2019 13:00:39 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-08-1984/</guid>
+      <description>おおきな栗の木の下でー
+あーなーたーとーわーたーしー
+なーかーよーくー裏切ったー
+おおきな栗の木の下でー
+.
+一九八四年だよ。
+栗の木カフェで
+ゴールドスタインが逃亡した後、残された三人をウィンストンが見つけた時に
+この曲がテレスクリーンから流れたの。
+思考警察からのメッセージだよ。
+今日は寝る間際になって、そんなことを思い出しました。
+.
+なんだかもう動揺しつつも
+｢情けないな｣
+｢みっともないな｣
+みたいな気持ちが勝ってしまい
+頭のなかゴチャゴチャするの整理する気もおきず
+こんなに面倒くさいのムリでしょ
+って投げやりな感じになっている。
+こうやって書きながら自分がイヤになっていく〜〜
+隠居したい。</description>
+    </item>
+    
+    <item>
+      <title>動画</title>
+      <link>https://hugo.suwa3.me/post/2019-06-07-%E5%8B%95%E7%94%BB/</link>
+      <pubDate>Fri, 07 Jun 2019 13:00:44 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-07-%E5%8B%95%E7%94%BB/</guid>
+      <description>動画を観ながらひたすら手を動かしてやってみるのやっていた
+Vimの使い方わからんマンなのでがんばる
+Evernoteに表を貼り付けたら(右下)
+こんな感じで表を自動で認識してくれた。
+VimよりEvernoteに感動した。
+少しずつでも自習時間コツコツするの。</description>
+    </item>
+    
+    <item>
+      <title>うさぎわからなくなってきた</title>
+      <link>https://hugo.suwa3.me/post/2019-06-06-%E3%81%86%E3%81%95%E3%81%8E%E3%82%8F%E3%81%8B%E3%82%89%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F/</link>
+      <pubDate>Thu, 06 Jun 2019 14:33:03 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-06-%E3%81%86%E3%81%95%E3%81%8E%E3%82%8F%E3%81%8B%E3%82%89%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F/</guid>
+      <description>ホスティングサービス、自鯖をすんなりたてられたんだけど
+やっぱり自分でやってみたいいい
+となって調べだしたら想像以上にやること多くてワロタ
+なにこの差
+.
+とりあえず参考にしても大丈夫そうな記事を探して
+読んで内容把握するところからスタートです。
+Docker🐳勉強になるし使いたいなあ、
+knzk.meのアカウントについて
+アーカイブは忘れないうちに、今週末までにやりたい。
+CSVも機械学習の素材に使えるかもなのでとっておきます。
+.
+やれそうなところまでやってみて
+こりゃむりだーってなったら
+諦めてホスティングサービスでおひとり様しよう。</description>
+    </item>
+    
+    <item>
+      <title>login</title>
+      <link>https://hugo.suwa3.me/post/2019-06-05-login/</link>
+      <pubDate>Wed, 05 Jun 2019 13:00:59 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-05-login/</guid>
+      <description>とりあえず建てた自鯖にログインしてみた。
+連合の仕組みが発見の連続でおもしろかった。
+ユーザーがフォローすることで連合形成していくのね。
+なるほどなあ。
+.
+ドトールに寄って座った直後に呼び出しがかかり
+とりあえず牛乳一気飲みしてマフィンは持ち帰り。
+帰宅直後にウトウトしてしまった。
+最近寝不足のせいだなあ。
+ソファでストンと眠れた。
+週末はきちんとベッドで寝ます。</description>
+    </item>
+    
+    <item>
+      <title>もんじゃ</title>
+      <link>https://hugo.suwa3.me/post/2019-06-04-%E3%82%82%E3%82%93%E3%81%98%E3%82%83/</link>
+      <pubDate>Tue, 04 Jun 2019 13:00:51 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-04-%E3%82%82%E3%82%93%E3%81%98%E3%82%83/</guid>
+      <description>渋谷の円山町にある
+すずめのお宿でもんじゃ焼きを食べてきたよ。 芸妓置屋をリノベーションしたらしい。
+｢店内のつくりがあまり飲食店らしくないね｣
+って話をしたので、納得だった。
+.
+もんじゃ焼きは人生二度目だったのですが、なかなか上手に焼くの難しいなあとおもった。
+次はお好み焼き食べに行きたい。
+.
+ラブホ街のど真ん中にあるので
+｢大丈夫かな？｣
+って不安になるけれど
+松濤や神泉駅側から行けば、ラブホ街を避けてお店に着くこともできますね。
+.
+そのままスタバへ行ってきました。
+m.toで自鯖たてるの
+想像以上にすんなり行けたので拍子抜けだった。
+凄いなぁ
+ロゴや背景画像つくりたい。
+なんとなく、こんな配色と素材とフォントでー
+ってイメージは出来ているの
+今週末はIllustratorとMediBangでちまちまする事が増えそう。</description>
+    </item>
+    
+    <item>
+      <title>.me</title>
+      <link>https://hugo.suwa3.me/post/2019-06-03-me/</link>
+      <pubDate>Mon, 03 Jun 2019 13:00:08 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-03-me/</guid>
+      <description>ドメイン購入したよ。
+お名前.comです。
+楽天で買い物するくらいサクッと買えた😊
+.
+Whois情報公開代行して貰わないと
+個人情報を全世界に公開されるの
+引っ掛けだとおもいました。ぷんぷん
+.
+あっ、でも初めてお名前.comで購入するひとは
+無料で代行してくれるみたいなので
+購入時のオプションチェック不要みたい。
+.
+登録した直後にもお知らせメール沢山きたけれども
+翌日には、お名前.comから広告メール10通はきて
+.
+さすがにうざいなとおもいメール設定しました。
+メール設定したら1日3通くらいになったよ。
+送る数を減らせば良いってもんじゃない🙄
+.
+Masto.host以外にも
+m.toだとかホスティングサービスあるので
+一週間お試しで無料のもの登録してみようとおもいます。
+とりあえず管理画面を見たいのと
+必要な素材や、どこまで権限があるのかだとか見てみたい。
+あと純粋に比較してみたいです。
+.
+でもお試しのほうはドメインを選べないので
+最終的にはMasto.hostになりそう。
+.
+※わたしは｢このドメインつかいたい｣
+ってこだわりたいポイントだったので
+ドメイン購入したけれども
+購入しなくてもホスティングサービスは利用できます。
+.
+そしてせっかくドメイン買ったんだし
+Word PressのURL変更か？！
+とおもったらまた有料プランだったのでやりません。
+うう( ；__； )いつかやるんだから</description>
+    </item>
+    
+    <item>
+      <title>Café LA MILLE</title>
+      <link>https://hugo.suwa3.me/post/2019-06-02-cafe-la-mille/</link>
+      <pubDate>Sun, 02 Jun 2019 13:00:29 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-02-cafe-la-mille/</guid>
+      <description>自由が丘へ寄り道して
+カフェ ラ ミルへ行きました。
+バレリーナの絵がたくさん飾ってあった！
+ドガではないバレリーナ絵飾ってあるの珍しい。
+.
+地元の学生だった頃
+夏休みの課題で
+｢テーマを決めて、それに沿ったスライドを作成する｣
+というのがあって
+チームを組むのOKだったので
+友だちと地元のケーキ屋さん巡りをして、それをスライドにまとめたの。
+.
+都内のケーキ屋さんやケーキの美味しいカフェ
+ほぼ知らないので新規開拓したあい
+.
+｢お祝いで美味しいケーキ食べよう｣
+ってなったときに、インスタ映えよりも
+ガチ美味しいケーキ屋さんに連れて行ってあげられるの
+スマートな感じでイケメンじゃない？
+えへへ
+美味しいケーキが食べたいだけです🍰😋
+.
+アンテナぴんってする</description>
+    </item>
+    
+    <item>
+      <title>ぱくぱく</title>
+      <link>https://hugo.suwa3.me/post/2019-06-01-%E3%81%B1%E3%81%8F%E3%81%B1%E3%81%8F/</link>
+      <pubDate>Sat, 01 Jun 2019 13:00:41 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-01-%E3%81%B1%E3%81%8F%E3%81%B1%E3%81%8F/</guid>
+      <description>お昼過ぎからみそぴぴとデートしました♡
+いろいろ話せたあ。
+松濤カフェに行ったの。
+シフォンケーキをトーストして、その上に生クリームたっぷりだよ。
+美味しかった😋
+.
+knzk.meが閉鎖になるの
+もうどこかのインスタンスに登録したら
+｢そこがいつかは閉鎖になるかもしれない｣
+っていうのは避けられなくて
+｢結婚して専業主婦になったとして
+離婚したら生活に困窮する｣
+みたいな感じなの、すごく嫌なのね。
+それならもう結婚はしないか
+したとしても｢いつ離婚してもOK｣くらいには経済的に自立していたいの。
+.
+話が逸れたけれども、そういう流れで
+おひとり様インスタンス建てたいなあ
+ってきもちになったので
+色々と相談に乗ってもらいました。
+主にホスティングサービスについてです。
+.
+みそぴぴとは目標とするものや
+方向性も似ているなあとかんじるので
+話していてとても楽しいです。
+.
+わたしにはない心の広さもあるの
+できるオンナ風でシュッとしたところ羨ましいけれども
+そこは努力でどうにもならないというか
+わたしには逆立ちしても手に入らない雰囲気なので
+あきらめるよᐠ( ᐛ )ᐟ♡ᐠ( ᐖ )ᐟ
+近況報告できたので良かったぁ
+.
+みそぴとバイバイしたあとは
+ぱくぱくパクチー部でした🌱
+渋谷のホァングンだよ。
+withシンプソンandジュビ氏
+ポケマスやjpの他のひとも誘ったのだけれどもも
+皆さんお仕事などで3人での部活動でした。
+なんの話したかな？
+とりあえずジュビ氏が冨樫めちゃ好きなのは理解。
+途中、お店の外に並んで待つひとたちもいて
+人気なお店なんだなあとおもった。
+ランチもやっているので是非😊</description>
+    </item>
+    
+    <item>
+      <title>コメダ</title>
+      <link>https://hugo.suwa3.me/post/2019-05-31-%E3%82%B3%E3%83%A1%E3%83%80/</link>
+      <pubDate>Fri, 31 May 2019 13:00:15 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-31-%E3%82%B3%E3%83%A1%E3%83%80/</guid>
+      <description>夜からは落ち込んでいたので
+なんだか(´-ω-｀)ﾐｰﾝでした。
+ひとつのところに思い入れを強くもつと
+やはり良くないのかもしれない。
+落ち着いたら引越し先について考えよう。
+コメダのピザトーストだよ。
+ここのコメダは外からの光がたくさん入ってくるのですき。</description>
+    </item>
+    
+    <item>
+      <title>Asterte</title>
+      <link>https://hugo.suwa3.me/post/2019-05-30-asterte/</link>
+      <pubDate>Thu, 30 May 2019 13:00:12 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-30-asterte/</guid>
+      <description>ガーベラさんだよ。
+.
+アスタルテ(霧島)鯖の多機能に一目惚れしたの。
+でもなんだかんだknzk.meにいそうです。
+BCCodeはknzkでも使えるしMarkdownは、待てばいずれ実装されるしね。</description>
+    </item>
+    
+    <item>
+      <title>紫陽花</title>
+      <link>https://hugo.suwa3.me/post/2019-05-29-%E7%B4%AB%E9%99%BD%E8%8A%B1/</link>
+      <pubDate>Wed, 29 May 2019 13:00:11 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-29-%E7%B4%AB%E9%99%BD%E8%8A%B1/</guid>
+      <description>紫陽花だよ。
+雨上がりって感じの水滴がいとおかし〜
+.
+脳内一人大喜利大会していた。
+楽しかったのでまたやりたい。
+.
+英語は文法に手をつけました✋
+苦手な分野しぼられているので、時制や仮定法の応用だとか
+とりあえず苦手つぶしします。
+.
+夜は｢きょうは会社休みます｣読んだの。
+漫画だよ。久しぶりに漫画を読んだ。
+きゅんきゅんした、補給された(っ˘꒳˘ｃ)♡</description>
+    </item>
+    
+    <item>
+      <title>vividでpop</title>
+      <link>https://hugo.suwa3.me/post/2019-05-28-vivid%E3%81%A7pop/</link>
+      <pubDate>Tue, 28 May 2019 13:00:06 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-28-vivid%E3%81%A7pop/</guid>
+      <description>服装に合わせて文字盤のデザインを変えられるの。
+今日はビビッドでポップなかんじにしました( ᐢ˙꒳˙ᐢ )
+.
+帰りがてらベトナム料理のお店を覗いたよ。
+職場から徒歩10分。
+お昼休みにダッシュして行くか迷う距離〜
+.
+英語はひたすら単語です。
+そろそろ文法も並行してやるのん。</description>
+    </item>
+    
+    <item>
+      <title>スマッチ</title>
+      <link>https://hugo.suwa3.me/post/2019-05-27-%E3%82%B9%E3%83%9E%E3%83%83%E3%83%81/</link>
+      <pubDate>Mon, 27 May 2019 13:00:54 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-27-%E3%82%B9%E3%83%9E%E3%83%83%E3%83%81/</guid>
+      <description>スマートウォッチは略してスマッチちゃんと呼ぶことにしました。
+呼び名はコロコロ変わるとおもいます。
+.
+スマッチちゃん曰く、昨夜の睡眠時間が5.6時間とのことなので
+今夜は早く寝ます〜
+と言っている今の時点で22時半過ぎているのでお察し
+えへへ
+.
+お昼と夕方の休憩時間だけ心拍数やたら安定しているの
+ふふふってかんじだった。
+すごいなあ
+有能な相棒ちゃんだ。
+.
+CAFÉ de CRIÉのレシートを集めて貰えるコースター
+2枚目GETしたの。
+.
+職場のお姉さまブーストのおかげで
+レシート早く集まった🙋♡
+やったねえ
+.
+本日の英語長文は、植物の種子収集家のtopicで
+種子マニアなお話で興味深かった。
+珍しい植物の種を交換するグループがあるらしい。
+.
+そういえばうちの観葉植物(ゴムの木)は
+葉の黄化で日照不足or根腐れの疑いがありましたが
+.
+毎朝、窓辺に移動して夜には仕舞い
+水やりの回数を減らしたら
+無事、健康的な濃い緑の葉に戻りました。
+.
+暑くなってきたし、そろそろ肥料あげたい。
+手のかかる子ですな🌱かわいい</description>
+    </item>
+    
+    <item>
+      <title>Huawei</title>
+      <link>https://hugo.suwa3.me/post/2019-05-26-huawei/</link>
+      <pubDate>Sun, 26 May 2019 13:00:49 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-26-huawei/</guid>
+      <description>Huaweiのスマートウォッチ
+42mmをGETしたよ。
+42mmが発表されてから
+ずっと欲しかったの、嬉しい。
+.
+デザインがメカメカしていなくてclassic
+一度の充電で電池が1週間もつ
+↑睡眠の質を1週間通しで計測できるの
+トライアスロンにも耐える防水性
+文字盤が可愛い
+.
+高機能なわりにコスパ良いのはHuaweiってかんじする。
+.
+発売日狙いで買うつもりだったのですが
+金曜日のお仕事帰りに秋葉原まで行くのは体力的にむりー
+となったので、土曜日に買ってきたの。
+土曜日は土曜日で歩き回ったので、日曜日に満を持して開封、笑😃
+.
+想像以上にテンション上がったので
+もっと早く設定とか済ませれば良かったあ
+.
+スマホに届くいろいろな通知
+腕時計にくるよう設定したよ。
+.
+小さな相棒ってかんじする。
+かわいいなあ</description>
+    </item>
+    
+    <item>
+      <title>おでかけなど</title>
+      <link>https://hugo.suwa3.me/post/2019-05-25-370/</link>
+      <pubDate>Sat, 25 May 2019 13:00:16 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-25-370/</guid>
+      <description>美容院へ行ったよ。
+髪色はミントアッシュで
+前髪を切って、うしろは整える感じ。
+.
+そのあとはワンピースを求めてさ迷いました👗
+最寄り駅で探したけれども納得のいくものが見つけられなくて
+.
+渋谷のモディやマルイに行ったのだけれども
+欲しい形の袖をしたワンピースを見つけられなくて
+.
+新宿のルミネで見つけました。
+お気に入りのお店で、下調べなしで行ったの
+理想のかたちに近い袖デザインあって
+さすがーっておもったあ|ू´꒳`)
+.
+たまたま時間と場所のタイミングあったので
+合流して秋葉原
+ヨドバシで昨日発売されたHuaweiの42mm
+腕時計を買ったよ。
+このデザインでこのサイズ出るの知ってから
+虎視眈々と狙っていたの。
+買えて嬉しい♡
+.
+秋葉原で世界の山ちゃん🐥
+山ちゃんだいすき
+久しぶりにビール飲んだきがする。
+最初は真面目にお仕事だとかの話をしていたのだけれども
+途中から、まあ愚痴やら恋バナ(？)やらになるよね。
+ガス抜きしました( ᐢ˙꒳˙ᐢ )
+どうもありがとうございます！
+.
+そして夜は夜更かし子ちゃんだったので反省します🐒ごめんね</description>
+    </item>
+    
+    <item>
+      <title>🐼🐾</title>
+      <link>https://hugo.suwa3.me/post/2019-05-24-/</link>
+      <pubDate>Fri, 24 May 2019 13:00:20 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-24-/</guid>
+      <description>手に虫がついたと勘違いして
+まあまあガチめに奇声をあげてしまった。
+たぶんわたしよりも周囲のひとのほうが驚いたとおもう。
+恥ずかしくなり、その場から走って逃げました🙋
+.
+おやつにパンダのパンだよ。
+かわいい🐼🐾
+週末なのでパン食べたり寄り道したりして帰りましたあ。</description>
+    </item>
+    
+    <item>
+      <title>トルコキキョウとろろ</title>
+      <link>https://hugo.suwa3.me/post/2019-05-23-360/</link>
+      <pubDate>Thu, 23 May 2019 13:00:07 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-23-360/</guid>
+      <description>お昼に食べたのー！
+とろろだよ♡
+おーいしかった！
+またいきたい！
+今度はホタテのランチセットのやつ食べたい。
+.
+夕方は約束の時間になっても相手が現れないトラブルあったけれども
+ほんとに事故だったらどうしようとか考えてしまった心配性(；－ω－)
+連絡がついて、怒るよりも先に
+｢事故じゃなくて良かったあ｣
+になっちゃった。
+.
+トルコキキョウだよ。
+仏花にもつかわれる花は、白だとお供えの花みたくなってしまうので
+白いトルコキキョウも良いなあとおもったけれども
+ピンクも入れて華やかなかんじにしたの。
+.
+マストドン、Markdown風のリッチテキストが導入されるね。
+なんだかんだで楽しみ。
+ふんふんー( * ॑˘ ॑* ) ⁾⁾</description>
+    </item>
+    
+    <item>
+      <title>コースター</title>
+      <link>https://hugo.suwa3.me/post/2019-05-22-355/</link>
+      <pubDate>Wed, 22 May 2019 13:00:37 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-22-355/</guid>
+      <description>CAFÉ de CRIÉで、レシートをためると貰えるコースターだよ。
+きゃわ、
+もう一種類デザインあるの。
+.
+帰り道、職場のお姉様と話しながら帰って
+CAFÉ de CRIÉのレシートを集めてコースター貰った話をしたら
+毎日行くけどコースター要らないから
+レシートとっておいてくれるって。
+うれぴぴ！
+.
+カフェランチ週2くらいの頻度なので
+がんばってコツコツためていたの。
+2枚目はもっとはやくgetできそう、
+やったねえ。
+.
+｢意外！そういうの集めるんだねえ｣
+って言われた。
+意外と思われていることが意外( ᐢ˙꒳˙ᐢ )
+ちまちま集めるのすきだなあ。</description>
+    </item>
+    
+    <item>
+      <title>Cふええ</title>
+      <link>https://hugo.suwa3.me/post/2019-05-21-c%E3%81%B5%E3%81%88%E3%81%88/</link>
+      <pubDate>Tue, 21 May 2019 13:00:20 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-21-c%E3%81%B5%E3%81%88%E3%81%88/</guid>
+      <description>何か書こうとしたんだけど忘れた( ‘ᾥ’ )
+むううう
+.
+今日はPythonがどう動いているのか
+図を描きながら整理しました。
+CPythonふええでした。
+.
+英語、マストドンでの不穏を見つけるとサッと読むのに
+参考書の英語はなかなか頭にはいってこないの
+ひととしての未熟さを感じる。
+.
+温野菜〜〜〜
+意識して野菜とらないとすぐ忘れちゃう
+🍅🍆🥑🥦🥒🌶🌽🥕🥔🍠
+いっぱい食べよ♡</description>
+    </item>
+    
+    <item>
+      <title>単語</title>
+      <link>https://hugo.suwa3.me/post/2019-05-20-%E5%8D%98%E8%AA%9E/</link>
+      <pubDate>Mon, 20 May 2019 13:00:55 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-20-%E5%8D%98%E8%AA%9E/</guid>
+      <description>今回のtopicは工業化についてでした。
+Civil War
+labor
+単語を覚えたい〜
+.
+最近はとりあえず各社会問題別に長文を読んで
+知らない単語を書き出して
+単語帳に登録して
+確認できるときに単語確認するのを続けているけれども
+そろそろ文法のほうも復習したいです。
+文法は今年の初めにひと通り済ませて
+苦手の炙り出しはしてあるので、多少効率良くはできるはず。</description>
+    </item>
+    
+    <item>
+      <title>上野動物園</title>
+      <link>https://hugo.suwa3.me/post/2019-05-19-344/</link>
+      <pubDate>Sun, 19 May 2019 13:00:03 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-19-344/</guid>
+      <description>上野のギャラン〜
+アイスコーヒーのお供です。
+ギャラン、The喫茶店なところがすき。
+久しぶりに行けたの嬉しかったあ。
+.
+上野動物園行ってきた🐰
+ここも数年ぶりの、でした。
+猿山大好きマンなので
+おさる🐒見れたの嬉しかった♡
+.
+パンダはかなり並ぶ感じだったので
+今回は見送りましたあ( ◜ω◝ )
+.
+サイをみていて
+本来なら見られるはずのない野生動物達を
+こんなに至近距離で見ることができるのすごいなあ
+と、謎の感動があったよ。
+サイ🦏、emotionalだった。
+.
+動物園のあとは不忍池へ行ったの。
+なかなか足がつかれました(っ˘꒳˘ｃ)
+足腰鍛えなきゃなあ、
+.
+The日曜日な良い日でした。
+ふんふん|ू´꒳`)
+.
+.
+【メモ】
+昨日に引き続き
+Virtual DOMについてわかりやすい説明を見つけたのでめも
+VirtualDOMの仕事ってなに？(Reactの表示速度がはやい理由)</description>
+    </item>
+    
+    <item>
+      <title>Pikachu</title>
+      <link>https://hugo.suwa3.me/post/2019-05-18-pikachu/</link>
+      <pubDate>Sat, 18 May 2019 13:00:10 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-18-pikachu/</guid>
+      <description>ポケモンの映画を観に行ったの。
+名探偵ピカチュウだよ。
+.
+正直、実写みたいなポケモンは
+なんとなく生理的に受け付けなくて
+なんだろう、ネタで流れてくるリアルピカチュウみたいなの
+わたしが子どもの頃からあって
+そういう雑コラ系があまり得意ではなかったので
+実写ピカを可愛いとおもえるのか不安だったの。
+.
+映画とてもよかったあ。
+ちゃんとお金かけてCGつくっているなあと感じた。
+ポケモンいっぱいいた♡
+ピカちゃんと可愛かった♡
+.
+IMAXで観たの。
+数年ぶりの3Dだあ、
+そもそも、ここ3年間くらい映画館で観ている映画
+ポケモンくらいしかなかった。
+うう、GODZILLA観たい。
+帰りに寄ったAnalogカフェだよ。
+ひっそりしていて好きなかんじでした。
+お気に入りカフェin新宿〜
+.
+きょうはDOMについて調べました。
+Virtual DOMについてきちんと調べようと努力しましたが
+結局よくわかりませんでした。
+DOMの仮想化……
+そもそも仮想化がまだよく理解しきれていない。
+ふわふわーってしてるう
+またがんばります。
+.
+わかったのはね
+やっぱり何か構造を理解しようとするときに
+ブロックであったり図であったり
+形の方が理解しやすいなあということ。
+文章のみだとまじでわからんち。
+めも
+MDN Web Docs</description>
+    </item>
+    
+    <item>
+      <title>ズレ</title>
+      <link>https://hugo.suwa3.me/post/2019-05-17-327/</link>
+      <pubDate>Fri, 17 May 2019 13:00:38 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-17-327/</guid>
+      <description>一週間やり切ったので金曜日は魂抜けていた。
+ピカの映画は土曜日に観に行くことになったよ。
+.
+じぶんの中で、世間的にみても
+考え方としてズレているよなあ、とおもうこと
+多々あるのね。
+常識だとかんじているものも
+他のひとにとってみれば非常識かもしれない。
+(そもそも常識の定義とは？になる)
+常々そういうのは意識していようとおもうの。
+.
+ビックリするくらい考え方の異なる方々とは
+もう分かり合うのは難しい年頃に差し掛かっているきがする。
+年齢関係ないかな？
+むかしよりずっと頭がかたくなったというか
+｢合わないなら仕方ないのでは｣
+と、諦めるようになったきがする。
+.
+違うなあと感じても
+必要であれば
+そのひとの良いところを探すゲームして
+内心めちゃ褒めて、付き合っていくの。
+.
+無理して付き合う必要なければ、すきなひとだけに囲われて暮らしたい。
+しかしこれも頭がかたくなる思考？？
+と、おもってしまう〜うえ〜</description>
+    </item>
+    
+    <item>
+      <title>夕ご飯の妄想Time</title>
+      <link>https://hugo.suwa3.me/post/2019-05-16-%E5%A4%95%E3%81%94%E9%A3%AF%E3%81%AE%E5%A6%84%E6%83%B3time/</link>
+      <pubDate>Thu, 16 May 2019 13:00:15 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-16-%E5%A4%95%E3%81%94%E9%A3%AF%E3%81%AE%E5%A6%84%E6%83%B3time/</guid>
+      <description>宇宙について考えていました。
+.
+最初はね、ロボットやAIについて考えていたの。
+ひとが、人間に限りなく近い人型ロボットをつくりあげたあと
+生身の人間が絶滅して(どのような形にせよ)生殖可能な人型ロボットが残った際に
+その人型ロボットも
+｢どうして地球にわたしたちがうまれたのかな？｣
+と、おもうんじゃないかなあ
+ってかんがえたの。
+.
+わたしたちみたいに
+｢神様がつくったのかも｣
+って宗教がうまれたり
+｢進化の過程でうまれたんだろう｣
+って学問ができあがったりするのかなあ
+なんて、夕ご飯を食べながら考えていました。
+えへへ
+.
+地球がシャーレだとして、観察者の存在を想像するのが楽しくて好きなのだけれども
+観察者も、創造者も、もしかしたらもう不在で
+あとは残されたものが勝手に動いているだけなのかもだとか
+マイルールでSFを妄想するのワクワクするねえ。</description>
+    </item>
+    
+    <item>
+      <title>ピカとおしごとの話</title>
+      <link>https://hugo.suwa3.me/post/2019-05-15-%E3%83%94%E3%82%AB%E3%81%A8%E3%81%8A%E3%81%97%E3%81%94%E3%81%A8%E3%81%AE%E8%A9%B1/</link>
+      <pubDate>Wed, 15 May 2019 13:00:36 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-15-%E3%83%94%E3%82%AB%E3%81%A8%E3%81%8A%E3%81%97%E3%81%94%E3%81%A8%E3%81%AE%E8%A9%B1/</guid>
+      <description>ピカの映画、お仕事終わりに行けるかな？
+とおもったけれども
+金曜日に行けたら行きたいなあ
+みたいな感じになりそう。
+金曜日がむりだったら土日かなあ。
+もふピカ早く観たいのo&amp;rsquo;ᆺ&amp;rsquo;o
+.
+お仕事するときノートにメモをとっていたんだけど
+PCのメモ帳にとるようにしたら
+パッと見やすくなったし、メモからcopy＆pasteでいけるから入力ミスも減った気がする。
+.
+あとはノートにマニュアルを手書きしていたけれども
+朝の時間ちょこちょこ使ってExcelにmyマニュアルつくりたい。
+｢これどうやるんだっけ？｣
+ってときに、検索で見つけたいし利用したいの〜〜。
+ふむむ</description>
+    </item>
+    
+    <item>
+      <title>TETRIS</title>
+      <link>https://hugo.suwa3.me/post/2019-05-14-tetris/</link>
+      <pubDate>Tue, 14 May 2019 13:00:22 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-14-tetris/</guid>
+      <description>テトリスについて考えていた。
+どうしても置く場所を見つけられない場合に
+仮置きして、あとから隙間を埋めるのだけれども
+最低でも2マス以上は余裕をみて置くの。
+そもそも
+｢次のブロックが置けない｣
+というような状況にしないのが正しい。
+テトリスのパターンについて演習したいなとおもって
+レーザーカッターで自分用にテトリスパズルつくろうかとおもったの。
+テトリスの敷き詰めについて調べていたらPythonでシュミレーションしている人がいた。
+テトロミノ敷き詰めパズルを量子コンピュータ（シミュレータ）で解いてみる
+これ組み合わせれば良いね！
+わーい作ろう(っ˘꒳˘ｃ)</description>
+    </item>
+    
+    <item>
+      <title>全BT全リプライ</title>
+      <link>https://hugo.suwa3.me/post/2019-05-13-%E5%85%A8bt%E5%85%A8%E3%83%AA%E3%83%97%E3%83%A9%E3%82%A4/</link>
+      <pubDate>Mon, 13 May 2019 13:00:45 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-13-%E5%85%A8bt%E5%85%A8%E3%83%AA%E3%83%97%E3%83%A9%E3%82%A4/</guid>
+      <description>コツコツ長文を解きながら英単語帳つくるのやっているの。
+前回の試験結果が残っているはずなので、それも見直してみる。
+.
+ひとりのアカウントのトゥートを、全BT全リプライとかいうのを3日間やることになった。
+正直リプライはそこまで大変ではない。
+適当な返事をサッと思いつくの得意かもしれない。
+BTが何故かたまにｳｯてなるので、ぼちぼちBTして取りこぼしたものは朝方にまとめてBTしようとおもいます。</description>
+    </item>
+    
+    <item>
+      <title>Markdown Toot</title>
+      <link>https://hugo.suwa3.me/post/2019-05-12-markdown-toot/</link>
+      <pubDate>Sun, 12 May 2019 13:00:09 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-12-markdown-toot/</guid>
+      <description>夜はjp飲み会でした。
+Knzk.meユーザーなのに参加するっていう🙋
+たらこのアヒージョ初めて食べたの。
+うまうまだった♡
+パクチー部活動したいですね。
+.
+Markdown Tootについて
+これ、リンク先のGitHubでも賛否両論の賛優勢なかんじで
+｢要らんやろ｣
+って意見ももちろんあるんだけど
+ここ数日間ふむーっておもっていたの。
+不要とおもえるような機能でも、仮に合理的ではなくても
+｢あれば楽しいよね｣
+って気持ちになれるなら、わたしは良いとおもうんだけどなあ。
+なんだかロマンをかんじる。
+遊び心すきだよ。
+.
+Twitterや大手企業や
+もっと広くつかわれているサービスが、
+｢ここオリジナルのMarkdown記法でやります｣
+というのと、マストドンでやるのとはまた別な気がするの。
+いつか実装されたら嬉しいなあ。
+.
+マストドンについてや、その他についても
+何か呟くと何かしら反応があるんだろうけれど
+結局、自分の意見をいうのはblogが書きやすいのね。
+なんとなく使い分けしているんだろな。</description>
+    </item>
+    
+    <item>
+      <title>科学未来館</title>
+      <link>https://hugo.suwa3.me/post/2019-05-11-314/</link>
+      <pubDate>Sat, 11 May 2019 13:00:27 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-11-314/</guid>
+      <description>科学未来館へ行きました。
+ゆりかもめに乗ったの、とても久しぶりだった。
+前に乗ったときはこんなに
+｢海や建物が綺麗だなあ｣
+っておもったかな？
+ふだん渋谷の雑多なビルのなかでお仕事しているので
+同じようにビルがたくさんあるのに、整然と並ぶ姿が新鮮でした。
+.
+ASIMOさん。
+走ったり、ケンケンしたり、ボールを蹴ったりする動く姿を間近で見ることができた。
+.
+｢今後ロボットがより身近な存在になったとき、仲良く暮らしていくことができるでしょうか｣
+｢大切なのは、ロボットとの付き合い方を皆さんそれぞれが考えていくことです｣
+なるほどー、とおもったの。
+ASIMOさんに言われるとグッとくるね。
+.
+3日間くらいに分けて科学未来館でのことを書きたいくらいだけれども
+気合い入れて書きます。
+.
+常設展のひとつ
+インターネットの物理モデル。
+個人的にこれが一番テンション上がった展示かもしれない。
+白と黒の玉はそれぞれ0と1のbitを表してして
+手渡されたスティックに
+1バイト文字を選んで登録するの。
+インターネットということでAからEまでの端末機が用意されていて
+送信機を選んで受信機を指定する形になっていました。
+送信機に玉(bit)をセットするのだけれども
+4つの玉でネットワークアドレス、その後ろでホストアドレスを指定していて
+最後に自分で決めた文字コードのスティックを置くの。
+写真とりわすれたので手描き‪w
+送信機です。
+青矢印のように玉を手でセットして
+赤矢印のボタンで送信！でした。
+.
+物理モデルの中心には塔のようなターミナルルータと
+ネットワークルータが据えられていて
+その中を玉がくるくるとまわり
+ホストアドレスとネットワークアドレスをそれぞれ読み取って
+指定した受信端末(A〜E)に届けられるという仕組みでした。
+.
+手を動かして仕組みを目で見ることができるような大掛かりな装置で遊ぶ機会
+なかなかないというか、恐らく初めてで
+かなりテンションが上がりました。楽しかったです。
+.
+.
+以上、ゆりかもめとASIMOさんとインターネット物理モデル
+科学未来館での3大｢グッときた｣でした。
+また行きたいなあ。</description>
+    </item>
+    
+    <item>
+      <title>plug-in</title>
+      <link>https://hugo.suwa3.me/post/2019-05-10-%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/</link>
+      <pubDate>Fri, 10 May 2019 13:00:47 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-10-%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/</guid>
+      <description>英語がんばりますとか言いながら
+blogページの横にでもマストドンのトゥート埋め込むために
+wordpressプラグインDLしたろとおもって準備していたの
+有料プランじゃないとプラグインやcssいじれないとか
+しかも月額2900円って地味にかなり高くないですか？
+ビジネス向けだなあ。
+備忘録として粛々と利用します…。
+.
+英語は単語帳に入力作業しました。
+時間みつけて暗記する。
+うっかりテトリス沼にハマらないよう気をつける。</description>
+    </item>
+    
+    <item>
+      <title>document</title>
+      <link>https://hugo.suwa3.me/post/2019-05-09-document/</link>
+      <pubDate>Thu, 09 May 2019 13:00:41 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-09-document/</guid>
+      <description>公式documentを読んで
+画像検索で図解入り解説を読んで
+もう一度公式documentに戻って理解度確認して
+頭のなかの、もう一人の自分に説明してみるの。
+.
+｢これって何？｣
+って聞くと、丁寧な説明がパッと返ってくるのに甘えて
+自分でググる作業サボりがちだけれども
+定着させるためにも復習だいじだとおもうので
+教えてもらったこと復習します。
+今日はサーバーまわりについてです。
+.
+wordpressちゃんとカスタマイズしたいなあとおもって調べたら
+phpの知識欲しいなとおもったの。
+htmlやcssは学生時代に嗜みましたが
+phpさっぱりんこなので、いろいろと調べて
+ここも英語月間おわったらカスタマイズしたいです。
+単語帳ぼちぼちつくっている。
+.
+ドガの絵画が見たいので
+バレル・コレクション行きたいです。
+落ち着いたら行きたいなあ。</description>
+    </item>
+    
+    <item>
+      <title>Word card</title>
+      <link>https://hugo.suwa3.me/post/2019-05-08-282/</link>
+      <pubDate>Wed, 08 May 2019 13:00:12 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-08-282/</guid>
+      <description>お昼休みにひたすら単語帳つくってたの。
+単語カードに手書きするつもりだったんだけど
+アプリの方がスマホで単語checkできるじゃん！
+と気づいて、単語帳アプリをDLしました。
+今は何でもアプリがあって便利だねえ。
+わたしが学生の頃はなかったな。
+.
+ということで
+ひたすら単語帳アプリに単語を入力したんだけど
+これカメラの翻訳機能で調べた単語を
+自動で(もしくは選択式で)
+単語帳に登録してくれる機能ないかなあ。
+.
+作ってみたいとおもったけれども
+いまは英語に集中する期間なので
+英語ちゃんとやりまーす。</description>
+    </item>
+    
+    <item>
+      <title>earphone</title>
+      <link>https://hugo.suwa3.me/post/2019-05-07-earphone/</link>
+      <pubDate>Tue, 07 May 2019 13:00:14 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-07-earphone/</guid>
+      <description>GW明けのお仕事でした。
+時間があっという間で｢もうこんな時間？｣だった。
+寄り道したカフェで上司と会って
+(時間が合うのか割とよく会う)
+お話ししていたら英語のおべんきょうしそびれちゃった。
+Appleの純正ワイヤレスイヤホンは良いということだった。
+純正たっかいんだよなあ、
+去年はワイヤレスイヤホン難民していて
+いろいろと試した末にまたコードのイヤホンに戻ってきたの。</description>
+    </item>
+    
+    <item>
+      <title>低気圧fuckin&#39;</title>
+      <link>https://hugo.suwa3.me/post/2019-05-06-%E4%BD%8E%E6%B0%97%E5%9C%A7fuckin/</link>
+      <pubDate>Mon, 06 May 2019 13:00:38 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-06-%E4%BD%8E%E6%B0%97%E5%9C%A7fuckin/</guid>
+      <description>低気圧fuckin&amp;rsquo;で
+ほぼ一日ソファかベッドで横になっていました。
+頭ぐわんぐわんするし吐き気するしで酷かった。
+来週末に病院いこうかなあ、低気圧のときに辛すぎる。
+.
+知らないところで知らない感じの一方的なバチバチあったけれど
+わたしは色々と学ぶことができたので漁夫の利？
+なるほどなるほどーと、知識を拾い集めて
+一時的に得したきもちにはなったけれども
+一時的なんだろうなあ。
+.
+今回のことも踏まえて
+これからはトゥートやblogの内容に気をつけたいです。</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://hugo.suwa3.me/post/2019-05-05-272/</link>
+      <pubDate>Sun, 05 May 2019 13:00:33 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-05-272/</guid>
+      <description>昼間はソファでごろんごろんしていたよ。
+The何もしない！
+たくさん休めて良かった。
+夕方からTully&amp;rsquo;sでえいごです。
+長文のわからなさが半端ない。
+単語を羅列して、全て写真とってGoogle翻訳に突っ込む作業でした。
+.
+マストドンの話題から仮想環境のはなしになって
+仮想環境って色々な場面で使われていて
+ゴチャゴチャするの、一般的にどれがメインなのか？
+ってはなしをしたら
+仮想環境というよりは環境分離ツールで
+environment isolation tool - Python: venv - Ruby: bundler - Node: npm (node_modules)
+こちらはPythonでも使ったのでふむふむした。
+.
+Virtual Box(サーバー仮想化)やDocker(コンテナ)は見かけるだけで使ったことはなかったので
+｢DLして使ってみよう！｣ということで
+DLしたところで力尽きました。
+Mastodonの立ち上げしてみるのは明日やります。
+メモ
+https://blogs.itmedia.co.jp/itsolutionjuku/2017/11/1_13.html</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hugo.suwa3.me/post/2019-05-04-270/</link>
+      <pubDate>Sat, 04 May 2019 13:00:55 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-04-270/</guid>
+      <description>朝はのんびりして、お昼過ぎからみそぴデートでした。
+本当は目黒川沿いにできた
+スタバ ロースタリーに行きたいね
+って話していたのだけれども
+まさかの150分待ちで｢TDLかな？｣
+って混み方だったので、今回は外観だけ見て別のカフェに行きました☕
+なかにひとが沢山いるの、わかるかなあ。
+行く前に、
+｢コーヒーの遊園地みたいだよねー｣
+と話していたのだけれども、本当にテーマパーク並の混み方でした。
+平日の早朝、お仕事前に行ってみようかなあ。
+おやつタイムだよ。
+Streamer coffee company☕
+バナナパウンドケーキとバナナ食べました🍌
+食物繊維で腸すっきりした♡
+.
+今回もいろいろと話せた。
+AIスピーカーのコード書くはなしから
+もくもく会しよう！ってなったので
+来月以降のPython＆Blender強化月間には
+ぜひ二人でもくもく会したいです。
+仲間が増えてうれしい🙋♡
+.
+そこから秋葉原に移動して
+ヨドバシデートしたよ。
+Illustratorつかっていておもったんだけど
+Bluetoothマウスでやりたい。笑
+トラックパッドでは使いづらいです。
+慣れてないだけかなあ(；－ω－)ｳｰﾝ
+.
+ドラ会は参加者15名くらいだったかな？
+ここでもいっぱい話せたので楽しかった。</description>
+    </item>
+    
+    <item>
+      <title>blender</title>
+      <link>https://hugo.suwa3.me/post/2019-05-03-blender/</link>
+      <pubDate>Fri, 03 May 2019 13:00:37 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-03-blender/</guid>
+      <description>3Dデータつくりたいので
+blenderをDLしました。
+謎に一時間半かかった、回線速度はふつうだったので謎ふかまる。
+楽しみだなあ。
+.
+穴がいっぱいあいたテーブルだよ。
+灰皿の穴説、焼鳥の串をいれる穴説、チンアナゴが出てくる穴説、手羽先の骨をいれる穴説etc……
+いろいろな説がでたよ。有力な説は無いかな。
+.
+そういえばGWに一日だけ出勤するんだけど
+今日がその出勤日でした。
+朝からイレギュラー多くて大変だった。
+何故か出勤してこないひとはいるし、
+一発目から物理的に無理案件を引いてしまうし
+リーダー不在で、わたしの他は後輩しかいなかったので
+心がすり減りました。
+無事に終わったので良かったです。
+休日の出勤たいへん。</description>
+    </item>
+    
+    <item>
+      <title>ひつじとオレンジジュース</title>
+      <link>https://hugo.suwa3.me/post/2019-05-02-%E3%81%B2%E3%81%A4%E3%81%98%E3%81%A8%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8%E3%82%B8%E3%83%A5%E3%83%BC%E3%82%B9/</link>
+      <pubDate>Thu, 02 May 2019 13:00:17 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-02-%E3%81%B2%E3%81%A4%E3%81%98%E3%81%A8%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8%E3%82%B8%E3%83%A5%E3%83%BC%E3%82%B9/</guid>
+      <description>浦和のOki Oki Cafeだよ。
+きゃわひつじ
+(｡&amp;gt;﹏&amp;lt;｡)ってかんじ🐑
+電車の網棚にリュックを乗せて、そのまま忘れてしまったの。
+宇都宮まで取りにいくのは流石にしんどいので
+郵送してもらうことにした。
+リュックの中身はオレンジジュースや本です。
+オレンジジュースううう(｡&amp;gt;﹏&amp;lt;｡)</description>
+    </item>
+    
+    <item>
+      <title>寝るぞ</title>
+      <link>https://hugo.suwa3.me/post/2019-05-01-%E5%AF%9D%E3%82%8B%E3%81%9E/</link>
+      <pubDate>Wed, 01 May 2019 13:00:57 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-05-01-%E5%AF%9D%E3%82%8B%E3%81%9E/</guid>
+      <description>徹夜して神崎の生放送を聴いていた。
+久しぶりの徹夜で心臓が痛くなったよ。
+案の定、昼まで寝たけれども
+夕方頃に軽く食べて、少し体を動かして
+ゆっくりと湯船につかったのでスッキリした。
+寄り道して買い物するために、雨のなかを歩いたの
+スッキリした気分は継続していたので良い日だった。
+ストレス発散は大切だねえ。
+明日は朝活後に、ほぼ一日外出の予定なので
+今日は早めに寝ます。寝るぞ</description>
+    </item>
+    
+    <item>
+      <title>Google翻訳</title>
+      <link>https://hugo.suwa3.me/post/2019-04-30-google%E7%BF%BB%E8%A8%B3/</link>
+      <pubDate>Tue, 30 Apr 2019 13:00:45 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-30-google%E7%BF%BB%E8%A8%B3/</guid>
+      <description>Tully&amp;rsquo;sで英語の勉強をしていて
+長文を読むときに英単語ひとつひとつ調べるの面倒臭いので
+アプリ何かないかなあとおもって調べたの。
+.
+Google翻訳のカメラ機能がとても便利なことに気づいた。
+知りたい単語の部分を指で選択すると翻訳してくれる、すごい。
+.
+とりあえず社会問題で取り扱われそうな話題
+経済成長、少子高齢化だとかの単語や
+これらについて簡単な英作文くらいは作れるよう練習しました。
+試験が来月のあたまなので、5月は英語強化月間です。</description>
+    </item>
+    
+    <item>
+      <title>フィカス エラスティカ メラニー</title>
+      <link>https://hugo.suwa3.me/post/2019-04-29-%E3%83%95%E3%82%A3%E3%82%AB%E3%82%B9-%E3%82%A8%E3%83%A9%E3%82%B9%E3%83%86%E3%82%A3%E3%82%AB-%E3%83%A1%E3%83%A9%E3%83%8B%E3%83%BC/</link>
+      <pubDate>Mon, 29 Apr 2019 13:00:39 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-29-%E3%83%95%E3%82%A3%E3%82%AB%E3%82%B9-%E3%82%A8%E3%83%A9%E3%82%B9%E3%83%86%E3%82%A3%E3%82%AB-%E3%83%A1%E3%83%A9%E3%83%8B%E3%83%BC/</guid>
+      <description>プロトリーフだよ。
+ちょっとした植物園みたいで、晴れている日に行くととても気持ち良いのでお勧めです。
+フィカス エラスティカ メラニーという品種の観葉植物をgetした。
+別名、インドゴムの木で
+流通量は少ないけれども、丈夫で育てやすいらしい。
+濃い色の葉が生き生きとしていて良いねえ。
+土の表面が乾いたら水遣りをするのと、2ヶ月に一度の置肥料を忘れずに、だね。
+大きく育ってきたら、白い鉢も似合いそう。楽しみだなあ、</description>
+    </item>
+    
+    <item>
+      <title>Shake Shack</title>
+      <link>https://hugo.suwa3.me/post/2019-04-28-shake-shack/</link>
+      <pubDate>Sun, 28 Apr 2019 13:00:30 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-28-shake-shack/</guid>
+      <description>Shake Shack(シェイク シャック)だよ。
+とても美味しかったので是非また食べたい。
+.
+都内最大規模の園芸店
+プロトリーフに行ってきたよ。
+植物園かな？ってくらい広くて品揃え豊富だった。
+ベンチのあるガーデンスペース、犬のお散歩しているひともいるくらい広かった。
+また行きたいにゃー( ᐢ˙꒳˙ᐢ )
+ポットと観葉植物をgetしたよ。
+植え替えをしたので、明日また太陽光のしたで撮ったらupします。
+アロマディフューザーの香り変えた。
+ベルガモットの香り、柑橘に少し苦味のある好きなかんじだよ。
+癒しだね*ˊᵕˋ*</description>
+    </item>
+    
+    <item>
+      <title>CAS</title>
+      <link>https://hugo.suwa3.me/post/2019-04-27-cas/</link>
+      <pubDate>Sat, 27 Apr 2019 13:00:05 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-27-cas/</guid>
+      <description>朝は早起きして朝活してたよ。
+朝ごはん美味しかった♡
+.
+日中は部屋のお片付けをして
+のんびり過ごしていたの。
+.
+夕方にステーキ食べに行ったあ。
+にく！
+年に一度だけ食べに行くところだよ。🍖
+また来年も行けたら良いな。
+.
+あと今日は初ツイキャス配信の日です。
+最初わたわたしたけれども
+ネイルし終わる一時間、喋ることができたので良かったです。
+またネイルするタイミングで配信したいなあ|ू´꒳`)</description>
+    </item>
+    
+    <item>
+      <title>目的地</title>
+      <link>https://hugo.suwa3.me/post/2019-04-26-%E7%9B%AE%E7%9A%84%E5%9C%B0/</link>
+      <pubDate>Fri, 26 Apr 2019 13:00:48 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-26-%E7%9B%AE%E7%9A%84%E5%9C%B0/</guid>
+      <description>たまにはサンマルクだよ。
+.
+ここ半年間くらいで、自分自身の考え方がとても変わった。
+例えば、一年前までは
+本が読めて、筋トレをして、英語の勉強を続ける。
+そういうのが日常で、ただ継続していけば良い。
+と、考えていたの。
+.
+実際にそれで悪くはなかったのだけれども
+最近はそれにプラスして、何か学ぶにしても
+｢これがやりたい｣｢やってみたい｣
+と、最終的に何をしたいのか
+具体的な目的をもって学ぶことが増えた。
+.
+地元にいた頃にも、目的はあったけれども
+こっちにいると選択肢が何倍にも増えるの。
+少し手を伸ばせば学ぶ環境がグッと広がるし、整っている。
+と、しみじみ考えてしまった。
+.
+時間はなかなかあっという間だし、思うように出来ないことも多いけれど
+自分のペースで少しづつでもやりたいことを達成できたら良いなあ。
+.
+そういえば今朝はpaypayデビューしたよ。
+新しいもの不安で、だいたい流行には乗り遅れる人間ですが
+職場で飲み物を購入するのがpaypayで可能になったので
+満を持して(？)デビュー致しました。
+｢ぺいぺいっ♪｣
+って、支払い音というか
+音量が大きいの恥ずかしいかったあ。
+音の大きさは調節できるので、使う前に最小に設定しておこう。
+(ミュートには出来ないらしい)</description>
+    </item>
+    
+    <item>
+      <title>薬局でみつけた</title>
+      <link>https://hugo.suwa3.me/post/2019-04-25-%E8%96%AC%E5%B1%80%E3%81%A7%E3%81%BF%E3%81%A4%E3%81%91%E3%81%9F/</link>
+      <pubDate>Thu, 25 Apr 2019 13:00:57 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-25-%E8%96%AC%E5%B1%80%E3%81%A7%E3%81%BF%E3%81%A4%E3%81%91%E3%81%9F/</guid>
+      <description>咳をしていないと、気持ち悪いなあってくらいなんだけれども
+咳き込むとｸﾞｪｰって吐くかんじだったので
+お昼過ぎに内科へ参りました。
+薬局で見つけた。
+このサービスいいねえ、
+知っ得情報だね。
+CHARGE spotで充電器をレンタルして
+返すときは最寄りのCHARGE spotを検索して返却しに行くらしい。
+48時間でも300円なら借りやすいね。</description>
+    </item>
+    
+    <item>
+      <title>Huaweiの</title>
+      <link>https://hugo.suwa3.me/post/2019-04-24-217/</link>
+      <pubDate>Wed, 24 Apr 2019 13:00:43 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-24-217/</guid>
+      <description>朝だるだるで
+お昼に復活したの、また夜に低気圧でだるだるになった。
+気圧変化に弱いのどうにかしたいなあ、
+日中はソファの上で過ごしたの
+ソファとても良いね。
+居心地良くてずっとソファの上にいたくなる。
+.
+Huaweiの腕時計
+42mmサイズのエレガントモデルが来月末に出るらしい。
+デザインがクラシックで、その時の気分で文字盤が変えられるの良いなあとおもった。
+防水なのもポイント高い。
+充電も週一で良いの、一週間付けっぱなしに出来るなら良いなあ。
+発売されるの楽しみ。
+.
+えへへ、
+毎日続いていることくらいしか取り柄のないblogだけれども
+実は、何があったか思い出しながら
+翌日に書いていることもあるの。
+翌日までならセーフのマイルールです🙋笑</description>
+    </item>
+    
+    <item>
+      <title>家具</title>
+      <link>https://hugo.suwa3.me/post/2019-04-22-%E5%AE%B6%E5%85%B7/</link>
+      <pubDate>Mon, 22 Apr 2019 13:00:46 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-22-%E5%AE%B6%E5%85%B7/</guid>
+      <description>ダイニングテーブルを仕舞って、ソファとローテーブルを置いたの。
+ちょうど良い感じ。
+ダイニングテーブルのときは、椅子に座って壁を見ながら作業していたけれど
+ソファに座るようになって、壁を背にして部屋全体を見渡せるようになった。
+視点が変わると気分も変わるねえ。
+マニキュア塗ったよ。
+ベースを塗って、グレーはきちんと2度塗りして、シールを貼って
+トップコートを塗ったの。
+.
+丁寧に塗って、仕上がりに満足したときの達成感
+ハマるなあ。
+.
+Illustrator強化週間が終わったので
+英語強化月間STARTです。
+夕方は同義語の熟語を暗記するのやった。
+むかしに比べてちっとも覚えられないんだけど
+学生の頃よりほんの少し知っている言葉は増えているみたいで
+｢あー、これこういう意味の英単語だったのね｣
+は、学生の頃よりも多いかもしれない。</description>
+    </item>
+    
+    <item>
+      <title>レーザーカッター</title>
+      <link>https://hugo.suwa3.me/post/2019-04-21-208/</link>
+      <pubDate>Sun, 21 Apr 2019 13:00:09 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-21-208/</guid>
+      <description>FabCafeのレーザーカッターclassに参加してきました。
+参加者は4人で、わたし以外はエンジニアやメーカー勤務の方々だったよ。
+完全に｢やってみたい｣の気持ちだけで参加してきました！
+えへへ、
+でも楽しかった😊
+Illustratorちゃんと使えたよ。
+基礎だけでも練習しておいて良かった。
+リードして教えるひとが1人と
+つまずいているひとをフォローするひとが1人で
+4人に対して2人体制で教えてくれたので
+スムーズだったし質問しやすかった。
+おまけで、おなじデザインのミラーもカットしてもらった。
+レーザーカッターでもカットできる特別な素材の鏡らしい。
+.
+渋谷のついでにカフェ・マメヒコ行ったよ。
+メニューの説明が面白くて読み込んでしまった。
+説明なのに、説明になってない説明おおくて楽しかったです！
+.
+家に着いたらソファとテーブルが届いていたので解体だよ。
+これから組み立てるの。
+家具が変わると気分かわるねえ💺</description>
+    </item>
+    
+    <item>
+      <title>おさんぽ</title>
+      <link>https://hugo.suwa3.me/post/2019-04-20-%E3%81%8A%E3%81%95%E3%82%93%E3%81%BD/</link>
+      <pubDate>Sat, 20 Apr 2019 13:00:45 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-20-%E3%81%8A%E3%81%95%E3%82%93%E3%81%BD/</guid>
+      <description>公園ぷらぷらお散歩してきた。
+陽が暖かかったよ。
+.
+いつも合鴨を食べに行くカフェ。
+昼間に行ったの初めてだった。
+店内も日当たりがよくて
+扉を開けはなしていたので、開放感あった。
+太陽光って食べ物がおいしく見えるねえ。
+ぜひまた行きたい。</description>
+    </item>
+    
+    <item>
+      <title>ガーシュウィン</title>
+      <link>https://hugo.suwa3.me/post/2019-04-19-198/</link>
+      <pubDate>Fri, 19 Apr 2019 13:00:09 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-19-198/</guid>
+      <description>お昼はFab Cafeだよ。
+ホットドッグは
+ナイフとフォークで食べると、食べやすい。
+一週間おつかれさまでした、だよ。
+細かな用事を済ませたら
+はやめに帰宅してEテレのらららclassicを観ながら
+神崎CAS聴いてねました！
+ガーシュウィンの生い立ちを知ることができたの良かったです。
+元々大衆向け音楽のソングライターだったのね、
+オーケストレーションがとても難しいものなんだなあ
+ってことがわかりました。
+ラプソディー・イン・ブルーのピアノ曲ver.を聴いて
+ピアノ曲のほうが好みだなあとおもった。
+ラヴェルの亡き王女も、ピアノ曲のほうが好きねえ。
+耳が疲れない気がする。</description>
+    </item>
+    
+    <item>
+      <title>蓋</title>
+      <link>https://hugo.suwa3.me/post/2019-04-18-%E8%93%8B/</link>
+      <pubDate>Thu, 18 Apr 2019 13:00:32 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-18-%E8%93%8B/</guid>
+      <description>ふと、わたしよりずっと長いあいだ一緒にいて
+わたしよりずっと自由がなくて
+それで幸せなのかなと考えてしまった。
+それでも羨ましいとおもうの、現実を何も知らないしわかってないんだろうなあ。
+考えても、本当に仕方の無いことを考えてしまう。
+わたしより幸せを感じているかどうかなんて関係なく羨ましいの。
+.
+時間を戻してやり直せるボタンが
+いま目の前にあったとして
+いつの時点まで戻れば良いのか考えたけれども
+たくさん戻れば戻るほど
+いまの自分とはかけ離れた自分になるんだろうなあとおもう。
+.
+ほんの少しだけむかしの
+たとえば半年前や一年前に戻れたとしても
+いまみたくならないなら
+戻れなくて良いとおもってしまう。
+いましか知らないからかなあ。
+気持ちだけ考えたら、半年や一年前のこと全部なかったほうが
+ずっと楽になれるんだろうなあとおもうよ。
+.
+どうにもならないつらさも
+副作用みたいなもんかとおもえば仕方ない。
+.
+わたしにはまったく別物の理想があるし
+羨ましくはあるけれども
+｢あのひとになりたい｣とは、おもわないの。
+.
+切り替えよう。
+蓋して明日もがんばろう。
+昨日行けなかったので
+今週は木曜日に俺流塩ラーメンだよ。</description>
+    </item>
+    
+    <item>
+      <title>はな</title>
+      <link>https://hugo.suwa3.me/post/2019-04-17-%E3%81%AF%E3%81%AA/</link>
+      <pubDate>Wed, 17 Apr 2019 13:00:22 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-17-%E3%81%AF%E3%81%AA/</guid>
+      <description>チューリップだよ。
+春って感じする。
+黄色いのだけ咲いてたの。
+こちらはヒナゲシ。
+花壇にヒナゲシなんて咲いちゃって
+繁殖力つよいから、来年はもっと咲いていそう。
+.
+花瓶のバラが枯れてきたので
+また新しく花を買ってきたいの。
+バラは短命だなあ、
+アリストロメリアとか花もち良い。
+花屋にチューリップ売ってるかなあ。</description>
+    </item>
+    
+    <item>
+      <title>おほしさま</title>
+      <link>https://hugo.suwa3.me/post/2019-04-16-176/</link>
+      <pubDate>Tue, 16 Apr 2019 13:00:17 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-16-176/</guid>
+      <description>Illustrator強化習慣なので、教科書の３章まで進めたよ。
+星をかけるようになったあ。
+かわいい。笑
+今週末コースターを作る予定なので
+そのデザインを自分で考えて作れる程度には
+Illustrator使いこなせるようになりたいー。
+ヘーゼルナッツラテだよ。
+夜は具合がわるわるだったので早めに寝ました。</description>
+    </item>
+    
+    <item>
+      <title>Illustrator強化週間</title>
+      <link>https://hugo.suwa3.me/post/2019-04-15-illustrator%E5%BC%B7%E5%8C%96%E9%80%B1%E9%96%93/</link>
+      <pubDate>Mon, 15 Apr 2019 13:00:24 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-15-illustrator%E5%BC%B7%E5%8C%96%E9%80%B1%E9%96%93/</guid>
+      <description>今週はIllustrator強化週間なので
+お昼と夕方に練習したよ。
+コメダのカツカリーパン
+想像のふた周りくらい大きかった。
+ボリュームあったけれど、きちんと食べたよ。
+Illustratorは本を読みながら進めていて
+3分の1くらい修了したので
+良いペースです。
+このまま一週間がんばろう。</description>
+    </item>
+    
+    <item>
+      <title>GB</title>
+      <link>https://hugo.suwa3.me/post/2019-04-14-gb/</link>
+      <pubDate>Sun, 14 Apr 2019 13:00:56 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-14-gb/</guid>
+      <description>スマホカバー届いた♡
+GB世代にはたまらんデザイン
+とてもお気に入り( ◜ω◝ )
+【ポイント最大43倍】ゲームボーイ iPhone ケース 実際に遊べるレトロゲームを多数内蔵 Wanle Gamers Console For iPhone| 6 8 7 Plus X 対応 テトリス バトルシティー シューティング フロッガー インベーダー ビデオゲーム 液晶
+.
+パーマかけたの。
+なんだか頭ふわふわして雰囲気かわった！
+美容院たのしい(*ˊᵕˋ*)</description>
+    </item>
+    
+    <item>
+      <title>家具屋さん</title>
+      <link>https://hugo.suwa3.me/post/2019-04-13-orb/</link>
+      <pubDate>Sat, 13 Apr 2019 13:00:09 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-13-orb/</guid>
+      <description>今朝は、地元にある
+いちばん好きな雑貨屋さん行った♡
+ストールと髪ゴムきにいったの。
+緑色の夏物スカートも買ったよ。
+着るの楽しみ😊
+.
+家具屋さんのなかにあるカフェで
+お母さんと待ち合わせした。
+カレーグラタンおいしかった🍛
+.
+食器をたくさん買った。
+そこの家具屋さんでは、いつも食器を買うって決めているの。
+.
+家具といえば
+帰りにニトリでソファとローテブルを買いました🙋
+これでリビングの床に寝なくて済むね、やったねえ。</description>
+    </item>
+    
+    <item>
+      <title>テトリスと</title>
+      <link>https://hugo.suwa3.me/post/2019-04-12-%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E3%81%A8/</link>
+      <pubDate>Fri, 12 Apr 2019 13:00:16 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-12-%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E3%81%A8/</guid>
+      <description>テトリスに夢中になっていたら
+朝から電車を降りそびれて、表参道に行っちゃったの。
+朝から迷子になった😢つらい
+.
+最近、春から新社会人や学生の子らが多くて
+連日遅延している。
+まあまあ早く電車に乗っていたので、遅刻しないで済んだよ。
+.
+表参道に行くときって渋谷から歩いて行くことがほとんどなので
+駅に降りたの二度目とかかもしれない。
+.
+お昼はFab Cafeだよ。
+SoftBankの社員と勘違いされて、お会計に社割適用されてしまった。
+いつもと金額ちがうと気付いて、きちんと支払ったけれども。
+社員証の紐の色が似ていたらしい。
+社割いいなあ。
+そしてMacBookが充電切れなの判明した。
+ただの板だあ、
+.
+お仕事おわって、新幹線に乗ったの。
+指定席とれず
+人生初グリーン車😃
+コンセントついてるー！
+隣の席のひと居なかったので、コンセント2つも使ってしまった。
+えへへ
+.
+てづかあいのライブに行ってきたよ。
+｢もしかして遠くから来てくださった方？｣
+って聞かれて
+わたしの名前も把握してくれていて
+嬉しかったあ。
+カフェにいたひとたち
+みんな四月うまれだったの。
+すごい偶然。
+.
+｢あたらしい花｣聴けたので良かった。
+練だった頃の曲だけれど、いちばん好きなのー😊</description>
+    </item>
+    
+    <item>
+      <title>はっけん</title>
+      <link>https://hugo.suwa3.me/post/2019-04-11-%E3%81%AF%E3%81%A3%E3%81%91%E3%82%93/</link>
+      <pubDate>Thu, 11 Apr 2019 13:00:21 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-11-%E3%81%AF%E3%81%A3%E3%81%91%E3%82%93/</guid>
+      <description>お仕事でPCの挙動がおかしくなり、いろいろ設定していた。
+システムのひとお休みで、自力で調べて頑張るしかなかったの。
+思わぬところで勉強になった。
+ふむふむ。
+しかしどこまで設定をいじって大丈夫なのかわからないので
+明日システムのひとに確認するの。
+.
+iPadのBluetoothキーボード
+USキーボードを使っているんだけど
+｢ショートカットキーを覚えるの面倒臭いなあ｣
+くらいにしか感じていなくて
+ショートカットキーの仕様変更の話題で
+USキーボード向けになっている流れを知って
+なるほどとなった。
+.
+まわるー、まーわるーよ
+時代ーは、まわるー
+だね。
+(USキーボード全く使いこなせていないけれど)
+.
+そしてdiscordの知らなかった機能発見した٩( ᐛ )( ᐖ )۶
+発見たくさんあって楽しい日だったあ。
+お昼ごはんにパスタ食べて
+夕方に、レシートのお代わりチケットで寄り道するの。
+コスパ良いー🐰</description>
+    </item>
+    
+    <item>
+      <title>さむいひ</title>
+      <link>https://hugo.suwa3.me/post/2019-04-10-%E3%81%95%E3%82%80%E3%81%84%E3%81%B2/</link>
+      <pubDate>Wed, 10 Apr 2019 13:00:48 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-10-%E3%81%95%E3%82%80%E3%81%84%E3%81%B2/</guid>
+      <description>｢私は夫を愛しています｣
+と彼女はすらりと言った。
+｢もちろん若い娘時代のような愛し方ではありませんが、愛していることは確かです。女にとって、娘時代は一度きりのものです。その当時私が愛した人は亡くなりました(略)｣
+ロング・グッドバイ
+アイリーン・ウェイドの台詞だよ。
+.
+感謝を軸にした関係は、強いなあ。
+わたしもそういった関係を築けるようなひとになりたいです。
+.
+冷静でいることや、理性的であること
+意識できていないことが多いので
+気をつけたいの。
+.
+人のふり見て我がふり直せ
+と言うけれども
+悪いところを見て
+｢なおさなきゃ｣
+とおもうよりも
+良いところに気付いて
+｢ああなりたい｣
+とおもう方が強く印象に残る。
+.
+今日は寒かったなあ。</description>
+    </item>
+    
+    <item>
+      <title>プレ衣替え</title>
+      <link>https://hugo.suwa3.me/post/2019-04-09-%E3%83%97%E3%83%AC%E8%A1%A3%E6%9B%BF%E3%81%88/</link>
+      <pubDate>Tue, 09 Apr 2019 13:00:37 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-09-%E3%83%97%E3%83%AC%E8%A1%A3%E6%9B%BF%E3%81%88/</guid>
+      <description>お昼にカフェへ行くときがあって
+最近、若い子たちが怪しいビジネス紹介しているの。
+上京したばかりの学生さんなんかが狙い目なんだろうなあとおもうけれど
+カフェ側は黙認なのかなあ。
+.
+粛々とお仕事をしていたら
+お昼ごはん食べるの15時とかになってしまった。
+お腹すいていると頭が回らなくなるので
+適当に切り上げてお昼ごはん食べなきゃね。
+.
+夜は洋服の整理をしたよ。
+セーターなどしまったり、着ない服はどんどん捨てたりした。
+しまっている最中に、ニュースで
+｢明日は最高気温6度の真冬並みの寒さになるでしょう｣
+と言っていて
+1枚だけセーターしまわずに、椅子のうえにだしたよー。
+しかも明日の一日だけ、とても寒いらしい。
+暖かくして寝なきゃね。</description>
+    </item>
+    
+    <item>
+      <title>わからん</title>
+      <link>https://hugo.suwa3.me/post/2019-04-08-%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93/</link>
+      <pubDate>Mon, 08 Apr 2019 13:00:07 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-08-%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93/</guid>
+      <description>本の通りにコードを書いても動かないと
+わからないなあとおもって次にいっていたの
+積み重なってぴゃってた
+自分で
+｢ここまでにこれをやりたい｣
+って設定するんだけど
+その都度修正すればいいのに
+なぜか焦ってしまうので、ぴゃーなる前に落ち着こうとおもいました。
+.
+部屋のお片付けが進んだので
+（どうせまた散らかるのに何故同じことを繰り返さなきゃいけないかなあ。
+リビングの主に床にあるもの
+全部捨てたいくらいだわ）
+また引き続き要らないもの捨てたいとおもいます。</description>
+    </item>
+    
+    <item>
+      <title>ポリッシュ</title>
+      <link>https://hugo.suwa3.me/post/2019-04-07-135/</link>
+      <pubDate>Sun, 07 Apr 2019 13:00:49 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-07-135/</guid>
+      <description>ほんとは沖縄料理のお店に行くつもりだったんだけど
+閉業していたので
+イタリアンのお店に行きました。
+ジャスミンティーだよ。
+帰り道すがら、ジャスミンティーのティーバッグを買ったの。
+.
+久しぶりにマニキュア💅
+とても仕上がり良い感じ。
+またネイルポリッシュ少しずつ揃えていこーっと</description>
+    </item>
+    
+    <item>
+      <title>にこにこ</title>
+      <link>https://hugo.suwa3.me/post/2019-04-06-%E3%81%AB%E3%81%93%E3%81%AB%E3%81%93/</link>
+      <pubDate>Sat, 06 Apr 2019 13:00:12 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-06-%E3%81%AB%E3%81%93%E3%81%AB%E3%81%93/</guid>
+      <description>にこたまだよ。
+服やアクセサリーなんかを買って
+にこたま公園ぶらぶらしたの
+オタマジャクシ大量につかまえた男の子が
+お母さんに
+｢これ全部もって帰って飼う！｣
+ってゴネてて
+男の子すごいなあとおもって見てたよ。
+.
+テラス席が気持ち良い日だった。
+休日らしい休日でした。</description>
+    </item>
+    
+    <item>
+      <title>Illustrator</title>
+      <link>https://hugo.suwa3.me/post/2019-04-05-illustrator/</link>
+      <pubDate>Fri, 05 Apr 2019 13:00:52 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-05-illustrator/</guid>
+      <description>わーいFeb Cafeだよ。
+Illustratorすこしさわってみた。
+描きたいものは決まっているので
+丸や三角等、幾何学模様の描き方を調べて
+ひたすら慣れる練習したよ。
+ある程度、(こうしたいんやろ？)ってかんじで
+自動で補完してくれるの助かる。
+暖かかったので、つくったスカートはいてみた。
+麻の布なのに、黒のレースだからシックな雰囲気いいかんじ( ◜ω◝ )♡</description>
+    </item>
+    
+    <item>
+      <title>ぶどう緑茶</title>
+      <link>https://hugo.suwa3.me/post/2019-04-04-%E3%81%B6%E3%81%A9%E3%81%86%E7%B7%91%E8%8C%B6/</link>
+      <pubDate>Thu, 04 Apr 2019 13:00:19 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-04-%E3%81%B6%E3%81%A9%E3%81%86%E7%B7%91%E8%8C%B6/</guid>
+      <description>お仕事終わって少し時間を潰すために
+ぶどう緑茶のカフェでおべんきょしてたよ。
+本の内容を一人で見て動かすことはできるようになったけど
+わからない単語や厳密な定義が不明な言葉が多く出てきたので
+箇条書きにして調べる作業がメインだった。
+以下備忘録メモで軽く調べたのみなので
+正確性には欠けるかも。御容赦〜
+.
+バイナリコードとは
+コンピューターが直接実行可能な機械言語。
+.
+コンパイルとは
+プログラミング言語をバイナリコード等に変換すること。
+compiler(英︰編集者)
+.
+ソースコードとは
+プログラミング言語で書かれたプログラムのこと。
+.
+低水準言語とは
+機械語に近い言語。コンピューターにとってわかりやすい言語のこと。(アセンブリ言語など)対義語は高水準言語。
+.
+機械語とは
+バイナリ(数値)の羅列。
+.
+プロセッサ
+演算装置(データの転送、計算、加工、制御、管理等を行う)処理装置。プロセッサの一種としてCPUがある。
+.
+ユニコード(UTF-8)とは
+わからん
+.
+何故0と1なのか
+何故二進法なのか
+電流は電圧の高低がある波であり、電圧が高いときを1低いときを0と定めることで10進法(10段階)での信号よりも誤認が少なくなるため。
+.
+FTPとは
+中継・輸送手段。FTPサーバーとFTPクライアント間でデータのやり取りがされる。通信経路が暗号化されていない。
+.
+SFTPとは
+SSH(セキュアシェル)の暗号認証技術を利用して安全性を付加したFTP。
+.
+PI(protocol interpreter)とは
+指示内容をプロトコルにインタプリタ(翻訳)すること
+.
+DTP(data transfer process)とは
+実質的な転送プロセス
+.
+プロトコル
+コンピューター同士が通信をするときの手順や規格。データの形式やパケットの構成、エラーの対処を取り決めた約束事。
+.
+大学時代に勉強した内容
+ほぼ忘れている。
+ユニコードは学生時代に習ったのは覚えているけれども
+納得のいく理解が難しいなと感じた。
+本を読んでいても自分が何をしているかがわかっていないと
+意味が無いなあと感じるので
+調べたの。時間すごくとけるうう。
+.
+夜は職場の懇親会でした。
+お酒まあまあ飲んだ。
+飲みの席では、ひとの意外な一面が見られるの楽しいので好き。</description>
+    </item>
+    
+    <item>
+      <title>麻スカート</title>
+      <link>https://hugo.suwa3.me/post/2019-04-03-%E9%BA%BB%E3%82%B9%E3%82%AB%E3%83%BC%E3%83%88/</link>
+      <pubDate>Wed, 03 Apr 2019 13:00:18 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-03-%E9%BA%BB%E3%82%B9%E3%82%AB%E3%83%BC%E3%83%88/</guid>
+      <description>お昼は俺流塩ラーメンたべた。
+水曜日はお楽しみがないので
+ラーメンを食べても良い日って決まってるの。
+お仕事帰りに
+夜は麻の布を買ってスカートをつくったよ。
+ジョキジョキ切って、カタカタ縫って3時間くらい。
+また別の柄でスカートつくりたい♡
+このスカートに合うイヤリングもつくった。
+また写真upするね。
+スカートに合わせてイヤリングつくるの楽しい。</description>
+    </item>
+    
+    <item>
+      <title>sh</title>
+      <link>https://hugo.suwa3.me/post/2019-04-02-sh/</link>
+      <pubDate>Tue, 02 Apr 2019 13:00:13 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-02-sh/</guid>
+      <description>うちにあったの
+シェルについても書かれていたので
+復習するつもりでパラパラ読んでみたよ。
+なんでシェル通さなきゃいけないのかなあ。
+.
+新しい知識がはいってくるのは楽しい。
+わくわくするねᐠ( ᐛ )ᐟ♡ᐠ( ᐖ )ᐟ</description>
+    </item>
+    
+    <item>
+      <title>わたぬき</title>
+      <link>https://hugo.suwa3.me/post/2019-04-01-%E3%82%8F%E3%81%9F%E3%81%AC%E3%81%8D/</link>
+      <pubDate>Mon, 01 Apr 2019 13:00:17 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-04-01-%E3%82%8F%E3%81%9F%E3%81%AC%E3%81%8D/</guid>
+      <description>職場では元号発表の話題がおおかった。
+.
+4月1日の月曜日ってきりが良いね。
+MacBookを持ち歩くようにしてみたよ。
+重たいので肩掛けじゃなくて、リュックにしようかなあ。
+.
+Air closetずっと愛用していたけれど
+今回届いた洋服がどうしても好きになれず
+じぶんで全く選べないのは
+さすがにギャンブルだなあとおもったので
+ある程度じぶんで選べるレンタルサービスを利用することにしました。
+お試しでEDIST.closetつかってみる。
+.
+暑くて汗をかいていたら、その10分後には寒くて震えていたり
+なんだか体感温度が変な一日だった。
+.
+入溶剤で湯船につかって
+早めに寝るよー( ˊ꒳ˋ ) ᐝ</description>
+    </item>
+    
+    <item>
+      <title>SSL</title>
+      <link>https://hugo.suwa3.me/post/2019-03-31-ssl/</link>
+      <pubDate>Sun, 31 Mar 2019 13:00:02 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-03-31-ssl/</guid>
+      <description>朝からてんこ盛りの一日でした。
+https://www.amazon.co.jp/exec/obidos/ASIN/4802611927/soccoltd-22/
+この本を教科書がわりに進めていて、しょっぱなから躓いたのが
+ライブラリーを取り込もうとしたところで
+urllib.request.urlopen()
+ここでerrorが出て
+https://qiita.com/orangain/items/0a641d980019fd7e0c52
+ここのblogがわかりやすかったので忘れないように貼っておきます。
+本の読み進め方もわからなくて挫折するかと思ったの
+なんとか光が見えてきそう。独力では厳しいなあ。
+午後は晴れたので、近所の公園へさくらを見に行ってきた。
+夕方にお昼寝して
+夜からまたお勉強です。
+Illustratorを入れたので、基本的な操作方法を確認したいー。</description>
+    </item>
+    
+    <item>
+      <title>目黒川</title>
+      <link>https://hugo.suwa3.me/post/2019-03-30-%E7%9B%AE%E9%BB%92%E5%B7%9D/</link>
+      <pubDate>Sat, 30 Mar 2019 13:00:19 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-03-30-%E7%9B%AE%E9%BB%92%E5%B7%9D/</guid>
+      <description>日中は低気圧で、やる気出ずに家事を片付けたりペディキュアを塗っていたりしたよ。
+夕方から目黒川の桜並木を見に行った。
+途中から雨が降ってきちゃったけど夜桜きれいだった。
+目黒川沿いに見たことのないスタバがあって
+行きたいーーと思って調べたら先月openしたばかりの店舗らしい。
+https://www.ryutsuu.biz/report/l022714.html
+コーヒーの遊園地みたい。
+「落ち着いて集中」
+とても大事なことなので写真を撮っておいた。</description>
+    </item>
+    
+    <item>
+      <title>3D</title>
+      <link>https://hugo.suwa3.me/post/2019-03-29-3d/</link>
+      <pubDate>Fri, 29 Mar 2019 13:00:37 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-03-29-3d/</guid>
+      <description>お昼にFabCafeへ行ったの。
+職場から近いので、ふらっと行けるの良いね。
+https://fabcafe.com/tokyo/fab/ 3Dプリンターやレーザーカッターを使うことができる
+ものづくりカフェ
+.
+ワークショップ行きたいなあ。
+とおもって、HPで調べたり店員さんに訊いてみたりしたよ。
+3Dプリンターのclassも
+HPには反映されていないけれど、来月末にあるらしい。
+.
+まずはレーザーカッターのclassだから
+Illustrator入れたいなあ。
+.
+楽しみが増えて嬉しい♡
+.
+夕方はTully&amp;rsquo;s
+がんばってロング・グッドバイ読み終わらせるぞ。
+٩(ˊᗜˋ*)وえいおー</description>
+    </item>
+    
+    <item>
+      <title>ハルキ</title>
+      <link>https://hugo.suwa3.me/post/2019-03-28-%E3%83%8F%E3%83%AB%E3%82%AD/</link>
+      <pubDate>Thu, 28 Mar 2019 13:00:26 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-03-28-%E3%83%8F%E3%83%AB%E3%82%AD/</guid>
+      <description>朝から面白い記事を見つけたの。
+https://www.gizmodo.jp/2019/03/telephone-operator.html
+人類をSNSから開放してくれるロボットだよ。
+.
+自動でいいね！ボタンを押してくれたり
+フォローバックや、リプライまでしてくれるみたい。
+ロボットなのがまた良いねえ。
+.
+暇さえあればロンググッドバイを読んでいるの。
+1日でまあまあ読み進んだ。
+この調子で週末には読み終わらせたいな。
+.
+村上春樹訳は読みやすいのだけれど
+春樹色が強すぎると、ただ彼の小説を読んでいるだけな気分になるの。
+実際、本を漫画化しているんじゃないかってくらいに
+文学的な表現が損なわれてしまうくらいに
+翻訳者のクセが色濃く出ていたら、それは漫画化したものを読んだ方がマシなのではとおもってしまう。
+村上春樹が好きなのであれば、素直に彼の小説を読んだ方が
+ワールドにどっぷり浸かることができる。
+.
+短い小説であれば、素早く読めるスマートな文章はとても助かるのだけど
+長編だと春樹色に触れる機会が増えて、くどさを感じてしまった。
+良くも悪くもクセが強いのよねえ。</description>
+    </item>
+    
+    <item>
+      <title>予想どおりに不合理</title>
+      <link>https://hugo.suwa3.me/post/2019-03-27-%E4%BA%88%E6%83%B3%E3%81%A9%E3%81%8A%E3%82%8A%E3%81%AB%E4%B8%8D%E5%90%88%E7%90%86/</link>
+      <pubDate>Wed, 27 Mar 2019 13:00:24 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-03-27-%E4%BA%88%E6%83%B3%E3%81%A9%E3%81%8A%E3%82%8A%E3%81%AB%E4%B8%8D%E5%90%88%E7%90%86/</guid>
+      <description>ウグイスの鳴き声を聞かなくなったなあ。
+寒さが戻ったから、ウグイスも縮こまっているのかもしれない。
+.
+出勤の途中でツバメの巣を見つけたよ。
+もうそんな時期か。
+.
+あとチューリップも。
+チューリップ飾りたいなあ。かわいいよねえ。
+.
+昼間は俺流塩ラーメンだよ。
+.
+儀式だね。
+.
+.
+Air Closetね、洋服のレンタルサービスなんだけれども
+自分で選ぶわけではなく
+スタイリストさんに、骨格や肌の色味など体型上の悩みや希望を伝えて
+それに沿ったものを選んでもらうので
+必ずしも気にいるものが来るとは限らないの。
+.
+返却すると1週間ほどで次の服が届くの。
+月額制なので、どのくらいの頻度で送り返すのが
+効率的でコスパが良いのかを試算してみたのだけれど
+気に入ったら飽きるまで借りれば良いし
+気に入らないと判断したら、即返却するのが
+最も合理的だよなあとおもった。
+.
+大学時代に行動経済学について教わったのをおもいだしたよ。
+ひとの非合理性、あるあるーってかんじ。
+今朝Amazonでポチって夜に帰宅したら届いてた。
+速いねえ。
+経済学部門のベストセラー本だって。
+面白かったらまたここに書くね☺️
+読むの楽しみだなあ。
+乱読雑多読みマン！</description>
+    </item>
+    
+    <item>
+      <title>喫茶店</title>
+      <link>https://hugo.suwa3.me/post/2019-03-26-%E5%96%AB%E8%8C%B6%E5%BA%97/</link>
+      <pubDate>Tue, 26 Mar 2019 13:00:30 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-03-26-%E5%96%AB%E8%8C%B6%E5%BA%97/</guid>
+      <description>すっかりマストドンを見なくなってしまった。
+.
+特に見ないよう意識しているわけではなくて
+なんとなく見なくなって
+習慣がなくなった感じなの。
+そういうとき、あるよねえ。
+.
+マストドンの時間は、主に読書の時間になっていて
+ロンググッドバイは相変わらず読むごとに新しい登場人物が3人は登場するので
+（外山滋比古の小説は一昨日読み終わった。説教くさかった。）
+まったく名前を覚えられる気がしないのだけれど
+ちょうど物語が佳境に差し掛かって
+いまとてもサスペンスで面白い場面なの。
+.
+拷問の描写は1984年に出てくるオブライエンのおかげで、だいぶ耐性がついたよ。
+.
+小説の優れているところは、見たくない描写の部分は
+特に鮮明に思い浮かべる必要がないところだとおもう。
+小説には想像の裁量権がある。
+.
+.
+優先順位リストを作るようにしてみた。
+優先順位：高
+優先順位：普
+優先順位：低
+三段階にわけて、何が終わっていないのか一目瞭然になるので
+ToDoリストの箇条書きよりも見やすくて良い感じだよ。
+Evernote、こんなに頼るようになるとは思っていなかったなあ。
+.
+喫茶店に寄ったの。
+ケーキは美味しかった。
+コーヒーはまあまあ。
+もう今では絶滅危惧種な、昔ながらの喫茶店だった。</description>
+    </item>
+    
+    <item>
+      <title>psyche</title>
+      <link>https://hugo.suwa3.me/post/2019-03-25-psyche/</link>
+      <pubDate>Mon, 25 Mar 2019 13:00:01 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-03-25-psyche/</guid>
+      <description>てづかあいのCDをiTunesでPCとiPhoneに落としたよ
+来月ライブに行けそうなので嬉しい😊
+.
+10年くらいファンをやっていて
+練(ねり)の頃に出したCDと
+ソロのてづかあい名義で出したCDの
+出したCDは2枚だけど
+のんびり待つので、またCD出して欲しいなあ
+.
+歌いつづけて欲しい歌手のひとりです</description>
+    </item>
+    
+    <item>
+      <title>じゆうがおか</title>
+      <link>https://hugo.suwa3.me/post/2019-03-24-65/</link>
+      <pubDate>Sun, 24 Mar 2019 13:00:55 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-03-24-65/</guid>
+      <description>午前中に家事やっつけてたの
+.
+EvernoteにToDoをまとめると
+チェックがつけやすくていいかんじ
+.
+お昼過ぎに自由が丘へ行ったよ
+花キャベツでパンケーキを食べた
+.
+雑貨屋さんで花瓶を探して
+フラワーショップで瓶に合わせて
+ドライフラワーを見繕ってもらったの
+こんもりした感じになったのでまんぞく
+.
+生花はカーネーションとかすみ草だよ
+雑貨屋さんはT.C
+手頃でオシャレでB1から2Fまで見るものがたくさんあって楽しかった😊
+.
+ドライフラワーは希望の雰囲気を伝えたら
+5分くらいで小さなブーケつくってくれたので
+また季節が変わる頃に行きたいなあ
+感じの良い店員さんだった</description>
+    </item>
+    
+    <item>
+      <title>水分</title>
+      <link>https://hugo.suwa3.me/post/2019-03-23-%E6%B0%B4%E5%88%86/</link>
+      <pubDate>Sat, 23 Mar 2019 13:00:06 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-03-23-%E6%B0%B4%E5%88%86/</guid>
+      <description>午前中は家でまったり過ごして
+午後は読書したり技術書を読んでみたり
+じゃんじゃか自炊したものをひたすら食べる午後だったよ
+.
+おもしろいなあと思った一節は
+「脳は十分な水分がある状態で最もよく働きます。脱水状態になると認知機能は衰えます」
+って部分で
+何かについて学ぼうとするときは
+水分をきちんと摂るのを、忘れずにしたいなあ
+と思いました。
+.
+忘れがちだけれども
+地味に大切なことって多いねえ</description>
+    </item>
+    
+    <item>
+      <title>Fab Cafe</title>
+      <link>https://hugo.suwa3.me/post/2019-03-22-56/</link>
+      <pubDate>Fri, 22 Mar 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-03-22-56/</guid>
+      <description>今日はなかなかおもしろな感じだったよ。
+カフェでお昼ご飯を食べようとおもったの。
+隣の席でカップルが揉めてて、女の子側がニコニコしながら怒ってて
+「真面目な話をしたいんだけど」
+って、男の人に切り出してるのね。
+「この話をしたら、会うのは今日がもう最後になるかもしれないね」
+って話しているのを聞いた時点で
+（席移動しようかなぁ）
+って悩んだんだけど、タイミング逃してランチが運ばれてくるのを待っていたの。
+.
+どうやら女の子は結婚したいのに
+煮え切らない男の人の態度にイライラして、別れ話をチラつかせているらしい。
+.
+スマホを忘れたので、わたしは時間を潰すために本を読んでいたんだけど
+男性側が本のタイトルを見ていたのか
+女の子「何見てるの？」
+男の人「いや、すごいなあと思って」
+女の子「確かに、『こんなところで本読むのかよ？』って感じだよね」
+って話を聞いた時点で、まさかの巻き込み事故にビックリしたんだけど
+.
+その後も
+女の子「なに？この女の人知り合いなの？」
+男の人「知らないよ」
+女の子「ほんと女遊び激しいよね」
+男の人「遊んでないってば」
+ってな感じで
+.
+女の子の声も、よく通る声なので
+店内のひとはヒヤヒヤしながら聞いていたと思うなあ。
+.
+その場ではただただ関わらないように無視を決め込んでいたけど
+blogのネタにしてやったぜー（陰湿）
+.
+ちなみに行ったカフェはここです
+3Dプリンターが使えたり、イベントを開いていたり
+デジタルなものづくりカフェで
+WiFiや電源もあって、雰囲気よかったよー</description>
+    </item>
+    
+    <item>
+      <title>ねこちゃん</title>
+      <link>https://hugo.suwa3.me/post/2019-03-21-%E3%81%AD%E3%81%93%E3%81%A1%E3%82%83%E3%82%93/</link>
+      <pubDate>Thu, 21 Mar 2019 14:31:27 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-03-21-%E3%81%AD%E3%81%93%E3%81%A1%E3%82%83%E3%82%93/</guid>
+      <description>昨夜は家事途中で寝落ちしちゃって
+今朝は3時くらいに目が覚めたの
+明け方にまた二度寝したよ
+変な時間に寝て起きると
+昼間やたら眠くなる現象おきた
+、
+午前中に出掛けたんだけど
+スマホ忘れておおおーってかんじだった
+午後から初めて行くネイルサロンだったので
+スマホ取りに戻ってお昼寝したー
+、
+低気圧でほんと頭痛いのつらかったあ
+アネロン買わなきゃ！酔い止め
+恵比寿のPile Cafeだよ
+ソファ席いっぱいで
+くてーって出来たのよかった
+入口が超わかりづらい
+、
+ねこちゃん♡
+きゃーわ
+ほんとは青眼ちゃんだったんだけど
+パーツの色変更で
+オッズアイにしてもらったの
+そしてここのネイルサロンも
+入口が超わかりづらかった
+入口わかりづらいの流行りか？
+、
+帰りに六本木の紗絵羅も寄ったよ
+ひさびさ
+コーヒー飲んで
+チーズトーストたべて
+チョコケーキたべたの
+、
+お出掛けいっぱいしたなーー
+、
+食材いっぱい買い込んで帰ったよー
+週末ガンガンつくるんじゃい
+、
+神崎ポケキャスいっぱい聴けたので
+寝るよー
+あしたがんばれば、またおやすみ嬉しいなあ</description>
+    </item>
+    
+    <item>
+      <title>おーれ</title>
+      <link>https://hugo.suwa3.me/post/2019-03-20-%E3%81%8A%E3%83%BC%E3%82%8C/</link>
+      <pubDate>Wed, 20 Mar 2019 13:00:35 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-03-20-%E3%81%8A%E3%83%BC%E3%82%8C/</guid>
+      <description>朝ごはん食べすぎて
+電車のなかでつらつらだった
+あほすぎるー
+お昼は俺塩だよ
+うーま♡うーま♡
+もう通い始めて半年になるんだなあ
+あっという間だね
+夜は寄り道せずに
+サッと帰宅したのに
+ごはん食べて家事途中で
+寝落ちしてしまった( ◜ω◝ )( ◜ω◝ )
+神崎のポケキャス聴けなかったあ
+悔しい
+最近つかれちゃって寝落ちおおいなあ</description>
+    </item>
+    
+    <item>
+      <title>Blogお引越し</title>
+      <link>https://hugo.suwa3.me/post/2019-03-19-%E6%9C%80%E5%88%9D%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E6%8A%95%E7%A8%BF/</link>
+      <pubDate>Tue, 19 Mar 2019 13:00:27 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-03-19-%E6%9C%80%E5%88%9D%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E6%8A%95%E7%A8%BF/</guid>
+      <description>blogお引越ししたよ
+昨夜は熱が出たので
+病院へ行ってからの出勤だった
+最近予定つめこみすぎ感あったから
+すこし疲れがたまってたのかも
+ガス抜きしなきゃねえ
+夜は、名前入りのお箸つくってもらったの
+あとblogのお引越し作業ね
+Ameba owndは相変わらず
+わたしのスマホから投稿ができないので
+諦めてお引越ししました！
+以前のblog
+suwa3 blog</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>raspberry-pi on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/raspberry-pi/</link>
+    <description>Recent content in raspberry-pi on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 01 Sep 2019 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberry Piにsshログイン</title>
+      <link>https://hugo.suwa3.me/post/2019-09-01-raspberry-pi%E3%81%ABssh%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3/</link>
+      <pubDate>Sun, 01 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-01-raspberry-pi%E3%81%ABssh%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3/</guid>
+      <description>Raspberry Piにsshログインしてみました。
+わあい
+新しいサーバーにログインするのわくわくする。
+そして、自分用の小さな庭って感じする。
+ここで何してもいいんだなあ。
+さっそく海外からアタックきていました。
+ポートの設定やセキュリティの整備するところからだな。
+夕方頃から落ちこみモードでした。
+たまには気のすむまで落ち込もうとおもって、しばらく凹んでいました。
+そのあとはなんだか落ち込みながらも話し合いが進んで
+平和的に（？）解決の方向に進みました。
+これから、より身を引き締めて勉強していきたいし
+精神的腕力のあるゴリラを目指します。</description>
+    </item>
+    
+    <item>
+      <title>Ruby予習/Raspberry Pi用途</title>
+      <link>https://hugo.suwa3.me/post/2019-08-30-1045/</link>
+      <pubDate>Fri, 30 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-30-1045/</guid>
+      <description>午前中は病院はしごしました。
+（最近忙しいなあ）
+とは、おもっていたのですが
+無理をすると知らないうちに病気になっていたりするので
+そのあたりのバランスが難しいなあと思いました。
+特にスケジュールは詰めすぎないように気をつけたいです。
+ちょこちょこRubyのおべんきょうしています。
+来週末にRuby on Railsハンズオンに参加するので、その予習です。
+まだまだ先は長いなあと感じる。
+夜はRaspberry Piがset upされるのを眺めていました。
+フォントがかわいい、Raspbianだから？
+Debianもこんなかんじのフォントなのかしら
+自鯖運用ラズパイでWordPressか
+（AWSはdon.suwa3.me用なので無料枠こえてしまいそうだから）
+GitHubなどで静的サイトジェネレーターかで迷っている。
+ラズパイは物置化して、blogは後者になりそうな予感。</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://hugo.suwa3.me/post/2019-07-19-raspberry-pi-2/</link>
+      <pubDate>Fri, 19 Jul 2019 13:00:34 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-19-raspberry-pi-2/</guid>
+      <description>昼間は引き続きJSのお勉強をして
+きちんと一つ一つ
+手でも、頭でも慣れて
+まとめたいなあとおもいました。
+.
+夜は秋葉原でお買い物したよ。
+Raspberry Piかわいいなあ。
+ミニ四駆は、上にボードやラズパイのせるので
+72mmのシャフトとアルミスペーサーでトレッド幅を広げます。
+.
+わからないこと沢山あるけれども
+とりあえず仮説をたてて組み立ててみて
+わからーん！ってなったら
+Raspberry Piの勉強会に参加して
+有識者にお話を伺おうとおもいました。</description>
+    </item>
+    
+    <item>
+      <title>ブラシ付きモータードライバIC</title>
+      <link>https://hugo.suwa3.me/post/2019-07-17-%E3%83%96%E3%83%A9%E3%82%B7%E4%BB%98%E3%81%8D%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90ic/</link>
+      <pubDate>Wed, 17 Jul 2019 13:00:02 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-17-%E3%83%96%E3%83%A9%E3%82%B7%E4%BB%98%E3%81%8D%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90ic/</guid>
+      <description>有用そうな記事を見つけたので貼るね。
+https://qiita.com/stnk20/items/f614ae1471b9e555708a
+(上記サイトから引用)
+Raspberry Piを基盤にカメラの画像からPythonで自動制御させている。
+組み立て方がハマりやすいところまで詳細に書かれているしソースコードもある。
+.
+https://tech.drecom.co.jp/self-driving_on_raspberrypi/
+(上記サイトから引用)
+こちらはDeep Learningさせている。
+かなり理想に近いものなので参考にしたい。
+.
+秋葉原のパーツショップいくつか目星をつけて
+この商品があるか問い合せたの。
+マルツには在庫無しで千石電商さんの分店に電話したら
+｢本店にあるかも｣
+ということで
+本店に1時間で5回ほどかけてようやく繋がり(通話中だった)
+在庫あること確認しました。やったねえ。
+週末にブレッドボードやジャンプワイヤもあわせて買いにいきたい。
+秋葉原なんでもそろうの素晴らしいね。
+.
+なんだか気持ちが忙しないなあとおもった。
+朝は満員電車で日中は職場のひとのなかで
+渋谷はどこを歩いていてもだいたい周りにひとが沢山いるし
+帰りも満員電車にのって
+家にいても一人になれる時間がなくて
+数時間で良いので、一人でゆっくりする時間ほしいなあとおもいました。</description>
+    </item>
+    
+    <item>
+      <title>ステアリング機構つき自動制御ミニ四駆構想</title>
+      <link>https://hugo.suwa3.me/post/2019-07-16-%E3%83%9F%E3%83%8B%E5%9B%9B%E9%A7%86/</link>
+      <pubDate>Tue, 16 Jul 2019 13:00:36 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-16-%E3%83%9F%E3%83%8B%E5%9B%9B%E9%A7%86/</guid>
+      <description>今日は1日ミニ四駆について考えていたの。
+先日のOSC名古屋で
+Raspberry Piでラジコンカーを自動制御しているブースがあったのだけれども
+それをきっかけに
+｢Raspberry Piでミニ四駆の自動制御ができたら面白そうだよね｣
+となり
+ちょっとだけ考えてみました。
+.
+Raspberry Piでミニ四駆をIoT化して遠隔操作している記事
+https://cad-kenkyujo.com/2018/10/30/mini4ku/
+[wpvideo R53F5fCO]
+(上記サイトから引用)
+.
+ミニ四駆にステアリング機構をつけてスマホから遠隔操作させる記事
+https://qiita.com/Google_Homer/items/109913f5394712ca07aa
+.
+このあたりを参考にして実際に作ってみたい。
+.
+前輪ハンドル機構(公式パーツ)
+http://www.powers-rainbow.com/cgi-bin/tkxcgi/shop/goods_detail.cgi?CategoryID=&amp;amp;GoodsID=00000172
+(上記サイトから引用)
+このパーツも使えるかもしれないので
+取り寄せ可能か確認する。
+.
+車やドローンの自動制御はトレンドなので
+ひとに聞いたり記事を調べてみたりで
+情報集め頑張りたいです。
+.
+｢後輪駆動改造してステアリング機構をもたせたうえで自動制御してみたい｣
+って、まあまあぶっ飛んだリクエストを
+一緒に真剣に考えてくれて
+有益なアドバイスをくれた店員さんに感謝です。
+.
+とりあえず本体を組み立てたので
+あとはパーツ取り寄せだよ。
+.
+最初はもっと大掛かりな改造を想定していて
+https://www.taus.ac.jp/blog/371
+(上記サイトから引用)
+この仕組みを利用して
+http://www.f-palette.org/works/students/2584/
+(上記サイトから引用)
+こういった改造をミニ四駆規模に落とし込む想定をしていたの。
+.
+むしろ三輪車の後輪駆動にして
+不安定さを解消するために低速改造するか？
+ってレベルで考えていたのだけれども
+たくさん調べたら少しできるかもって気持ちになってきた。
+楽しくなってきたᐠ( ᐛ )ᐟ♡ᐠ( ᐖ )ᐟ</description>
+    </item>
+    
+    <item>
+      <title>OSC名古屋</title>
+      <link>https://hugo.suwa3.me/post/2019-07-14-572/</link>
+      <pubDate>Sun, 14 Jul 2019 13:00:39 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-14-572/</guid>
+      <description>オープンソースカンファレンス名古屋に行ってきました。
+オープンソースのお祭りだったよ。
+企業ブースや個人のブースがあって
+エンジニア向け同人イベントみたいだなあという印象でした。
+.
+Raspberry Piのセミナーと、gitのセミナーを受講したの。
+Raspberry Piの講師は年配の方で
+｢最近のひとはPythonとかで制御するみたいですが、わたしはPythonよく分からないので全てshell scriptで書きました｣
+と言っていて、すごいなあとおもったよ。
+.
+あと面白いなとおもったのが
+ポーチライトを外の照度で管理するの
+“外が明るかったらポーチライトの灯りを消す、暗かったら点ける”
+という仕組みをつくるのに
+太陽光電池つきの100均電卓を分解して
+照度が高いと電圧も高くなるのを利用していたの。
+閾値処理である電圧以上になったら消す/以下になったら点ける
+という設定をしたらしい。
+アイディアだなあとおもった。
+.
+講師の方はスマホに音声で指示を出していたんだけど
+スマートウォッチで指示が出せたらラクよね。
+海外ではスマートウォッチでIoTの遠隔操作をすることが増えてきているらしく
+それがスマートウォッチ普及の一翼を担っていると知って
+自動制御や遠隔操作の開発
+今後も活発化しそうだし、たのしそうだなあとおもいました。
+.
+Raspberry PiのステッカーをgetしたのでMacBookに貼った♡
+可愛い。
+.
+gitのセミナーは
+最近GitHubを使い始めて
+shellコマンドでのgit操作を記事にまとめたし
+https://qiita.com/suwa3/items/0a180e9833c0146e36b5
+初歩的な仕組みについては知っているつもりだったの。
+前半はわたしにとって復習的な要素が大きくて
+｢んー、たしかに｣
+とおもいながら聞いていたけれども
+後半の重複(コンフリクト)対策の仕組みはなるほどとおもった。
+https://www.slideshare.net/mobile/ToruMiyahara/git-osc2018
+帰宅してスライドもう一度復習しました。
+図解がわかりやすくて良いなあ。
+.
+その後ポケマス管理者のナツキさんと合流して
+WordPressのはなしや
+マストドンについて
+お互いに今日受講したセミナーの感想を話しつつ
+ナツキさんが最近ハマっているたまごっちの話や
+星ドラの話も聞いたよ。
+解散後はダッシュで会場に戻って
+ギリギリLT（発表）を聞くことができた。
+.
+新幹線で地元の静岡に寄り道して
+地元の、昔からの知人が働いているダイニングバーで夕食をとったよ。
+元SEのひとでWindows 3.1を使っていたはなしから
+当時はPCが扱えてもオタクに人権がなかった
+というはなしに、歴史を感じました〜。
+.
+今日盛りだくさんᐠ( ᐛ )ᐟ♡ᐠ( ᐖ )ᐟ</description>
+    </item>
+    
+  </channel>
+</rss>

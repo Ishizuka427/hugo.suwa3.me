@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>%e3%83%9f%e3%83%8b%e5%9b%9b%e9%a7%86 on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/%e3%83%9f%e3%83%8b%e5%9b%9b%e9%a7%86/</link>
+    <description>Recent content in %e3%83%9f%e3%83%8b%e5%9b%9b%e9%a7%86 on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Thu, 30 Jan 2020 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/%e3%83%9f%e3%83%8b%e5%9b%9b%e9%a7%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ミニ四駆</title>
+      <link>https://hugo.suwa3.me/post/2020-01-30-%E3%83%9F%E3%83%8B%E5%9B%9B%E9%A7%86-2/</link>
+      <pubDate>Thu, 30 Jan 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-01-30-%E3%83%9F%E3%83%8B%E5%9B%9B%E9%A7%86-2/</guid>
+      <description>ミニ四駆のスマホゲームがTAMIYA監修のもとリリースされていた。
+しかも数週間前！
+https://play.google.com/store/apps/details?id=com.bandainamcoent.mini4wdgp
+まず登録する前に疑問だったのがカスタマイズ性。
+恐らく自由度高くても、車幅やパーツ系は公式ルール範囲内だろうな。 コースアウトが存在する世界線なのかな。そこやたら再現度が高いとコースアウトばかりで萎えそうだけど、シュミレーターとして使えそう。
+みたいに予想していました。
+チュートリアルのストーリーに愛を感じた。
+頭文字D的な感じでストーリー度の高いゲームでも全然あり。
+過去にミニ四駆ハマった大人が、こういったアプリを企画して作る年齢になったんだなと思いました。
+初っ端の10連ガチャでスピンアックスを引いた😃
+藤吉好きなので嬉しい。
+そしてコースアウト存在する世界線だった。加えてスピード感が妙にリアル‪。
+10連引いても手に入れられるパーツが中途半端で
+｢もうちょいやりたい｣
+って欲を刺激するのがうまい。
+現実並の自由度は無いけれども、パラメーターが見やすいし
+パーツ集めゲームとして考えれば有りかもしれない。
+実際の大会では、コースに合わせてその場でチューニングする手際の良さも加味される為に、時短改造できるシャーシが選ばれることもあるのだけれども
+そういった側面がないのであれば、チューニングマシンのイメージレジストリ機能ほしいです。(あるのかな？)
+↑セーブデータのように、気に入ったパーツ構成を保存できて
+読み込めば一発実装できるボタンがあれば便利そう。</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://hugo.suwa3.me/post/2019-07-19-raspberry-pi-2/</link>
+      <pubDate>Fri, 19 Jul 2019 13:00:34 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-19-raspberry-pi-2/</guid>
+      <description>昼間は引き続きJSのお勉強をして
+きちんと一つ一つ
+手でも、頭でも慣れて
+まとめたいなあとおもいました。
+.
+夜は秋葉原でお買い物したよ。
+Raspberry Piかわいいなあ。
+ミニ四駆は、上にボードやラズパイのせるので
+72mmのシャフトとアルミスペーサーでトレッド幅を広げます。
+.
+わからないこと沢山あるけれども
+とりあえず仮説をたてて組み立ててみて
+わからーん！ってなったら
+Raspberry Piの勉強会に参加して
+有識者にお話を伺おうとおもいました。</description>
+    </item>
+    
+    <item>
+      <title>ブラシ付きモータードライバIC</title>
+      <link>https://hugo.suwa3.me/post/2019-07-17-%E3%83%96%E3%83%A9%E3%82%B7%E4%BB%98%E3%81%8D%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90ic/</link>
+      <pubDate>Wed, 17 Jul 2019 13:00:02 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-17-%E3%83%96%E3%83%A9%E3%82%B7%E4%BB%98%E3%81%8D%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90ic/</guid>
+      <description>有用そうな記事を見つけたので貼るね。
+https://qiita.com/stnk20/items/f614ae1471b9e555708a
+(上記サイトから引用)
+Raspberry Piを基盤にカメラの画像からPythonで自動制御させている。
+組み立て方がハマりやすいところまで詳細に書かれているしソースコードもある。
+.
+https://tech.drecom.co.jp/self-driving_on_raspberrypi/
+(上記サイトから引用)
+こちらはDeep Learningさせている。
+かなり理想に近いものなので参考にしたい。
+.
+秋葉原のパーツショップいくつか目星をつけて
+この商品があるか問い合せたの。
+マルツには在庫無しで千石電商さんの分店に電話したら
+｢本店にあるかも｣
+ということで
+本店に1時間で5回ほどかけてようやく繋がり(通話中だった)
+在庫あること確認しました。やったねえ。
+週末にブレッドボードやジャンプワイヤもあわせて買いにいきたい。
+秋葉原なんでもそろうの素晴らしいね。
+.
+なんだか気持ちが忙しないなあとおもった。
+朝は満員電車で日中は職場のひとのなかで
+渋谷はどこを歩いていてもだいたい周りにひとが沢山いるし
+帰りも満員電車にのって
+家にいても一人になれる時間がなくて
+数時間で良いので、一人でゆっくりする時間ほしいなあとおもいました。</description>
+    </item>
+    
+    <item>
+      <title>ステアリング機構つき自動制御ミニ四駆構想</title>
+      <link>https://hugo.suwa3.me/post/2019-07-16-%E3%83%9F%E3%83%8B%E5%9B%9B%E9%A7%86/</link>
+      <pubDate>Tue, 16 Jul 2019 13:00:36 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-16-%E3%83%9F%E3%83%8B%E5%9B%9B%E9%A7%86/</guid>
+      <description>今日は1日ミニ四駆について考えていたの。
+先日のOSC名古屋で
+Raspberry Piでラジコンカーを自動制御しているブースがあったのだけれども
+それをきっかけに
+｢Raspberry Piでミニ四駆の自動制御ができたら面白そうだよね｣
+となり
+ちょっとだけ考えてみました。
+.
+Raspberry Piでミニ四駆をIoT化して遠隔操作している記事
+https://cad-kenkyujo.com/2018/10/30/mini4ku/
+[wpvideo R53F5fCO]
+(上記サイトから引用)
+.
+ミニ四駆にステアリング機構をつけてスマホから遠隔操作させる記事
+https://qiita.com/Google_Homer/items/109913f5394712ca07aa
+.
+このあたりを参考にして実際に作ってみたい。
+.
+前輪ハンドル機構(公式パーツ)
+http://www.powers-rainbow.com/cgi-bin/tkxcgi/shop/goods_detail.cgi?CategoryID=&amp;amp;GoodsID=00000172
+(上記サイトから引用)
+このパーツも使えるかもしれないので
+取り寄せ可能か確認する。
+.
+車やドローンの自動制御はトレンドなので
+ひとに聞いたり記事を調べてみたりで
+情報集め頑張りたいです。
+.
+｢後輪駆動改造してステアリング機構をもたせたうえで自動制御してみたい｣
+って、まあまあぶっ飛んだリクエストを
+一緒に真剣に考えてくれて
+有益なアドバイスをくれた店員さんに感謝です。
+.
+とりあえず本体を組み立てたので
+あとはパーツ取り寄せだよ。
+.
+最初はもっと大掛かりな改造を想定していて
+https://www.taus.ac.jp/blog/371
+(上記サイトから引用)
+この仕組みを利用して
+http://www.f-palette.org/works/students/2584/
+(上記サイトから引用)
+こういった改造をミニ四駆規模に落とし込む想定をしていたの。
+.
+むしろ三輪車の後輪駆動にして
+不安定さを解消するために低速改造するか？
+ってレベルで考えていたのだけれども
+たくさん調べたら少しできるかもって気持ちになってきた。
+楽しくなってきたᐠ( ᐛ )ᐟ♡ᐠ( ᐖ )ᐟ</description>
+    </item>
+    
+  </channel>
+</rss>

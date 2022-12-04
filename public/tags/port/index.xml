@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>port on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/port/</link>
+    <description>Recent content in port on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 23 Nov 2019 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/port/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PORTでもくもく</title>
+      <link>https://hugo.suwa3.me/post/2019-11-23-port%E3%81%A7%E3%82%82%E3%81%8F%E3%82%82%E3%81%8F/</link>
+      <pubDate>Sat, 23 Nov 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-11-23-port%E3%81%A7%E3%82%82%E3%81%8F%E3%82%82%E3%81%8F/</guid>
+      <description>PORTのもくもく会に行きました。
+先月行けなかったので、少し久しぶりな感じでした。
+だんだん知り合いが増えてきて、ホーム感増してきたの嬉しいなぁ。
+LTをやったので懇親会にも初参戦したよ。
+あまり話したことない人とたくさん話せて楽しかったです。
+主に趣味鯖上で運用しているSNSの
+dumpのcronを書き換えたりsidekiqの設定を変えたりしました。
+備忘録を残します。
+$ crontab -l 0 0 * * * docker run &amp;ndash;link mastodon_db_1 &amp;ndash;volume /opt/backup:/mnt/backup &amp;ndash;network mastodon_internal_network postgres:9.6-alpine /bin/sh -c &amp;ldquo;pg_dump -U postgres -h mastodon_db_1 postgres | gzip -c &amp;gt; /mnt/backup/dump-`date +&amp;rsquo;%Y-%m-%d&amp;rsquo;`.sql.gz; exit&amp;rdquo; &amp;gt; ~/cron.log 2&amp;gt;&amp;amp;1
+本当はローカルにdump取りたいの
+でもとりあえずdiscfullでEC2が定期的に落ちるのどうにかしたいので
+`date +&amp;rsquo;%Y-%m-%d&amp;rsquo;`
+ここの部分を削除して
+dumpファイルが最新のものに上書きされるようにしました。
+つまりこうです。
+$ crontab -l 0 0 * * * docker run &amp;ndash;link mastodon_db_1 &amp;ndash;volume /opt/backup:/mnt/backup &amp;ndash;network mastodon_internal_network postgres:9.6-alpine /bin/sh -c &amp;ldquo;pg_dump -U postgres -h mastodon_db_1 postgres | gzip -c &amp;gt; /mnt/backup/dump.</description>
+    </item>
+    
+    <item>
+      <title>PORTもくもくメンテナンス</title>
+      <link>https://hugo.suwa3.me/post/2019-07-20-616/</link>
+      <pubDate>Sat, 20 Jul 2019 13:00:56 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-20-616/</guid>
+      <description>PORTのもくもく会へ行ってきました。
+おやつタイムに配られたシュークリームアイス😊
+ランチタイムも色々と会話できたの楽しかったです。
+主にMastodonのバックアップ/メンテナンスやりました。
+.
+やったこと
+- postgreSQLのバックアップ
+- GitHubで設定ファイルの保全
+- EC2上へメンテナンスページの設置
+- メンテナンスの流れ確認(設定ファイルについてなど)
+.
+postgreSQLのバックアップとったの。
+.
+第 23章バックアップとリストア
+https://www.postgresql.jp/document/8.1/html/backup.html
+復習しておこう。
+Docker上にバックアップ用のディレクトリを作成して
+pg_dumpを実行しました。
+.
+Nginx設定ファイル内の整理をして
+Mastodonの設定ファイルとNginxの設定ファイルを
+scpコマンドをつかいDLしてGitHubに保存。
+.
+EC2インスタンス上にメンテナンスページ用のディレクトリを作成して
+GitHub上にメンテナンスページを置いていたので
+それをgit cloneしてメンテナンスの準備をしたよ。
+.
+site-availableにメンテナンス用のNginx設定ファイルを置いて
+中の設定ファイルをメンテナンス用に変更したの。
+シンボリックリンクを書き換えて、設定ファイルをテストし
+忘れずにNginxをリロード。
+.
+これblog書いていて
+下書き保存がうまくいかず
+一度ぜんぶ消えてしまったので
+もう一度はじめから書き直したの
+復習バッチリです！！！
+.
+帰りは一杯飲んで帰ったよお。</description>
+    </item>
+    
+    <item>
+      <title>勉強会</title>
+      <link>https://hugo.suwa3.me/post/2019-06-22-%E5%8B%89%E5%BC%B7%E4%BC%9A/</link>
+      <pubDate>Sat, 22 Jun 2019 13:00:06 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-06-22-%E5%8B%89%E5%BC%B7%E4%BC%9A/</guid>
+      <description>PORT勉強会に行ってきました。
+ノージャンルもくもく会といったかんじ。
+人数も多くて会場も綺麗でLT(発表)もあるし
+アクセスも良くて月イチで開催しているの。
+とても良い感じだったので継続して参加していきたいです。
+.
+Mastodonの構築
+調べて、レシピをつくって
+主にローカル汚すだとか
+セキュリティ面でとんでもないレシピになっていないか
+わかりそうなひとにチェックをして貰ってから
+動くかどうかはコンピューターで答え合わせをする
+みたいな感じで、マストドンのほうはわりとゆるゆる出来ていたの。
+.
+Misskeyマジでそんな余裕ないくらい
+まず出回っている情報が少ないので
+情報収集がままならず
+AWS利用での構築方法を模索しなくてはならなくて
+OSが違うだけで、こんなにも大変なのかとおもいました。
+構築方法には書かれていないけれども
+インストールしなくてはいけないものだとか
+ファイルの設定内容についても
+どこをどう編集したら良いかわからず。
+とりあえず流れをgistにまとめました。
+https://gist.github.com/suwa3/e2a4ea4d5558b6995cf2f0affaa9447e
+でもこれ90％で動いてないの。
+残り10％を調べなければいけないの。
+.
+夜からはみそぴぴデートだよ。
+最近どうよ、
+から始まって
+近況報告しつつも
+やっぱりMisskeyの構築のこと色々と聞いてもらった。
+なんだかねえ、うまくいかないのよ。
+みそぴぴもAWS使っているので
+これから一緒に勉強していけたらいいなあ。
+一緒に勉強できる仲間ほしいね。</description>
+    </item>
+    
+  </channel>
+</rss>

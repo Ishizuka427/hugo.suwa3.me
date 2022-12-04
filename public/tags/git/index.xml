@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/git/</link>
+    <description>Recent content in git on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 07 Mar 2020 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazon Linux AMIにGitの最新バージョンをインストール</title>
+      <link>https://hugo.suwa3.me/post/2020-03-07-amazon-linux-ami%E3%81%ABgit%E3%81%AE%E6%9C%80%E6%96%B0%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+      <pubDate>Sat, 07 Mar 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-03-07-amazon-linux-ami%E3%81%ABgit%E3%81%AE%E6%9C%80%E6%96%B0%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+      <description>WordPressのサーバーにgit cloneしてこようと思ったら躓いたので、備忘録です。
+__| __|_ ) _| ( / Amazon Linux AMI ___|\___|___| https://aws.amazon.com/amazon-linux-ami/2018.03-release-notes/ 普段yumでインストールするので
+今回もCentOSを前提にして調べました。
+$ yum -y install https://centos7.iuscommunity.org/ius-release.rpm Error: Package: ius-release-2-1.el7.ius.noarch (/ius-release) $ yum -y install https://centos6.iuscommunity.org/ius-release.rpm Complete! $ yum -y install git2u Error: Package: git216-perl-Git-2.16.6-2.el6.ius.noarch (ius) なるほど、CentOS 6っぽいけれども
+インストールしようとするとコケる。
+Gitの公式リファレンスで
+ソースからgitをインストールする方法を確認します。
+Git - Gitのインストール
+Git のバイナリをコンパイルしてインストールするために必要な
+依存ライブラリをインストール
+$ sudo yum install curl-devel expat-devel gettext-devel openssl-devel perl-devel zlib-devel git-2.24.1.tar.gz
+$ wget https://github.com/git/git/archive/v2.24.1.tar.gz ダウンロードが終わったら、コンパイルしてインストールします。
+$ tar -zxf v2.24.1.tar.gz $ cd git-2.</description>
+    </item>
+    
+    <item>
+      <title>.gitignore&amp;新リポジトリ</title>
+      <link>https://hugo.suwa3.me/post/2019-09-24-gitignore/</link>
+      <pubDate>Tue, 24 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-24-gitignore/</guid>
+      <description>静的サイトジェネレーターの続きやりました。
+Hexoのローカルサーバーを hexo server コマンドで起動しようとしたら
+すでに何か走っているらしく起動できなかったので、調べてみた。
+$ lsof -i:4000 $ ps -ef | grep 80174
+ふむふむ
+Hexoだな。
+ヘクソって屁糞みたいで汚い。
+C+cしても止まらないので、まあいいやとおもい放置です。
+$ kill -KILL 80174
+で指定して止めることも可能ぽい。
+Hexoのディレクトリをgit管理してNetlifyでデプロイするのを早くやりたいので
+リポジトリを作るまえにtreeで確認したら
+942 directories, 6294 files
+途方もない量でした。
+どうやら
+$HOME/blog/node_modules
+この下に大量のディレクトリやファイルがあるみたい。
+$ vi .gitignore
+と書いたら
+なんと最初から不要そうなものが書いてある！
+ふしぎ！
+gitignore とは Git の管理に含めないファイルを指定するためのファイル。 設定方法：無視設定を行いたいフォルダに .gitignore という名前でテキストファイルを作成する。
+gitignore のテンプレ、ググると各言語ごとに用意されている。
+なるほどー
+チェックを入れずにリポジトリつくって
+$ git init .
+$ git remote add origin git@github.com:suwa3/Hexo-blog.git
+$ git commit -m &amp;lsquo;Initial commit&amp;rsquo; &amp;ndash;allow-empty
+$ git push --set-upstream origin master</description>
+    </item>
+    
+    <item>
+      <title>中華街/外部メディアファイルを削除する</title>
+      <link>https://hugo.suwa3.me/post/2019-08-31-%E4%B8%AD%E8%8F%AF%E8%A1%97-%E5%A4%96%E9%83%A8%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sat, 31 Aug 2019 01:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-31-%E4%B8%AD%E8%8F%AF%E8%A1%97-%E5%A4%96%E9%83%A8%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</guid>
+      <description>なんちにくはらむーさんらと中華街で食べ歩きしました！
+小籠包だよ。
+今まで小籠包を誤解していたの。
+お饅頭の類だとおもっていた。
+いくらやプチトマトの仲間なんだということを知った。
+おいしかったなあ。また食べたい。
+最近ほんとうに忙しくて、余裕がなくて
+こうやって作業優先しないで、何も考えずに話して食べてってするの
+なんだか現実味がなかった。
+こういう時間も大切なのかもしれないと思いました。
+そのあとはコメダに移動して作業です。
+むーさんと渋谷まで行って嶋田さんと顔だけ合わせてバイバイしました。
+渋谷の宮益坂をのぼった先にあるコメダは何故かいつも集中できるの。
+git pushしようとしたら、このコマンドで設定をしてくださいと言われた。
+設定しようとしたらコンフリクト起こしていたため
+一度git pullして設定しろと言われ、その設定でうまくいったので
+再度pullして、その後はいつも通りいい感じで終わりました。
+最後にgit remote -vでリモートブランチのブランチが確認できます。
+Dockerで構築したMastodonの外部メディアファイルを削除する方法
+ここを参考に画像削除のcronコマンドを書きました。
+らしおさんに教わったコマンドでは
+$ &amp;ndash;rm web bundle exec bin/tootctl media remove &amp;ndash;days 1
+確かこんな感じで
+ただ&amp;ndash;days 1だと「やっぱりやりなおしたい」とおもっても
+一日前までの画像を消しちゃったらtestしづらいね、ということで
+--days 30 「あ、まちがえた」
+--days 29 「もう少し違う方法したいかも」
+--days 28「cronで設定したいなあ」
+--days 27「Ansibleで設定したい〜」
+みたいな感じで30回くらいtestできるといいよねってことになり
+--days 30から行ってみたいと思います！</description>
+    </item>
+    
+    <item>
+      <title>監視など</title>
+      <link>https://hugo.suwa3.me/post/2019-08-20-%E7%9B%A3%E8%A6%96%E3%81%AA%E3%81%A9/</link>
+      <pubDate>Tue, 20 Aug 2019 13:00:48 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-20-%E7%9B%A3%E8%A6%96%E3%81%AA%E3%81%A9/</guid>
+      <description>夏バテ過ぎる。
+ぴぴお花屋さんだけど今日はコードも少し書いたよ。
+システムのお仕事したいなあ。
+.
+お昼はdon.suwa3.meに簡易的な監視ツールを入れるため
+Uptime Robotの設定をしていました。
+監視対象のURLと通知先のメールアドレスを登録するだけなので
+2分で完了した。
+念の為Slackにも届くようにしてみた。
+.
+don.suwa3.meをメンテナンスモードに切り替えて
+Uptime Robotから通知がくるか試したの。
+5分毎にcheckしているはずなのに
+なかなか通知が来なくて
+｢おかしいなー？｣
+とおもったんだけど
+よくよく考えたらメンテナンスページは
+通常と同様に200を返すので
+Uptime Robot的には問題なしと判断されるのだった。
+.
+ということで
+設定したURLをhttps://don.suwa3.me/about
+にして
+メンテナンスモードに切り替えて404を返すようにしてみたら
+しばらくして期待値通り
+Uptime Robotから通知がきたので
+これでdon.suwa3.meに異常が起きたら即通知くるようになったᐠ( ᐛ )ᐟ♡ᐠ( ᐖ )ᐟ
+わーいわーい
+そしてそのまましばらくメンテナンスモード戻し忘れて
+don.suwa3.meはロングラビットチャンス到来していました。
+.
+夜はHPの編集をしていた。
+背景画像を変えていたの。
+相対パスが未だによくわからんちで
+なんだか血縁関係の
+｢従兄弟は何親等か？｣
+みたいなかんじやんね。
+.
+とりあえずディレクトリのドット一つが
+｢今いる場所ここのディレクトリのこと｣
+ドット二つが
+｢今いる場所の一つ上のディレクトリのこと｣
+というのは覚えた。
+.
+../←これに慣れよう。
+あとね
+何故かHPのindex.html等が入ったディレクトリがローカルのhomeとdesktopそれぞれにあって
+ほぼ同じファイルなんだけれども
+.
+homeのディレクトリはgit管理されていて
+ターミナルからgit addとかしているのはhomeの方なの。
+.
+desktopのディレクトリはgit管理されていないんだけれども
+Atomから編集するのはdesktopのディレクトリにあるindex.html等で
+ブラウザから手作業でgit pushしているのは
+いつもdesktopのindex.htmlなの。
+｢ん？？？？｣
+ってかんじなので
+desktopのディレクトリは封印して
+homeのgit管理されているものを</description>
+    </item>
+    
+    <item>
+      <title>Nuxt.js移植</title>
+      <link>https://hugo.suwa3.me/post/2019-08-17-926/</link>
+      <pubDate>Sat, 17 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-17-926/</guid>
+      <description>恵比寿でネイルしてきたよ。
+くすんだベージュで落ち着いた感じになりました。
+そのあとは六本木に移動して、しばらく作業。
+ひたすらWordPressのタグつけ作業だよ。
+PCからだと左側にタグ群が表示されて
+スマホからだと右上のハンバーガーメニュー（三本線）から
+タグ群が表示されるようになりました。
+やったねえ。
+.
+母に頼まれて大昔に作ったHPの、ログインボタンを復活させるなどしました。
+すべてgit管理したいなあ。
+.
+Rabbit-gameのNuxt.jsへの移植もすこしやったよ。
+標準ライブラリやサードパーティライブラリについて
+あと、コンパイルとビルドまでやるのかと知って
+JavaScriptなのにJavaぶっているなと感じました。
+.
+わたしは浦島太郎なのでjQueryに触れずにきて
+最新の恩恵がわからず、ただひたすら複雑化して
+JS書くだけなのに何故こんなにも段階を踏まされるのか分からん😠
+って気持ちだったのだけど
+思い返せばdocker-composeも仮想サーバーも
+以前なら存在すらしなかったけれども
+現在の技術進歩によって生み出されて
+複雑化してはいるのだけれども、便利だし覚えた方が良いよね。
+って、ノリで覚えてきたし
+JSも膨大に散らかったものを一つ一つ見るのではなく
+自動化して整理されるようなツールがあるのならば
+それの使い方は、積極的に覚えてしまった方がラクなのかもしれないと思いました。
+こちらGitHubのブラウザ上でJSを移植しようとして一気にコピペしてpushしていたの。
+移植は一行一行やっていかないとerrorだらけでわけわからんくなる😢
+と、いうことで
+$ git log
+で、今までのgit履歴を確認して
+$ git revert [ID]
+で、IDを指定して消し
+git pushしました。
+git管理だいじ</description>
+    </item>
+    
+    <item>
+      <title>Nuxt.js</title>
+      <link>https://hugo.suwa3.me/post/2019-07-22-nuxt-js/</link>
+      <pubDate>Mon, 22 Jul 2019 13:00:20 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-22-nuxt-js/</guid>
+      <description>Nuxt.jsを導入する練習をするために
+Rabbit gameをexampleとして
+GitHubにリポジトリを作成しました。
+開発サーバーかわいい
+色々と機能があるのね。
+https://ja.nuxtjs.org/guide
+サーバーサイドレンダリングはやらなかった。
+あとGitHubの使い方少しずつ慣れてきたんだけれども
+GitHub上にpushしたあとshellで修正するの慣れないので
+もう少し復習したいなあってきもちです。
+.
+$ rm -rf .git
+-rfは-rと-fくっつけたもの
+-rディレクトリを消す、ファイルの場合は不要
+-fはforce、無理やり
+.
+$ git commit -m &amp;lsquo;scaffolding&amp;rsquo;
+-mはcommit messes
+.
+$ mv * ../
+*ワイルドカードで全部
+../を指定して上の階層にmv移動させる
+.
+$ cd ..
+じぶんも上の階層に移動
+.
+$ mv .editorconfig ../
+$ mv .gitignore ../
+$ mv .nuxt/ ../
+.がつく隠しファイルは*で指定できないので手動で移動
+.
+このblogドット.だらけで意味わからんくなっているな。
+できたあ、かわいい。
+そしてspacemacsをいれました。
+Evilモードではない方にしました。
+Evilって名称にemacsの悪意のようなものをやんわりと感じつつ
+調べたら建前上きちんとした意味はあるぽい。
+真実は謎のまま。
+これから色々と設定を加えていけたら良いなあとおもいました。
+.
+現在AtomユーザーなのでAtomの使い方も復習しながら
+WebのコーディングはVSCode使いこなせたら良いなあって目標です。</description>
+    </item>
+    
+    <item>
+      <title>スマホからgit/Vim/Emacs</title>
+      <link>https://hugo.suwa3.me/post/2019-07-18-%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%8B%E3%82%89git-vim-emacs/</link>
+      <pubDate>Thu, 18 Jul 2019 13:00:25 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-18-%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%8B%E3%82%89git-vim-emacs/</guid>
+      <description>JSの練習していたの。
+だいぶ触っていなかったので・・
+図で説明されるとわかりやすいなあとおもう。
+Vue.js練習したいなあとおもいます。
+.
+Github、スマホからissueのClosedができたので
+もしやとおもって試してみたら、スマホから編集/反映できた。
+そしてgit cloneできるのか調べたらTermuxというアプリをいれることで
+Android上でLinuxのようなshellをつかえるようになるらしい。
+shellとgitコマンドが使えるならgit clone可能なんだねえ
+https://qiita.com/0uts1de/items/7eb13fea6ac5f02da44b
+ついでに、iPhoneにVimが入っていたのおもいだして
+iでinsert modeに入れたけれども
+どうやって抜けるのかわからず
+まさかの脱出ゲームだった。
+emacsも入れていたので開いたよ。
+iPhoneのアプリはnot emacsだけれども
+Androidアプリはemacsだったよ。なぞい
+ちなみにAtomのスマホ用エディタは見つけられず
+VSCodeはありました。</description>
+    </item>
+    
+    <item>
+      <title>OSC名古屋</title>
+      <link>https://hugo.suwa3.me/post/2019-07-14-572/</link>
+      <pubDate>Sun, 14 Jul 2019 13:00:39 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-14-572/</guid>
+      <description>オープンソースカンファレンス名古屋に行ってきました。
+オープンソースのお祭りだったよ。
+企業ブースや個人のブースがあって
+エンジニア向け同人イベントみたいだなあという印象でした。
+.
+Raspberry Piのセミナーと、gitのセミナーを受講したの。
+Raspberry Piの講師は年配の方で
+｢最近のひとはPythonとかで制御するみたいですが、わたしはPythonよく分からないので全てshell scriptで書きました｣
+と言っていて、すごいなあとおもったよ。
+.
+あと面白いなとおもったのが
+ポーチライトを外の照度で管理するの
+“外が明るかったらポーチライトの灯りを消す、暗かったら点ける”
+という仕組みをつくるのに
+太陽光電池つきの100均電卓を分解して
+照度が高いと電圧も高くなるのを利用していたの。
+閾値処理である電圧以上になったら消す/以下になったら点ける
+という設定をしたらしい。
+アイディアだなあとおもった。
+.
+講師の方はスマホに音声で指示を出していたんだけど
+スマートウォッチで指示が出せたらラクよね。
+海外ではスマートウォッチでIoTの遠隔操作をすることが増えてきているらしく
+それがスマートウォッチ普及の一翼を担っていると知って
+自動制御や遠隔操作の開発
+今後も活発化しそうだし、たのしそうだなあとおもいました。
+.
+Raspberry PiのステッカーをgetしたのでMacBookに貼った♡
+可愛い。
+.
+gitのセミナーは
+最近GitHubを使い始めて
+shellコマンドでのgit操作を記事にまとめたし
+https://qiita.com/suwa3/items/0a180e9833c0146e36b5
+初歩的な仕組みについては知っているつもりだったの。
+前半はわたしにとって復習的な要素が大きくて
+｢んー、たしかに｣
+とおもいながら聞いていたけれども
+後半の重複(コンフリクト)対策の仕組みはなるほどとおもった。
+https://www.slideshare.net/mobile/ToruMiyahara/git-osc2018
+帰宅してスライドもう一度復習しました。
+図解がわかりやすくて良いなあ。
+.
+その後ポケマス管理者のナツキさんと合流して
+WordPressのはなしや
+マストドンについて
+お互いに今日受講したセミナーの感想を話しつつ
+ナツキさんが最近ハマっているたまごっちの話や
+星ドラの話も聞いたよ。
+解散後はダッシュで会場に戻って
+ギリギリLT（発表）を聞くことができた。
+.
+新幹線で地元の静岡に寄り道して
+地元の、昔からの知人が働いているダイニングバーで夕食をとったよ。
+元SEのひとでWindows 3.1を使っていたはなしから
+当時はPCが扱えてもオタクに人権がなかった
+というはなしに、歴史を感じました〜。
+.
+今日盛りだくさんᐠ( ᐛ )ᐟ♡ᐠ( ᐖ )ᐟ</description>
+    </item>
+    
+  </channel>
+</rss>

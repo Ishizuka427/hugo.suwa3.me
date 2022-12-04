@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>youtube on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/youtube/</link>
+    <description>Recent content in youtube on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Fri, 13 Sep 2019 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>フリーマンカフェ/権限の指</title>
+      <link>https://hugo.suwa3.me/post/2019-09-13-%E3%83%95%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%AB%E3%83%95%E3%82%A7-%E6%A8%A9%E9%99%90%E3%81%AE%E6%8C%87/</link>
+      <pubDate>Fri, 13 Sep 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-09-13-%E3%83%95%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%AB%E3%83%95%E3%82%A7-%E6%A8%A9%E9%99%90%E3%81%AE%E6%8C%87/</guid>
+      <description>渋谷のフリーマンカフェに行きました。
+電源WIFIいい感じのおしゃカフェだった。
+肩の荷が降りたー
+ってかんじだったので
+開放感の中でピザを食べました。
+わあい
+近々やりたいことをLISTにまとめた。
+Linuxの権限確認と変更(chmod)（超初心者向け） - Qiita
+$ chmod u+x hoge.txt
+uが変更対象　+が変更方法　xが変更内容
+変更対象
+変更対象
+意味
+u
+ユーザー
+g
+グループ
+o
+その他
+a
+すべて
+変更方法
+変更方法
+意味
+=
+指定した権限にする
+指定した権限を付与する
+-
+指定した権限を除去する
+変更内容
+変更内容
+意味
+r
+読み取り
+w
+書き込み
+x
+実行
+権限の指で、数字を指定して変更する方法を以前教わったけれども
+アルファベットの方がわかりやすいなあと思ったのでメモです。
+https://www.youtube.com/watch?v=5W17cVtMgXg
+これは勢いでupした権限の指です。
+小声で数字を数えています。
+don.suwa3.meがDocker上にDBと共にキツキツで置いてあるせいか
+最近は週一でDockerがふわふわして
+メンテナンスモードに切り替えてstatusを確認して
+再起動かけて、場合によってはイメージID指定して削除して
+っていうの
+そろそろ飽きてきたので、早急にお引越ししたいです。
+なのでまずはNginx設定ファイルをAnsibleに展開するところからです！
+やるぞー</description>
+    </item>
+    
+  </channel>
+</rss>

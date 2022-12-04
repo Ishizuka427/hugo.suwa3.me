@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rsyslog on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/rsyslog/</link>
+    <description>Recent content in rsyslog on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 07 Aug 2019 13:00:33 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/rsyslog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rsyslog/拡張機能</title>
+      <link>https://hugo.suwa3.me/post/2019-08-07-rsyslog-%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD/</link>
+      <pubDate>Wed, 07 Aug 2019 13:00:33 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-07-rsyslog-%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD/</guid>
+      <description>朝からフラフラしていました😵
+立つと気持ち悪くなるの、貧血かなあとおもったけれども
+夏バテや疲れの蓄積もあるのでは
+と言われた。
+ふむ。
+横になると少しラクになって
+お昼過ぎにお粥を食べて
+Chromeの拡張機能を入れていたの。
+また気持ち悪くなり日中はほぼ横になって過ごしました。
+夜は、ほうれん草いっぱい食べたよ。
+そしたら元気が戻ってきたので
+何もしていないの不安になってきたのでぼちぼち作業しました。Ubuntuにrsyslogが入っていなかったので入れました。
+これでDockerがふわふわしても
+EC2に入れさえすればlogを見ることできるよ、やったあ。
+installは以下を参考にしました。https://www.rsyslog.com/ubuntu-repository
+.
+Chromeの拡張機能について
+翻訳やメモ、Evernoteの拡張機能なんかは入っていたけれども
+@女子部の問題解決能力高い先輩が拡張機能を色々と入れているのをみて
+いいなあーーとおもい真似しました。
+便利そうなのを幾つか調べたよ。
+.
+中でも使えそうだなとおもったのが
+Back menu for Google
+Googleの機能が使えるの
+ページを開きながら
+気になった単語をサッと調べられるの良いなとおもい導入しました。</description>
+    </item>
+    
+  </channel>
+</rss>

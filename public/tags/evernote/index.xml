@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>evernote on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/evernote/</link>
+    <description>Recent content in evernote on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Fri, 05 Mar 2021 10:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/evernote/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evernote to Markdown</title>
+      <link>https://hugo.suwa3.me/post/2021-03-06-evernote_to_markdown/</link>
+      <pubDate>Fri, 05 Mar 2021 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-03-06-evernote_to_markdown/</guid>
+      <description>Evernote to Markdown ここのREADME.mdの通りに実行したらできました。
+https://github.com/wormi4ok/evernote2md
+今回はDockerを使ってみました🐳
+※バージョンが19系だったので最新の20系にUpdateしました
+Evernoteのエクスポートファイル.enexを.md形式に変換 先にEvernoteの記事をExportしておきます
+ノートをエクスポートする – Evernote ヘルプ＆参考情報
+% mkdir exports % mv ~/Downloads/Mynote.enex . % docker run -t --rm -v &amp;#34;$PWD&amp;#34;:/tmp -w /tmp wormi4ok/evernote2md:latest exports/Mynote.enex ./notes Unable to find image &amp;#39;wormi4ok/evernote2md:latest&amp;#39; locally latest: Pulling from wormi4ok/evernote2md ba3557a56b15: Pull complete 2c339f1d5460: Pull complete Digest: sha256:e4d5eb9715f4a8b096e58c393a227f88d3c79fcecb2d2d0da33b0e9c7f0561b2 Status: Downloaded newer image for wormi4ok/evernote2md:latest Notes: 5 / 5 [===========================================================================================] 100.00% 0s Done! あるか確認
+notes % ls Evernote_blog.md	Shell_Script.md	purpose_of_the_week.</description>
+    </item>
+    
+    <item>
+      <title>purpose of the week</title>
+      <link>https://hugo.suwa3.me/post/2021-01-22-purpose_of_the_week/</link>
+      <pubDate>Fri, 22 Jan 2021 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-01-22-purpose_of_the_week/</guid>
+      <description>purpose of the week タイトルが英語なのは、Markdown化 (Hugoへ移植) するときスムーズにするためです。。
+画像がうさぎなのは、単純にうさぎが好きだから＆まだまだ出来なくても成長するぞ！の心意気です。成長を実感したら、もう少し大人なうさぎにするかも。
+体力づくり 体力づくりは習慣化まあまあ出来ていて
+毎日お風呂後にストレッチ 週に5回くらいストレッチ後に筋トレ(腹筋＆背筋それぞれ50回ずつ) 週2〜3回の朝ランキング ↑これが、来月まで続けば御の字かなぁ。
+続けられなくても、代替策を考えればOKの気持ちで💪
+学習面は、**書かないとやらないな？**と思ったので書きます。
+技術 勉強会の内容、発表動画と資料を参考にまとめる youtube発表動画
+スライド資料 Kubernetes Middle Way
+シェルスクリプト練習問題（中級編） | ゆるっとエンジニアブログ 独学プログラマー(Part3) shell script
+独学プログラマー(Part4) SQL 独学プログラマー(Part1,2) Python それぞれ完了したらアウトプットするぞい。
+語学 How language shapes the way we think | Lera Boroditsky (youtube) 言語の違いが考え方にどう影響するのか具体例をもとに紹介されている。おもしろい〜 TEDシャドーイング
+ラズパイの新作にテンアゲしたので。 Raspberry Foundation Release Their Own Silicon, the Raspberry Pi Pico Linux Today 翻訳 </description>
+    </item>
+    
+    <item>
+      <title>Evernote blog</title>
+      <link>https://hugo.suwa3.me/post/2021-01-19-evernote_blog/</link>
+      <pubDate>Tue, 19 Jan 2021 10:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2021-01-19-evernote_blog/</guid>
+      <description>Evernote blog 今日から試験的に Evernote で blog を書いてみたいと思います。
+今まで Hugo+Netlify で3ヶ月ほどblogを運用していましたが、Postach.io という Evernote のノートブックをそのままブログにできるサービスがあることを知って、思うところもあり乗り換えてみようと考えました。
+Hugo+Netlify から Evernote+Postach.io へ乗り換えようと考えた理由 1) Hugo は Theme カスタマイズが大変そう GitHub上 などで公開されている Theme を読み込んで簡単に変更できますが、それらをカスタマイズするにはリポジトリをフォークして、cssファイルなどを上書きする必要があります。(ちょっと面倒くさい)
+2) git 管理が煩わしい 静的サイトジェネレーターは更新の度に git push するのが手間なうえ、書き直したエモい差分が GitHub 上で公開されてしまうなどの問題があります。(これはプライベートリポジトリで管理してしまえば解決します。)
+3) Markdown では細やかな色付けが難しい カスタマイズすることで不可能ではないですが、基本的にモノクロで少しさびしいです。
+4) WYSIWYGエディタマイブームが来ている GitHub 上でオープンソースの WYSIWYG エディタを探したり、「編集作業とは」について考えることが増えたり、人生で初の WYSIWYG ブームが到来中です。
+5) Evernote to Markdown のGitHubリポジトリを見つけた *.enex形式でエクスポートされた Evernote を、Markdown ファイルに変換する CLI ツールを見つけました。いつでも Hugo に戻ってこられるね♪
+Wordpress to Markdown の際も画像の移行で詰まったけれど、たぶん Evernote to Markdown も画像なり日本語のファイル名なりでエラーしそうな予感がしています。Wordpress on EC2 から Hugo+Netlify に乗り換えてから、すっかり blog の更新が減ってしまった。正直、Hugo を触っていて一番テンションが上がった瞬間って、Wordpress からエクスポートしてきた記事を CLI ツールで Markdown に変換して、それを Hugo で問題なく表示できた瞬間がピークでした。</description>
+    </item>
+    
+    <item>
+      <title>ListとSESとメモ帳難民</title>
+      <link>https://hugo.suwa3.me/post/2019-07-23-%E3%83%AA%E3%82%B9%E3%83%88/</link>
+      <pubDate>Tue, 23 Jul 2019 13:00:39 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-07-23-%E3%83%AA%E3%82%B9%E3%83%88/</guid>
+      <description>やること増えてきたので
+まとめたのがこちらです。
+issueと書かれたものはGitHubでissue管理されているもの。
+最優先は就活と、期限の決まっているKubernetesかなあ。
+.
+Kubernetesは勉強会@女子部に登録したので
+その予習をできるだけやっていきたい。
+.
+最近気づいたのは、入門系の講習やセミナーに
+本気で予習無しや前提知識ゼロでいくと
+ただただ｢訳分からん｣な時間を過ごす羽目になるので
+できる限りじぶんで予習しておくべきだなとおもった。
+入門系の勉強会はむしろ復習なのね。
+.
+最優先の就活だけれども、焦りたくはないの。
+きちんと何がしたいのか見極めたいし
+特に急いでいないので慎重に進められたら良いなあとおもいます。
+.
+AWSサポートにSESの送信制限解除の申請をした。
+この申請が通れば、don.suwa3.meのメール登録開放ができるの。
+無事申請が通ると良いなあ。
+.
+blogにコードを書く際に
+イケてるメモ帳が欲しいなあとおもって探したよ。
+.
+Evernoteはターミナルの内容をコピペすると
+背景の黒も一緒にコピーしてしまうの。
+優秀なんだけれどもwordpressにコピペするときにジャマなので
+純粋にテキストのみで書けるメモ帳がないか
+お勧めを片っ端から試しました。
+Google keepのメモ帳がシンプルで
+クラウド対応しているの。
+PCから入力後すぐにスマホに反映されるのも良い。
+ダークテーマ
+良いじゃんとおもって使っていたら
+Evernoteがコードブロック可能なことを知った。
+.
+バッククオートでコードブロックしてあげれば
+背景の黒も取れて全て解決することに気づいてしまった。
+.
+メモ帳難民した1日でしたあ。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>datadog on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/datadog/</link>
+    <description>Recent content in datadog on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 05 Oct 2019 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/datadog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DATADOG/LAMP</title>
+      <link>https://hugo.suwa3.me/post/2019-10-05-datadog-lamp/</link>
+      <pubDate>Sat, 05 Oct 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-10-05-datadog-lamp/</guid>
+      <description>麻生区にある王禅寺ふるさと公園で行われていたイベントに行ってきました。
+動物のふれあいコーナー目当てです。
+ヤギが可愛かったあ🐑
+どんすわにDATADOG導入しました。
+ひとつのサーバーなら無料プランで入れられるとのことで試してみました。
+GUIでメモリ容量やCPU稼働率をパッと見られるの便利ねえ。
+CPUやばい。
+あとはAWSでLAMP構成の構築やりました。
+VPC、サブネットの設定です。
+チョコミントココア的なもの
+タピオカが入っていたあ。
+以前は些細なコマンドを打つのにも怖くてなかなか下調べに時間がかかったのだけれども
+最近とりあえずやってみて
+うまく行かなければerrorになるし
+どんどんやってみようみたいな感じになってきた。
+特に趣味サーバーなら、ガンガン遊び倒そうとおもいました。</description>
+    </item>
+    
+  </channel>
+</rss>

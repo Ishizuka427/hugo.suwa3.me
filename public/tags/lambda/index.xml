@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lambda on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/lambda/</link>
+    <description>Recent content in lambda on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Tue, 11 Feb 2020 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/lambda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LambdaとPythonでAPI GatewayをエンドポイントにしてSlackに何かを送る</title>
+      <link>https://hugo.suwa3.me/post/2020-02-11-lambda%E3%81%A8python%E3%81%A7api-gateway%E3%82%92%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%AB%E3%81%97%E3%81%A6slack%E3%81%AB%E4%BD%95%E3%81%8B%E3%82%92%E9%80%81%E3%82%8B/</link>
+      <pubDate>Tue, 11 Feb 2020 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2020-02-11-lambda%E3%81%A8python%E3%81%A7api-gateway%E3%82%92%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%AB%E3%81%97%E3%81%A6slack%E3%81%AB%E4%BD%95%E3%81%8B%E3%82%92%E9%80%81%E3%82%8B/</guid>
+      <description>経緯 今週の水曜日にJAWS-UG 初心者支部#23 次回のハンズオン勉強会向けのチューター向け予習会へ参加することになりました。
+Lambdaは、花屋時代にローカル環境でテスト実行してみてQiitaに上げたきりだったので
+その時の記事 =&amp;gt; Pythonでaws-sam-cliをローカル実行するまで
+もうすこし踏み込んで
+(実用性を意識しながらLambdaを触ってみたいなぁ)
+と、思った＆予習も兼ねて
+『API GatewayをエンドポイントにしてLambdaを起動しSlackに何かを流す』
+というのをやってみました。
+API Gatewayをエンドポイントにした実行を試したいと考えた理由として
+外部から連携したい場合、HTTPリクエストを受けて発火させる場面が多くあるので
+これから効率化を考える際に、よく使いそうな手法として要領を掴んで慣れておきたかったからです。
+逆にAPI Gatewayを使わないパターンとして
+AWS内のサービスを使うときは、わざわざエンドポイントを外に置かなくても
+AWSのサービス同士はだいたいIAMロールを使えばAWS内でセキュアに連携できます。
+流れ 流れとしては
+SlackでIncoming Webhookの設定をしてWebhook URLを控えます。
+Lambdaのコンソール上で関数を作成して
+Webhook URLをその関数内で使用し、連携させます。
+API Gatewayのコンソール上でLambda関数を紐付けて
+エンドポイントをデプロイすると、発火用のURLが発行されます。
+そのURLにアクセスする(HTTPリクエストが届く)と
+それを合図にしてLambdaが起動して
+SlackのBotが起動する、という仕組みです。
+Slack
+1. Incoming Webhookの設定
+2. Webhook URLを控える Lambda
+1. 関数の作成
+2. 関数内にWebhook URLを仕込む API Gateway
+1. Lambda関数の紐付け
+2. エンドポイントをデプロイして発火用URLを控える (例えば)ブラウザなど
+エンドポイントURLにアクセスしてみる Slack
+Botが起動する Slack Incoming Webhookの設定 まずはSlackの設定です。
+『Slackをカスタマイズ』を選択します。
+左上の『MENU』から
+『App 管理』を選択します。
+『 Incoming Webhook』を検索し、アプリを『Slackに追加』します。</description>
+    </item>
+    
+    <item>
+      <title>Lambda</title>
+      <link>https://hugo.suwa3.me/post/2019-08-16-lambda/</link>
+      <pubDate>Fri, 16 Aug 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-16-lambda/</guid>
+      <description>AWSで例えば
+&amp;ldquo;S3へファイルがあがったら、それをトリガーにして何かプログラムが走る&amp;rdquo;
+というような
+簡単な動作をさせたいねという話から
+Lambdaならコードさえ書けば、EC2要らずで動くの便利なのでは？
+と、いうことでLambdaについてザッと調べました。
+.
+AWS初心者入門 第7回～「Lambda」ってなにがスゴイんですか？
+説明はそこそこにサッサと現物を触ってみようということで
+Python による Lambda 関数のビルド
+AWSのチュートリアルを参考にコンソールをポチポチしてから
+ローカル環境で実行も出来るらしいということで
+Qiitaの記事をいくつか参考にしつつ試してみました。
+.
+aws-sam-local 改め aws-sam-cli の新機能 sam init を試す
+[AWS SAM CLIでLambda Functionを開発する](http:// https://qiita.com/te20/items/5a28cef4966c75886218)
+Pythonの参考に出来る新しい記事が見当たらなかったのと
+タイポミスで、記事通りだと実際に動作しないものや
+若干の変更点もあったので
+自分で備忘録用に記事をまとめてみることにしました。
+Pythonでaws-sam-cliをローカル実行するまで
+Mastodonにもupしたのだけれども、ほぼ反応なかったの寂しい😢
+ま、いいけどねえ。
+treeコマンドを使えるようになった画像です。
+LambdaをGitHubにあげるところまでやったよ。
+.
+そういえば
+gitコマンド操作に慣れるため
+ブラウザからのGitHub禁止令が出されました。
+ひいい
+git stashなどのコマンド操作や
+サーバー内でgit操作をしたいときに
+gitコマンドに慣れていた方が良いよね。
+と、いうことでしばらく封印です。
+少しだけgitコマンド慣れたよ☺️</description>
+    </item>
+    
+  </channel>
+</rss>

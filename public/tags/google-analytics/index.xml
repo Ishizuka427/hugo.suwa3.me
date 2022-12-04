@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google-analytics on suwa3 blog</title>
+    <link>https://hugo.suwa3.me/tags/google-analytics/</link>
+    <description>Recent content in google-analytics on suwa3 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 28 Dec 2019 13:00:00 +0000</lastBuildDate><atom:link href="https://hugo.suwa3.me/tags/google-analytics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pixelaという草APIサービスを利用して、WordPressのPV数をGitHub風に草生やしてサイドバーに表示させたい(丁寧に)</title>
+      <link>https://hugo.suwa3.me/post/2019-12-28-pixela%E3%81%A8%E3%81%84%E3%81%86%E8%8D%89api%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6wordpress%E3%81%AEpv%E6%95%B0%E3%82%92github%E9%A2%A8%E3%81%AB-2/</link>
+      <pubDate>Sat, 28 Dec 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-12-28-pixela%E3%81%A8%E3%81%84%E3%81%86%E8%8D%89api%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6wordpress%E3%81%AEpv%E6%95%B0%E3%82%92github%E9%A2%A8%E3%81%AB-2/</guid>
+      <description>https://wp.suwa3.me/2019/12/25/pixela%e3%81%a8%e3%81%84%e3%81%86%e8%8d%89api%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%82%92%e5%88%a9%e7%94%a8%e3%81%97%e3%81%a6%e3%80%81wordpress%e3%81%aepv%e6%95%b0%e3%82%92github%e9%a2%a8%e3%81%ab/
+こちらのblog内容の続きです。
+準備内容だとか箇条書きな感じになっているので
+もう少し丁寧に書きます。
+まず、GitHub風に草を生やすことができるPixela
+超かわいい！！と、見た瞬間一目惚れして
+ぜひこれでblogのPV数をサイドバーなどに表示させたいと思いました。
+(スマホの場合は下にスクロールしてもらうと記事＆検索窓の下に表示されます)
+順序としては以下のとおりです。
+PixelaでユーザーとIDを作成してグラフを表示させてみる PV数を調べるため、対象blogにGoogleAnalyticsを導入する GoogleAnalytics APIを利用してjsonファイルをDLする PythonでjsonファイルからPixelaの求める出力ができるように整形する ディレクトリをサーバーなどに置いてcron実行させる htmlにで埋め込む PixelaでユーザーとIDを作成してグラフを表示させてみる https://pixe.la/
+こちらのサービスですが
+基本的にすべてWeb APIで構成されるサービスになるため
+ユーザーやIDの登録など、設定もAPIで行います。
+初めはユーザー登録からAPIで設定することにハードルの高さを感じたのですが
+使ううちに、無駄がなくて洗練されているなぁと感じるようになりました。
+以下の
+a-know には自分の希望ユーザー名
+thisissecret にはパスワードを入力します。
+$ curl -X POST https://pixe.la/v1/users -d &amp;#39;{&amp;#34;token&amp;#34;:&amp;#34;thisissecret&amp;#34;, &amp;#34;username&amp;#34;:&amp;#34;a-know&amp;#34;, &amp;#34;agreeTermsOfService&amp;#34;:&amp;#34;yes&amp;#34;, &amp;#34;notMinor&amp;#34;:&amp;#34;yes&amp;#34;}&amp;#39; 成功すると以下が表示されます。
+{&amp;#34;message&amp;#34;:&amp;#34;Success.&amp;#34;,&amp;#34;isSuccess&amp;#34;:true} test-graph には希望するID(URLに使われます)
+graph-name には希望する名前
+commit には希望する単位(kgやｍなどでもOK)
+int は、今回はPV数ということで整数を扱うのでそのままです。
+shibafu には色を入力します。
+green,red,blue,yellow,purple,blackから選べます。
+$ curl -X POST https://pixe.la/v1/users/a-know/graphs -H &amp;#39;X-USER-TOKEN:thisissecret&amp;#39; -d &amp;#39;{&amp;#34;id&amp;#34;:&amp;#34;test-graph&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;graph-name&amp;#34;,&amp;#34;unit&amp;#34;:&amp;#34;commit&amp;#34;,&amp;#34;type&amp;#34;:&amp;#34;int&amp;#34;,&amp;#34;color&amp;#34;:&amp;#34;shibafu&amp;#34;}&amp;#39; 成功すると以下が表示されます。
+{&amp;#34;message&amp;#34;:&amp;#34;Success.&amp;#34;,&amp;#34;isSuccess&amp;#34;:true} ブラウザで以下にアクセスします。
+a-know にはユーザー名 test-graph にはIDを指定してください。
+https://pixe.la/v1/users/a-know/graphs/test-graph
+(ユーザー名にsuwa3/IDにtest-graphを指定した例)</description>
+    </item>
+    
+    <item>
+      <title>甘えモードAnsible/WordPress.comにGA導入</title>
+      <link>https://hugo.suwa3.me/post/2019-08-25-996/</link>
+      <pubDate>Sun, 25 Aug 2019 13:00:34 +0000</pubDate>
+      
+      <guid>https://hugo.suwa3.me/post/2019-08-25-996/</guid>
+      <description>朝からすっかり疲れていました。
+本日は完全に甘えモードで、Ansibleのcronモジュールでcrontabの設定です。
+自分用の備忘録です。
+もともとUbuntu内の権限周りの設定がわけわかめだったのですが
+今回Ansibleでcronの設定をやろうということで、権限周り問題が複雑化したように感じます。
+ただ、本日は甘えモードのため
+「よくわからないけど、動いた設定内容を備忘録としてまとめればOK」
+を、目標としたので
+本日の目標は完全に達成しました！
+.
+WordPressにGoogle Analytics導入も試しました。
+結論、断念したのですが
+scriptタグが許可されていないっぽい。
+WordPress.orgとWordPress.com、どっちのワードプレスを選ぶ？
+WordPress.orgであれば、自前サーバーでの管理になるので
+自由度が高いためプラグインを使って解決できるのだけれども
+WordPress.comは有料プランでないとプラグインを使えず、月々3000円ほどのビジネスプランに登録必要があるの。
+.
+EC2使えるのであればWordPress.orgに移行して自分で運用すれば？
+って感じなんですが
+don.suwa3.meの運用ですら保守にあっぷあっぷしているので
+もう少し慣れてからかなあってかんじです。
+具体的には、セキュリティの設定面やアプデに追従できるのかが不安なので
+そのあたり慣れたらぜひやりたいです🙋‍♀️
+.
+vimに慣れたいので、カンペ貼ったよ。
+©️はコマンドモードのcです。
+便利なショートカット覚えたらどんどん追記したい。</description>
+    </item>
+    
+  </channel>
+</rss>
