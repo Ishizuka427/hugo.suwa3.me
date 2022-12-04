@@ -7,6 +7,10 @@ tags:
   - "life"
 ---
 
+人生たのベントカレンダー🎶 Advent Calendar 2022  
+https://adventar.org/calendars/7637  
+3日目担当です。  
+
 ## 出会い
 
 
